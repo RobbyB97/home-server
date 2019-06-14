@@ -2,9 +2,10 @@
   "name": "home-server",
   "version": "1.0.0",
   "description": "Code base for homelab",
-  "main": "src/app.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.js -e js,html,css,hbs",
+    "start": "node src/index.js",
   },
   "repository": {
     "type": "git",
