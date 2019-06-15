@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<!------------------------------------
+Author:		Robert Bergers
+Project:	Personal Website
+File:		./index.html
+Info:		Main HTML File (No template used)
+------------------------------------->
+<html>
+<head>
+	<title>Robby B</title>
+	<link rel="icon" type="images/png" href="images/favicon.ico">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="initial-scale=1">
+	<link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="js/default.js" defer></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div id="bg-color"></div>
+	<div id="email-modal">
+		<p>
+			Email me at <a href="mailto:bergersr@my.easternct.edu">bergersr@my.easternct.edu</a>
+			</br></br>
+		</p>
+		<p id="close-email">
+			&#923;
+		</p>
+	</div>
+  <div class="container-fluid" id="header"> <!-- Header -->
+		<div class="row">
+			<div class="col-xs-2 col-sm-1">
+				<a href="#">
+					<img class="title-img" src="./images/favicon.png" alt="Home">
+				</a>
+			</div>
+			<div class="col-xs-2 col-sm-1">
+				<button class="inter-nav"> &#9776;</button>
+			</div>
+		</div>
+		<div id="nav-overlay">
+			<span>
+				<a href="#skills" onclick="toggleNav()">Skills</a>
+				<div class="nav-divider"></div>
+				<a href="#experience" onclick="toggleNav()">Projects</a>
+				<div class="nav-divider"></div>
+				<a target="_blank" href="https://github.com/RobbyB97">GitHub</a>
+				<div class="nav-divider"></div>
+				<a target="_blank" href="https://www.linkedin.com/in/robbyb97">LinkedIn</a>
+			</span>
+		</div>
+  </div> <!-- End Header -->
+  <div class="container-fluid" id="mainbody"> <!-- Main Body -->
+		<div class="row section" id="blurb" tabindex="0"> <!-- Blurb -->
+			<div id="selfie" class="col-xs-12 col-sm-4">
+				<img src="images/self.jpeg" alt="Robby B.">
+			</div>
+			<div class="col-xs-12 col-sm-8">
+				</br>
+				<div class="desktop-only"></br></br></br></div>
+				<div class="title">
+					Overview
+				</div>
+				<div class="mobile-only">
+					<div class="article-divider"></div>
+				</div>
+				<div class="non-mobile"></br></div>
+				<div class="article">
+					Hello! My name's Robby. I'm a <a target="_blank" href="https://www.thewebdesignhub.com/about-us/">Junior Web Developer</a>, visual artist, and senior Computer Science major at <a target="_blank" href="http://www.easternct.edu">ECSU</a>. I enjoy full stack web development with an emphasis on creating clean and responsive front-end interfaces. Oh, and I love space. The most boring things that happen in space are more exciting than the most exciting things that happen on Earth.
+				</div>
+				<div class="icon-bar">
+					<a target="_blank" href="https://github.com/RobbyB97">
+						<img src="images/logos/github-white.png" alt="Github">
+					</a>
+					<a target="_blank" href="https://www.linkedin.com/in/robbyb97">
+						<img src="images/logos/linkedin.svg" alt="LinkedIn">
+					</a>
+					<a target="_blank" href="https://www.reddit.com/user/RobbyB97">
+						<img src="images/logos/reddit.png" alt="Reddit">
+					</a>
+					<a>
+						<button id="email-button">
+							<img src="images/logos/email.png" alt="Email me">
+						</button>
+					</a>
+				</div>
+			</div>
+		</div>
+		</div> <!-- End Blurb -->
+		<div class="container-fluid" id="skillsbg"> <!-- Technical Skills Section -->
+			<div class="container">
+				<div class="row section" id="skills" tabindex="1">
+					<div class="title">
+						Skills
+					</div>
+					<div class="article">
+						<div class="col-md-4">
+							<div class="subtitle">
+								Web Design
+							</div>
+							<p>
+								I've been an artist since the day a pencil was put in my hand, and that passion has transitioned well into front-end web development. I'm a big fan of modern web design and clean user interfaces.
+							</p>
+							<ul>
+								<li>
+									Mobile-first web design
+								</li>
+								<li>
+									WordPress / Wix
+								</li>
+								<li>
+									JS / JQuery / AngularJS
+								</li>
+								<li>
+									Responsive Layouts
+								</li>
+								<li>
+									Bootstrap
+								</li>
+								<li>
+									SASS / CSS3
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-4">
+							<div class="subtitle">
+								Development
+							</div>
+							<p>
+								While having an aesthetically pleasing and intuitive front-end design is important to attract and retain users, an efficient and functional back-end is important to provide them a service quickly and efficiently.
+							</p>
+							<ul>
+								<li>
+									WordPress Plugin Development
+								</li>
+								<li>
+									PHP
+								</li>
+								<li>
+									MySQL / PHPMyAdmin
+								</li>
+								<li>
+									Flask
+								</li>
+								<li>
+									SQL / Orace SQL
+								</li>
+								<li>
+									Website Maintenance
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-4">
+							<div class="subtitle">
+								Programming
+							</div>
+							<p>
+								I'm an avid Python programmer and find it very useful in automating repetitive tasks, scraping the internet, generating html files dynamically, and making useful APIs.
+							</p>
+						<ul>
+							<li>
+								Python / Java / C++
+							</li>
+							<li>
+								.NET / VBA
+							</li>
+							<li>
+								PyPI Package Development
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> <!-- End Technical Skills -->
+	<div class="container-fluid" id="experiencebg"> <!-- Experience -->
+		<div class="container">
+			<div class="row section" id="experience" tabindex="2">
+				<div class="title">
+					Projects
+				</div>
+				<div class="article">
+					<div class="col-md-4">
+						<div class="subtitle">
+							B.A.D.
+						</div>
+						<ul>
+							<li>
+								<a href="https://github.com/RobbyB97/BADMedia">
+									Find B.A.D. here!
+								</a>
+							</br>
+								<p>
+									B.A.D. (Bearer of Awesome Data) is a program written in Python that dynamically generates webpages that give the user easy access to the latest news on whatever interests them. While working on this project, I've split some aspects of it that could prove useful to others  and deployed them to the Python Package Index.
+								</p>
+							</li>
+							<li>
+								<a href="https://pypi.org/project/yt-iframe/">
+									yt-iframe
+								</a>
+							</br>
+								<p>
+									<i>yt-iframe</i> is a Python package that takes a link to a YouTube video or channel and gathers useful information about it. It also generates iframes for the video or each video in the channel. If you would like to embed a YouTube video or channel's videos on your website, this could be useful to you. (Run <i>pip install yt-iframe</i>)
+								</p>
+							</li>
+							<li>
+								<a href="https://pypi.org/project/libpyn/">
+									libpyn
+								</a>
+							</br>
+								<p>
+									<i>libpyn</i> is an API for <a href="https://www.libsyn.com/">libsyn</a>, a podcast hosting website. If you are hosting a channel on this site and would like to post updates on your personal website automatically, or you are a podcast enthusiast that likes having all their podcasts in one place, or would like to download podcasts and listen to them offline, libpyn can help! (Run <i>pip install libpyn</i>)
+								</p>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<div class="subtitle">
+							WP Plugins
+						</div>
+						<p>
+							Developing WordPress plugins helps me to learn PHP and the WP API, and helps other people who may not be experienced with coding to create their own website with highly customizable and easy to use plugins.
+						</p>
+						<ul>
+							<li>
+								<a href="https://wordpress.org/plugins/sitewide-notice-twdh/">
+									Sitewide Notice TWDH
+								</a>
+							</br>
+								<p>
+									Adds a customizable popup banner with optional link to your WP site.
+								</p>
+							</li>
+							<li>
+								<a href="https://github.com/RobbyB97/twdh-register-email/tree/master/all-in-one-modal-popup">
+									All-in-One Modal Popup
+								</a>
+							</br>
+								<p>
+									Adds a customizable popup to your WP site with custom message, the option to gather user emails and store them in your database and an optional cookie warning.
+								</p>
+							</li>
+							<li>
+								<a href="https://github.com/RobbyB97/twdh-hide-admin">
+									TWDH Hide Admin
+								</a>
+							</br>
+								<p>
+									Prevents the admin panel from being visited by unauthorized users. Automatically redirects them to a URL set by the admin. (Under Development)
+								</p>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<div class="subtitle">
+							Other Projects
+						</div>
+						<ul>
+							<li>
+								<a href="https://github.com/RobbyB97/python-projects/blob/master/assignment8.py">
+									Selenium
+								</a> / <a href="https://github.com/RobbyB97/python-projects/blob/master/assignment7.py">
+									Beautiful Soup
+								</a>
+							</br>
+								<p>
+									These projects taught me how to use Selenium and Beautiful Soup for web scraping.
+								</p>
+							</li>
+							<li>
+								<a href="https://github.com/RobbyB97/python-projects/tree/master/pytext">
+									Pytext Text Editor
+								</a>
+							</br>
+								<p>
+									This was my first Python GUI program, just a simple text editor.
+								</p>
+							</li>
+							<li>
+								<a href="https://github.com/RobbyB97/python-projects/blob/master/Sushi-Go-Round%20Bot/sushiprogram.py">
+									Sushi-Go-Round Game Bot
+								</a>
+							</br>
+								<p>
+									This was my first real Python project, a bot that plays Sushi-Go-Round. I followed the rough steps of a guide, but used different libraries.
+								</p>
+							</li>
+							<li>
+								<a href="https://github.com/RobbyB97/python-projects/tree/master/RoundRobinScheduler">
+									Round Robin CPU Simulator
+								</a>
+							</br>
+								<p>
+									This is a program written in Python that simulates the decisions made by a CPU Round Robin scheduler.
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				</br></br>
+			</div> <!-- End Experience -->
+		</div>
+	</div>
+	<div id="copyright">
+		Hosted on GitHub Pages. &nbsp;&nbsp;&nbsp;&nbsp; Robby Bergers &#169; 2017-2019.
+		</div>
+	<div id="background"></div>
+</body>
+</html>
