@@ -1,20 +1,26 @@
 {
   "name": "home-server",
   "version": "1.0.0",
-  "description": "Code base for homelab",
+  "description": "home server",
   "main": "src/index.js",
   "scripts": {
-    "dev": "nodemon src/index.js -e js,html,css,hbs",
     "start": "node src/index.js",
+    "dev": "nodemon src/index.js -e js,css,html,hbs"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RobbyB97/home-server.git"
   },
-  "author": "Robby Bergers",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/RobbyB97/home-server/issues"
   },
-  "homepage": "https://github.com/RobbyB97/home-server#readme"
+  "homepage": "https://github.com/RobbyB97/home-server#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.0.4",
+    "mongoose": "^5.6.0",
+    "validator": "^11.0.0"
+  }
 }
