@@ -10,7 +10,7 @@ const publicPages = path.join(__dirname, '../public')
 const viewsPath = path.join(__dirname, '../templates/views')
 
 // Express config
-const port = 3000
+const port = 443
 const app = express()
 app.use(express.static(publicPages))
 app.use(express.json())
