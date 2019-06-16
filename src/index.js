@@ -12,8 +12,8 @@ require('./db/mongoose')
 const appRouters = require('./routers/app')
 const publicPages = path.join(__dirname, '../public')
 const viewsPath = path.join(__dirname, '../templates/views')
-const key = path.join(__dirname, 'key/privkey.pem')
-const cert = path.join(__dirname, 'key/fullchain.pem')
+const key = path.join(__dirname, '../../../../../etc/letsencrypt/live/privkey.pem')
+const cert = path.join(__dirname, '../../../../../etc/letsencrypt/live/fullchain.pem')
 
 // Express config
 const port = 443
