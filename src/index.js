@@ -8,7 +8,7 @@ const hbs = require('hbs')
 const fs = require('fs')
 
 // Connect local files and db
-require('./db/mongoose')
+//require('./db/mongoose')
 const appRouters = require('./routers/app')
 const publicPages = path.join(__dirname, '../public')
 const viewsPath = path.join(__dirname, '../templates/views')
