@@ -13,7 +13,7 @@ const appRouters = require('./routers/app')
 const publicPages = path.join(__dirname, '../public')
 const viewsPath = path.join(__dirname, '../templates/views')
 const key = fs.readFileSync('/etc/letsencrypt/live/bergers.dev/privkey.pem')
-const cert = fs.readFileSync('/etc/letsencrypt/live/bergers.dev/cert.pem')
+const cert = fs.readFileSync('/etc/letsencrypt/live/bergers.dev/fullchain.pem')
 const ca = fs.readFileSync('/etc/letsencrypt/live/bergers.dev/chain.pem')
 
 // Express config
