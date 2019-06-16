@@ -24,8 +24,8 @@ app.use(appRouters)
 
 // HTTPS Config
 const httpsOptions = {
-  cert: fs.readFileSync('//etc/letsencrypt/live/fullchain.pem'),
-  key: fs.readFileSync('//etc/letsencrypt/live/privkey.pem')
+  cert: fs.readFileSync('./key/fullchain.pem'),
+  key: fs.readFileSync('./key/privkey.pem')
 }
 
 // Run server
