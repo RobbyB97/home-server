@@ -17,7 +17,7 @@ const cert = fs.readFileSync('/etc/letsencrypt/live/bergers.dev/fullchain.pem')
 const ca = fs.readFileSync('/etc/letsencrypt/live/bergers.dev/chain.pem')
 
 // Express config
-const port = 443
+const port = 3000
 const app = express()
 app.use(express.static(publicPages))
 app.use(express.json())
@@ -34,8 +34,8 @@ const httpsOptions = {
 
 // Run server
 
-https.createServer(httpsOptions, app).listen(port, () => {
-  console.log('HTTPS running... Port: ' + port)
+https.createServer(httpsOptions, app).listen(443, () => {
+  console.log('HTTPS running... Port: 443')
 })
 
 //app.listen(port, () => {
