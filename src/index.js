@@ -36,11 +36,6 @@ const httpsOptions = {
 }
 
 // Run server
-
 https.createServer(httpsOptions, app).listen(443, () => {
   console.log('HTTPS running... Port: 443')
 })
-
-//app.listen(port, () => {
-//  console.log('Server running at port:', port)
-//})
