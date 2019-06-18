@@ -1,5 +1,3 @@
-'use strict'
-
 // Libraries
 const express = require('express')
 const path = require('path')
@@ -8,7 +6,6 @@ const fs = require('fs')
 
 // Connect local files and db
 //require('./db/mongoose')
-const appRouters = require('./routers/dev')
 const publicPages = path.join(__dirname, '../public')
 const viewsPath = path.join(__dirname, '../templates/views')
 const partialsPath = path.join(__dirname, '../templates/partials')
@@ -20,12 +17,16 @@ app.use(express.static(publicPages))
 app.use(express.json())
 app.set('view engine', 'hbs')
 app.set('views', viewsPath)
-app.use(appRouters)
+
+// Routers
+const mainRouter = require('./routers/app')
+const weatherRouter = require('./routers/weather')
+app.use(mainRouter)
+app.use(weatherRouter)
 
 hbs.registerPartials(partialsPath)
 
 // Run server
-
 app.listen(port, () => {
   console.log('Server running at port:', port)
 })
