@@ -12,18 +12,21 @@ const fs = require('fs')
 const appRouters = require('./routers/app')
 const publicPages = path.join(__dirname, '../public')
 const viewsPath = path.join(__dirname, '../templates/views')
+const partialsPath = path.join(__dirname, '../templates/partials')
 const key = fs.readFileSync('/etc/letsencrypt/live/bergers.dev/privkey.pem')
 const cert = fs.readFileSync('/etc/letsencrypt/live/bergers.dev/fullchain.pem')
 const ca = fs.readFileSync('/etc/letsencrypt/live/bergers.dev/chain.pem')
 
 // Express config
-const port = 3000
+const port = 443
 const app = express()
 app.use(express.static(publicPages))
 app.use(express.json())
 app.set('view engine', 'hbs')
 app.set('views', viewsPath)
 app.use(appRouters)
+
+hbs.registerPartials(partialsPath)
 
 // HTTPS Config
 const httpsOptions = {
