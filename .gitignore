@@ -4,3 +4,9 @@ node_modules/
 #Ignore sass cache
 .sass-cache/
 *.map
+
+#Ignore keys for SSL cert
+src/key/*
+
+#Ignore logs
+*.log
