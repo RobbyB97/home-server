@@ -3,12 +3,23 @@ const express = require('express')
 const path = require('path')
 const hbs = require('hbs')
 
+
 // Config
 const router = new express.Router()
 const http2https = require('../middleware/http2https')
 
-// Homepage (Portfolio)
+
+// Homepage
 router.get('', http2https, (req, res) => {
+  try {
+    res.render('index')
+  } catch(e) {
+    res.send()
+  }
+})
+
+// Portfolio
+router.get('/portfolio', http2https, (req, res) => {
   try {
     res.render('portfolio/index')
   } catch(e) {
