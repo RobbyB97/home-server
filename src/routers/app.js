@@ -4,6 +4,10 @@ const path = require('path')
 const hbs = require('hbs')
 
 
+// Environment variables
+const dev = process.env.DEV
+
+
 // Config
 const router = new express.Router()
 const http2https = require('../middleware/http2https')
@@ -12,7 +16,9 @@ const http2https = require('../middleware/http2https')
 // Homepage
 router.get('', http2https, (req, res) => {
   try {
-    //res.render('homepage/index')
+    if (dev == 1) {
+      return res.render('homepage/index')
+    } 
     res.redirect('/portfolio')
   } catch(e) {
     res.send()
