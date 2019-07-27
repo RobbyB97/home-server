@@ -12,7 +12,7 @@ const http2https = require('../middleware/http2https')
 // Homepage
 router.get('', http2https, (req, res) => {
   try {
-    res.render('index')
+    res.render('homepage/index')
   } catch(e) {
     res.send()
   }
