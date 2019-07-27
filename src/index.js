@@ -39,17 +39,21 @@ hbs.registerPartials(partialsPath)
 
 
 // Server config
+let key = ''
+let cert = ''
+let ca = ''
+let httpsOptions = {}
 if (dev == 1) {
   console.log(chalk.green('Running server in dev environment'))
 } else {
   console.log(chalk.green('Running server in prod environment'))
   // Connect SSL Certs
-  const key = fs.readFileSync('/etc/letsencrypt/live/bergers.dev/privkey.pem')
-  const cert = fs.readFileSync('/etc/letsencrypt/live/bergers.dev/fullchain.pem')
-  const ca = fs.readFileSync('/etc/letsencrypt/live/bergers.dev/chain.pem')
+  key = fs.readFileSync('/etc/letsencrypt/live/bergers.dev/privkey.pem')
+  cert = fs.readFileSync('/etc/letsencrypt/live/bergers.dev/fullchain.pem')
+  ca = fs.readFileSync('/etc/letsencrypt/live/bergers.dev/chain.pem')
 
   // HTTPS Config
-  const httpsOptions = {
+  httpsOptions = {
     cert: cert,
     key: key,
     ca: ca
