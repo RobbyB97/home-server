@@ -26,6 +26,7 @@
     "validator": "^11.0.0"
   },
   "devDependencies": {
+    "concurrently": "^4.1.1",
     "env-cmd": "^8.0.2",
     "sass": "^1.22.7"
   }
