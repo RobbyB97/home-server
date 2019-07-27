@@ -23,10 +23,10 @@
     "hbs": "^4.0.4",
     "mongoose": "^5.6.0",
     "nodemon": "^1.19.1",
-    "sass": "^1.22.7",
     "validator": "^11.0.0"
   },
   "devDependencies": {
-    "env-cmd": "^8.0.2"
+    "env-cmd": "^8.0.2",
+    "sass": "^1.22.7"
   }
 }
