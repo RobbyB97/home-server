@@ -2,7 +2,7 @@
 const express = require('express')
 const path = require('path')
 const hbs = require('hbs')
-
+const chalk = require('chalk')
 
 // Environment variables
 const dev = process.env.DEV
@@ -19,6 +19,7 @@ router.get('', http2https, (req, res) => {
     if (dev == 1) {
       return res.render('homepage/index')
     } 
+    console.log(chalk.blue('Redirecting homepage to portfolio...'))
     res.redirect('/portfolio')
   } catch(e) {
     res.send()

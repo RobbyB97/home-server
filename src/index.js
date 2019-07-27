@@ -44,9 +44,9 @@ let cert = ''
 let ca = ''
 let httpsOptions = {}
 if (dev == 1) {
-  console.log(chalk.green('Running server in dev environment'))
+  console.log(chalk.blue('Running server in dev environment'))
 } else {
-  console.log(chalk.green('Running server in prod environment'))
+  console.log(chalk.blue('Running server in prod environment'))
   // Connect SSL Certs
   key = fs.readFileSync('/etc/letsencrypt/live/bergers.dev/privkey.pem')
   cert = fs.readFileSync('/etc/letsencrypt/live/bergers.dev/fullchain.pem')
@@ -70,11 +70,11 @@ app.use(weatherRouter)
 if (dev == 1) {
   // Dev
   http.createServer(app).listen(port, () => {
-    console.log(`Server is up on port ${port}`)
+    console.log(chalk.bold.green(`Server is up on port ${port}`))
   })
 } else {
   // Production
   https.createServer(httpsOptions, app).listen(443, () => {
-    console.log(`Production HTTPS server running on port: ${port}`)
+    console.log(chalk.green(`Production HTTPS server running on port: ${port}`))
   })
 }
