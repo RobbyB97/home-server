@@ -44,6 +44,7 @@ router.get('/weather/help', http2https, (req, res) => {
 router.get('/weather/*', http2https, (req, res) => {
   try {
     res.render('weather/404', {
+      title: 'Weather 404',
       message: 'This page doesn\'t exist :('
     })
   } catch(e) {
