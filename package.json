@@ -4,8 +4,8 @@
   "description": "home server",
   "main": "src/index.js",
   "scripts": {
-    "start": "env-cmd ./config/prod.env nodemon src/index.js",
-    "dev": "env-cmd ./config/test.env nodemon src/index.js -e js,css,html,hbs"
+    "start": "env-cmd ./config/environments/prod.env nodemon src/index.js",
+    "dev": "env-cmd ./config/environments/test.env nodemon src/index.js -e js,css,html,hbs"
   },
   "repository": {
     "type": "git",
