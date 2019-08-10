@@ -18,11 +18,14 @@
   },
   "homepage": "https://github.com/RobbyB97/home-server#readme",
   "dependencies": {
+    "babel-preset-env": "^1.5.2",
+    "babel-preset-react": "^6.24.1",
     "chalk": "^2.4.2",
     "express": "^4.17.1",
     "hbs": "^4.0.4",
     "mongoose": "^5.6.0",
     "nodemon": "^1.19.1",
+    "react": "^16.0.0",
     "validator": "^11.0.0"
   },
   "devDependencies": {
