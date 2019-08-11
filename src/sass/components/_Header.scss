@@ -1,9 +1,20 @@
 #head {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     right: 0;
 
-    @media $bp-tablet {}
-    @media $bp-desktop {}
+    #head-logo {
+        margin-left: 4px;
+        width: 3em;
+        height: 3em;
+        img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    @media #{$bp-tablet} {}
+    @media #{$bp-desktop} {}
 }
