@@ -1,10 +1,17 @@
 // Config
 //=====================================================
 
-@import './base/settings';
+@import 
+    './base/settings';
 
 
 // Base Styles
 //=====================================================
+@import 
+    './base/base';
 
-@import './base/base';
+
+// Components
+//=====================================================
+@import
+    './components/Header';
