@@ -35,12 +35,4 @@ router.get('/portfolio', http2https, (req, res) => {
   }
 })
 
-router.get('/react', http2https, (req, res) => {
-  try {
-    res.render('react/index')
-  } catch(e) {
-    res.send()
-  }
-})
-
 module.exports = router
