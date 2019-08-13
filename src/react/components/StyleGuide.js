@@ -3,7 +3,7 @@ import Header from './Header'
 import ReactHome from './ReactHome'
 import ReactTest1 from './ReactTest1'
 
-export const StyleGuide = () => (
+const StyleGuide = () => (
     <div>
         <h1>This is an h1</h1>
         <h2>This is an h2</h2>
@@ -32,3 +32,5 @@ export const StyleGuide = () => (
         </ol>
     </div>
 )
+
+export default StyleGuide
