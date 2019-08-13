@@ -27,6 +27,7 @@ const partialsPath = path.join(__dirname, '../templates/partials')
 
 const mainRouter = require('./routers/app')
 const weatherRouter = require('./routers/weather')
+const reactRouter = require('./routers/react')
 
 
 // Express config
@@ -64,6 +65,7 @@ if (dev == 1) {
 // Connect routers
 app.use(mainRouter)
 app.use(weatherRouter)
+app.use(reactRouter)
 
 
 // Run server
