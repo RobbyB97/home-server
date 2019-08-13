@@ -13,3 +13,6 @@ src/key/*
 
 #Ignore production env
 config/prod.env
+
+#Ignore webpack-built files
+bundle.js
