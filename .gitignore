@@ -15,4 +15,4 @@ src/key/*
 config/prod.env
 
 #Ignore webpack-built files
-bundle.js
+public/react/bundle.js
