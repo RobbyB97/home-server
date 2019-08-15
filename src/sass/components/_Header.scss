@@ -15,6 +15,13 @@
         }
     }
 
+    h1 {
+        position: fixed;
+        top: 6px;
+        margin-top: 0px;
+        left: 2.5em;
+    }
+
     @media #{$bp-tablet} {}
     @media #{$bp-desktop} {}
 }
