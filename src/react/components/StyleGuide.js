@@ -4,7 +4,7 @@ import ReactHome from './ReactHome'
 import ReactTest1 from './ReactTest1'
 
 const StyleGuide = () => (
-    <div>
+    <div class="main-content">
         <h1>This is an h1</h1>
         <h2>This is an h2</h2>
         <h3>This is an h3</h3>

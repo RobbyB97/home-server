@@ -10,6 +10,17 @@ body {
     font-family: $monospace;
 }
 
+.main-content {
+    margin-top: 3em;
+
+    @media #{$bp-tablet} {
+
+    }
+    @media #{$bp-desktop} {
+
+    }
+}
+
 h1 {}
 
 h2 {}
