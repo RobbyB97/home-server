@@ -13,8 +13,8 @@ const Header = (props) => (
     </div>
     <NavLink to="/react/">Home</NavLink>
     <NavLink to="/react/style_guide">Style Guide</NavLink>
-    <button className="inter-nav" onClick={props.toggleNav}>
-      {props.activeNav ? '✕':'☰'}
+    <button id="inter-nav" onClick={props.toggleNav}>
+      {!props.activeNav ? '☰':'✕'}
     </button>
     <h1>Header</h1>
   </header>
