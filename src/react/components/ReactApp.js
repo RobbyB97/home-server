@@ -5,47 +5,39 @@ import ReactHome from './ReactHome'
 import ReactTest1 from './ReactTest1'
 import StyleGuide from './StyleGuide'
 
+import {NavLink} from 'react-router-dom'
+
 export default class ReactApp extends React.Component {
-    constructor(props) {
-        super(props)
-
-        this.state = {
-            active: this.props.active,
-            count: this.props.count
-        }
-
-        this.toggleNav = this.toggleNav.bind(this)
-        this.test = this.test.bind(this)
+    state = {
+        active: this.props.activeNav
     }
-    
+
     toggleNav = () => {
-        console.log(this.props.active)
+        let thing = !this.state.activeNav
         this.setState(() => ({
-            active: !this.props.active
+            activeNav: thing
         }))
-        console.log(this.state.active)
     }
 
-    test = () => {
-        this.setState(() => ({
-            count: 100
-        }))
-        console.log(this.props.count)
+    componentDidUpdate() {
+        console.log('update')
     }
-    
+
     render() {
         return (
-            <Header 
-                active={this.props.active}
-                toggleNav={this.toggleNav}
-                test={this.test}
-                count={this.props.count}
-            />
+            <div>
+                <Header 
+                    toggleNav={this.toggleNav}
+                    activeNav={this.state.activeNav}
+                />
+                <p>ok</p>
+            </div>
         )
     }
+
 }
 
 ReactApp.defaultProps = {
-    active: false,
+    activeNav: false,
     count: 1
 }
