@@ -6,14 +6,31 @@ import ReactTest1 from './ReactTest1'
 import StyleGuide from './StyleGuide'
 
 export default class ReactApp extends React.Component {
-    state = {
-        active: this.props.active
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            active: this.props.active,
+            count: this.props.count
+        }
+
+        this.toggleNav = this.toggleNav.bind(this)
+        this.test = this.test.bind(this)
     }
     
-    toggleNav() {
+    toggleNav = () => {
+        console.log(this.props.active)
         this.setState(() => ({
             active: !this.props.active
         }))
+        console.log(this.state.active)
+    }
+
+    test = () => {
+        this.setState(() => ({
+            count: 100
+        }))
+        console.log(this.props.count)
     }
     
     render() {
@@ -21,11 +38,14 @@ export default class ReactApp extends React.Component {
             <Header 
                 active={this.props.active}
                 toggleNav={this.toggleNav}
+                test={this.test}
+                count={this.props.count}
             />
         )
     }
 }
 
 ReactApp.defaultProps = {
-    active: false
+    active: false,
+    count: 1
 }
