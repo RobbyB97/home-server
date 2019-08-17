@@ -13,21 +13,24 @@
     overflow: hidden;
     text-align: center;
 
-
     ul {
+        margin-top: 2.5em;
         list-style: none;
         padding: 0;
-        padding-top: 4em;
         text-align: center;
+        font-size: $l-font;
         
-        li > a {
-            color: $off-white;
-            text-decoration: none;
+        li {
+            padding-bottom: $s-font;
+
+            > a {
+                color: $off-white;
+                text-decoration: none;
+            }
         }
     }
 
     #nav-bg {
-        opacity: 0.6;
         z-index: 1;
         position: absolute;
         left: 0;
@@ -35,6 +38,7 @@
         right: 0;
         bottom: 0;
         background-color: darken($space-blue, 2%);
+        background-blend-mode: color-burn;
     }
 
     &.active-nav {
