@@ -28,6 +28,7 @@ export default class AppRouter extends React.Component {
       <BrowserRouter>
         <div>
           <div id="main-bg"></div>
+          <div id="header-bg"></div>
 
           <Header
             toggleNav={this.toggleNav}
