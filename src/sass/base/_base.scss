@@ -43,6 +43,10 @@ section {
         margin: auto;
         background-color: darken($dark-blue, 15%)
     }
-    section {
+    &.dark-1 {
+        background-color: darken($dark-blue, 20%);
+    }
+    &.dark-2 {
+        background-color: darken($dark-blue, 25%);
     }
 }
