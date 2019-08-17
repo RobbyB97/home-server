@@ -11,8 +11,6 @@ const Header = (props) => (
         <img src='/assets/images/favicon.png' alt='Home'/> 
       </a>
     </div>
-    <NavLink to="/react/">Home</NavLink>
-    <NavLink to="/react/style_guide">Style Guide</NavLink>
     <button id="inter-nav" onClick={props.toggleNav}>
       {!props.activeNav ? '☰':'✕'}
     </button>
