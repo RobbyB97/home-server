@@ -15,7 +15,6 @@ const Header = (props) => (
       {!props.activeNav ? '☰':'✕'}
     </button>
     <h1>Header</h1>
-    <NavigationMenu activeNav={props.activeNav} toggleNav={props.toggleNav}/>
   </header>
 ) 
 
