@@ -21,11 +21,6 @@ export default class AppRouter extends React.Component {
     this.setState(() => ({
         activeNav: thing
     }))
-    console.log(this.state.activeNav)
-  }
-
-  componentDidUpdate() {
-    console.log('update')
   }
 
   render() {
@@ -40,6 +35,7 @@ export default class AppRouter extends React.Component {
           <NavigationMenu 
             activeNav={this.state.activeNav} 
             toggleNav={this.toggleNav}
+            routeChange={this.routeChange}
           />
 
           <Switch>
