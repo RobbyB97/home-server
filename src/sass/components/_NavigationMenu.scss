@@ -1,5 +1,9 @@
+/**
+    NavigationMenu React component styles
+**/
+
 #navigationMenu {
-    visibility: hidden;
+    display: none;
 
     ul {
         list-style: none;
@@ -11,6 +15,6 @@
     }
 
     &.active-nav {
-        visibility: visible;
+        display: block;
     }
 }
