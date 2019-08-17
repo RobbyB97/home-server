@@ -5,19 +5,19 @@
 #navigationMenu {
     position: fixed;
     z-index: 9;
-    right: 0;
-    bottom: 0;
     top: 0;
-    width: 0px;
+    left: 0;
+    right: 0;
+    height: 0px;
     transition: 200ms;
     overflow: hidden;
-    padding-top: 4em;
     text-align: center;
 
 
     ul {
         list-style: none;
         padding: 0;
+        padding-top: 4em;
         text-align: center;
         
         li > a {
@@ -27,7 +27,8 @@
     }
 
     #nav-bg {
-        opacity: 0.3;
+        opacity: 0.6;
+        z-index: 1;
         position: absolute;
         left: 0;
         top: 0;
@@ -37,6 +38,6 @@
     }
 
     &.active-nav {
-        width: 100vw;
+        height: 100vh;
     }
 }
