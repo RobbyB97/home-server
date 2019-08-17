@@ -12,18 +12,8 @@ header {}
 body {
     margin-top:3em;
     color: darken($off-white, 2%);
-    font-family: $monospace;
-}
-
-.main-content {
-    margin-top: 3em;
-
-    @media #{$bp-tablet} {
-
-    }
-    @media #{$bp-desktop} {
-
-    }
+    font-family: $sans-serif;
+    font-size: $s-font;
 }
 
 h1 {}
@@ -41,3 +31,18 @@ h6 {}
 p {}
 
 a {}
+
+section {
+    display: block;
+    height: auto;
+    padding: 1em;
+    background-color: darken($dark-blue, 10%);
+
+    &.inner {
+        width: 80%;
+        margin: auto;
+        background-color: darken($dark-blue, 15%)
+    }
+    section {
+    }
+}
