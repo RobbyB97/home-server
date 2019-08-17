@@ -3,10 +3,22 @@
 **/
 
 #navigationMenu {
-    display: none;
+    position: fixed;
+    z-index: 9;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 0px;
+    transition: 200ms;
+    overflow: hidden;
+    padding-top: 4em;
+    text-align: center;
+
 
     ul {
         list-style: none;
+        padding: 0;
+        text-align: center;
         
         li > a {
             color: $off-white;
@@ -14,13 +26,17 @@
         }
     }
 
-    &.active-nav {
-        display: block;
-        z-index: 9;
+    #nav-bg {
+        opacity: 0.3;
         position: absolute;
         left: 0;
-        right: 0;
         top: 0;
+        right: 0;
         bottom: 0;
+        background-color: darken($space-blue, 2%);
+    }
+
+    &.active-nav {
+        width: 100vw;
     }
 }
