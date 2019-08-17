@@ -2,6 +2,7 @@ import React from 'react'
 import {NavLink} from 'react-router-dom'
 
 import StyleGuide from './StyleGuide'
+import NavigationMenu from './NavigationMenu'
 
 const Header = (props) => (
   <header id="head">
@@ -14,6 +15,7 @@ const Header = (props) => (
       {!props.activeNav ? '☰':'✕'}
     </button>
     <h1>Header</h1>
+    <NavigationMenu activeNav={props.activeNav}/>
   </header>
 ) 
 

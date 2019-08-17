@@ -1,0 +1,6 @@
+#navigationMenu {
+    visibility: hidden;
+}
+#navigationMenu.active-nav {
+    visibility: visible;
+}
