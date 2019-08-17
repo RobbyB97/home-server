@@ -1,4 +1,3 @@
-    
 import React from 'react'
 import {NavLink} from 'react-router-dom'
 
@@ -11,7 +10,7 @@ const Header = (props) => (
         <img src='/assets/images/favicon.png' alt='Home'/> 
       </a>
     </div>
-    <button id="inter-nav" onClick={props.toggleNav}>
+    <button id="nav-button" onClick={props.toggleNav}>
       {!props.activeNav ? '☰':'✕'}
     </button>
     <h1>Header</h1>
