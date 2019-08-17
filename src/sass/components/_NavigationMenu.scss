@@ -1,6 +1,15 @@
 #navigationMenu {
     visibility: hidden;
-}
-#navigationMenu.active-nav {
-    visibility: visible;
+
+    ul {
+        list-style: none;
+        
+        li > a {
+            color: $off-white;
+        }
+    }
+
+    &.active-nav {
+        visibility: visible;
+    }
 }
