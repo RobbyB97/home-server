@@ -41,12 +41,12 @@ section {
     &.inner {
         width: 80%;
         margin: auto;
-        background-color: darken($dark-blue, 15%)
+        background-color: darken($dark-blue, 12%)
     }
     &.dark-1 {
-        background-color: darken($dark-blue, 20%);
+        background-color: darken($dark-blue, 14%);
     }
     &.dark-2 {
-        background-color: darken($dark-blue, 25%);
+        background-color: darken($dark-blue, 16%);
     }
 }
