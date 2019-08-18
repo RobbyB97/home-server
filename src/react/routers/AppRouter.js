@@ -41,11 +41,23 @@ export default class AppRouter extends React.Component {
             routeChange={this.routeChange}
           />
 
-          <Switch>
-            <Route path="/react/" component={ReactApp} exact={true} />
-            <Route path="/react/style_guide/" component={StyleGuide} />
-            <Route path="/react/test" component={ReactTest1} />
-          </Switch>
+          <div id="main-content" className={this.state.activeNav ? 'active-nav':''}>
+            <Switch>
+              <Route 
+                path="/react/" 
+                component={ReactApp} 
+                exact={true} 
+              />
+              <Route 
+                path="/react/style_guide/" 
+                component={StyleGuide}
+              />
+              <Route 
+                path="/react/test" 
+                component={ReactTest1}
+              />
+            </Switch>
+          </div>
         </div>
       </BrowserRouter>
     )
