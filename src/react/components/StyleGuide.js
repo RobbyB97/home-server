@@ -52,6 +52,9 @@ export default class StyleGuide extends React.Component {
                 <section className="article">
                     <p>This is a section.article</p>
                     <h2 className="article__title">This is an article title</h2>
+                    <h3 className="article__subtitle">This is an article subtitle</h3>
+                    <p className="article__text">This is article text</p>
+                    <p className="article__subtext">This is article subtext</p>
                 </section>
             </div>
         )
