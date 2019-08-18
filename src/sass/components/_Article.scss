@@ -1,0 +1,10 @@
+.article {
+
+    .article__title {
+        font-weight: 100;
+        font-size: $l-font;
+    }
+
+    @media #{$bp-tablet} {}
+    @media #{$bp-desktop} {}
+}
