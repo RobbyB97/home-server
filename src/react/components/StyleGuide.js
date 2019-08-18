@@ -4,20 +4,10 @@ import ReactHome from './ReactHome'
 import ReactTest1 from './ReactTest1'
 
 export default class StyleGuide extends React.Component {
-    state = {
-        active: this.props.activeNav
-    }
-
-    toggleNav = () => {
-        let thing = !this.state.activeNav
-        this.setState(() => ({
-            activeNav: thing
-        }))
-    }
-
+    
     render() {
         return (
-            <div id="main-content">
+            <div>
                 <h1>This is an h1</h1>
                 <h2>This is an h2</h2>
                 <h3>This is an h3</h3>
@@ -51,6 +41,17 @@ export default class StyleGuide extends React.Component {
                         <section>
                             <p>This is a section in a section!</p>
                         </section>
+                </section>
+                <section className="dark-1">
+                    <p>This is a dark-1 section</p>
+                </section>
+                <section className="dark-2">
+                    <p>This is a dark-2 section</p>
+                </section>
+                <div className="padding">This is padding (probably don't put text in here)</div>
+                <section className="article">
+                    <p>This is a section.article</p>
+                    <h2 className="article__title">This is an article title</h2>
                 </section>
             </div>
         )
