@@ -26,7 +26,11 @@
 }
 
 #main-content {
-    padding-top: 2em;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 5.5em;
 
     @media #{$bp-tablet} {
 
@@ -34,4 +38,9 @@
     @media #{$bp-desktop} {
 
     }
+}
+
+.padding {
+    display: block;
+    height: $l-font;
 }
