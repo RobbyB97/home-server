@@ -11,7 +11,7 @@ export default class ReactApp extends React.Component {
 
     render() {
         return (
-            <div id="main-content">
+            <div>
                 <div>no!</div>
                 <p>ok</p>
             </div>
