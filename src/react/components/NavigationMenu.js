@@ -3,6 +3,7 @@ import {NavLink} from 'react-router-dom'
 import { connect } from 'react-redux';
 
 import toggleNav from '../actions/navigation'
+import {setTitle} from '../actions/title'
 
 
 const NavigationMenu = ({nav, dispatch}) => (
@@ -12,11 +13,13 @@ const NavigationMenu = ({nav, dispatch}) => (
                 <li>
                     <NavLink to="/react/" onClick={() => {
                         dispatch(toggleNav())
+                        dispatch(setTitle('Home'))
                     }}>Home</NavLink>
                 </li>
                 <li>
                     <NavLink to="/react/style_guide" onClick={() => {
                         dispatch(toggleNav())
+                        dispatch(setTitle('Style Guide'))
                     }}>Style Guide</NavLink>
                 </li>
             </ul>
