@@ -9,12 +9,10 @@ import StyleGuide from '../components/StyleGuide'
 import ReactTest1 from '../components/ReactTest1'
 import ReactApp from '../components/ReactApp'
 import NavigationMenu from '../components/NavigationMenu'
+import { connect } from 'react-redux';
 
 // Routes
-export default class AppRouter extends React.Component {
-  state = {
-    activeNav: this.props.activeNav
-  }
+class AppRouter extends React.Component {
 
   toggleNav = () => {
     let thing = !this.state.activeNav
@@ -30,18 +28,11 @@ export default class AppRouter extends React.Component {
           <div id="main-bg"></div>
           <div id="header-bg"></div>
 
-          <Header
-            toggleNav={this.toggleNav}
-            activeNav={this.state.activeNav}
-          />
+          <Header />
 
-          <NavigationMenu 
-            activeNav={this.state.activeNav} 
-            toggleNav={this.toggleNav}
-            routeChange={this.routeChange}
-          />
+          <NavigationMenu />
 
-          <div id="main-content" className={this.state.activeNav ? 'active-nav':''}>
+          <div id="main-content">
             <Switch>
               <Route 
                 path="/react/" 
@@ -64,6 +55,10 @@ export default class AppRouter extends React.Component {
   }
 } 
 
-AppRouter.defaultProps = {
-  activeNav: false
+const mapStateToProps = (state) => {
+  return {
+    nav: state.navigation.nav
+  }
 }
+
+export default connect(mapStateToProps)(AppRouter)
