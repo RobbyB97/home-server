@@ -2,12 +2,23 @@ import React from 'react'
 import {NavLink} from 'react-router-dom'
 import { connect } from 'react-redux';
 
-const NavigationMenu = ({nav}) => (
+import toggleNav from '../actions/navigation'
+
+
+const NavigationMenu = ({nav, dispatch}) => (
     <div id="navigationMenu" className={nav ? 'active-nav':''}>
         <div id="nav-bg">
             <ul className="intra-nav">
-                <li><NavLink to="/react/">Home</NavLink></li>
-                <li><NavLink to="/react/style_guide">Style Guide</NavLink></li>
+                <li>
+                    <NavLink to="/react/" onClick={() => {
+                        dispatch(toggleNav())
+                    }}>Home</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/react/style_guide" onClick={() => {
+                        dispatch(toggleNav())
+                    }}>Style Guide</NavLink>
+                </li>
             </ul>
         </div>
     </div>
