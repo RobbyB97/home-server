@@ -1,6 +1,7 @@
 //Libraries
 import React from 'react'
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
+import { connect } from 'react-redux';
 
 //Components
 import Header from '../components/Header'
@@ -9,55 +10,48 @@ import StyleGuide from '../components/StyleGuide'
 import ReactTest1 from '../components/ReactTest1'
 import ReactApp from '../components/ReactApp'
 import NavigationMenu from '../components/NavigationMenu'
-import { connect } from 'react-redux';
+
+// Actions
+import {getTitle} from '../actions/title'
 
 // Routes
-class AppRouter extends React.Component {
+const AppRouter = ({nav, dispatch, title}) => (
+  <BrowserRouter>
+    <div>
+      <div id="main-bg"></div>
+      <div id="header-bg"></div>
+      <div id="main-title">
+        {title}
+      </div>
 
-  toggleNav = () => {
-    let thing = !this.state.activeNav
-    this.setState(() => ({
-        activeNav: thing
-    }))
-  }
+      <Header />
+      <NavigationMenu />
 
-  render() {
-    return (
-      <BrowserRouter>
-        <div>
-          <div id="main-bg"></div>
-          <div id="header-bg"></div>
-
-          <Header />
-
-          <NavigationMenu />
-
-          <div id="main-content">
-            <Switch>
-              <Route 
-                path="/react/" 
-                component={ReactApp} 
-                exact={true} 
-              />
-              <Route 
-                path="/react/style_guide/" 
-                component={StyleGuide}
-              />
-              <Route 
-                path="/react/test" 
-                component={ReactTest1}
-              />
-            </Switch>
-          </div>
-        </div>
-      </BrowserRouter>
-    )
-  }
-} 
+      <div id="main-content">
+        <Switch>
+          <Route 
+            path="/react/" 
+            component={ReactApp} 
+            exact={true} 
+          />
+          <Route 
+            path="/react/style_guide/" 
+            component={StyleGuide}
+          />
+          <Route 
+            path="/react/test" 
+            component={ReactTest1}
+          />
+        </Switch>
+      </div>
+    </div>
+  </BrowserRouter>
+)
 
 const mapStateToProps = (state) => {
   return {
-    nav: state.navigation.nav
+    nav: state.navigation.nav,
+    title: state.title.title
   }
 }
 
