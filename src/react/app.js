@@ -11,11 +11,11 @@ import toggleNav from './actions/navigation'
 // Variables
 const $appRoot = document.getElementById('app')
 
+// Configure store
 const store = configureStore()
-
-console.log(store.getState())
-store.dispatch(toggleNav())
-console.log(store.getState())
+store.subscribe(() => {
+    console.log(store.getState())
+})
 
 const jsx = (
     <Provider store={store}>
