@@ -1,8 +1,6 @@
 // Import components
-import Header from './Header'
-import ReactHome from './ReactHome'
-import ReactTest1 from './ReactTest1'
-import Article from './Article'
+import Header from '../Header'
+import Article from '../Article'
 
 export default class StyleGuide extends React.Component {
     

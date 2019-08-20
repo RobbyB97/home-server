@@ -1,8 +1,6 @@
 import React from 'react'
 
-import Header from './Header'
-import ReactHome from './ReactHome'
-import ReactTest1 from './ReactTest1'
+import Header from '../Header'
 import StyleGuide from './StyleGuide'
 
 import {NavLink} from 'react-router-dom'
