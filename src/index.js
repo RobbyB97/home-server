@@ -5,7 +5,6 @@ const express = require('express')
 const https = require('https')
 const http = require('http')
 const path = require('path')
-const hbs = require('hbs')
 const fs = require('fs')
 const chalk = require('chalk')
 
@@ -22,8 +21,6 @@ console.log(chalk.blue('Environment Variables:\n'), chalk.green(`Port: ${port}\n
 
 // Connect local files
 const publicPages = path.join(__dirname, '../public')
-const viewsPath = path.join(__dirname, '../templates/views')
-const partialsPath = path.join(__dirname, '../templates/partials')
 
 const mainRouter = require('./routers/app')
 const weatherRouter = require('./routers/weather')
@@ -34,9 +31,6 @@ const reactRouter = require('./routers/react')
 const app = express()
 app.use(express.static(publicPages))
 app.use(express.json())
-app.set('view engine', 'hbs')
-app.set('views', viewsPath)
-hbs.registerPartials(partialsPath)
 
 
 // Server config
@@ -64,7 +58,6 @@ if (dev == 1) {
 
 // Connect routers
 app.use(mainRouter)
-app.use(weatherRouter)
 app.use(reactRouter)
 
 
