@@ -2,6 +2,7 @@
 import Header from './Header'
 import ReactHome from './ReactHome'
 import ReactTest1 from './ReactTest1'
+import Article from './Article'
 
 export default class StyleGuide extends React.Component {
     
@@ -56,6 +57,12 @@ export default class StyleGuide extends React.Component {
                     <p className="article__text">This is article text</p>
                     <p className="article__subtext">This is article subtext</p>
                 </section>
+                <Article 
+                    title="This is an article component title"
+                    text="This is article component text"
+                    image="/assets/images/favicon.png"
+                    imageClass="large" // small, medium, large
+                />
             </div>
         )
     }
