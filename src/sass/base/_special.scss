@@ -1,7 +1,13 @@
-.home_cover {
+.home-cover {
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
-    top: 6em;
+    top: 3em;
+    z-index: 5;
+
+    &.space {
+        opacity: 0.8;
+        z-index: 4;
+    }
 }
