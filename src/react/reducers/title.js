@@ -1,5 +1,5 @@
 const titleReducerDefaultState = {
-    title: ''
+    title: 'Bergers.dev'
 }
 
 export default (state = titleReducerDefaultState, action) => {
