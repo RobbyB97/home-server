@@ -52,4 +52,7 @@ section {
     &.dark-2 {
         background-color: darken($dark-blue, 16%);
     }
+    &.space {
+        background-color: $space-blue;
+    }
 }
