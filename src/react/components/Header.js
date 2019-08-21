@@ -3,7 +3,7 @@ import {NavLink} from 'react-router-dom'
 import {connect} from 'react-redux'
 
 import toggleNav from '../actions/navigation'
-import StyleGuide from './StyleGuide'
+import StyleGuide from './pages/StyleGuide'
 import NavigationMenu from './NavigationMenu'
 
 const Header = ({nav, dispatch}) => (

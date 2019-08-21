@@ -5,11 +5,11 @@ import { connect } from 'react-redux';
 
 //Components
 import Header from '../components/Header'
-import ReactHome from '../components/ReactHome'
-import StyleGuide from '../components/StyleGuide'
-import ReactTest1 from '../components/ReactTest1'
-import ReactApp from '../components/ReactApp'
 import NavigationMenu from '../components/NavigationMenu'
+
+//Pages
+import StyleGuide from '../components/pages/StyleGuide'
+import ReactApp from '../components/pages/ReactApp'
 
 // Actions
 import {getTitle} from '../actions/title'
@@ -37,10 +37,6 @@ const AppRouter = ({nav, dispatch, title}) => (
           <Route 
             path="/react/style_guide/" 
             component={StyleGuide}
-          />
-          <Route 
-            path="/react/test" 
-            component={ReactTest1}
           />
         </Switch>
       </div>
