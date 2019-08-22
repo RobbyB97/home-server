@@ -18,7 +18,7 @@ import {getTitle} from '../actions/title'
 const AppRouter = ({nav, dispatch, title}) => (
   <BrowserRouter>
     <div>
-      <div id="main-bg"></div>
+      <div id="main-bg" className="space"></div>
       <div id="header-bg"></div>
       <div id="main-title">
         {title}
