@@ -3,11 +3,11 @@
     left: 0;
     right: 0;
     bottom: 0;
-    top: 3em;
+    top: 50%;
     z-index: 5;
 
     &.space {
-        opacity: 0.8;
         z-index: 4;
+        margin-right: 0;
     }
 }
