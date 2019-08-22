@@ -4,7 +4,7 @@
 **/
 
 html {
-    background-color: darken($dark-blue, 8%);
+    background-color: darken($dark-blue, 12%);
 }
 
 header {}
@@ -40,6 +40,7 @@ section {
     height: auto;
     padding: 1em;
     background-color: darken($dark-blue, 10%);
+    border-bottom: 3px solid darken($dark-blue, 12%);
 
     &.inner {
         width: 80%;
@@ -48,9 +49,11 @@ section {
     }
     &.dark-1 {
         background-color: darken($dark-blue, 14%);
+        border-bottom: 3px solid darken($dark-blue, 16%);
     }
     &.dark-2 {
         background-color: darken($dark-blue, 16%);
+        border-bottom: 3px solid darken($dark-blue, 18%);
     }
     &.space {
         background-color: $space-blue;
