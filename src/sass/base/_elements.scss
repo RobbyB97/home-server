@@ -8,12 +8,28 @@
     top: 0;
     right: 0;
     bottom: 0;
+    width: 100vw;
+    height: 100vh;
     background: $dark-blue;//$dark-gray;
-    background-size: cover;
-    opacity: 0.2;
+    opacity: 0.6;
     z-index: -10;
     &.space {
-        background: url('/assets/images/Carina_Nebula.jpg') no-repeat;
+        background: url('/assets/images/backgrounds/phone.jpg') no-repeat;
+        background-size: cover;
+        @media #{$bp-tablet} {
+            background: url('/assets/images/backgrounds/phone.jpg') no-repeat;
+        }
+        @media #{$bp-large} {
+            background: url('/assets/images/backgrounds/4k.jpg') no-repeat;
+            background-size: contain;
+        }
+        @media #{$bp-huge} {
+            background: url('/assets/images/backgrounds/1200.jpg') no-repeat;
+            background-size: contain;
+        }
+        @media #{$bp-huge} {
+
+        }
     }
 }
 
@@ -24,7 +40,7 @@
     right: 0;
     top: 0;
     height: 3.5em;
-    background-color: $space-blue;
+    background-color: #000001;
 }
 
 #main-content {
