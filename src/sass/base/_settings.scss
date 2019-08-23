@@ -4,10 +4,10 @@
 
 
 // Font sizes
-$s-font: 1em;
-$m-font: 1.4em;
-$l-font: 2em;
-$xl-font: 2.5em;
+$s-font: 1rem;
+$m-font: 1.4rem;
+$l-font: 2rem;
+$xl-font: 2.5rem;
 
 
 // Fonts
@@ -16,8 +16,10 @@ $serif: "Muli", Bookman, serif;
 $monospace: "Lucida Console", Monaco, monospace;
 
 // Media queries
-$bp-tablet:"only screen and (min-width: 768px)";
-$bp-desktop:"only screen and (min-width: 1200px)";
+$bp-tablet:"only screen and (min-width: 576px)";
+$bp-desktop:"only screen and (min-width: 768px)";
+$bp-large:"only screen and (min-width: 1200px)";
+$bp-huge:"only screen and (min-width: 2100px)";
 
 
 // Color palette
@@ -30,4 +32,4 @@ $dark-gray: #0b0b0b;
 $real-dark-gray: #0f0f0f;
 $low-gray: #262626;
 
-$off-white: #fcffe8;
+$off-white: #fcfff6;
