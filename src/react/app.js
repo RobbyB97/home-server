@@ -2,6 +2,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import {Provider} from 'react-redux'
+import Loader from 'react-loader-spinner'
 import 'normalize.css/normalize.css'
 
 
@@ -26,7 +27,16 @@ store.subscribe(() => {
 
 const jsx = (
     <Provider store={store}>
-        <AppRouter />
+        <div>
+            <Loader
+                type="Puff"
+                color="#00BFFF"
+                height={100}
+                width={100}
+                visible="false"
+            />
+            <AppRouter />
+        </div>
     </Provider>
 )
 

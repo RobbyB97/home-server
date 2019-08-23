@@ -2,6 +2,7 @@
 import React from 'react'
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
 import { connect } from 'react-redux';
+import Loader from 'react-loader-spinner'
 
 //Components
 import Header from '../components/Header'
