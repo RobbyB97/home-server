@@ -6,6 +6,7 @@ import { connect } from 'react-redux';
 //Components
 import Header from '../components/Header'
 import NavigationMenu from '../components/NavigationMenu'
+import DesktopNavigationMenu from '../components/DesktopNavigationMenu'
 
 //Pages
 import StyleGuide from '../components/pages/StyleGuide'
@@ -25,6 +26,7 @@ const AppRouter = ({nav, dispatch, title}) => (
       </div>
 
       <Header />
+      <DesktopNavigationMenu />
       <NavigationMenu />
 
       <div id="main-content">
