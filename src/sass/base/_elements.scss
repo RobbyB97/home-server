@@ -21,11 +21,11 @@
         }
         @media #{$bp-large} {
             background: url('/assets/images/backgrounds/4k.jpg') no-repeat;
-            background-size: contain;
+            background-size: cover;
         }
         @media #{$bp-huge} {
             background: url('/assets/images/backgrounds/1200.jpg') no-repeat;
-            background-size: contain;
+            background-size: cover;
         }
         @media #{$bp-huge} {
 
