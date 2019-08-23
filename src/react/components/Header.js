@@ -9,9 +9,12 @@ import NavigationMenu from './NavigationMenu'
 const Header = ({nav, dispatch}) => (
   <header id="head">
     <div id="head-logo">
-      <a href='#'>
+      <NavLink to="/react/">
         <img src='/assets/images/favicon.png' alt='Home'/> 
-      </a>
+      </NavLink>
+    </div>
+    <div id="head-nav-desktop">
+
     </div>
     <button id="nav-button" onClick={() => {
       dispatch(toggleNav())
