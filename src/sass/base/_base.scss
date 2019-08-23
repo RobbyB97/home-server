@@ -35,6 +35,30 @@ a {
 
 }
 
+button {
+    background-color: $purple;
+    padding: 4px 8px;
+    border: 0;
+    border-bottom: 3px solid darken($purple, 10%);
+    margin: 3px;
+    font-weight: 400;
+    font-family: $sans-serif;
+    color: white;
+    font-size: $m-font;
+    border-radius: 4px;
+    &:focus {
+        outline: none;
+    }
+    &:active {
+        background-color: darken($purple, 10%);
+    }
+}
+
+input {
+    background-color: $space-blue;
+    border: none;
+}
+
 section {
     display: block;
     height: auto;
