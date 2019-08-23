@@ -7,7 +7,7 @@ import {setTitle} from '../actions/title'
 
 
 const NavigationMenu = ({nav, dispatch}) => (
-    <div id="navigationMenu" className={nav ? 'active-nav':''}>
+    <div id="navigation-menu" className={nav ? 'active-nav':''}>
         <div id="nav-bg">
             <ul className="intra-nav">
                 <li>
