@@ -2,14 +2,14 @@
     ul {
         display: none;
     }
-    @media #{$bp-desktop} {
+    @media #{$bp-large} {
         flex-grow: 1;
         position: fixed;
         z-index: 10;
         right: 4rem;
-        top: 0;
+        top: 1rem;
         background: transparent;
-        font-size: $l-font;
+        font-size: $m-font;
         height: 3rem;
         ul {
             display: flex;
@@ -30,9 +30,4 @@
             }
         }
     }
-    @media #{$bp-large} {
-        font-size: $m-font;
-        top: 1rem;
-    }
-
 }
