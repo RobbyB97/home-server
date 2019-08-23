@@ -1,0 +1,38 @@
+#desktop-navigation-menu {
+    ul {
+        display: none;
+    }
+    @media #{$bp-desktop} {
+        flex-grow: 1;
+        position: fixed;
+        z-index: 10;
+        right: 4rem;
+        top: 0;
+        background: transparent;
+        font-size: $l-font;
+        height: 3rem;
+        ul {
+            display: flex;
+            flex-direction: row;
+            li {
+                list-style-type: none;
+                margin-left: $m-font;
+                &:hover {
+                    background-color: rgba(0,0,0,0.7);
+                    border-bottom: 2px solid white;
+                }
+                a {
+                    color: white;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    @media #{$bp-large} {
+        font-size: $m-font;
+        top: 1rem;
+    }
+
+}
