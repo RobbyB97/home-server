@@ -2,14 +2,17 @@ import React from 'react'
 import {NavLink} from 'react-router-dom'
 import {connect} from 'react-redux'
 
-import toggleNav from '../actions/navigation'
+import {toggleNav} from '../actions/navigation'
+import {setTitle} from '../actions/title'
 import StyleGuide from './pages/StyleGuide'
 import NavigationMenu from './NavigationMenu'
 
 const Header = ({nav, dispatch}) => (
   <header id="head">
     <div id="head-logo">
-      <NavLink to="/react/">
+      <NavLink to="/react/" onClick={() => {
+        dispatch(setTitle(''))
+      }}>
         <img src='/assets/images/favicon.png' alt='Home'/> 
       </NavLink>
     </div>
