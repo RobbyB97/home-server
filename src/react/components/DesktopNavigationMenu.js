@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 
 import {setTitle} from '../actions/title'
 import {toggleNavOff} from '../actions/navigation'
+import {homeOff} from '../actions/home'
 
 
 const DesktopNavigationMenu = ({dispatch}) => (
@@ -13,10 +14,17 @@ const DesktopNavigationMenu = ({dispatch}) => (
                 <NavLink to="/react/style_guide" onClick={() => {
                     dispatch(setTitle('Style Guide'))
                     dispatch(toggleNavOff())
+                    dispatch(homeOff())
                 }}>Style Guide</NavLink>
             </li>
         </ul>
     </div>
 )
 
-export default connect()(DesktopNavigationMenu)
+const mapStateToProps = (state) => {
+    return {
+        home: state.home.home
+    }
+}
+
+export default connect(mapStateToProps)(DesktopNavigationMenu)

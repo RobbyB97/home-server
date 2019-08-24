@@ -2,11 +2,12 @@ import React from 'react'
 import {NavLink} from 'react-router-dom'
 import { connect } from 'react-redux'
 
-import toggleNav from '../actions/navigation'
+import {toggleNav, toggleNavOff} from '../actions/navigation'
 import {setTitle} from '../actions/title'
+import {homeOn, homeOff} from '../actions/home'
 
 
-const NavigationMenu = ({nav, dispatch}) => (
+const NavigationMenu = ({nav, dispatch, home}) => (
     <div id="navigation-menu" className={nav ? 'active-nav':''}>
         <div id="nav-bg">
             <ul className="intra-nav">
@@ -14,12 +15,14 @@ const NavigationMenu = ({nav, dispatch}) => (
                     <NavLink to="/react/" onClick={() => {
                         dispatch(toggleNav())
                         dispatch(setTitle(''))
+                        dispatch(homeOn())
                     }}>Home</NavLink>
                 </li>
                 <li>
                     <NavLink to="/react/style_guide" onClick={() => {
                         dispatch(toggleNav())
                         dispatch(setTitle('Style Guide'))
+                        dispatch(homeOff())
                     }}>Style Guide</NavLink>
                 </li>
             </ul>
@@ -29,7 +32,8 @@ const NavigationMenu = ({nav, dispatch}) => (
 
 const mapStateToProps = (state) => {
     return {
-        nav: state.navigation.nav
+        nav: state.navigation.nav,
+        home: state.home.home
     }
 }
 

@@ -15,22 +15,27 @@ import ReactApp from '../components/pages/ReactApp'
 
 // Actions
 import {getTitle} from '../actions/title'
+import {homeOn, homeOff} from '../actions/home'
+import {toggleNavOff} from '../actions/navigation'
 
 // Routes
-const AppRouter = ({nav, dispatch, title}) => (
+const AppRouter = ({nav, dispatch, title, home}) => (
   <BrowserRouter>
-    <div>
+    <div id={home && "home"}>
       <div id="main-bg" className="space"></div>
       <div id="header-bg"></div>
       <div id="main-title">
         {title}
       </div>
 
+      
       <Header />
       <DesktopNavigationMenu />
       <NavigationMenu />
 
-      <div id="main-content">
+      <div id="main-content"onClick={() => {
+        dispatch(toggleNavOff())
+      }}>
         <Switch>
           <Route 
             path="/react/" 
@@ -50,7 +55,8 @@ const AppRouter = ({nav, dispatch, title}) => (
 const mapStateToProps = (state) => {
   return {
     nav: state.navigation.nav,
-    title: state.title.title
+    title: state.title.title,
+    home: state.home.home
   }
 }
 
