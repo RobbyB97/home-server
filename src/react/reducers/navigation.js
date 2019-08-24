@@ -9,6 +9,19 @@ export default (state = navigationReducerDefaultState, action) => {
             return {
                 nav: toggle
             }
+
+        case 'TOGGLE_OFF':
+            if (state.nav == true) {
+                let toggle = !state.nav
+                return {
+                    nav: toggle
+                }
+            } else {
+                return {
+                    nav: state.nav
+                }
+            }
+
         default:
             return state
     }
