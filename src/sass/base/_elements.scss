@@ -14,21 +14,20 @@
     opacity: 0.6;
     z-index: -10;
     &.space {
-        background: url('/assets/images/backgrounds/phone.jpg') no-repeat;
+        background: url('/assets/images/backgrounds/planets-mobile.jpg') no-repeat;
         background-size: cover;
         @media #{$bp-tablet} {
-            background: url('/assets/images/backgrounds/phone.jpg') no-repeat;
+            //background: url('/assets/images/backgrounds/milky-way-1080.jpg') no-repeat;
         }
         @media #{$bp-large} {
-            background: url('/assets/images/backgrounds/4k.jpg') no-repeat;
-            background-size: cover;
+            background: url('/assets/images/backgrounds/milky-way-1080.jpg') no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            opacity: 0.6;
         }
         @media #{$bp-huge} {
-            background: url('/assets/images/backgrounds/1200.jpg') no-repeat;
+            background: url('/assets/images/backgrounds/milky-way-1200.jpg') no-repeat;
             background-size: cover;
-        }
-        @media #{$bp-huge} {
-
         }
     }
 }
@@ -61,4 +60,10 @@
 .padding {
     display: block;
     height: $l-font;
+}
+
+#home {
+    #header-bg {
+        background: transparent;
+    }
 }
