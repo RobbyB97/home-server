@@ -10,7 +10,7 @@ export default class StyleGuide extends React.Component {
                 <section className="inner">
                     <div className="container-fluid">
                         <div className="row">
-                            <div className="col-md-4">
+                            <div className="col-lg-4">
                                 <h1>This is an h1</h1>
                                 <h2>This is an h2</h2>
                                 <h3>This is an h3</h3>
@@ -23,7 +23,7 @@ export default class StyleGuide extends React.Component {
                                     <a href="#">This is a link</a>
                                 </p>
                             </div>
-                            <div className="col-md-4">
+                            <div className="col-lg-4">
                                 <ul>
                                     <li>This</li>
                                     <li>is</li>
@@ -39,7 +39,7 @@ export default class StyleGuide extends React.Component {
                                     <li>list</li>
                                 </ol>
                             </div>
-                            <div className="col-md-4">
+                            <div className="col-lg-4">
                                 <button>This is a button</button>
                                 <br/>
                                 <form>
