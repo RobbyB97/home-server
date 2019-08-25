@@ -1,0 +1,21 @@
+.card {
+    display: inline-block;
+    background: gray;
+    height: 8rem;
+    padding-right: 1rem;
+
+    img {
+        max-height: 6rem;
+        height: 6rem;
+        width: 6rem;
+        max-width: 6rem;
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+    } 
+}
+
+.card__text {
+    margin-left: 8rem;
+    margin-top: 1rem;
+}
