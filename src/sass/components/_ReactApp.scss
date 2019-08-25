@@ -1,0 +1,41 @@
+#home {
+    #header-bg {
+        background: transparent;
+    }
+
+    .home-text {
+        font-family: $serif;
+        font-size: $l-font;
+        font-weight: lighter;
+        position: absolute;
+        color: white;
+        &.one {
+            top: 2rem;
+            left: 10vw;
+        }
+        &.two {
+            top: 8rem;
+            left: 20vw;
+        }
+    }
+}
+
+.home-cover {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 66vh;
+    z-index: 5;
+    background: transparent;
+
+    &.space {
+        z-index: 4;
+        margin-right: 0;
+        background: $space-blue;
+        opacity: 0.4;
+    }
+    &.active {
+        height: 33vh;
+    }
+}
