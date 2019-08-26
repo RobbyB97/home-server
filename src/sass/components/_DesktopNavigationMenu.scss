@@ -19,13 +19,16 @@
                 margin-left: $m-font;
                 &:hover {
                     background-color: rgba(0,0,0,0.7);
-                    border-bottom: 2px solid white;
+                    text-decoration: underline;
                 }
                 a {
                     color: white;
                     &:hover {
                         text-decoration: none;
                     }
+                }
+                .active {
+                    text-decoration: underline;
                 }
             }
         }
