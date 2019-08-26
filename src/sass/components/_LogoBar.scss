@@ -1,0 +1,36 @@
+#logo-bar {
+    position: absolute;
+    top: 10px;
+    right: 4rem;
+    z-index: 1;
+    display: none;
+
+    img {
+        width: 2.3em;
+        max-width: 2.3em;
+        height: auto;
+        border-radius: 50%;
+    }
+    ul {
+        display: flex;
+        flex-direction: row;
+        li {
+            display: inline-block;
+            margin-left: 8px;
+        }
+    }
+    
+    @media #{$bp-desktop} {
+        display: block;
+    }
+
+    @media #{$bp-large} {
+        top: 4rem;
+        right: 12px;
+        img {
+            width: 1.8em;
+            max-width: 1.8em;
+            height: auto;
+        }
+    }
+}
