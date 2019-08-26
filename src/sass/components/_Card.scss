@@ -1,8 +1,19 @@
 .card {
     display: inline-block;
-    background: gray;
+    background: $dark-blue;
     height: 8rem;
-    padding-right: 1rem;
+    padding-right: 2rem;
+    transition: 100ms;
+    border-bottom: 5px solid darken($dark-blue, 10%);
+    border-radius: 6px;
+
+    &:hover {
+        background: darken($dark-blue, 10%);
+        
+        .card__text, img {
+            opacity: 0.8;
+        }
+    }
 
     img {
         max-height: 6rem;
@@ -16,6 +27,15 @@
 }
 
 .card__text {
-    margin-left: 8rem;
+    margin-left: 9rem;
     margin-top: 1rem;
+    color: white;
+}
+
+.card__link {
+    height: 100%;
+}
+
+.card__wrap {
+    margin: 0 auto;
 }
