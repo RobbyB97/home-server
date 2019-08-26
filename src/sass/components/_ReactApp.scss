@@ -18,6 +18,13 @@
             left: 20vw;
         }
     }
+    @media #{$bp-large} {
+        .home-text {
+            h2 {
+                font-size: 7rem;
+            }
+        }
+    }
 }
 
 .home-cover {
@@ -27,7 +34,6 @@
     bottom: 0;
     top: 66vh;
     z-index: 5;
-    background: transparent;
 
     &.space {
         z-index: 4;
