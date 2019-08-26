@@ -11,10 +11,12 @@ const DesktopNavigationMenu = ({dispatch}) => (
     <div id="desktop-navigation-menu">
         <ul>
             <li>
-                <NavLink to="/react/style_guide" onClick={() => {
-                    dispatch(setTitle('Style Guide'))
-                    dispatch(toggleNavOff())
-                    dispatch(homeOff())
+                <NavLink to="/react/style_guide"
+                    activeClassName="active" 
+                    onClick={() => {
+                        dispatch(setTitle('Style Guide'))
+                        dispatch(toggleNavOff())
+                        dispatch(homeOff())
                 }}>Style Guide</NavLink>
             </li>
         </ul>
