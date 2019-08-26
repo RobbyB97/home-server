@@ -8,6 +8,7 @@ import Loader from 'react-loader-spinner'
 import Header from '../components/Header'
 import NavigationMenu from '../components/NavigationMenu'
 import DesktopNavigationMenu from '../components/DesktopNavigationMenu'
+import LogoBar from '../components/LogoBar'
 
 //Pages
 import StyleGuide from '../components/pages/StyleGuide'
@@ -22,16 +23,17 @@ import {toggleNavOff} from '../actions/navigation'
 const AppRouter = ({nav, dispatch, title, home}) => (
   <BrowserRouter>
     <div id={home && "home"}>
-      <div id="main-bg" className="space"></div>
+      <div id={home && "main-bg"} className="space"></div>
       <div id="header-bg"></div>
       <div id="main-title">
-        {title}
+        {}
       </div>
 
       
       <Header />
       <DesktopNavigationMenu />
       <NavigationMenu />
+      <LogoBar></LogoBar>
 
       <div id="main-content"onClick={() => {
         dispatch(toggleNavOff())
