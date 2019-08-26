@@ -5,3 +5,7 @@ export const homeOn = () => ({
 export const homeOff = () => ({
     type: 'HOME_OFF'
 })
+
+export const toggleHomePage = () => ({
+    type: 'TOGGLE_HOMEPAGE'
+})
