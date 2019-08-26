@@ -18,13 +18,13 @@ export default class ReactApp extends React.Component {
                     <div className="home-text two">
                         <h2>Home-text 2</h2>
                     </div>
+                <div className="home-cover">
                     <Card
                         link="https://www.github.com/robbyb97"
                         image="/assets/images/favicon.png"
                         title="My Github"
                         subtext="View my projects"
                     />
-                <div className="home-cover">
                 </div>
             </div>
         )
