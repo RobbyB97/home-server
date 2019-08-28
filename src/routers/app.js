@@ -17,9 +17,9 @@ const http2https = require('../middleware/http2https')
 router.get('', http2https, (req, res) => {
   try {
     if (dev == 1) {
-      return res.redirect('/react')
+      return res.redirect('/portfolio')
     } 
-    console.log(chalk.blue('Redirecting homepage to react...'))
+    console.log(chalk.blue('Redirecting homepage to portfolio...'))
     res.redirect('/react')
   } catch(e) {
     res.send()
