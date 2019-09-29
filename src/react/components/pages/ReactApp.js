@@ -4,6 +4,7 @@ import {connect} from 'react-redux'
 import Header from '../Header'
 import StyleGuide from './StyleGuide'
 import Card from '../Card'
+import SplashPage from '../SplashPage'
 
 import {toggleHomePage} from '../../actions/home'
 
@@ -11,7 +12,7 @@ import {Link, NavLink} from 'react-router-dom'
 
 const ReactApp = ({dispatch, nav, title, home, homePage}) =>(
             <div>
-                
+                <SplashPage />
                 <div className="home-text one">
                         <h2>Home-text 1</h2>
                         {homePage}
