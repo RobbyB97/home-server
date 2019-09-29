@@ -9,3 +9,11 @@ export const homeOff = () => ({
 export const toggleHomePage = () => ({
     type: 'TOGGLE_HOMEPAGE'
 })
+
+export const splashOn = () => ({
+    type: 'SPLASH_ON'
+})
+
+export const splashOff = () => ({
+    type: 'SPLASH_OFF'
+})
