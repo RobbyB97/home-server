@@ -47,6 +47,7 @@ const AppRouter = ({nav, dispatch, title, home}) => (
           <Route 
             path="/react/style_guide/" 
             component={StyleGuide}
+            exact={true}
           />
         </Switch>
       </div>
