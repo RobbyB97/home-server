@@ -1,6 +1,7 @@
 const homeReducerDefaultState = {
     home: true,
-    homePage: false
+    homePage: false,
+    splash: true,
 }
 
 export default (state = homeReducerDefaultState, action) => {
@@ -15,6 +16,18 @@ export default (state = homeReducerDefaultState, action) => {
             return {
                 ...state,
                 home: false
+            }
+
+        case 'SPLASH_ON':
+            return {
+                ...state,
+                splash: true
+            }
+
+        case 'SPLASH_OFF':
+            return {
+                ...state,
+                splash: false
             }
 
         case 'TOGGLE_HOMEPAGE':
