@@ -74,12 +74,11 @@
 
 #home-cover {
     background: $space-blue;
-    position: fixed;
+    position: absolute;
     left: 0;
     right: 0;
     top: 100vh;
     height: 100vh;
-    width: 100vw;
     transition: 150ms;
     z-index: 5;
     &.active {
