@@ -27,13 +27,6 @@ const ReactApp = ({dispatch, nav, title, home, homePage}) =>(
                         subtext="View my projects"
                     />
                 </div>
-                <div id="home-toggle" className={homePage ? "active":""}>
-                    <button onClick={() => {
-                        dispatch(toggleHomePage())
-                    }}>
-                        {homePage ? "▲":"▼"}
-                    </button>
-                </div>
             </div>
         )
 
