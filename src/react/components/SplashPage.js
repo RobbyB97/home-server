@@ -15,3 +15,5 @@ const SplashPage = ({dispatch}) => {
         </button>
     </div>
 }
+
+export default connect(mapStateToProps)(SplashPage)
