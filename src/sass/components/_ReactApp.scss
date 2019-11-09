@@ -14,21 +14,32 @@
         top: -5.5rem;
         &.one {
             left: 0;
-            clip-path: polygon(0 0, 100% 0, 0 86%, 0 86%);
-            width: 50vw;
+            clip-path: polygon(0 0, 100% 0, 100% 12%, 0 25%);
+            background: rgba(4, 8, 18, 1);//$space-blue;//rgba(60, 1, 112, 0.5);
+            right: 0;
             bottom: 10%;
 
             @media #{$bp-desktop} {
-                background: rgba(68, 131, 207, 0.5);
+                //background: rgba(68, 131, 207, 0.5);
                 left: 0;
-                clip-path: polygon(0 0, 12% 0, 60% 100%, 0% 100%);
-                width: 50vw;
+                //clip-path: polygon(0 0, 12% 0, 60% 100%, 0% 100%);
+                //clip-path: polygon(0 0, 100% 0, 100% 19%, 0 13%);
+                clip-path: polygon(0 0, 100% 0, 100% 13%, 0 7%);
+                right: 0;
                 padding-top: 8rem;
                 bottom: 0;
             }
         }
         &.two {
             right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(4, 8, 18, 1);
+            clip-path: polygon(0 74%, 100% 88%, 100% 100%, 0 100%);
+
+            @media #{$bp-desktop} {
+                background: rgba(4, 8, 18, 0.5);
+            }
         }
     }
 
