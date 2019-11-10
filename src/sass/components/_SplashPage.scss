@@ -5,15 +5,25 @@
     left: 0;
     right: 0;
     bottom: 0;
-
     background: url('/assets/images/backgrounds/planets-mobile-bandw.jpg') no-repeat;
     background-size: cover;
+
+    .splash-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(100, 100, 100, 0.5);
+    }
+
     @media #{$bp-large} {
         background: url('/assets/images/backgrounds/milky-way-1080-bandw.jpg') no-repeat;
         background-attachment: fixed;
         background-position: center top;
         background-size: cover;
     }
+
     @media #{$bp-huge} {
         background: url('/assets/images/backgrounds/milky-way-1200-bandw.jpg') no-repeat;
         background-size: cover;

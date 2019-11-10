@@ -6,17 +6,19 @@ import {splashOff} from '../actions/home'
 
 const SplashPage = ({splash, dispatch}) => (
     <div id="splash-page" className={splash ? "":"hidden"}>
-        <h2>
-            Splash Page main text
-        </h2>
-        <h3>
-            Splash Page subtext
-        </h3>
-        <button onClick={() => {
-            dispatch(splashOff())
-        }}>
-            Splash Page button
-        </button>
+        <div class="splash-content">
+            <h2>
+                Designer.
+            </h2>
+            <h3>
+                Splash Page subtext
+            </h3>
+            <button onClick={() => {
+                dispatch(splashOff())
+            }}>
+                Splash Page button
+            </button>
+        </div>
     </div>
 )
 
