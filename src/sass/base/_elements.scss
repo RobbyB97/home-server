@@ -3,7 +3,7 @@
 **/
 
 .space {
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 0;
     right: 0;
@@ -22,7 +22,6 @@
         }
         @media #{$bp-large} {
             background: url('/assets/images/backgrounds/milky-way-1080.jpg') no-repeat;
-            background-attachment: fixed;
             background-position: center top;
             opacity: 1;
             background-size: cover;
