@@ -1,6 +1,7 @@
 ## Portfolio
 
 ### Toolset
+
 - JavaScript (ES6) [5]
 - Node.js [5]
 - React (Router, Redux) [5]
@@ -19,7 +20,11 @@
 
 ### Experience
 
+- Web Design Hub, LLC
+    - November 2018 - June 2019
 
+- Finalsite
+    - July 2019 - December 2019
 
 ### Projects
 
@@ -27,3 +32,5 @@
     - URL: https://pypi.org/project/yt-iframe/
 
 - Flappy Bird AI Restored
+    - URL: https://flappy-bird-ai.herokuapp.com/
+    - Code Bullet: https://www.youtube.com/channel/UC0e3QhIYukixgh5VVpKHH9Q
