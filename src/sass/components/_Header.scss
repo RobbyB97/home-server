@@ -34,6 +34,10 @@
         &:active, &:focus {
             outline: none;
         }
+
+        @media #{$bp-desktop} {
+            display: none;
+        }
     }
 
     h1 {
