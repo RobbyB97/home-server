@@ -21,14 +21,24 @@ const ReactApp = ({dispatch, nav, title, home, homePage}) =>(
                         <h2>Home-text 2</h2>
                     </div>
                 <div id="home-cover" className={homePage ? "active":""}>
-                    <div className="bio">
+                    <div id="bio">
                         <section>
                             <div className="title">
-
+                                My mission.
                             </div>
                             <div className="content">
-
+                                What is a perfect website? One that is <i>simplistic</i>, <i>intuitive</i>, <i>fast</i> and <i>memorable</i> would be my answer. However, every person has their own vision of the perfect website for themselves or their company. My mission is to take that vision and make it a reality.
                             </div>
+                        </section>
+                    </div>
+                    <div id="experience">
+                        <section>
+
+                        </section>
+                    </div>
+                    <div id="toolkit">
+                        <section>
+                            
                         </section>
                     </div>
                     <Card
