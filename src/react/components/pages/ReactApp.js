@@ -21,6 +21,16 @@ const ReactApp = ({dispatch, nav, title, home, homePage}) =>(
                         <h2>Home-text 2</h2>
                     </div>
                 <div id="home-cover" className={homePage ? "active":""}>
+                    <div className="bio">
+                        <section>
+                            <div className="title">
+
+                            </div>
+                            <div className="content">
+
+                            </div>
+                        </section>
+                    </div>
                     <Card
                         link="https://www.github.com/robbyb97"
                         image="/assets/images/favicon.png"
