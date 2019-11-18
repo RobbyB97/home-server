@@ -38,15 +38,16 @@
             width: 100%;
             text-align: left;
             &:first-child {
-                border-top: 1px solid $real-dark-gray;
+                //border-top: 1px solid $real-dark-gray;
             }
             li {
                 padding-left: $m-font;
-                border-bottom: 2px solid $real-dark-gray;
+                //border-bottom: 2px solid $real-dark-gray;
                 padding-bottom: 0px;
                 font-size: #{$m-font + 0.2rem};
+                transition: 200ms;
                 &:hover {
-                    background-color: $real-dark-gray;
+                    background-color: darken($purple, 10%);
                 }
                 > a {
                     width: 100%;
