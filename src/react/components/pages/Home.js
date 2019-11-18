@@ -10,7 +10,7 @@ import {toggleHomePage} from '../../actions/home'
 
 import {Link, NavLink} from 'react-router-dom'
 
-const ReactApp = ({dispatch, nav, title, home, homePage}) =>(
+const Home = ({dispatch, nav, title, home, homePage}) =>(
             <div>
                 <SplashPage />
                 <div className="home-text one">
@@ -33,22 +33,6 @@ const ReactApp = ({dispatch, nav, title, home, homePage}) =>(
                             </div>
                         </section>
                     </div>
-                    <div id="experience">
-                        <section>
-
-                        </section>
-                    </div>
-                    <div id="toolkit">
-                        <section>
-                            
-                        </section>
-                    </div>
-                    <Card
-                        link="https://www.github.com/robbyb97"
-                        image="/assets/images/favicon.png"
-                        title="My Github"
-                        subtext="View my projects"
-                    />
                 </div>
             </div>
         )
@@ -62,4 +46,4 @@ const mapStateToProps = (state) => {
     }
   }
 
-  export default connect(mapStateToProps)(ReactApp)
+  export default connect(mapStateToProps)(Home)
