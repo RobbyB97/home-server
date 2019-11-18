@@ -13,6 +13,8 @@ import LogoBar from '../components/LogoBar'
 //Pages
 import StyleGuide from '../components/pages/StyleGuide'
 import Home from '../components/pages/Home'
+import Skills from '../components/pages/Skills'
+import Experience from '../components/pages/Experience'
 
 // Actions
 import {getTitle} from '../actions/title'
@@ -44,9 +46,22 @@ const AppRouter = ({nav, dispatch, title, home}) => (
             component={Home} 
             exact={true} 
           />
+
           <Route 
             path="/react/style_guide/" 
             component={StyleGuide}
+            exact={true}
+          />
+
+          <Route 
+            path="/react/skills/" 
+            component={Skills}
+            exact={true}
+          />
+
+          <Route 
+            path="/react/experience/" 
+            component={Experience}
             exact={true}
           />
         </Switch>
