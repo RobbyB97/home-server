@@ -18,12 +18,29 @@ const NavigationMenu = ({nav, dispatch, home}) => (
                         dispatch(homeOn())
                     }}>Home</NavLink>
                 </li>
+                
                 <li>
                     <NavLink to="/react/style_guide" onClick={() => {
                         dispatch(toggleNav())
                         dispatch(setTitle('Style Guide'))
                         dispatch(homeOff())
                     }}>Style Guide</NavLink>
+                </li>
+
+                <li>
+                    <NavLink to="/react/skills" onClick={() => {
+                        dispatch(toggleNav())
+                        dispatch(setTitle('Skills'))
+                        dispatch(homeOff())
+                    }}>Skills</NavLink>
+                </li>
+
+                <li>
+                    <NavLink to="/react/experience" onClick={() => {
+                        dispatch(toggleNav())
+                        dispatch(setTitle('Experience'))
+                        dispatch(homeOff())
+                    }}>Experience</NavLink>
                 </li>
             </ul>
         </div>

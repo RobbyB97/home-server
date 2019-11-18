@@ -18,6 +18,22 @@ const DesktopNavigationMenu = ({dispatch}) => (
                         dispatch(toggleNavOff())
                         dispatch(homeOff())
                 }}>Style Guide</NavLink>
+
+                <NavLink to="/react/skills"
+                    activeClassName="active" 
+                    onClick={() => {
+                        dispatch(setTitle('Skills'))
+                        dispatch(toggleNavOff())
+                        dispatch(homeOff())
+                }}>Skills</NavLink>
+
+                <NavLink to="/react/experience"
+                    activeClassName="active" 
+                    onClick={() => {
+                        dispatch(setTitle('Experience'))
+                        dispatch(toggleNavOff())
+                        dispatch(homeOff())
+                }}>Experience</NavLink>
             </li>
         </ul>
     </div>
