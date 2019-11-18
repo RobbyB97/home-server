@@ -7,6 +7,7 @@
     bottom: 0;
     background: url('/assets/images/backgrounds/planets-mobile-bandw.jpg') no-repeat;
     background-size: cover;
+    overflow-y: hidden;
 
     .splash-content {
         position: absolute;
