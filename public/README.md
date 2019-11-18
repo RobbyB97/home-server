@@ -1,7 +1,10 @@
 ## Portfolio
 
-### Toolset
+### Bio
+    - Freelance Web Developer
+    - 
 
+### Toolset
 - JavaScript (ES6) [5]
 - Node.js [5]
 - React (Router, Redux) [5]
@@ -19,7 +22,6 @@
 - Gulp [3]
 
 ### Experience
-
 - Web Design Hub, LLC
     - November 2018 - June 2019
 
@@ -27,7 +29,6 @@
     - July 2019 - December 2019
 
 ### Projects
-
 - YT iFrame
     - URL: https://pypi.org/project/yt-iframe/
 
