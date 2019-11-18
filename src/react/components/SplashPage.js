@@ -8,10 +8,10 @@ const SplashPage = ({splash, dispatch}) => (
     <div id="splash-page" className={splash ? "":"hidden"}>
         <div class="splash-content">
             <h2>
-                Designer.
+                Designer. <br/> &nbsp; Developer. <br/> &nbsp;&nbsp; Problem Solver.
             </h2>
             <h3>
-                Splash Page subtext
+                Robby Bergers
             </h3>
             <button onClick={() => {
                 dispatch(splashOff())
