@@ -14,7 +14,9 @@ const ReactApp = ({dispatch, nav, title, home, homePage}) =>(
             <div>
                 <SplashPage />
                 <div className="home-text one">
-                        <h2>Home-text 1</h2>
+                        <h2>
+                            
+                        </h2>
                         {homePage}
                     </div>
                     <div className="home-text two">

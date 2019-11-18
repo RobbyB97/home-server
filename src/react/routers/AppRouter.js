@@ -12,7 +12,7 @@ import LogoBar from '../components/LogoBar'
 
 //Pages
 import StyleGuide from '../components/pages/StyleGuide'
-import ReactApp from '../components/pages/ReactApp'
+import Home from '../components/pages/Home'
 
 // Actions
 import {getTitle} from '../actions/title'
@@ -41,7 +41,7 @@ const AppRouter = ({nav, dispatch, title, home}) => (
         <Switch>
           <Route 
             path="/react/" 
-            component={ReactApp} 
+            component={Home} 
             exact={true} 
           />
           <Route 
