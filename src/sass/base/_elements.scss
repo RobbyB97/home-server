@@ -2,36 +2,6 @@
     Elements used on many pages
 **/
 
-.space {
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    height: 100vh;
-    background: $space-blue;
-    opacity: 1;
-    z-index: -10;
-    &#main-bg {
-        opacity: 0.3;
-        background: url('/assets/images/backgrounds/planets-mobile.jpg') no-repeat;
-        background-size: cover;
-        @media #{$bp-tablet} {
-            //background: url('/assets/images/backgrounds/milky-way-1080.jpg') no-repeat;
-        }
-        @media #{$bp-large} {
-            background: url('/assets/images/backgrounds/milky-way-1080.jpg') no-repeat;
-            background-position: center top;
-            opacity: 0.3;
-            background-size: cover;
-        }
-        @media #{$bp-huge} {
-            background: url('/assets/images/backgrounds/milky-way-1200.jpg') no-repeat;
-            background-size: cover;
-        }
-    }
-}
-
 #header-bg {
     position: absolute;
     z-index: 0;
