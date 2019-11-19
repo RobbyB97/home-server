@@ -36,14 +36,14 @@ const DesktopNavigationMenu = () => (
                 >Experience</NavLink>
             </li>
 
-            <li>
-                <a className="github" href="https://www.github.com/RobbyB97" target="_blank">
+            <li className="github">
+                <a href="https://www.github.com/RobbyB97" target="_blank">
                     <img src="/assets/images/icons/github.svg"></img>
                 </a>
             </li>
 
-            <li>
-                <a className="linkedin" href="https://www.linkedin.com/in/robbyb97" target="_blank">
+            <li className="linkedin">
+                <a href="https://www.linkedin.com/in/robbyb97" target="_blank">
                     <img src="/assets/images/icons/linkedin.png"></img>
                 </a>
             </li>

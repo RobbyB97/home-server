@@ -3,7 +3,7 @@
     top: 10px;
     right: 4rem;
     z-index: 1;
-    display: none;
+    display: block;
 
     img {
         width: 2.3em;
@@ -21,7 +21,7 @@
     }
     
     @media #{$bp-desktop} {
-        display: block;
+        display: none;
     }
 
     @media #{$bp-large} {
