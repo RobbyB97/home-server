@@ -35,14 +35,20 @@ const DesktopNavigationMenu = () => (
                     activeClassName="active" 
                 >Experience</NavLink>
             </li>
+
+            <li>
+                <a className="github" href="https://www.github.com/RobbyB97" target="_blank">
+                    <img src="/assets/images/icons/github.svg"></img>
+                </a>
+            </li>
+
+            <li>
+                <a className="linkedin" href="https://www.linkedin.com/in/robbyb97" target="_blank">
+                    <img src="/assets/images/icons/linkedin.png"></img>
+                </a>
+            </li>
         </ul>
     </div>
 )
-
-/*const mapStateToProps = (state) => {
-    return {
-        home: state.home.home
-    }
-}*/
 
 export default DesktopNavigationMenu
