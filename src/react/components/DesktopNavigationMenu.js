@@ -18,7 +18,9 @@ const DesktopNavigationMenu = ({dispatch}) => (
                         dispatch(toggleNavOff())
                         dispatch(homeOff())
                 }}>Style Guide</NavLink>
+            </li>
 
+            <li>
                 <NavLink to="/react/skills"
                     activeClassName="active" 
                     onClick={() => {
@@ -26,7 +28,9 @@ const DesktopNavigationMenu = ({dispatch}) => (
                         dispatch(toggleNavOff())
                         dispatch(homeOff())
                 }}>Skills</NavLink>
+            </li>
 
+            <li>
                 <NavLink to="/react/experience"
                     activeClassName="active" 
                     onClick={() => {
