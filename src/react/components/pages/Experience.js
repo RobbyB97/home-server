@@ -4,7 +4,7 @@ import {connect} from 'react-redux'
 
 
 const Experience = ({dispatch, nav, title}) => (
-    <div>
+    <div id="experience">
         Experience component
     </div>
 )

@@ -4,7 +4,7 @@ import {connect} from 'react-redux'
 
 
 const Skills = ({dispatch, nav, title}) => (
-    <div>
+    <div id="skills">
         Skills component
     </div>
 )

@@ -6,13 +6,15 @@ import SplashPage from '../SplashPage'
 
 
 const Home = ({dispatch, nav, title, home, homePage}) =>(
-            <div>
+            <div id="home">
                 <SplashPage />
+                <div id="main-bg" className="space"></div>
+
                 <div className="home-text one">
-                        <h2>
-                            
-                        </h2>
-                        {homePage}
+                        <p>
+
+                        </p>
+                        
                     </div>
                     <div className="home-text two">
                         <h2>Home-text 2</h2>
