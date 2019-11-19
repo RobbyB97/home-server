@@ -5,53 +5,44 @@ import { connect } from 'react-redux'
 
 import {setTitle} from '../actions/title'
 import {homeOff} from '../actions/home'
+import {toggleNavOff} from '../actions/navigation'
 
 
-const DesktopNavigationMenu = ({dispatch}) => (
+
+const DesktopNavigationMenu = () => (
     <div id="desktop-navigation-menu">
         <ul>
             <li>
-            <NavLink to="/react"
+                <NavLink to="/react/"
                     activeClassName="active"
-                    onClick={() => {
-                        dispatch(setTitle('Home'))
-                }}>Home</NavLink>
+                >Home</NavLink>
             </li>
 
             <li>
-                <NavLink to="/style_guide"
+                <NavLink to="/style_guide/"
                     activeClassName="active"
-                    onClick={() => {
-                        dispatch(setTitle('Style Guide'))
-                        dispatch(homeOff())
-                }}>Style Guide</NavLink>
+                >Style Guide</NavLink>
             </li>
 
             <li>
-                <NavLink to="/skills"
+                <NavLink to="/skills/"
                     activeClassName="active"
-                    onClick={() => {
-                        dispatch(setTitle('Skills'))
-                        dispatch(homeOff())
-                }}>Skills</NavLink>
+                >Skills</NavLink>
             </li>
 
             <li>
-                <NavLink to="/experience"
+                <NavLink to="/experience/"
                     activeClassName="active" 
-                    onClick={() => {
-                        dispatch(setTitle('Experience'))
-                        dispatch(homeOff())
-                }}>Experience</NavLink>
+                >Experience</NavLink>
             </li>
         </ul>
     </div>
 )
 
-const mapStateToProps = (state) => {
+/*const mapStateToProps = (state) => {
     return {
         home: state.home.home
     }
-}
+}*/
 
-export default connect(mapStateToProps)(withRouter(DesktopNavigationMenu))
+export default DesktopNavigationMenu
