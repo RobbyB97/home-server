@@ -24,14 +24,7 @@ import {toggleNavOff} from '../actions/navigation'
 // Routes
 const AppRouter = ({nav, dispatch, title, home}) => (
   <BrowserRouter>
-    <div id={home && "home"}>
-      <div id={home && "main-bg"} className="space"></div>
-      <div id="header-bg"></div>
-      <div id="main-title">
-        {}
-      </div>
-
-      
+    <div>
       <Header />
       <DesktopNavigationMenu />
       <NavigationMenu />
@@ -44,25 +37,25 @@ const AppRouter = ({nav, dispatch, title, home}) => (
           <Route 
             path="/react/" 
             component={Home} 
-            exact={true} 
+            exact 
           />
 
           <Route 
             path="/react/style_guide/" 
             component={StyleGuide}
-            exact={true}
+            exact
           />
 
           <Route 
             path="/react/skills/" 
             component={Skills}
-            exact={true}
+            exact
           />
 
           <Route 
             path="/react/experience/" 
             component={Experience}
-            exact={true}
+            exact
           />
         </Switch>
       </div>
