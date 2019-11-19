@@ -1,14 +1,9 @@
 import React from 'react'
 import {connect} from 'react-redux'
 
-import Header from '../Header'
-import StyleGuide from './StyleGuide'
-import Card from '../Card'
 import SplashPage from '../SplashPage'
 
-import {toggleHomePage} from '../../actions/home'
 
-import {Link, NavLink} from 'react-router-dom'
 
 const Home = ({dispatch, nav, title, home, homePage}) =>(
             <div>
