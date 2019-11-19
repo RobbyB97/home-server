@@ -1,6 +1,5 @@
 // Config
 //=====================================================
-
 @import 
     './base/settings';
 
@@ -13,6 +12,14 @@
     './base/special';
 
 
+// Pages
+//=====================================================
+@import
+    './pages/Home',
+    './pages/Skills',
+    './pages/Experience';
+
+
 // Components
 //=====================================================
 @import
@@ -20,7 +27,6 @@
     './components/NavigationMenu',
     './components/DesktopNavigationMenu',
     './components/Article',
-    './components/ReactApp',
     './components/Card',
     './components/LogoBar',
     './components/SplashPage';
