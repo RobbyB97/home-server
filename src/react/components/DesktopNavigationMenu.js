@@ -1,9 +1,9 @@
 import React from 'react'
-import {NavLink} from 'react-router-dom'
+import {withRouter} from 'react-router'
+import {NavLink, Link, IndexLink} from 'react-router-dom'
 import { connect } from 'react-redux'
 
 import {setTitle} from '../actions/title'
-import {toggleNavOff} from '../actions/navigation'
 import {homeOff} from '../actions/home'
 
 
@@ -11,31 +11,36 @@ const DesktopNavigationMenu = ({dispatch}) => (
     <div id="desktop-navigation-menu">
         <ul>
             <li>
-                <NavLink to="/react/style_guide"
-                    activeClassName="active" 
+            <NavLink to="/react"
+                    activeClassName="active"
+                    onClick={() => {
+                        dispatch(setTitle('Home'))
+                }}>Home</NavLink>
+            </li>
+
+            <li>
+                <NavLink to="/style_guide"
+                    activeClassName="active"
                     onClick={() => {
                         dispatch(setTitle('Style Guide'))
-                        dispatch(toggleNavOff())
                         dispatch(homeOff())
                 }}>Style Guide</NavLink>
             </li>
 
             <li>
-                <NavLink to="/react/skills"
-                    activeClassName="active" 
+                <NavLink to="/skills"
+                    activeClassName="active"
                     onClick={() => {
                         dispatch(setTitle('Skills'))
-                        dispatch(toggleNavOff())
                         dispatch(homeOff())
                 }}>Skills</NavLink>
             </li>
 
             <li>
-                <NavLink to="/react/experience"
+                <NavLink to="/experience"
                     activeClassName="active" 
                     onClick={() => {
                         dispatch(setTitle('Experience'))
-                        dispatch(toggleNavOff())
                         dispatch(homeOff())
                 }}>Experience</NavLink>
             </li>
@@ -49,4 +54,4 @@ const mapStateToProps = (state) => {
     }
 }
 
-export default connect(mapStateToProps)(DesktopNavigationMenu)
+export default connect(mapStateToProps)(withRouter(DesktopNavigationMenu))

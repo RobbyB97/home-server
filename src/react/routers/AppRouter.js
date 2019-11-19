@@ -17,8 +17,6 @@ import Skills from '../components/pages/Skills'
 import Experience from '../components/pages/Experience'
 
 // Actions
-import {getTitle} from '../actions/title'
-import {homeOn, homeOff} from '../actions/home'
 import {toggleNavOff} from '../actions/navigation'
 
 // Routes
@@ -35,25 +33,25 @@ const AppRouter = ({nav, dispatch, title, home}) => (
       }}>
         <Switch>
           <Route 
-            path="/react/" 
+            path="/react" 
             component={Home} 
             exact 
           />
 
           <Route 
-            path="/react/style_guide/" 
+            path="/style_guide" 
             component={StyleGuide}
             exact
           />
 
           <Route 
-            path="/react/skills/" 
+            path="/skills" 
             component={Skills}
             exact
           />
 
           <Route 
-            path="/react/experience/" 
+            path="/experience" 
             component={Experience}
             exact
           />

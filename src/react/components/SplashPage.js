@@ -6,7 +6,7 @@ import {splashOff} from '../actions/home'
 
 const SplashPage = ({splash, dispatch}) => (
     <div id="splash-page" className={splash ? "":"hidden"}>
-        <div class="splash-content">
+        <div className="splash-content">
             <h2 className="text-one">
                 Designer. <br/> &nbsp; Developer. <br/> &nbsp;&nbsp; Problem Solver.
             </h2>
