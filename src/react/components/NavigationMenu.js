@@ -12,7 +12,7 @@ const NavigationMenu = ({nav, dispatch, home}) => (
         <div id="nav-bg">
             <ul className="intra-nav">
                 <li>
-                    <NavLink to="/react/" onClick={() => {
+                    <NavLink to="/react" onClick={() => {
                         dispatch(toggleNav())
                         dispatch(setTitle(''))
                         dispatch(homeOn())
@@ -20,7 +20,7 @@ const NavigationMenu = ({nav, dispatch, home}) => (
                 </li>
                 
                 <li>
-                    <NavLink to="/react/style_guide" onClick={() => {
+                    <NavLink to="/style_guide" onClick={() => {
                         dispatch(toggleNav())
                         dispatch(setTitle('Style Guide'))
                         dispatch(homeOff())
@@ -28,7 +28,7 @@ const NavigationMenu = ({nav, dispatch, home}) => (
                 </li>
 
                 <li>
-                    <NavLink to="/react/skills" onClick={() => {
+                    <NavLink to="/skills" onClick={() => {
                         dispatch(toggleNav())
                         dispatch(setTitle('Skills'))
                         dispatch(homeOff())
@@ -36,7 +36,7 @@ const NavigationMenu = ({nav, dispatch, home}) => (
                 </li>
 
                 <li>
-                    <NavLink to="/react/experience" onClick={() => {
+                    <NavLink to="/experience" onClick={() => {
                         dispatch(toggleNav())
                         dispatch(setTitle('Experience'))
                         dispatch(homeOff())
