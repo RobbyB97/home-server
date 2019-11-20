@@ -24,7 +24,8 @@ const publicPages = path.join(__dirname, '../public')
 
 const mainRouter = require('./routers/app')
 const weatherRouter = require('./routers/weather')
-const reactRouter = require('./routers/react')
+const portfolioRouter = require('./routers/portfolio')
+const chatRouter = require('./routers/chat')
 
 
 // Express config
@@ -58,7 +59,7 @@ if (dev == 1) {
 
 // Connect routers
 app.use(mainRouter)
-app.use(reactRouter)
+app.use(portfolioRouter)
 
 
 // Run server
