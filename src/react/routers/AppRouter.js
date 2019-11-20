@@ -15,6 +15,7 @@ import StyleGuide from '../components/pages/StyleGuide'
 import Home from '../components/pages/Home'
 import Skills from '../components/pages/Skills'
 import Experience from '../components/pages/Experience'
+import Contact from '../components/pages/Contact'
 
 // Actions
 import {toggleNavOff} from '../actions/navigation'
@@ -53,6 +54,12 @@ const AppRouter = ({nav, dispatch, title, home}) => (
           <Route 
             path="/experience" 
             component={Experience}
+            exact
+          />
+
+          <Route 
+            path="/contact" 
+            component={Contact}
             exact
           />
         </Switch>

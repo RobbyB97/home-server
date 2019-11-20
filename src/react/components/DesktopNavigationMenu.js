@@ -36,6 +36,12 @@ const DesktopNavigationMenu = () => (
                 >Experience</NavLink>
             </li>
 
+            <li>
+                <NavLink to="/contact/"
+                    activeClassName="active" 
+                >Contact</NavLink>
+            </li>
+
             <li className="github">
                 <a href="https://www.github.com/RobbyB97" target="_blank">
                     <img src="/assets/images/icons/github.svg"></img>
