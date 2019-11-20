@@ -10,9 +10,9 @@ const http2https = require('../middleware/http2https')
 
 
 // Routes
-router.get('/react/', http2https, (req, res) => {
+router.get('/react', http2https, (req, res) => {
     try {
-        res.return('react/index')
+        return res.return('react/index')
     } catch(e) {
         res.send()
         console.log(chalk.red('An error occured on /react: '))
@@ -20,9 +20,29 @@ router.get('/react/', http2https, (req, res) => {
     }
 })
 
-router.get('/react/style_guide', http2https, (req, res) => {
+router.get('/style_guide', http2https, (req, res) => {
     try {
-        res.redirect('/react/')
+        return res.redirect('/react')
+    } catch(e) {
+        res.send()
+        console.log(chalk.red('An error occured on /react: '))
+        console.log(e)
+    }
+})
+
+router.get('/skills', http2https, (req, res) => {
+    try {
+        return res.redirect('/react')
+    } catch(e) {
+        res.send()
+        console.log(chalk.red('An error occured on /react: '))
+        console.log(e)
+    }
+})
+
+router.get('/experience', http2https, (req, res) => {
+    try {
+        return res.redirect('/react')
     } catch(e) {
         res.send()
         console.log(chalk.red('An error occured on /react: '))
