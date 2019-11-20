@@ -50,7 +50,8 @@
                     margin-right: 0 !important;
                 }
                 .active {
-                    text-decoration: underline;
+                    border-bottom: 1px solid white;
+                    text-decoration: none;
                 }
             }
         }
