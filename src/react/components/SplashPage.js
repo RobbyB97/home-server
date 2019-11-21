@@ -5,18 +5,27 @@ import { connect } from 'react-redux'
 import {splashOff} from '../actions/home'
 
 const SplashPage = ({splash, dispatch}) => (
-    <div id="splash-page" className={splash ? "":"hidden"}>
+    <div id="splash-page" className={splash ? "":"splash__hidden"}>
         <div className="splash-content">
-            <h2 className="text-one">
-                Designer. <br/> &nbsp; Developer. <br/> &nbsp;&nbsp; Problem Solver.
-            </h2>
-            <h3 className="text-two">
-                Robby Bergers
-            </h3>
+            <p className="text-one">
+                Designer.
+            </p>
+
+            <p className="text-two">
+                Developer.
+            </p>
+
+            <p className="text-three">
+                Problem solver.
+            </p>
+
+            <p className="text-four">
+                Robby Bergers.
+            </p>
             <button className="to-site" onClick={() => {
                 dispatch(splashOff())
             }}>
-                Splash Page button
+                Learn more →
             </button>
         </div>
     </div>
