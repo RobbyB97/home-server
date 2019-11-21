@@ -12,7 +12,7 @@ const Home = ({dispatch, nav, title, home, homePage}) =>(
 
         <div className="home-text one">
             <p>
-
+            What is a perfect website? One that is <i>simplistic</i>, <i>intuitive</i>, <i>fast</i> and <i>memorable</i> would be my answer. However, every person has their own vision of the perfect website for themselves or their company. My mission is to take that vision and make it a reality.
             </p>
                         
         </div>
