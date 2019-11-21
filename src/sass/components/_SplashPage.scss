@@ -13,6 +13,7 @@
     &.splash__hidden {
         left: 100vw;
         right: -100vw;
+        opacity: 0;
     }
 
     .splash-content {
