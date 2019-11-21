@@ -7,19 +7,19 @@ import {splashOff} from '../actions/home'
 const SplashPage = ({splash, dispatch}) => (
     <div id="splash-page" className={splash ? "":"splash__hidden"}>
         <div className="splash-content">
-            <p className="text-one">
+            <p className="text one">
                 Designer.
             </p>
 
-            <p className="text-two">
+            <p className="text two">
                 Developer.
             </p>
 
-            <p className="text-three">
+            <p className="text three">
                 Problem solver.
             </p>
 
-            <p className="text-four">
+            <p className="name">
                 Robby Bergers.
             </p>
             <button className="to-site" onClick={() => {
