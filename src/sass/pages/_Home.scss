@@ -82,6 +82,10 @@
             font-size: $s-font;
         }
 
+        @media #{$bp-huge} {
+            font-size: $l-font;
+        }
+
         &.one {
             text-align: justify;
             padding-left: 7%;
@@ -96,12 +100,6 @@
                 padding-left: 0;
                 padding-right: 0;
             }
-        }
-    }
-
-    @media #{$bp-huge} {
-        .home__text {
-            font-size: $l-font;
         }
     }
 }
