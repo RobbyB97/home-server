@@ -8,38 +8,27 @@ import SplashPage from '../SplashPage'
 const Home = ({dispatch, nav, title, home, homePage, splash}) =>(
     <div id="home">
         <SplashPage />
-        <div id="main-bg" className={splash ? "space one": "space two"}></div>
+        <div className={splash ? "home__background phone one": "home__background phone two"}></div>
+        <div className={splash ? "home__background tablet one": "home__background tablet two"}></div>
+        <div className={splash ? "home__background desktop one": "home__background desktop two"}></div>
+        <div className={splash ? "home__background huge one": "home__background huge two"}></div>
 
-        <div className="home-text one">
+        <div className="home__text one">
             <p>
-            What is a perfect website? One that is <i>simplistic</i>, <i>intuitive</i>, <i>fast</i> and <i>memorable</i> would be my answer. However, every person has their own vision of the perfect website for themselves or their company. My mission is to take that vision and make it a reality.
+            What is a perfect website? One that is <i>memorable</i>, <i>simplistic</i>, <i>intuitive</i> and <i>fast</i> would be my answer. However, every person has their own vision of the perfect website for themselves or their company. My mission is to take that vision and make it a reality.
             </p>
                         
         </div>
 
-        <div className="home-text two">
+        <div className="home__text two">
             <h2>
-                Home-text 2
+                
             </h2>
         </div>
     </div>
 )
 
-/*
-<div id="bio">
-    <section>
-        <div className="title">
-            My mission.
-        </div>
-        <div className="content">
-            What is a perfect website? One that is <i>simplistic</i>, <i>intuitive</i>, <i>fast</i> and <i>memorable</i> would be my answer. However, every person has their own vision of the perfect website for themselves or their company. My mission is to take that vision and make it a reality.
-        </div>
-    </section>
-</div>
 
-    <div id="home-cover" className={homePage ? "active":""}>
-    </div>
-*/
 
 const mapStateToProps = (state) => {
     return {
