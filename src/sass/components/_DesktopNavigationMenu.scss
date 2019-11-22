@@ -55,13 +55,13 @@
                     margin-right: 0 !important;
 
                     a > div {
-                        background: url(/assets/images/icons/linkedin.png);
+                        background: url($linkedin);
                         background-size: cover;
                         width: $m-font;
                         height: $m-font;
 
                         &:hover {
-                            background: url(/assets/images/icons/linkedin-purple.png);
+                            background: url($linkedin-purple);
                             background-size: cover;
                         }   
                     }
@@ -70,13 +70,13 @@
                 &.github {
                     
                     a > div {
-                        background: url(/assets/images/icons/github.svg);
+                        background: url($github);
                         background-size: cover;
                         width: $m-font;
                         height: $m-font;
 
                         &:hover {
-                            background: url(/assets/images/icons/github-purple.png);
+                            background: url($github-purple);
                             background-size: cover;
                         }
                     }
