@@ -5,10 +5,10 @@ import SplashPage from '../SplashPage'
 
 
 
-const Home = ({dispatch, nav, title, home, homePage}) =>(
+const Home = ({dispatch, nav, title, home, homePage, splash}) =>(
     <div id="home">
         <SplashPage />
-        <div id="main-bg" className="space"></div>
+        <div id="main-bg" className={splash ? "space one": "space two"}></div>
 
         <div className="home-text one">
             <p>
@@ -46,7 +46,8 @@ const mapStateToProps = (state) => {
       nav: state.navigation.nav,
       title: state.title.title,
       home: state.home.home,
-      homePage: state.home.homePage
+      homePage: state.home.homePage,
+      splash: state.home.splash
     }
 }
 
