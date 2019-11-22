@@ -5,8 +5,9 @@ import { connect } from 'react-redux'
 import {splashOff} from '../actions/home'
 
 const SplashPage = ({splash, dispatch}) => (
-    <div id="splash-page" className={splash ? "":"splash__hidden"}>
-        <div className="splash-content">
+    <div id="splash" className={splash ? "":"splash__hidden"}>
+        <div className="splash__background"></div>
+        <div className="splash__content">
             <p className="text one">
                 Designer.
             </p>

@@ -1,14 +1,22 @@
-#splash-page {
+#splash {
     position: fixed;
     z-index: 999;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('/assets/images/backgrounds/planets-mobile-bandw.jpg') no-repeat;
-    background-size: cover;
     overflow-y: hidden;
     transition: 300ms;
+
+    .splash__background {
+        background: url('/assets/images/backgrounds/planets-mobile-bandw.jpg') no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
 
     &.splash__hidden {
         left: 100vw;
@@ -16,7 +24,7 @@
         opacity: 0;
     }
 
-    .splash-content {
+    .splash__content {
         position: absolute;
         top: 0;
         left: 0;
