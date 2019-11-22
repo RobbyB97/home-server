@@ -44,13 +44,13 @@ const DesktopNavigationMenu = () => (
 
             <li className="github">
                 <a href="https://www.github.com/RobbyB97" target="_blank">
-                    <img src="/assets/images/icons/github.svg"></img>
+                    <div></div>
                 </a>
             </li>
 
             <li className="linkedin">
                 <a href="https://www.linkedin.com/in/robbyb97" target="_blank">
-                    <img src="/assets/images/icons/linkedin.png"></img>
+                    <div></div>
                 </a>
             </li>
         </ul>

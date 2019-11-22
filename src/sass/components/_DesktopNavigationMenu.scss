@@ -2,6 +2,7 @@
     ul {
         display: none;
     }
+
     @media #{$bp-large} {
         flex-grow: 1;
         position: fixed;
@@ -11,15 +12,19 @@
         background: transparent;
         font-size: $s-font;
         height: 3rem;
+
         ul {
             display: flex;
             flex-direction: row;
+
             li {
                 list-style-type: none;
                 margin-right: $m-font;
+
                 &:hover {
                     text-decoration: none;
                 }
+
                 a {
                     color: white;
                     transition: 200ms;
@@ -29,26 +34,54 @@
                         border-bottom: 2px solid $purple;
                     }
                 }
+
                 &.github, &.linkedin {
                     margin-right: 1rem;
+
                     a {
                         width: $m-font;
                         height: $m-font;
                         border-radius: 50%;
                         padding-bottom: 2px;
+                        transition: 200ms;
+                        
                         &:hover {
                             border-bottom: 0;
-                        }
+                        }                        
+                    }
+                }
+
+                &.linkedin {
+                    margin-right: 0 !important;
+
+                    a > div {
+                        background: url(/assets/images/icons/linkedin.png);
+                        background-size: cover;
+                        width: $m-font;
+                        height: $m-font;
+
+                        &:hover {
+                            background: url(/assets/images/icons/linkedin-purple.png);
+                            background-size: cover;
+                        }   
+                    }
+                }
+
+                &.github {
                     
-                        img {
-                            width: $m-font;
-                            height: $m-font;    
+                    a > div {
+                        background: url(/assets/images/icons/github.svg);
+                        background-size: cover;
+                        width: $m-font;
+                        height: $m-font;
+
+                        &:hover {
+                            background: url(/assets/images/icons/github-purple.png);
+                            background-size: cover;
                         }
                     }
                 }
-                &.linkedin {
-                    margin-right: 0 !important;
-                }
+
                 .active {
                     border-bottom: 1px solid white;
                     text-decoration: none;
