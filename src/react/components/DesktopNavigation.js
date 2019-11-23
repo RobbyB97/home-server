@@ -42,13 +42,13 @@ const DesktopNavigation = () => (
                 >Contact</NavLink>
             </li>
 
-            <li className="github">
+            <li className="desktop-navigation__link github">
                 <a href="https://www.github.com/RobbyB97" target="_blank">
                     <div></div>
                 </a>
             </li>
 
-            <li className="linkedin">
+            <li className="desktop-navigation__link linkedin">
                 <a href="https://www.linkedin.com/in/robbyb97" target="_blank">
                     <div></div>
                 </a>

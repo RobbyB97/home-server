@@ -1,4 +1,5 @@
 #desktop-navigation {
+
     ul {
         display: none;
     }
@@ -21,10 +22,6 @@
                 list-style-type: none;
                 margin-right: $m-font;
 
-                &:hover {
-                    text-decoration: none;
-                }
-
                 a {
                     color: white;
                     transition: 200ms;
@@ -35,57 +32,58 @@
                     }
                 }
 
-                &.github, &.linkedin {
-                    margin-right: 1rem;
-
-                    a {
-                        width: $m-font;
-                        height: $m-font;
-                        border-radius: 50%;
-                        padding-bottom: 2px;
-                        transition: 200ms;
-                        
-                        &:hover {
-                            border-bottom: 0;
-                        }                        
-                    }
-                }
-
-                &.linkedin {
-                    margin-right: 0 !important;
-
-                    a > div {
-                        background: url($linkedin);
-                        background-size: cover;
-                        width: $m-font;
-                        height: $m-font;
-
-                        &:hover {
-                            background: url($linkedin-purple);
-                            background-size: cover;
-                        }   
-                    }
-                }
-
-                &.github {
-                    
-                    a > div {
-                        background: url($github);
-                        background-size: cover;
-                        width: $m-font;
-                        height: $m-font;
-
-                        &:hover {
-                            background: url($github-purple);
-                            background-size: cover;
-                        }
-                    }
-                }
-
                 .active {
                     border-bottom: 1px solid white;
                     text-decoration: none;
                 }
+            }
+        }
+    }
+}
+
+
+.desktop-navigation__link {
+    margin-right: 1rem;
+
+    a {
+        width: $m-font;
+        height: $m-font;
+        border-radius: 50%;
+        padding-bottom: 2px;
+        transition: 200ms;
+        
+        &:hover {
+            border-bottom: 0;
+        }                        
+    }
+
+    &.linkedin {
+        margin-right: 0 !important;
+
+        a > div {
+            background: url($linkedin);
+            background-size: cover;
+            width: $m-font;
+            height: $m-font;
+
+            &:hover {
+                background: url($linkedin-purple);
+                background-size: cover;
+            }   
+        }
+    }
+
+    &.github {
+                    
+        a > div {
+            background: url($github);
+            background-size: cover;
+            width: $m-font;
+            height: $m-font;
+
+            &:hover {
+                background: url($github-purple);
+                background-size: cover;
             }
         }
     }
