@@ -1,11 +1,18 @@
 import React from 'react'
 import {connect} from 'react-redux'
 
+import JobCard from '../JobCard'
+
 
 
 const Experience = ({dispatch, nav, title}) => (
     <div id="experience">
         Experience component
+        <JobCard
+          title="Finalsite"
+          text="Job"
+          image="/assets/images/icons/finalsite.png">
+        </JobCard>
     </div>
 )
 
