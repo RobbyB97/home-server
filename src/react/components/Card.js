@@ -3,9 +3,9 @@ import {Link} from 'react-router-dom'
 
 const Card = ({image, title, subtext, link}) => (
     <div>
-        <div className="card__wrap">
+        <div className="card">
             <a className="card__link" href={link}>
-                <div className="card">
+                <div className="card__content">
                     <img src={image}/>
                     <div className="card__text">
                         <h2>{title}</h2>

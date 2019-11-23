@@ -1,23 +1,25 @@
 .article {
 
-    .article__title {
-        font-weight: 100;
-        font-size: $l-font;
-    }
+}
 
-    .article__subtitle {
-        font-weight: 100;
-        font-size: $m-font;
-    }
 
-    .article__text {
-        font-family: $sans-serif;
-    }
+.article__title {
+    font-weight: 100;
+    font-size: $l-font;
+}
 
-    .article__subtext {
-        opacity: 0.8;
-    }
 
-    @media #{$bp-tablet} {}
-    @media #{$bp-desktop} {}
+.article__subtitle {
+    font-weight: 100;
+    font-size: $m-font;
+}
+
+
+.article__text {
+    font-family: $sans-serif;
+}
+
+
+.article__subtext {
+    opacity: 0.8;
 }
