@@ -1,0 +1,51 @@
+/*****************************************
+*** Media Queries
+*****************************************/
+
+$bp-tablet:"only screen and (min-width: 576px)";
+$bp-desktop:"only screen and (min-width: 768px)";
+$bp-large:"only screen and (min-width: 1200px)";
+$bp-huge:"only screen and (min-width: 2100px)";
+
+/*****************************************
+*** Fonts
+*****************************************/
+
+$s-font: 1rem;
+$m-font: 1.4rem;
+$l-font: 2rem;
+$xl-font: 2.5rem;
+
+$sans-serif: "Questrial", Helvetica, sans-serif;
+$serif: "Muli", Bookman, serif;
+$monospace: "Lucida Console", Monaco, monospace;
+
+/*****************************************
+*** Colors
+*****************************************/
+
+$dark-blue: #182842; //#2f6cce;
+$dark-blue-fade1: #2e3b4d;
+$dark-blue-fade2: #383c43;
+$space-blue: #040812;
+
+$purple: #8b4ae0;
+
+$dark-gray: #0b0b0b;
+$real-dark-gray: #0f0f0f;
+$low-gray: #262626;
+
+$off-white: #fcfff6;
+
+/*****************************************
+*** Icons
+*****************************************/
+
+$icon: '/assets/images/icons/';
+$down_arrow: $icon + 'down_arrow.png';
+$down_arrow_white: $icon + 'down_arrow_white.png';
+$github: $icon + 'github.svg';
+$github-purple: $icon + 'github-purple.png';
+$linkedin: $icon + 'linkedin.png'; 
+$linkedin-purple: 'linkedin-purple.png';
+

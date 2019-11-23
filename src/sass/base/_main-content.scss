@@ -1,7 +1,3 @@
-/**
-    Elements used on many pages
-**/
-
 #main-content {
     position: absolute;
     left: 0;
@@ -15,9 +11,4 @@
     @media #{$bp-desktop} {
 
     }
-}
-
-.padding {
-    display: block;
-    height: $l-font;
 }
