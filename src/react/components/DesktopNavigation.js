@@ -9,8 +9,8 @@ import {toggleNavOff} from '../actions/navigation'
 
 
 
-const DesktopNavigationMenu = () => (
-    <div id="desktop-navigation-menu">
+const DesktopNavigation = () => (
+    <div id="desktop-navigation">
         <ul>
             <li>
                 <NavLink to="/react/"
@@ -57,4 +57,4 @@ const DesktopNavigationMenu = () => (
     </div>
 )
 
-export default DesktopNavigationMenu
+export default DesktopNavigation

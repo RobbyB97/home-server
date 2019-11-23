@@ -7,10 +7,10 @@ import {setTitle} from '../actions/title'
 import {homeOn, homeOff} from '../actions/home'
 
 
-const NavigationMenu = ({nav, dispatch, home}) => (
-    <div id="navigation-menu" className={nav ? 'active-nav':''}>
-        <div id="nav-bg">
-            <ul className="intra-nav">
+const MobileNavigation = ({nav, dispatch, home}) => (
+    <div id="mobile-navigation" className={nav ? 'active-nav':''}>
+        <div className="mobile-navigation__background">
+            <ul className="mobile-navigation__intra-nav">
                 <li>
                     <NavLink to="/react" onClick={() => {
                         dispatch(toggleNav())
@@ -54,4 +54,4 @@ const mapStateToProps = (state) => {
     }
 }
 
-export default connect(mapStateToProps)(NavigationMenu)
+export default connect(mapStateToProps)(MobileNavigation)

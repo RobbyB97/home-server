@@ -1,8 +1,4 @@
-/**
-    NavigationMenu React component styles
-**/
-
-#navigation-menu {
+#mobile-navigation {
     position: fixed;
     z-index: 9;
     top: 0;
@@ -12,6 +8,7 @@
     transition: 200ms;
     overflow: hidden;
     text-align: center;
+    
     @media #{$bp-desktop} {
         width: 250px;
     }
@@ -58,18 +55,18 @@
         }
     }
 
-    #nav-bg {
-        z-index: 1;
-        position: absolute;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        background-color: $space-blue;
-        background-blend-mode: color-burn;
-    }
-
     &.active-nav {
         height: 100vh;
     }
+}
+
+.mobile-navigation__background {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $space-blue;
+    background-blend-mode: color-burn;
 }
