@@ -1,0 +1,20 @@
+.jobcard {
+    background: rgba(255,255,255,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.jobcard__title {
+
+}
+
+.jobcard__text {
+
+}
+
+.jobcard__image {
+    width: 80%;
+    max-width: 80;
+    margin-left: 10%;
+}
