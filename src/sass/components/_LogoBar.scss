@@ -12,12 +12,15 @@
         border-radius: 50%;
         vertical-align: top;
     }
+    
     ul {
         display: flex;
         flex-direction: row;
+        
         li {
             display: inline-block;
             margin-right: 1rem;
+            
             &:last-child {
                 margin-right: 0;
             }
@@ -31,6 +34,7 @@
     @media #{$bp-large} {
         top: 4rem;
         right: 12px;
+        
         img {
             width: 1.8em;
             max-width: 1.8em;

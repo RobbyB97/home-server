@@ -6,8 +6,8 @@ import Loader from 'react-loader-spinner'
 
 //Components
 import Header from '../components/Header'
-import NavigationMenu from '../components/NavigationMenu'
-import DesktopNavigationMenu from '../components/DesktopNavigationMenu'
+import MobileNavigation from '../components/MobileNavigation'
+import DesktopNavigation from '../components/DesktopNavigation'
 import LogoBar from '../components/LogoBar'
 
 //Pages
@@ -25,9 +25,9 @@ const AppRouter = ({nav, dispatch, title, home}) => (
   <BrowserRouter>
     <div>
       <Header />
-      <DesktopNavigationMenu />
-      <NavigationMenu />
-      <LogoBar></LogoBar>
+      <DesktopNavigation />
+      <MobileNavigation />
+      <LogoBar />
 
       <div id="main-content"onClick={() => {
         dispatch(toggleNavOff())

@@ -6,12 +6,10 @@ import {toggleNav, toggleNavOff} from '../actions/navigation'
 import {setTitle} from '../actions/title'
 import {homeOn} from '../actions/home'
 
-import StyleGuide from './pages/StyleGuide'
-import NavigationMenu from './NavigationMenu'
 
 const Header = ({nav, dispatch}) => (
-  <header id="head">
-    <div id="head-logo">
+  <header id="header">
+    <div className="header__logo">
       <NavLink to="/react/" onClick={() => {
         dispatch(setTitle(''))
         dispatch(toggleNavOff())
@@ -20,15 +18,12 @@ const Header = ({nav, dispatch}) => (
         <img src='/assets/images/favicon.png' alt='Home'/> 
       </NavLink>
     </div>
-    <div id="head-nav-desktop">
 
-    </div>
-    <button id="nav-button" onClick={() => {
+    <button className="header__nav-button" onClick={() => {
       dispatch(toggleNav())
     }}>
       {!nav ? '☰':'✕'}
-    </button>
-    <h1>{!!nav}</h1>
+    </button>    
   </header>
 ) 
 
