@@ -1,105 +1,108 @@
 #home {
 
-    .home__background {
-        position: absolute;
-        left: 0;
-        top: -5.5em;
-        right: 0;
-        bottom: 0;
-        height: 100vh;
-        background: $space-blue;
-        z-index: -10;
-        transition: 1000ms;
+}
 
-        &.phone {
-            background: url('/assets/images/backgrounds/planets-mobile.jpg') no-repeat;
-            background-size: cover;
 
-            @media #{$bp-tablet} {
-                display: none;
-            }
-        }
+.home__background {
+    position: absolute;
+    left: 0;
+    top: -5.5em;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    background: $space-blue;
+    z-index: -10;
+    transition: 1000ms;
 
-        &.tablet {
+    &.phone {
+        background: url('/assets/images/backgrounds/planets-mobile.jpg') no-repeat;
+        background-size: cover;
+
+        @media #{$bp-tablet} {
             display: none;
-
-            @media #{$bp-tablet} {
-                background: url('/assets/images/backgrounds/planets-mobile.jpg') no-repeat;
-                background-size: cover;
-                display: block;
-            }
-
-            @media #{$bp-large} {
-                display: none;
-            }
-        }
-
-        &.desktop {
-            display: none;
-
-            @media #{$bp-large} {
-                background: url('/assets/images/backgrounds/milky-way-1080.jpg') no-repeat;
-                background-position: center top;
-                background-size: cover;
-                display: block;
-            }
-
-            @media #{$bp-huge} {
-                display: none;
-            }
-        }
-
-        &.huge {
-            display: none;
-
-            @media #{$bp-huge} {
-                background: url('/assets/images/backgrounds/milky-way-1200.jpg') no-repeat;
-                background-size: cover;
-                display: block;
-            }
-        }
-
-        &.one {
-            opacity: 0;
-        }
-
-        &.two {
-            opacity: 0.7;
         }
     }
 
-    .home__text {
-        font-family: $serif;
-        font-size: $s-font;
-        position: absolute;
-        color: white;
-        
+    &.tablet {
+        display: none;
+
         @media #{$bp-tablet} {
-            font-size: $m-font;
+            background: url('/assets/images/backgrounds/planets-mobile.jpg') no-repeat;
+            background-size: cover;
+            display: block;
         }
-        
-        @media #{$bp-desktop} {
-            font-size: $s-font;
+
+        @media #{$bp-large} {
+            display: none;
+        }
+    }
+
+    &.desktop {
+        display: none;
+
+        @media #{$bp-large} {
+            background: url('/assets/images/backgrounds/milky-way-1080.jpg') no-repeat;
+            background-position: center top;
+            background-size: cover;
+            display: block;
         }
 
         @media #{$bp-huge} {
-            font-size: $l-font;
+            display: none;
         }
+    }
 
-        &.one {
-            text-align: justify;
-            padding-left: 7%;
-            padding-right: 7%;
-            bottom: 0;
-            
-            @media #{$bp-desktop} {
-                top: 15%;
-                bottom: unset;
-                left: 7%;
-                right: 60%;
-                padding-left: 0;
-                padding-right: 0;
-            }
+    &.huge {
+        display: none;
+
+        @media #{$bp-huge} {
+            background: url('/assets/images/backgrounds/milky-way-1200.jpg') no-repeat;
+            background-size: cover;
+            display: block;
+        }
+    }
+
+    &.one {
+        opacity: 0;
+    }
+
+    &.two {
+        opacity: 0.7;
+    }
+}
+
+
+.home__text {
+    font-family: $serif;
+    font-size: $s-font;
+    position: absolute;
+    color: white;
+    
+    @media #{$bp-tablet} {
+        font-size: $m-font;
+    }
+    
+    @media #{$bp-desktop} {
+        font-size: $s-font;
+    }
+
+    @media #{$bp-huge} {
+        font-size: $l-font;
+    }
+
+    &.one {
+        text-align: justify;
+        padding-left: 7%;
+        padding-right: 7%;
+        bottom: 0;
+        
+        @media #{$bp-desktop} {
+            top: 15%;
+            bottom: unset;
+            left: 7%;
+            right: 60%;
+            padding-left: 0;
+            padding-right: 0;
         }
     }
 }

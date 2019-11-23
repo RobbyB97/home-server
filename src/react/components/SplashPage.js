@@ -8,22 +8,22 @@ const SplashPage = ({splash, dispatch}) => (
     <div id="splash" className={splash ? "":"splash__hidden"}>
         <div className="splash__background"></div>
         <div className="splash__content">
-            <p className="text one">
+            <p className="splash__text one">
                 Designer.
             </p>
 
-            <p className="text two">
+            <p className="splash__text two">
                 Developer.
             </p>
 
-            <p className="text three">
+            <p className="splash__text three">
                 Problem solver.
             </p>
 
-            <p className="name">
+            <p className="splash__name">
                 Robby Bergers.
             </p>
-            <button className="to-site" onClick={() => {
+            <button className="splash__to-site" onClick={() => {
                 dispatch(splashOff())
             }}>
                 Learn more →

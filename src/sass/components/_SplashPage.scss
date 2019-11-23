@@ -8,89 +8,82 @@
     overflow-y: hidden;
     transition: 300ms;
 
-    .splash__background {
-        background: url('/assets/images/backgrounds/planets-mobile-bandw.jpg') no-repeat;
-        background-size: cover;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-    }
-
     &.splash__hidden {
         left: 100vw;
         right: -100vw;
         opacity: 0;
     }
+}
 
-    .splash__content {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(10, 10, 10, 0.7);
+
+.splash__background {
+    background: url('/assets/images/backgrounds/planets-mobile-bandw.jpg') no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+.splash__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(10, 10, 10, 0.7);
+}
+
+
+.splash__text {
+    font-size: $l-font;
+    position: absolute;
+
+    &.one {
+        top: 1rem;
+        left: 1rem;
+
+        @media #{$bp-desktop} {
+            top: 3rem;
+            left: 3rem;
+        }
     }
 
-    .text {
-        font-size: $l-font;
-        position: absolute;
+    &.two {
+        top: 4rem;
+        left: 4rem;
 
-        &.one {
-            top: 1rem;
-            left: 1rem;
-
-            @media #{$bp-desktop} {
-                top: 3rem;
-                left: 3rem;
-            }
-        }
-
-        &.two {
-            top: 4rem;
-            left: 4rem;
-
-            @media #{$bp-desktop} {
-                top: 7rem;
-                left: 7rem;
-            }
-        }
-
-        &.three {
+        @media #{$bp-desktop} {
             top: 7rem;
             left: 7rem;
-
-            @media #{$bp-desktop} {
-                top: 11rem;
-                left: 11rem;
-            }
         }
     }
 
-    .name {
-        font-size: $m-font;
-        position: absolute;
-        right: 5rem;
-        bottom: 4rem;
-    }
+    &.three {
+        top: 7rem;
+        left: 7rem;
 
-    .to-site {
-        border-radius: 0;
-        position: absolute;
-        bottom: 1rem;
-        right: 1rem;
+        @media #{$bp-desktop} {
+            top: 11rem;
+            left: 11rem;
+        }
     }
+}
 
-    @media #{$bp-large} {
-        background: url('/assets/images/backgrounds/milky-way-1080-bandw.jpg') no-repeat;
-        background-attachment: fixed;
-        background-position: center top;
-        background-size: cover;
-    }
 
-    @media #{$bp-huge} {
-        background: url('/assets/images/backgrounds/milky-way-1200-bandw.jpg') no-repeat;
-        background-size: cover;
-    }
+.splash__name {
+    font-size: $m-font;
+    position: absolute;
+    right: 5rem;
+    bottom: 4rem;
+}
+
+
+.splash__to-site {
+    border-radius: 0;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
 }
