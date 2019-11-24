@@ -62,13 +62,13 @@
 
         a > div {
             background: url($linkedin);
-            background-size: cover;
+            background-size: 100% 100%;
             width: $m-font;
             height: $m-font;
 
             &:hover {
                 background: url($linkedin-purple);
-                background-size: cover;
+                background-size: 100% 100%;
             }   
         }
     }
@@ -77,13 +77,13 @@
                     
         a > div {
             background: url($github);
-            background-size: cover;
+            background-size: 100% 100%;
             width: $m-font;
             height: $m-font;
 
             &:hover {
                 background: url($github-purple);
-                background-size: cover;
+                background-size: 100% 100%;
             }
         }
     }
