@@ -1,7 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 
-import JobCard from '../JobCard'
+import JobCard from '../content/JobCard'
 
 
 

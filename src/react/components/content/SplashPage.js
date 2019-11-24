@@ -2,7 +2,7 @@ import React from 'react'
 import {NavLink} from 'react-router-dom'
 import { connect } from 'react-redux'
 
-import {splashOff} from '../actions/home'
+import {splashOff} from '../../actions/home'
 
 const SplashPage = ({splash, dispatch}) => (
     <div id="splash" className={splash ? "":"splash__hidden"}>

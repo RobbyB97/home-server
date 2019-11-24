@@ -1,7 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 
-import SplashPage from '../SplashPage'
+import SplashPage from '../content/SplashPage'
 
 
 

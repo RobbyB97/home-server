@@ -2,9 +2,9 @@ import React from 'react'
 import {NavLink} from 'react-router-dom'
 import {connect} from 'react-redux'
 
-import {toggleNav, toggleNavOff} from '../actions/navigation'
-import {setTitle} from '../actions/title'
-import {homeOn} from '../actions/home'
+import {toggleNav, toggleNavOff} from '../../actions/navigation'
+import {setTitle} from '../../actions/title'
+import {homeOn} from '../../actions/home'
 
 
 const Header = ({nav, dispatch}) => (

@@ -5,10 +5,10 @@ import { connect } from 'react-redux';
 import Loader from 'react-loader-spinner'
 
 //Components
-import Header from '../components/Header'
-import MobileNavigation from '../components/MobileNavigation'
-import DesktopNavigation from '../components/DesktopNavigation'
-import LogoBar from '../components/LogoBar'
+import Header from '../components/common/Header'
+import MobileNavigation from '../components/common/MobileNavigation'
+import DesktopNavigation from '../components/common/DesktopNavigation'
+import LogoBar from '../components/common/LogoBar'
 
 //Pages
 import StyleGuide from '../components/pages/StyleGuide'
