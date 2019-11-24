@@ -15,8 +15,9 @@ export default (props) => (
         }
 
         {props.image &&
-            <img className="jobcard__image"
-                src={props.image}/>
+            <div className="jobcard__image">
+                <img src={props.image} />
+            </div>
         }
 
     </div>

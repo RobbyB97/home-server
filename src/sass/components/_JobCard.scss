@@ -1,8 +1,8 @@
 .jobcard {
     background: rgba(255,255,255,0.5);
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .jobcard__title {
@@ -14,7 +14,13 @@
 }
 
 .jobcard__image {
-    width: 80%;
-    max-width: 80;
-    margin-left: 10%;
+    height: 40px;
+    width: auto;
+    
+    img {
+        height: 100%;
+        width: auto;
+        max-height: 100%;
+        vertical-align: middle;
+    }
 }
