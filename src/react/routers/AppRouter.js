@@ -16,64 +16,71 @@ import Home from '../components/pages/Home'
 import Skills from '../components/pages/Skills'
 import Experience from '../components/pages/Experience'
 import Contact from '../components/pages/Contact'
+import Projects from '../components/pages/Projects'
 
 // Actions
 import {toggleNavOff} from '../actions/navigation'
 
 // Routes
 const AppRouter = ({nav, dispatch, title, home}) => (
-  <BrowserRouter>
-    <div>
-      <Header />
-      <DesktopNavigation />
-      <MobileNavigation />
-      <LogoBar />
+	<BrowserRouter>
+		<div>
+			<Header />
+			<DesktopNavigation />
+			<MobileNavigation />
+			<LogoBar />
 
-      <div id="main-content"onClick={() => {
-        dispatch(toggleNavOff())
-      }}>
-        <Switch>
-          <Route 
-            path="/react" 
-            component={Home} 
-            exact 
-          />
+			<div id="main-content"onClick={() => {
+				dispatch(toggleNavOff())
+			}}>
+				<Switch>
+					<Route 
+						path="/react" 
+						component={Home} 
+						exact 
+					/>
 
-          <Route 
-            path="/style_guide" 
-            component={StyleGuide}
-            exact
-          />
+					<Route 
+						path="/style_guide" 
+						component={StyleGuide}
+						exact
+					/>
 
-          <Route 
-            path="/skills" 
-            component={Skills}
-            exact
-          />
+					<Route 
+						path="/skills" 
+						component={Skills}
+						exact
+					/>
 
-          <Route 
-            path="/experience" 
-            component={Experience}
-            exact
-          />
+					<Route 
+						path="/experience" 
+						component={Experience}
+						exact
+					/>
 
-          <Route 
-            path="/contact" 
-            component={Contact}
-            exact
-          />
-        </Switch>
-      </div>
-    </div>
-  </BrowserRouter>
+					<Route 
+						path="/contact" 
+						component={Contact}
+						exact
+					/>
+
+					<Route
+						path="/projects"
+						component={Projects}
+						exact
+					/>
+				</Switch>
+			</div>
+		</div>
+	</BrowserRouter>
 )
 
 const mapStateToProps = (state) => {
-  return {
-    nav: state.navigation.nav,
-    title: state.title.title,
-    home: state.home.home
-  }
+	return {
+		nav: state.navigation.nav,
+		title: state.title.title,
+		home: state.home.home
+	}
 }
 
 export default connect(mapStateToProps)(AppRouter)

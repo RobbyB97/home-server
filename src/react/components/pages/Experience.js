@@ -6,23 +6,23 @@ import JobCard from '../content/JobCard'
 
 
 const Experience = ({dispatch, nav, title}) => (
-    <div id="experience">
-        Experience component
-        <JobCard
-          title="Finalsite"
-          text="Job"
-          image="/assets/images/icons/finalsite.png">
-        </JobCard>
-    </div>
+	<div id="experience">
+				Experience component
+				<JobCard
+					title="Finalsite"
+					text="Job"
+					image="/assets/images/icons/finalsite.png">
+				</JobCard>
+		</div>
 )
 
 
 
 const mapStateToProps = (state) => {
-    return {
-      nav: state.navigation.nav,
-      title: state.title.title,
-    }
-  }
+		return {
+			nav: state.navigation.nav,
+			title: state.title.title,
+		}
+	}
 
-  export default connect(mapStateToProps)(Experience)
+	export default connect(mapStateToProps)(Experience)

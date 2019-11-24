@@ -40,20 +40,21 @@ let cert = ''
 let ca = ''
 let httpsOptions = {}
 if (dev == 1) {
-  console.log(chalk.blue('Running server in dev environment'))
+  	console.log(chalk.blue('Running server in dev environment'))
 } else {
-  console.log(chalk.blue('Running server in prod environment'))
-  // Connect SSL Certs
-  key = fs.readFileSync('/etc/letsencrypt/live/bergers.dev/privkey.pem')
-  cert = fs.readFileSync('/etc/letsencrypt/live/bergers.dev/fullchain.pem')
-  ca = fs.readFileSync('/etc/letsencrypt/live/bergers.dev/chain.pem')
+  	console.log(chalk.blue('Running server in prod environment'))
+  
+	// Connect SSL Certs
+  	key = fs.readFileSync('/etc/letsencrypt/live/bergers.dev/privkey.pem')
+  	cert = fs.readFileSync('/etc/letsencrypt/live/bergers.dev/fullchain.pem')
+  	ca = fs.readFileSync('/etc/letsencrypt/live/bergers.dev/chain.pem')
 
-  // HTTPS Config
-  httpsOptions = {
-    cert: cert,
-    key: key,
-    ca: ca
-  }
+  	// HTTPS Config
+  	httpsOptions = {
+    	cert: cert,
+    	key: key,
+    	ca: ca
+  	}
 }
 
 
