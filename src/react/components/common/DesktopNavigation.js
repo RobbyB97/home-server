@@ -37,6 +37,13 @@ const DesktopNavigation = () => (
             </li>
 
             <li>
+                <NavLink to="/projects/"
+                    activeClassName="active" 
+                >Projects</NavLink>
+            </li>
+
+
+            <li>
                 <NavLink to="/contact/"
                     activeClassName="active" 
                 >Contact</NavLink>

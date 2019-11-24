@@ -12,7 +12,7 @@ const MobileNavigation = ({nav, dispatch, home}) => (
         <div className="mobile-navigation__background">
             <ul className="mobile-navigation__intra-nav">
                 <li>
-                    <NavLink to="/react" onClick={() => {
+                    <NavLink to="/react/" onClick={() => {
                         dispatch(toggleNav())
                         dispatch(setTitle(''))
                         dispatch(homeOn())
@@ -20,7 +20,7 @@ const MobileNavigation = ({nav, dispatch, home}) => (
                 </li>
                 
                 <li>
-                    <NavLink to="/style_guide" onClick={() => {
+                    <NavLink to="/style_guide/" onClick={() => {
                         dispatch(toggleNav())
                         dispatch(setTitle('Style Guide'))
                         dispatch(homeOff())
@@ -28,7 +28,7 @@ const MobileNavigation = ({nav, dispatch, home}) => (
                 </li>
 
                 <li>
-                    <NavLink to="/skills" onClick={() => {
+                    <NavLink to="/skills/" onClick={() => {
                         dispatch(toggleNav())
                         dispatch(setTitle('Skills'))
                         dispatch(homeOff())
@@ -36,11 +36,27 @@ const MobileNavigation = ({nav, dispatch, home}) => (
                 </li>
 
                 <li>
-                    <NavLink to="/experience" onClick={() => {
+                    <NavLink to="/experience/" onClick={() => {
                         dispatch(toggleNav())
                         dispatch(setTitle('Experience'))
                         dispatch(homeOff())
                     }}>Experience</NavLink>
+                </li>
+
+                <li>
+                    <NavLink to="/projects/" onClick={() => {
+                        dispatch(toggleNav())
+                        dispatch(setTitle('Projects'))
+                        dispatch(homeOff())
+                    }}>Projects</NavLink>
+                </li>
+
+                <li>
+                    <NavLink to="/contact/" onClick={() => {
+                        dispatch(toggleNav())
+                        dispatch(setTitle('Contact'))
+                        dispatch(homeOff())
+                    }}>Contact</NavLink>
                 </li>
             </ul>
         </div>
