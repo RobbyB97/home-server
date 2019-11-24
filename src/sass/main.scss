@@ -1,15 +1,14 @@
 // Config
 //=====================================================
 @import 
-    './base/settings';
+    './base/variables';
 
 
 // Base Styles
 //=====================================================
 @import 
     './base/base',
-    './base/main-content',
-    './base/variables';
+    './base/main-content';
 
 
 // Pages
