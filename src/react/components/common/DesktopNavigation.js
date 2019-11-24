@@ -19,12 +19,6 @@ const DesktopNavigation = () => (
             </li>
 
             <li>
-                <NavLink to="/style_guide/"
-                    activeClassName="active"
-                >Style Guide</NavLink>
-            </li>
-
-            <li>
                 <NavLink to="/skills/"
                     activeClassName="active"
                 >Skills</NavLink>

@@ -18,14 +18,6 @@ const MobileNavigation = ({nav, dispatch, home}) => (
                         dispatch(homeOn())
                     }}>Home</NavLink>
                 </li>
-                
-                <li>
-                    <NavLink to="/style_guide/" onClick={() => {
-                        dispatch(toggleNav())
-                        dispatch(setTitle('Style Guide'))
-                        dispatch(homeOff())
-                    }}>Style Guide</NavLink>
-                </li>
 
                 <li>
                     <NavLink to="/skills/" onClick={() => {
