@@ -13,7 +13,7 @@ const DesktopNavigation = () => (
     <div id="desktop-navigation">
         <ul>
             <li>
-                <NavLink to="/react/"
+                <NavLink to="/"
                     activeClassName="active"
                 >Home</NavLink>
             </li>

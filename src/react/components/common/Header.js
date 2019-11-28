@@ -10,7 +10,7 @@ import {homeOn} from '../../actions/home'
 const Header = ({nav, dispatch}) => (
 	<header id="header">
 		<div className="header__logo">
-	  		<NavLink to="/react/" onClick={() => {
+	  		<NavLink to="/" onClick={() => {
 				dispatch(setTitle(''))
 				dispatch(toggleNavOff())
 				dispatch(homeOn())

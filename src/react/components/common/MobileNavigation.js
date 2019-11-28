@@ -12,7 +12,7 @@ const MobileNavigation = ({nav, dispatch, home}) => (
         <div className="mobile-navigation__background">
             <ul className="mobile-navigation__intra-nav">
                 <li>
-                    <NavLink to="/react/" onClick={() => {
+                    <NavLink to="/" onClick={() => {
                         dispatch(toggleNav())
                         dispatch(setTitle(''))
                         dispatch(homeOn())

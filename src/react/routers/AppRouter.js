@@ -35,7 +35,7 @@ const AppRouter = ({nav, dispatch, title, home}) => (
 			}}>
 				<Switch>
 					<Route 
-						path="/react" 
+						path="/" 
 						component={Home} 
 						exact 
 					/>
