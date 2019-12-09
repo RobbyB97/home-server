@@ -61,6 +61,7 @@ if (dev == 1) {
 // Connect routers
 app.use(mainRouter)
 app.use(portfolioRouter)
+app.use(chatRouter)
 
 
 // Run server
