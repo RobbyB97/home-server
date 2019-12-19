@@ -23,10 +23,10 @@ router.get('', http2https, (req, res) => {
 // Portfolio
 router.get('/portfolio', http2https, (req, res) => {
   	try {
-    	return res.render('portfolio/index')
+    	return res.return('portfolio/index')
   	} catch(e) {
 		res.send()
-		console.log(chalk.red('An error occured on /react: '))
+		console.log(chalk.red('An error occured on /portfolio: '))
         console.log(e)
   	}
 })
