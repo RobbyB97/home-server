@@ -15,6 +15,7 @@ const DesktopNavigation = () => (
             <li>
                 <NavLink to="/"
                     activeClassName="active"
+                    exact
                 >Home</NavLink>
             </li>
 
