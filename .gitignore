@@ -16,3 +16,4 @@ config/prod.env
 
 #Ignore webpack-built files
 public/react/bundle.js
+public/bundle.js
