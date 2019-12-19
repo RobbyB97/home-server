@@ -2,11 +2,15 @@ import React from 'react'
 import {connect} from 'react-redux'
 
 // Components
-
+import Skill from '../content/Skill'
 
 const Skills = ({dispatch, nav, title}) => (
     <div id="skills">
         Skills component
+        <Skill
+            title="Test"
+            description="Test"
+        />
     </div>
 )
 
