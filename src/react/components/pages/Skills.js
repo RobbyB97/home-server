@@ -1,6 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 
+// Components
 
 
 const Skills = ({dispatch, nav, title}) => (
