@@ -41,6 +41,7 @@
     
     &:active, &:focus {
         outline: none;
+        background-color: transparent;
     }
 
     @media #{$bp-large} {
