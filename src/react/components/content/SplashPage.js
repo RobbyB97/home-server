@@ -4,33 +4,65 @@ import { connect } from 'react-redux'
 
 import {splashOff} from '../../actions/home'
 
-const SplashPage = ({splash, dispatch}) => (
-    <div id="splash" className={splash ? "":"splash__hidden"}>
-        <div className="splash__background"></div>
-        <div className="splash__content">
-            <p className="splash__text one">
-                Designer.
-            </p>
+class SplashPage extends React.Component {
 
-            <p className="splash__text two">
-                Developer.
-            </p>
+    componentDidMount = () => {
+        setTimeout(() => {
+            let text = document.querySelector('.splash__text.one')
+            text.style.opacity = '1'
+        }, 500)
 
-            <p className="splash__text three">
-                Problem solver.
-            </p>
+        setTimeout(() => {
+            let text = document.querySelector('.splash__text.two')
+            text.style.opacity = '1'
+        }, 1100)
 
-            <p className="splash__name">
-                Robby Bergers.
-            </p>
-            <button className="splash__to-site" onClick={() => {
-                dispatch(splashOff())
-            }}>
-                Learn more →
-            </button>
-        </div>
-    </div>
-)
+        setTimeout(() => {
+            let text = document.querySelector('.splash__text.three')
+            text.style.opacity = '1'
+        }, 1700)
+
+        setTimeout(() => {
+            let text = document.querySelector('.splash__name')
+            text.style.opacity = '1'
+        }, 2300)
+
+        setTimeout(() => {
+            let text = document.querySelector('.splash__to-site')
+            text.style.opacity = '1'
+        }, 2900)
+    }
+
+    render() {
+        return (
+            <div id="splash" className={this.props.splash ? "":"splash__hidden"}>
+                <div className="splash__background"></div>
+                <div className="splash__content">
+                    <p className="splash__text one">
+                        Designer.
+                    </p>
+        
+                    <p className="splash__text two">
+                        Developer.
+                    </p>
+        
+                    <p className="splash__text three">
+                        Problem solver.
+                    </p>
+        
+                    <p className="splash__name">
+                        Robby Bergers.
+                    </p>
+                    <button className="splash__to-site" onClick={() => {
+                        this.props.dispatch(splashOff())
+                    }}>
+                        Learn more →
+                    </button>
+                </div>
+            </div> 
+        )
+    }
+}
 
 const mapStateToProps = (state) => {
     return {
