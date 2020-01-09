@@ -12,7 +12,7 @@ const Experience = ({dispatch, nav, title}) => (
 				<JobCard
 					title="Finalsite"
 					text="Job"
-					image="/assets/images/icons/finalsite.png">
+					image="/dist/images/icons/finalsite.png">
 				</JobCard>
 		</div>
 )

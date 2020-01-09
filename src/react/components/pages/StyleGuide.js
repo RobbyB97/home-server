@@ -76,7 +76,7 @@ export default class StyleGuide extends React.Component {
                 <Article 
                     title="This is an article component title"
                     text="This is article component text"
-                    image="/assets/images/favicon.png"
+                    image="/dist/images/favicon.png"
                     imageClass="large" // small, medium, large
                 />
             </div>

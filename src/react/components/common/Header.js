@@ -15,7 +15,7 @@ const Header = ({nav, dispatch}) => (
 				dispatch(toggleNavOff())
 				dispatch(homeOn())
 	  		}}>
-			<img src='/assets/images/favicon.png' alt='Home'/> 
+			<img src='/dist/images/favicon.png' alt='Home'/> 
 	  		</NavLink>
 		</div>
 

@@ -5,13 +5,13 @@ const LogoBar = () => (
         <ul>
             <li>
                 <a href="https://www.github.com/robbyb97" target="_blank">
-                    <img src="/assets/images/icons/github.svg" />
+                    <img src="/dist/images/icons/github.svg" />
                 </a>
             </li>
             
             <li>
                 <a href="https://www.linkedin.com/in/robbyb97" target="_blank">
-                    <img src="/assets/images/icons/linkedin.png" />
+                    <img src="/dist/images/icons/linkedin.png" />
                 </a>
             </li>
         </ul>
