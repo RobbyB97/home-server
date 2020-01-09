@@ -15,7 +15,7 @@
     transition: 1000ms;
 
     &.phone {
-        background: url('/assets/images/backgrounds/planets-mobile.jpg') no-repeat;
+        background: url('/dist/images/backgrounds/planets-mobile.jpg') no-repeat;
         background-size: cover;
 
         @media #{$bp-tablet} {
@@ -27,7 +27,7 @@
         display: none;
 
         @media #{$bp-tablet} {
-            background: url('/assets/images/backgrounds/planets-mobile.jpg') no-repeat;
+            background: url('/dist/images/backgrounds/planets-mobile.jpg') no-repeat;
             background-size: cover;
             display: block;
         }
@@ -41,7 +41,7 @@
         display: none;
 
         @media #{$bp-large} {
-            background: url('/assets/images/backgrounds/milky-way-1080.jpg') no-repeat;
+            background: url('/dist/images/backgrounds/milky-way-1080.jpg') no-repeat;
             background-position: center top;
             background-size: cover;
             display: block;
@@ -56,7 +56,7 @@
         display: none;
 
         @media #{$bp-huge} {
-            background: url('/assets/images/backgrounds/milky-way-1200.jpg') no-repeat;
+            background: url('/dist/images/backgrounds/milky-way-1200.jpg') no-repeat;
             background-size: cover;
             display: block;
         }
