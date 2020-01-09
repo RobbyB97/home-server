@@ -20,18 +20,15 @@ console.log(chalk.blue('Environment Variables:\n'), chalk.green(`Port: ${port}\n
 
 
 // Connect local files
-const publicPages = path.join(__dirname, '../public')
-
+const publicPath = path.join(__dirname, '../public')
 const mainRouter = require('./routers/app')
-const weatherRouter = require('./routers/weather')
-const portfolioRouter = require('./routers/portfolio')
-const chatRouter = require('./routers/chat')
 
 
 // Express config
 const app = express()
-app.use(express.static(publicPages))
+app.use(express.static(publicPath))
 app.use(express.json())
+app.use(mainRouter)
 
 
 // Server config
@@ -39,8 +36,12 @@ let key = ''
 let cert = ''
 let ca = ''
 let httpsOptions = {}
+
+// Dev
 if (dev == 1) {
   	console.log(chalk.blue('Running server in dev environment'))
+
+// Prod
 } else {
   	console.log(chalk.blue('Running server in prod environment'))
   
@@ -56,12 +57,6 @@ if (dev == 1) {
     	ca: ca
   	}
 }
-
-
-// Connect routers
-app.use(mainRouter)
-app.use(portfolioRouter)
-app.use(chatRouter)
 
 
 // Run server
