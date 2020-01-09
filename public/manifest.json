@@ -1,7 +1,7 @@
 {
     "short_name": "Robby B",
     "name": "Robby Bergers' Portfolio",
-    "start_url": "/portfolio",
+    "start_url": "/",
     "background_color": "#040812",
     "theme_color": "#182842",
     "display": "standalone"
