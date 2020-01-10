@@ -3,7 +3,7 @@ const chalk = require('chalk')
 
 
 // Environment variables
-const dev = process.env.DEV
+const dev = !process.env.PORT
 
 
 // Ensure secure connection
