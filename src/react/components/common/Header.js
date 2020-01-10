@@ -3,29 +3,35 @@ import {NavLink} from 'react-router-dom'
 import {connect} from 'react-redux'
 
 import {toggleNav, toggleNavOff} from '../../actions/navigation'
-import {setTitle} from '../../actions/title'
 import {homeOn} from '../../actions/home'
 
 
-const Header = ({nav, dispatch}) => (
-	<header id="header">
-		<div className="header__logo">
-	  		<NavLink to="/" onClick={() => {
-				dispatch(setTitle(''))
-				dispatch(toggleNavOff())
-				dispatch(homeOn())
-	  		}}>
-			<img src='/dist/images/favicon.png' alt='Home'/> 
-	  		</NavLink>
-		</div>
+export class Header extends React.Component {
+	goHome = () => {
+		this.props.goHome()
+	}
 
-		<button className="header__nav-button" onClick={() => {
-	  		dispatch(toggleNav())
-		}}>
-	  		{!nav ? '☰':'✕'}
-		</button>    
-  	</header>
-) 
+	toggleNav = () => {
+		this.props.toggleNav()
+	}
+
+	render() {
+		return (
+			<header id="header">
+				<div className="header__logo">
+					<NavLink to="/" onClick={this.goHome}>
+						<img src='/dist/images/favicon.png' alt='Home'/> 
+				  	</NavLink>
+				</div>
+	
+				<button className="header__nav-button" onClick={this.toggleNav}>
+					{!this.nav ? '☰':'✕'}
+				</button>    
+			</header>	
+		)
+	}
+}
+
 
 const mapStateToProps = (state) => {
 	return {
@@ -33,4 +39,13 @@ const mapStateToProps = (state) => {
   	}
 }
 
-export default connect(mapStateToProps)(Header)
+const mapDispatchToProps = (dispatch) => ({
+	goHome: () => {
+		dispatch(toggleNavOff())
+		dispatch(homeOn())
+	},
+	toggleNav: () => dispatch(toggleNav())
+})
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header)
