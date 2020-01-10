@@ -11,7 +11,7 @@ const chalk = require('chalk')
 
 // Environment variables
 const port = process.env.PORT || 3000
-const dev = process.env.PORT ? false : true
+const dev = !process.env.PORT
 console.log(chalk.blue('Environment Variables:\n'), chalk.green(`Port: ${port}\n Dev: ${dev}`))
 
 
