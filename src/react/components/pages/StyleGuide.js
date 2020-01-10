@@ -1,4 +1,5 @@
-// Components
+import React from 'react'
+
 import Article from '../content/Article'
 
 export default class StyleGuide extends React.Component {
