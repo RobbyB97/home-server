@@ -22,58 +22,65 @@ import Projects from '../components/pages/Projects'
 import {toggleNavOff} from '../actions/navigation'
 
 // Routes
-export const AppRouter = ({nav, dispatch, title, home}) => (
-	<BrowserRouter>
-		<div>
-			<Header />
-			<DesktopNavigation />
-			<MobileNavigation />
-			<LogoBar />
+export class AppRouter extends React.Component {
+    toggleNavOff = () => {
+        this.props.toggleNavOff()
+    }
 
-			<div id="main-content"onClick={() => {
-				dispatch(toggleNavOff())
-			}}>
-				<Switch>
-					<Route 
-						path="/" 
-						component={Home} 
-						exact 
-					/>
+    render() {
+        return (
+            <BrowserRouter>
+                <div>
+                    <Header />
+                    <DesktopNavigation />
+                    <MobileNavigation />
+                    <LogoBar />
 
-					<Route 
-						path="/style_guide" 
-						component={StyleGuide}
-						exact
-					/>
+                    <div id="main-content"onClick={this.toggleNavOff}>
+                        <Switch>
+                            <Route 
+                                path="/" 
+                                component={Home} 
+                                exact 
+                            />
 
-					<Route 
-						path="/skills" 
-						component={Skills}
-						exact
-					/>
+                            <Route 
+                                path="/style_guide" 
+                                component={StyleGuide}
+                                exact
+                            />
 
-					<Route 
-						path="/experience" 
-						component={Experience}
-						exact
-					/>
+                            <Route 
+                                path="/skills" 
+                                component={Skills}
+                                exact
+                            />
 
-					<Route 
-						path="/contact" 
-						component={Contact}
-						exact
-					/>
+                            <Route 
+                                path="/experience" 
+                                component={Experience}
+                                exact
+                            />
 
-					<Route
-						path="/projects"
-						component={Projects}
-						exact
-					/>
-				</Switch>
-			</div>
-		</div>
-	</BrowserRouter>
-)
+                            <Route 
+                                path="/contact" 
+                                component={Contact}
+                                exact
+                            />
+
+                            <Route
+                                path="/projects"
+                                component={Projects}
+                                exact
+                            />
+                        </Switch>
+                    </div>
+                </div>
+            </BrowserRouter>
+        )
+    }
+}
+
 
 const mapStateToProps = (state) => {
 	return {
@@ -83,4 +90,9 @@ const mapStateToProps = (state) => {
 	}
 }
 
-export default connect(mapStateToProps)(AppRouter)
+const mapDispatchToProps = (dispatch, props) => ({
+    toggleNavOff: () => dispatch(toggleNavOff())
+})
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(AppRouter)
