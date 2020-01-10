@@ -22,7 +22,7 @@ import Projects from '../components/pages/Projects'
 import {toggleNavOff} from '../actions/navigation'
 
 // Routes
-const AppRouter = ({nav, dispatch, title, home}) => (
+export const AppRouter = ({nav, dispatch, title, home}) => (
 	<BrowserRouter>
 		<div>
 			<Header />
