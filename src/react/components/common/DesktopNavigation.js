@@ -1,12 +1,5 @@
 import React from 'react'
-import {withRouter} from 'react-router'
-import {NavLink, Link, IndexLink} from 'react-router-dom'
-import { connect } from 'react-redux'
-
-import {setTitle} from '../../actions/title'
-import {homeOff} from '../../actions/home'
-import {toggleNavOff} from '../../actions/navigation'
-
+import {NavLink} from 'react-router-dom'
 
 
 const DesktopNavigation = () => (
