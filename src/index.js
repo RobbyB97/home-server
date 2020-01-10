@@ -10,13 +10,9 @@ const chalk = require('chalk')
 
 
 // Environment variables
-const port = process.env.PORT
-const dev = process.env.DEV
+const port = process.env.PORT || 3000
+const dev = process.env.PORT ? false : true
 console.log(chalk.blue('Environment Variables:\n'), chalk.green(`Port: ${port}\n Dev: ${dev}`))
-
-
-// (Uncomment when database in use)
-//require('./db/mongoose')
 
 
 // Connect local files
@@ -38,7 +34,7 @@ let ca = ''
 let httpsOptions = {}
 
 // Dev
-if (dev == 1) {
+if (dev) {
   	console.log(chalk.blue('Running server in dev environment'))
 
 // Prod
@@ -60,14 +56,14 @@ if (dev == 1) {
 
 
 // Run server
-if (dev == 1) {
+if (dev) {
   // Dev
   http.createServer(app).listen(port, () => {
     console.log(chalk.bold.green(`Server is up on port ${port}`))
   })
 } else {
   // Production
-  https.createServer(httpsOptions, app).listen(443, () => {
+  https.createServer(httpsOptions, app).listen(port, () => {
     console.log(chalk.green(`Production HTTPS server running on port: ${port}`))
   })
 }
