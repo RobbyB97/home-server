@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Header 1`] = `
+<header
+  id="header"
+>
+  <div
+    className="header__logo"
+  >
+    <NavLink
+      activeClassName="active"
+      ariaCurrent="true"
+      onClick={[Function]}
+      to="/"
+    >
+      <img
+        alt="Home"
+        src="/dist/images/favicon.png"
+      />
+    </NavLink>
+  </div>
+  <button
+    className="header__nav-button"
+    onClick={[Function]}
+  >
+    ☰
+  </button>
+</header>
+`;
