@@ -2,13 +2,16 @@ import React from 'react'
 import {connect} from 'react-redux'
 
 
+export class Projects extends React.Component {
 
-const Projects = ({dispatch, nav, title}) => (
-    <div id="projects">
-        Projects component
-    </div>
-)
-
+    render() {
+        return (
+            <div id="projects">
+                Projects component
+            </div>
+        )
+    }
+}
 
 
 const mapStateToProps = (state) => {
@@ -16,6 +19,12 @@ const mapStateToProps = (state) => {
       nav: state.navigation.nav,
       title: state.title.title,
     }
-  }
+}
 
-  export default connect(mapStateToProps)(Projects)
+const mapDispatchToProps = (dispatch) => {
+    return {
+
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Projects)

@@ -1,7 +1,6 @@
 import React from 'react'
 import {connect} from 'react-redux'
 
-// Components
 import Skill from '../content/Skill'
 
 const Skills = ({dispatch, nav, title}) => (
@@ -23,4 +22,9 @@ const mapStateToProps = (state) => {
     }
 }
 
-  export default connect(mapStateToProps)(Skills)
+const mapDispatchToProps = (dispatch) => ({
+
+})
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(Skills)
