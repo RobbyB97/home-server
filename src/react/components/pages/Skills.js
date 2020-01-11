@@ -3,17 +3,21 @@ import {connect} from 'react-redux'
 
 import Skill from '../content/Skill'
 
-const Skills = ({dispatch, nav, title}) => (
-    <div id="skills">
-        Skills component
-        <Skill
-            title="Test"
-            description="Test"
-        />
-    </div>
-)
 
-
+export class Skills extends React.Component {
+    
+    render() {
+        return (
+            <div id="skills">
+                Skills component
+                <Skill
+                    title="Test"
+                    description="Test"
+                />
+            </div>
+        )
+    }
+}
 
 const mapStateToProps = (state) => {
     return {
