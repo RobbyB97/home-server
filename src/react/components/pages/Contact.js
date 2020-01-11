@@ -3,12 +3,16 @@ import {connect} from 'react-redux'
 
 
 
-const Contact = ({dispatch, nav, title}) => (
-	<div id="contact">
-		Contact component
-	</div>
-)
-
+export class Contact extends React.Component {
+    
+    render() {
+        return (
+            <div id="contact">
+		        Contact component
+	        </div>
+        )
+    }
+}
 
 
 const mapStateToProps = (state) => {
@@ -18,4 +22,9 @@ const mapStateToProps = (state) => {
 	}
 }
 
-export default connect(mapStateToProps)(Contact)
+const mapDispatchToProps = (dispatch) => ({
+
+})
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(Contact)
