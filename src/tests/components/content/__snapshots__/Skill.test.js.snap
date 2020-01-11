@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Skill with only a title 1`] = `
+<div
+  className="skill"
+>
+  <button
+    className="skill__button"
+  >
+    <h2
+      className="skill__title"
+    >
+      Title!
+    </h2>
+  </button>
+  <div
+    className="skill__content"
+  >
+    <p />
+  </div>
+</div>
+`;
+
+exports[`Render Skill with title and description 1`] = `
+<div
+  className="skill"
+>
+  <button
+    className="skill__button"
+  >
+    <h2
+      className="skill__title"
+    >
+      Title!
+    </h2>
+  </button>
+  <div
+    className="skill__content"
+  >
+    <p>
+      Description!
+    </p>
+  </div>
+</div>
+`;

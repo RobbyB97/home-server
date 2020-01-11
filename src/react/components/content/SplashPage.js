@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 
 import {splashOff} from '../../actions/home'
 
-class SplashPage extends React.Component {
+export class SplashPage extends React.Component {
 
     componentDidMount = () => {
         setTimeout(() => {

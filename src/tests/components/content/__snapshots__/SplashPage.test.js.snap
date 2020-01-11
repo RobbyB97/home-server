@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render SplashPage 1`] = `
+<div
+  className="splash__hidden"
+  id="splash"
+>
+  <div
+    className="splash__background"
+  />
+  <div
+    className="splash__content"
+  >
+    <p
+      className="splash__text one"
+    >
+      Designer.
+    </p>
+    <p
+      className="splash__text two"
+    >
+      Developer.
+    </p>
+    <p
+      className="splash__text three"
+    >
+      Problem solver.
+    </p>
+    <p
+      className="splash__name"
+    >
+      Robby Bergers.
+    </p>
+    <button
+      className="splash__to-site"
+      onClick={[Function]}
+    >
+      Learn more →
+    </button>
+  </div>
+</div>
+`;
