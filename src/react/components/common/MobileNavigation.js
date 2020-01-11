@@ -18,7 +18,7 @@ export class MobileNavigation extends React.Component {
 
     render() {
         return (
-            <div id="mobile-navigation" className={this.nav ? 'active-nav':''}>
+            <div id="mobile-navigation" className={this.props.nav ? "active-nav":""}>
                 <div className="mobile-navigation__background">
                     <ul className="mobile-navigation__intra-nav">
                         <li>

@@ -25,7 +25,7 @@ export class Header extends React.Component {
 				</div>
 	
 				<button className="header__nav-button" onClick={this.toggleNav}>
-					{!this.nav ? '☰':'✕'}
+					{!this.props.nav ? '☰':'✕'}
 				</button>    
 			</header>	
 		)
