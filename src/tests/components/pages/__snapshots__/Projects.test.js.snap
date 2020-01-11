@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Projects page 1`] = `
+<div
+  id="projects"
+>
+  Projects component
+</div>
+`;

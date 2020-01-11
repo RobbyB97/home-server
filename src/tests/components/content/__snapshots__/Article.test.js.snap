@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Article with no props 1`] = `
+<div
+  className="article"
+/>
+`;
+
+exports[`Render Article with props 1`] = `
+<div
+  className="article"
+>
+  <h2
+    className="article__title"
+  >
+    TITLE!
+  </h2>
+  <p
+    className="article__text"
+  >
+    TEXT!
+  </p>
+</div>
+`;
