@@ -7,53 +7,56 @@ import {setTitle} from '../../actions/title'
 import {homeOn, homeOff} from '../../actions/home'
 
 
-const MobileNavigation = ({nav, dispatch, home}) => (
-    <div id="mobile-navigation" className={nav ? 'active-nav':''}>
-        <div className="mobile-navigation__background">
-            <ul className="mobile-navigation__intra-nav">
-                <li>
-                    <NavLink to="/" onClick={() => {
-                        dispatch(toggleNav())
-                        dispatch(setTitle(''))
-                        dispatch(homeOn())
-                    }}>Home</NavLink>
-                </li>
+export class MobileNavigation extends React.Component {
+    navHome = () => {
+        this.props.navHome()
+    }
 
-                <li>
-                    <NavLink to="/skills/" onClick={() => {
-                        dispatch(toggleNav())
-                        dispatch(setTitle('Skills'))
-                        dispatch(homeOff())
-                    }}>Skills</NavLink>
-                </li>
+    navNotHome = () => {
+        this.props.navNotHome()
+    }
 
-                <li>
-                    <NavLink to="/experience/" onClick={() => {
-                        dispatch(toggleNav())
-                        dispatch(setTitle('Experience'))
-                        dispatch(homeOff())
-                    }}>Experience</NavLink>
-                </li>
+    render() {
+        return (
+            <div id="mobile-navigation" className={this.nav ? 'active-nav':''}>
+                <div className="mobile-navigation__background">
+                    <ul className="mobile-navigation__intra-nav">
+                        <li>
+                            <NavLink to="/" onClick={this.navHome}>
+                                Home
+                            </NavLink>
+                        </li>
 
-                <li>
-                    <NavLink to="/projects/" onClick={() => {
-                        dispatch(toggleNav())
-                        dispatch(setTitle('Projects'))
-                        dispatch(homeOff())
-                    }}>Projects</NavLink>
-                </li>
+                        <li>
+                            <NavLink to="/skills/" onClick={this.navNotHome}>
+                                Skills
+                            </NavLink>
+                        </li>
 
-                <li>
-                    <NavLink to="/contact/" onClick={() => {
-                        dispatch(toggleNav())
-                        dispatch(setTitle('Contact'))
-                        dispatch(homeOff())
-                    }}>Contact</NavLink>
-                </li>
-            </ul>
-        </div>
-    </div>
-)
+                        <li>
+                            <NavLink to="/experience/" onClick={this.navNotHome}>
+                                Experience
+                            </NavLink>
+                        </li>
+
+                        <li>
+                            <NavLink to="/projects/" onClick={this.navNotHome}>
+                                Projects
+                            </NavLink>
+                        </li>
+
+                        <li>
+                            <NavLink to="/contact/" onClick={this.navNotHome}>
+                                Contact
+                            </NavLink>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        )
+    }
+}
+
 
 const mapStateToProps = (state) => {
     return {
@@ -62,4 +65,16 @@ const mapStateToProps = (state) => {
     }
 }
 
-export default connect(mapStateToProps)(MobileNavigation)
+const mapDispatchToProps = (dispatch) => ({
+    navHome: () => {
+        dispatch(toggleNav())
+        dispatch(homeOn())
+    },
+    navNotHome: () => {
+        dispatch(toggleNav())
+        dispatch(homeOff())
+    }
+})
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(MobileNavigation)
