@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Home page 1`] = `
+<div
+  id="home"
+>
+  <Connect(SplashPage) />
+  <div
+    className="home__background phone two"
+  />
+  <div
+    className="home__background tablet two"
+  />
+  <div
+    className="home__background desktop two"
+  />
+  <div
+    className="home__background huge two"
+  />
+  <div
+    className="home__text one"
+  >
+    <p>
+      What is a perfect website? One that is 
+      <i>
+        memorable
+      </i>
+      , 
+      <i>
+        simplistic
+      </i>
+      , 
+      <i>
+        intuitive
+      </i>
+       and 
+      <i>
+        fast
+      </i>
+       would be my answer. However, every person has their own vision of the perfect website for themselves or their company. My mission is to take that vision and make it a reality.
+    </p>
+  </div>
+  <div
+    className="home__text two"
+  >
+    <h2 />
+  </div>
+</div>
+`;
