@@ -9,7 +9,7 @@ export default (props) => (
         </button>
         <div className="skill__content">
             <p>
-                {props.description}
+                {props.description && props.description}
             </p>
         </div>
     </div>
