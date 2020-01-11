@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Experience page 1`] = `
+<div
+  id="experience"
+>
+  Experience component
+  <Component
+    image="/dist/images/icons/finalsite.png"
+    text="Job"
+    title="Finalsite"
+  />
+</div>
+`;
