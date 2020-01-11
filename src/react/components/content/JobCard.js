@@ -22,5 +22,3 @@ export default (props) => (
 
     </div>
 )
-
-//export default JobCard
