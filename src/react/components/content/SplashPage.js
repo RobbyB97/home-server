@@ -10,27 +10,27 @@ export class SplashPage extends React.Component {
         setTimeout(() => {
             let text = document.querySelector('.splash__text.one')
             text.style.opacity = '1'
-        }, 500)
+        }, 200)
 
         setTimeout(() => {
             let text = document.querySelector('.splash__text.two')
             text.style.opacity = '1'
-        }, 1100)
+        }, 350)
 
         setTimeout(() => {
             let text = document.querySelector('.splash__text.three')
             text.style.opacity = '1'
-        }, 1700)
+        }, 500)
 
         setTimeout(() => {
             let text = document.querySelector('.splash__name')
             text.style.opacity = '1'
-        }, 2300)
+        }, 750)
 
         setTimeout(() => {
             let text = document.querySelector('.splash__to-site')
             text.style.opacity = '1'
-        }, 2900)
+        }, 850)
     }
 
     render() {
