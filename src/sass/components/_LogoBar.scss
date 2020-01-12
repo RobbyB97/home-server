@@ -1,6 +1,6 @@
 #logo-bar {
     position: absolute;
-    top: 13px;
+    top: 14px;
     right: 4rem;
     z-index: 100;
     display: block;
@@ -16,6 +16,7 @@
     ul {
         display: flex;
         flex-direction: row;
+        margin: 0;
         
         li {
             display: inline-block;
@@ -27,18 +28,7 @@
         }
     }
     
-    @media #{$bp-desktop} {
+    @media #{$bp-tablet} {
         display: none;
-    }
-
-    @media #{$bp-large} {
-        top: 4rem;
-        right: 12px;
-        
-        img {
-            width: 1.8em;
-            max-width: 1.8em;
-            height: auto;
-        }
     }
 }
