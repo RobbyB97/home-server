@@ -9,6 +9,7 @@ import Header from '../components/common/Header'
 import MobileNavigation from '../components/common/MobileNavigation'
 import DesktopNavigation from '../components/common/DesktopNavigation'
 import LogoBar from '../components/common/LogoBar'
+import SplashPage from '../components/content/SplashPage'
 
 //Pages
 import StyleGuide from '../components/pages/StyleGuide'
@@ -31,6 +32,7 @@ export class AppRouter extends React.Component {
         return (
             <BrowserRouter>
                 <div>
+                    <SplashPage />
                     <Header />
                     <DesktopNavigation />
                     <MobileNavigation />
@@ -86,7 +88,8 @@ const mapStateToProps = (state) => {
 	return {
 		nav: state.navigation.nav,
 		title: state.title.title,
-		home: state.home.home
+        home: state.home.home,
+        splash: state.home.splash
 	}
 }
 

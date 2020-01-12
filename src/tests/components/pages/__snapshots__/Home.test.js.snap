@@ -4,7 +4,6 @@ exports[`Render Home page 1`] = `
 <div
   id="home"
 >
-  <Connect(SplashPage) />
   <div
     className="home__background phone two"
   />

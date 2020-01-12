@@ -9,6 +9,7 @@ export class Experience extends React.Component {
     render() {
         return (
             <div id="experience">
+                
                 Experience component
                 <JobCard
                     title="Finalsite"
@@ -24,7 +25,8 @@ export class Experience extends React.Component {
 const mapStateToProps = (state) => {
 	return {
 		nav: state.navigation.nav,
-	    title: state.title.title,
+        title: state.title.title,
+        splash: state.home.splash
 	}
 }
 
