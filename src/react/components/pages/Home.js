@@ -15,15 +15,15 @@ export class Home extends React.Component {
 
                 <div className="home__text one">
                     <p>
-                        What is a perfect website? One that is <i>memorable</i>, <i>simplistic</i>, <i>intuitive</i> and <i>fast</i> would be my answer. However, every person has their own vision of the perfect website for themselves or their company. My mission is to take that vision and make it a reality.
+                        Hey, my name's Robby. I'm a freelance front end developer. If you're looking for someone to design an elegant website or web app that your clients will love, then I'm your man. Click the links above to learn more about my skills or get in touch with me.
                     </p>
                                 
                 </div>
 
                 <div className="home__text two">
-                    <h2>
-                        
-                    </h2>
+                    <p>
+                        What is a perfect website? The answer is a <i>memorable</i>, <i>simplistic</i>, <i>intuitive</i> and <i>fast</i> user experience. My goal is to create that perfect website for your business.
+                    </p>
                 </div>
             </div>
         )
