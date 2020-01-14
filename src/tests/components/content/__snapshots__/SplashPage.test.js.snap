@@ -12,19 +12,61 @@ exports[`Render SplashPage 1`] = `
     className="splash__content"
   >
     <p
-      className="splash__text one"
+      className="splash__text"
     >
-      Designer.
-    </p>
-    <p
-      className="splash__text two"
-    >
-      Developer.
-    </p>
-    <p
-      className="splash__text three"
-    >
-      Problem solver.
+      <span
+        className="splash__words one"
+      >
+        What is a perfect website? 
+      </span>
+      <span
+        className="splash__words two"
+      >
+        The answer is a 
+      </span>
+      <span
+        className="splash__words three"
+      >
+        <i>
+          memorable
+        </i>
+        , 
+      </span>
+      <span
+        className="splash__words four"
+      >
+        <i>
+          simplistic
+        </i>
+        , 
+      </span>
+      <span
+        className="splash__words five"
+      >
+        <i>
+          intuitive
+        </i>
+        , 
+      </span>
+      <span
+        className="splash__words six"
+      >
+        and 
+        <i>
+          fast
+        </i>
+         
+      </span>
+      <span
+        className="splash__words seven"
+      >
+        user experience. 
+      </span>
+      <span
+        className="splash__words eight"
+      >
+        My goal is to create that perfect website for your business.
+      </span>
     </p>
     <p
       className="splash__name"

@@ -38,42 +38,17 @@
 
 
 .splash__text {
-    font-size: $l-font;
-    position: absolute;
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 3rem;
+    font-size: #{$s-font + 0.1rem};
+}
+
+
+.splash__words {
     opacity: 0;
-
-    &.one {
-        top: 1rem;
-        left: 1rem;
-        transition: 1s;
-
-        @media #{$bp-desktop} {
-            top: 3rem;
-            left: 3rem;
-        }
-    }
-
-    &.two {
-        top: 4rem;
-        left: 4rem;
-        transition: 1s;
-
-        @media #{$bp-desktop} {
-            top: 7rem;
-            left: 7rem;
-        }
-    }
-
-    &.three {
-        top: 7rem;
-        left: 7rem;
-        transition: 1s;
-
-        @media #{$bp-desktop} {
-            top: 11rem;
-            left: 11rem;
-        }
-    }
+    transition: 300ms;
 }
 
 
