@@ -1,35 +1,42 @@
-// Config
-//=====================================================
+/*************************************
+*** Base Config
+*************************************/
 @import 
-    './base/variables';
-
-
-// Base Styles
-//=====================================================
-@import 
+    './base/variables',
     './base/base',
     './base/main-content';
 
 
-// Pages
-//=====================================================
+
+/*************************************
+*** Common Components
+*************************************/
 @import
-    './pages/Home',
-    './pages/Skills',
-    './pages/Experience',
-    './pages/Contact',
-    './pages/Projects';
+    './components/common/DesktopNavigation',
+    './components/common/MobileNavigation',
+    './components/common/Header',
+    './components/common/LogoBar';
 
 
-// Components
-//=====================================================
+
+/*************************************
+*** Content Components
+*************************************/
 @import
-    './components/Header',
-    './components/MobileNavigation',
-    './components/DesktopNavigation',
-    './components/Article',
-    './components/Card',
-    './components/LogoBar',
-    './components/SplashPage',
-    './components/JobCard',
-    './components/Skill';
+    './components/content/Article',
+    './components/content/Card',
+    './components/content/JobCard',
+    './components/content/Skill';
+
+
+
+/*************************************
+*** Page Components
+*************************************/
+@import
+    './components/pages/Contact',
+    './components/pages/Experience',
+    './components/pages/Home',
+    './components/pages/Projects',
+    './components/pages/Skills',
+    './components/pages/SplashPage';

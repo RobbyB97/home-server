@@ -1,15 +1,13 @@
-/*****************************************
-*** Media Queries
-*****************************************/
+/* Media Queries */
 
 $bp-tablet:"only screen and (min-width: 576px)";
 $bp-desktop:"only screen and (min-width: 768px)";
 $bp-large:"only screen and (min-width: 1200px)";
 $bp-huge:"only screen and (min-width: 2100px)";
 
-/*****************************************
-*** Fonts
-*****************************************/
+
+
+/* Fonts */
 
 $s-font: 1rem;
 $m-font: 1.4rem;
@@ -20,9 +18,9 @@ $sans-serif: "Questrial", Helvetica, sans-serif;
 $serif: "Muli", Bookman, serif;
 $monospace: "Lucida Console", Monaco, monospace;
 
-/*****************************************
-*** Colors
-*****************************************/
+
+
+/* Colors */
 
 $dark-blue: #182842; //#2f6cce;
 $dark-blue-fade1: #2e3b4d;
@@ -37,9 +35,9 @@ $low-gray: #262626;
 
 $off-white: #fcfff6;
 
-/*****************************************
-*** Icons
-*****************************************/
+
+
+/* Icons */
 
 $icon: '/dist/images/icons/';
 $down_arrow: $icon + 'down_arrow.png';
@@ -48,4 +46,3 @@ $github: $icon + 'github.svg';
 $github-purple: $icon + 'github-purple.png';
 $linkedin: $icon + 'linkedin.png'; 
 $linkedin-purple: $icon + 'linkedin-purple.png';
-

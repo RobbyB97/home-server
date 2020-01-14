@@ -74,35 +74,28 @@
 
 .home__text {
     font-family: $serif;
-    font-size: $s-font;
-    position: absolute;
+    font-size: #{$s-font + 0.1rem};
     color: white;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: justify;
     
     @media #{$bp-tablet} {
         font-size: $m-font;
     }
     
     @media #{$bp-desktop} {
-        font-size: 1.2rem;
+        font-size: #{$l-font - 0.2rem};
     }
 
     @media #{$bp-huge} {
         font-size: $l-font;
     }
+}
 
-    &.one {
-        text-align: justify;
-        padding-left: 7%;
-        padding-right: 7%;
-        bottom: 0;
-        
-        @media #{$bp-desktop} {
-            top: 15%;
-            bottom: unset;
-            left: 7%;
-            right: 60%;
-            padding-left: 0;
-            padding-right: 0;
-        }
-    }
+.home__text.one {
+}
+
+.home__text.two {
+    margin-top: 2rem;
 }
