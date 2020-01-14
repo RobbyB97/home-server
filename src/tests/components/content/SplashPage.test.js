@@ -9,3 +9,16 @@ test('Render SplashPage', () => {
 
     expect(wrapper).toMatchSnapshot()
 })
+
+
+test('Trigger splashOff', () => {
+    const splashOff = jest.fn()
+    const wrapper = shallow(
+        <SplashPage 
+            splashOff={splashOff}    
+        />
+    )
+    wrapper.find('.splash__to-site').simulate('click')
+
+    expect(splashOff).toHaveBeenCalled()
+})
