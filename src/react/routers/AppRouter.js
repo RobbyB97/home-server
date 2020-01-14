@@ -9,7 +9,6 @@ import Header from '../components/common/Header'
 import MobileNavigation from '../components/common/MobileNavigation'
 import DesktopNavigation from '../components/common/DesktopNavigation'
 import LogoBar from '../components/common/LogoBar'
-import SplashPage from '../components/content/SplashPage'
 
 //Pages
 import StyleGuide from '../components/pages/StyleGuide'
@@ -18,6 +17,7 @@ import Skills from '../components/pages/Skills'
 import Experience from '../components/pages/Experience'
 import Contact from '../components/pages/Contact'
 import Projects from '../components/pages/Projects'
+import SplashPage from '../components/pages/SplashPage'
 
 // Actions
 import {toggleNavOff} from '../actions/navigation'

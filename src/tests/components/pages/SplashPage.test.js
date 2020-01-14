@@ -1,7 +1,7 @@
 import React from 'react'
 import {shallow} from 'enzyme'
 
-import {SplashPage} from '../../../react/components/content/SplashPage'
+import {SplashPage} from '../../../react/components/pages/SplashPage'
 
 
 test('Render SplashPage', () => {
