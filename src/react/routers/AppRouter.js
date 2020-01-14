@@ -15,7 +15,6 @@ import StyleGuide from '../components/pages/StyleGuide'
 import Home from '../components/pages/Home'
 import Skills from '../components/pages/Skills'
 import Experience from '../components/pages/Experience'
-import Contact from '../components/pages/Contact'
 import Projects from '../components/pages/Projects'
 import SplashPage from '../components/pages/SplashPage'
 
@@ -61,12 +60,6 @@ export class AppRouter extends React.Component {
                             <Route 
                                 path="/experience" 
                                 component={Experience}
-                                exact
-                            />
-
-                            <Route 
-                                path="/contact" 
-                                component={Contact}
                                 exact
                             />
 

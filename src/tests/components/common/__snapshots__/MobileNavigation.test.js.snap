@@ -52,14 +52,11 @@ exports[`Render MobileNavigation 1`] = `
         </NavLink>
       </li>
       <li>
-        <NavLink
-          activeClassName="active"
-          ariaCurrent="true"
-          onClick={[Function]}
-          to="/contact/"
+        <a
+          href="mailto:bergersr@my.easternct.edu"
         >
           Contact
-        </NavLink>
+        </a>
       </li>
     </ul>
   </div>

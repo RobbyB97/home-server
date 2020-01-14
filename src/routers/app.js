@@ -55,17 +55,6 @@ router.get('/experience', http2https, (req, res) => {
     }
 })
 
-router.get('/contact', http2https, (req, res) => {
-    try {
-        return res.sendFile(path.join(publicPath, 'index.html'))
-
-    } catch(e) {
-        res.send()
-        console.log(chalk.red('An error occured on /contact: '))
-        console.log(e)
-    }
-})
-
 router.get('/projects', http2https, (req, res) => {
     try {
         return res.sendFile(path.join(publicPath, 'index.html'))

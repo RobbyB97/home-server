@@ -32,9 +32,9 @@ const DesktopNavigation = () => (
 
 
             <li>
-                <NavLink to="/contact/"
-                    activeClassName="active" 
-                >Contact</NavLink>
+                <a href="mailto:bergersr@my.easternct.edu">
+                    Contact
+                </a>
             </li>
 
             <li className="desktop-navigation__link github">

@@ -46,9 +46,9 @@ export class MobileNavigation extends React.Component {
                         </li>
 
                         <li>
-                            <NavLink to="/contact/" onClick={this.navNotHome}>
+                            <a href="mailto:bergersr@my.easternct.edu">
                                 Contact
-                            </NavLink>
+                            </a>
                         </li>
                     </ul>
                 </div>

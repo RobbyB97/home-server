@@ -43,13 +43,11 @@ exports[`Render DesktopNavigation 1`] = `
       </NavLink>
     </li>
     <li>
-      <NavLink
-        activeClassName="active"
-        ariaCurrent="true"
-        to="/contact/"
+      <a
+        href="mailto:bergersr@my.easternct.edu"
       >
         Contact
-      </NavLink>
+      </a>
     </li>
     <li
       className="desktop-navigation__link github"

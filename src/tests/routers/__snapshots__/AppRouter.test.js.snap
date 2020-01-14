@@ -36,11 +36,6 @@ exports[`Render AppRouter 1`] = `
         <Route
           component={[Function]}
           exact={true}
-          path="/contact"
-        />
-        <Route
-          component={[Function]}
-          exact={true}
           path="/projects"
         />
       </Switch>
