@@ -11,7 +11,7 @@
     "test": "jest --config=jest.config.json",
     "test:watch": "npm run test -- --watch",
     "dev": "concurrently --kill-others \"npm run watch\" \"npm run watch-react\"",
-    "watch": "env-cmd ./config/environments/test.env nodemon src/index.js -e js,css,html,hbs",
+    "watch": "nodemon src/index.js -e js,css,html,hbs",
     "watch-react": "webpack --watch"
   },
   "repository": {
