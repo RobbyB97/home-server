@@ -36,7 +36,7 @@ export class AppRouter extends React.Component {
                     <MobileNavigation />
                     <LogoBar />
 
-                    <div id="main-content"onClick={this.toggleNavOff}>
+                    <div id="main-content" onClick={this.toggleNavOff}>
                         <Switch>
                             <Route 
                                 path="/" 

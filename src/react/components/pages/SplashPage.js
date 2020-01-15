@@ -5,7 +5,13 @@ import { connect } from 'react-redux'
 import {splashOff} from '../../actions/home'
 
 export class SplashPage extends React.Component {
+    
     componentDidMount = () => {
+        setTimeout(() => {
+            const background = document.querySelector('.splash__background.two')
+            background.style.opacity = '0.9'
+        }, 100)
+
         setTimeout(() => {
             const text = document.querySelector('.splash__words.one')
             text.style.opacity = '1'
@@ -47,14 +53,16 @@ export class SplashPage extends React.Component {
         }, 2900)
 
         setTimeout(() => {
-            const text = document.querySelector('.splash__name')
+            const text = document.querySelector('.splash__words.nine')
             text.style.opacity = '1'
-        }, 3000)
+        }, 3500)
 
         setTimeout(() => {
-            const text = document.querySelector('.splash__to-site')
+            let text = document.querySelector('.splash__name')
             text.style.opacity = '1'
-        }, 3100)
+            text = document.querySelector('.splash__to-site')
+            text.style.opacity = '1'
+        }, 3900)
     }
 
     splashOff = () => {
@@ -64,9 +72,11 @@ export class SplashPage extends React.Component {
     render() {
         return (
             <div id="splash" className={this.props.splash ? "":"splash__hidden"}>
-                <div className="splash__background"></div>
+                <div className="splash__background one"></div>
+                <div className="splash__background two"></div>
+
                 <div className="splash__content">
-                    <p className="splash__text">
+                    <p className="splash__text one">
                         <span className="splash__words one">
                             What is a perfect website?&nbsp;
                         </span>
@@ -91,7 +101,12 @@ export class SplashPage extends React.Component {
                         <span className="splash__words eight">
                             My goal is to create that perfect website for your business.
                         </span>
+                    </p>
 
+                    <p className="splash__text two">
+                        <span className="splash__words nine">
+                            Hi, my name's Robby. I'm a freelance front end developer. If you're looking for someone to design an elegant website or web app that your clients will love, then I'm your man. Click the button below to learn more about my skills or get in touch with me.
+                        </span>
                     </p>
         
                     <p className="splash__name">

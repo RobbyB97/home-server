@@ -17,13 +17,29 @@
 
 
 .splash__background {
-    background: url('/dist/images/backgrounds/planets-mobile-bandw.jpg') no-repeat;
-    background-size: cover;
-    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    transition: 3500ms;
+}
+
+
+.splash__background.one {
+    background: url('/dist/images/backgrounds/planets-mobile-bandw.jpg') no-repeat;
+    background-size: cover;
+    position: absolute;
+    opacity: 1;
+    z-index: 2;
+}
+
+
+.splash__background.two {
+    background: url('/dist/images/backgrounds/planets-mobile.jpg') no-repeat;
+    background-size: cover;
+    position: absolute;
+    opacity: 0;
+    z-index: 3;
 }
 
 
@@ -34,21 +50,49 @@
     right: 0;
     bottom: 0;
     background: rgba(10, 10, 10, 0.7);
+    z-index: 4;
 }
 
 
 .splash__text {
+    position: absolute;
     text-align: center;
     margin-left: 1rem;
     margin-right: 1rem;
-    margin-top: 3rem;
     font-size: #{$s-font + 0.1rem};
+
+    @media #{$bp-desktop} {
+        font-size: 2rem;
+    }
+}
+
+
+.splash__text.one {
+    top: 5%;
+    left: 0;
+    right: 0;
+    
+    @media #{$bp-desktop} {
+
+    }
+}
+
+
+.splash__text.two {
+    top: 45%;
+    left: 0;
+    right: 0;
+
+    @media #{$bp-desktop} {
+        top: unset;
+        bottom: 15%;
+    }
 }
 
 
 .splash__words {
     opacity: 0;
-    transition: 300ms;
+    transition: 700ms;
 }
 
 

@@ -70,25 +70,3 @@
         opacity: 0.3;
     }
 }
-
-
-.home__text {
-    font-family: $serif;
-    font-size: #{$s-font + 0.1rem};
-    color: white;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    text-align: justify;
-    
-    @media #{$bp-tablet} {
-        font-size: $m-font;
-    }
-    
-    @media #{$bp-desktop} {
-        font-size: #{$l-font - 0.2rem};
-    }
-
-    @media #{$bp-huge} {
-        font-size: $l-font;
-    }
-}
