@@ -19,7 +19,7 @@ const Attribute = (props) => (
         }
 
         {   props.text &&
-                <p className="article__text">
+                <p className="attribute__text">
                     {props.text}
                 </p>
         }
