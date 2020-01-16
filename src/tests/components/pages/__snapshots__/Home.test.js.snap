@@ -16,5 +16,25 @@ exports[`Render Home page 1`] = `
   <div
     className="home__background huge two"
   />
+  <div
+    className="home__attributes"
+  >
+    <Attribute
+      image="/dist/images/icons/speed_icon.png"
+      title="Fast"
+    />
+    <Attribute
+      image="/dist/images/icons/responsive_icon.png"
+      title="Responsive"
+    />
+    <Attribute
+      image="/dist/images/icons/paint_icon.png"
+      title="Beautiful"
+    />
+    <Attribute
+      image="/dist/images/icons/accessibility_icon.png"
+      title="Accessible"
+    />
+  </div>
 </div>
 `;
