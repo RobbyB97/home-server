@@ -79,12 +79,11 @@
 
 
 .splash__text.two {
-    top: 45%;
     left: 0;
     right: 0;
+    bottom: 20%;
 
     @media #{$bp-desktop} {
-        top: unset;
         bottom: 15%;
     }
 }
