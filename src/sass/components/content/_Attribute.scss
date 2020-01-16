@@ -4,8 +4,9 @@
 
 
 .attribute__image {
-    width: 100px;
+    width: 80px;
     height: auto;
+    margin: 0 auto;
 
     img {
         max-width: 100%;
@@ -14,8 +15,8 @@
 }
 
 
-.attribute_title {
-
+.attribute__title {
+    text-align: center;
 }
 
 
