@@ -17,7 +17,7 @@ exports[`Render Attribute with all props 1`] = `
     Title!
   </h2>
   <p
-    className="article__text"
+    className="attribute__text"
   >
     Text!
   </p>
@@ -34,7 +34,7 @@ exports[`Render Attribute with some props 1`] = `
     Title!
   </h2>
   <p
-    className="article__text"
+    className="attribute__text"
   >
     Text!
   </p>
