@@ -1,5 +1,46 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Render Attribute with all props 1`] = `
+<div
+  className="attribute"
+>
+  <div
+    className="attribute__image"
+  >
+    <img
+      src="Image!"
+    />
+  </div>
+  <h2
+    className="attribute__title"
+  >
+    Title!
+  </h2>
+  <p
+    className="article__text"
+  >
+    Text!
+  </p>
+</div>
+`;
+
+exports[`Render Attribute with some props 1`] = `
+<div
+  className="attribute"
+>
+  <h2
+    className="attribute__title"
+  >
+    Title!
+  </h2>
+  <p
+    className="article__text"
+  >
+    Text!
+  </p>
+</div>
+`;
+
 exports[`Render Attribute without props 1`] = `
 <div
   className="attribute"
