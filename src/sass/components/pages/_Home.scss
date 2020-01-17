@@ -18,7 +18,7 @@
         background: url('/dist/images/backgrounds/planets-mobile.jpg') no-repeat;
         background-size: cover;
 
-        @media #{$bp-tablet} {
+        @media #{$bp-phone} {
             display: none;
         }
     }
@@ -26,13 +26,13 @@
     &.tablet {
         display: none;
 
-        @media #{$bp-tablet} {
+        @media #{$bp-phone} {
             background: url('/dist/images/backgrounds/planets-mobile.jpg') no-repeat;
             background-size: cover;
             display: block;
         }
 
-        @media #{$bp-large} {
+        @media #{$bp-desktop} {
             display: none;
         }
     }
@@ -40,14 +40,14 @@
     &.desktop {
         display: none;
 
-        @media #{$bp-large} {
+        @media #{$bp-desktop} {
             background: url('/dist/images/backgrounds/milky-way-1080.jpg') no-repeat;
             background-position: center top;
             background-size: cover;
             display: block;
         }
 
-        @media #{$bp-huge} {
+        @media #{$bp-large} {
             display: none;
         }
     }
@@ -55,7 +55,7 @@
     &.huge {
         display: none;
 
-        @media #{$bp-huge} {
+        @media #{$bp-large} {
             background: url('/dist/images/backgrounds/milky-way-1200.jpg') no-repeat;
             background-size: cover;
             display: block;

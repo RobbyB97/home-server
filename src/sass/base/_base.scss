@@ -51,11 +51,11 @@ button {
     &:active {
         background-color: darken($purple, 2%);
         color: darken(white, 5%);
-        @media #{$bp-large} {
+        @media #{$bp-desktop} {
             background-color: darken($purple, 45%);
         }
     }
-    @media #{$bp-large} {
+    @media #{$bp-desktop} {
         background-color: darken($purple, 35%);
         border-bottom: 3px solid darken($purple, 45%)
     }

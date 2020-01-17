@@ -1,7 +1,7 @@
 #desktop-navigation {
     display: none;
 
-    @media #{$bp-desktop} {
+    @media #{$bp-tablet} {
         display: block;
         flex-grow: 1;
         position: fixed;
@@ -41,7 +41,7 @@
         }
     }
 
-    @media #{$bp-large} {
+    @media #{$bp-desktop} {
         ul {
             margin-top: 12px ;
             margin-bottom: 12px;

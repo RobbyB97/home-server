@@ -9,7 +9,7 @@
     overflow: hidden;
     text-align: center;
     
-    @media #{$bp-desktop} {
+    @media #{$bp-tablet} {
         width: 250px;
     }
 
@@ -29,7 +29,7 @@
             }
         }
     }
-    @media #{$bp-desktop} {
+    @media #{$bp-tablet} {
         ul {
             display: block;
             width: 100%;
