@@ -21,18 +21,22 @@ exports[`Render Home page 1`] = `
   >
     <Attribute
       image="/dist/images/icons/speed_icon.png"
+      text="Fully minified files and an optimized structure guarantee your website will load quickly, even on inconsistent internet connections."
       title="Fast"
     />
     <Attribute
       image="/dist/images/icons/responsive_icon.png"
+      text="Mobile first development built up to 4k screens guarantees that your website will be elegant and functional on any device."
       title="Responsive"
     />
     <Attribute
       image="/dist/images/icons/paint_icon.png"
+      text="A thorough, UX focused design process and open communication guarantees your website will look as beautiful as you envision it."
       title="Beautiful"
     />
     <Attribute
       image="/dist/images/icons/accessibility_icon.png"
+      text="Full compliance with ADA standards guarantees that your website will be accessible and easy to use for everyone."
       title="Accessible"
     />
   </div>
