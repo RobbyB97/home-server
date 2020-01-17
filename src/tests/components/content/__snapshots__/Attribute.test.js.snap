@@ -2,7 +2,7 @@
 
 exports[`Render Attribute with all props 1`] = `
 <div
-  className="attribute"
+  className="attribute title!"
 >
   <div
     className="attribute__image"
@@ -26,7 +26,7 @@ exports[`Render Attribute with all props 1`] = `
 
 exports[`Render Attribute with some props 1`] = `
 <div
-  className="attribute"
+  className="attribute title!"
 >
   <h2
     className="attribute__title"
