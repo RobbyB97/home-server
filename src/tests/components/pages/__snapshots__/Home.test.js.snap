@@ -1,3 +1,44 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Render Home page 1`] = `undefined`;
+exports[`Render Home page 1`] = `
+<div
+  id="home"
+>
+  <div
+    className="home__background phone two"
+  />
+  <div
+    className="home__background tablet two"
+  />
+  <div
+    className="home__background desktop two"
+  />
+  <div
+    className="home__background huge two"
+  />
+  <div
+    className="home__attributes"
+  >
+    <Attribute
+      image="/dist/images/icons/speed_icon.png"
+      text="Fully minified files and an optimized structure guarantee your website will always load quickly."
+      title="Fast"
+    />
+    <Attribute
+      image="/dist/images/icons/responsive_icon.png"
+      text="Mobile first development ensures your site works smoothly on all screen sizes."
+      title="Responsive"
+    />
+    <Attribute
+      image="/dist/images/icons/paint_icon.png"
+      text="A UX focused design process guarantees your website is as functional as it is elegant."
+      title="Beautiful"
+    />
+    <Attribute
+      image="/dist/images/icons/accessibility_icon.png"
+      text="Compliance with ADA ensures your website is accessible and easy to use for everyone."
+      title="Accessible"
+    />
+  </div>
+</div>
+`;

@@ -4,10 +4,16 @@ import {shallow} from 'enzyme'
 import {Home} from '../../../react/components/pages/Home'
 
 
-let wrapper
+let wrapper, attributesFadeIn
 
 beforeEach(() => {
-    wrapper = shallow(<Home />)
+    attributesFadeIn = jest.fn()
+    wrapper = shallow(
+        <Home 
+            attributesFadeIn={attributesFadeIn} 
+            test={true}  
+        />
+    )
 })
 
 

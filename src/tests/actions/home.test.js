@@ -1,4 +1,4 @@
-import {homeOn, homeOff, toggleHomePage, splashOn, splashOff} from '../../react/actions/home'
+import {homeOn, homeOff, splashOn, splashOff} from '../../react/actions/home'
 
 
 test('homeOn action', () => {
@@ -17,16 +17,6 @@ test('homeOff action', () => {
         type: 'HOME_OFF'
     })
 })
-
-
-test('toggleHomePage action', () => {
-    const action = toggleHomePage()
-
-    expect(action).toEqual({
-        type: 'TOGGLE_HOMEPAGE'
-    })
-})
-
 
 test('splashOn action', () => {
     const action = splashOn()

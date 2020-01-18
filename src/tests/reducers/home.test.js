@@ -6,7 +6,6 @@ test('homeReducer default state', () => {
 
     expect(state).toEqual({
         home: true,
-        homePage: false,
         splash: true
     })
 })
