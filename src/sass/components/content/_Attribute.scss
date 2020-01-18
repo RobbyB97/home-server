@@ -1,25 +1,75 @@
 .attribute {
+    width: 300px;
+    margin: 0 auto;
+    clear: both;
+    display: block;
+    opacity: 0;
+    transition: 300ms;
 
+    @media #{$bp-phone} {
+        width: 350px;
+    }
+}
+
+
+.attribute__top {
+    float: left;
+    margin: auto 0;
+    width: 140px;
+    
+    &:not(:first-child) {
+        margin-top: 1rem;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+}
+
+
+.attribute__bottom {
+    float: left;
+    margin: 0;
+    width: 160px;
+
+    &:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
+    @media #{$bp-phone} {
+        width: 200px;
+    }
 }
 
 
 .attribute__image {
-    width: 80px;
+    width: 100%;
     height: auto;
-    margin: 0 auto;
+    margin: 0;
+    clear: both;
 
     img {
-        max-width: 100%;
+        max-width: 80px;
         height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    @media #{$bp-phone} {
+    
     }
 }
 
 
 .attribute__title {
     text-align: center;
+    width: 140px;
+    margin: 0;
+    margin-top: 1rem;
 }
 
 
 .attribute__text {
-
+    margin: auto;
+    font-size: $s-font;
 }
