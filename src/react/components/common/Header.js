@@ -42,7 +42,6 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => ({
 	goHome: () => {
 		dispatch(toggleNavOff())
-		dispatch(homeOn())
 	},
 	toggleNav: () => dispatch(toggleNav())
 })
