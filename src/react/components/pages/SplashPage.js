@@ -7,6 +7,14 @@ import {splashOff} from '../../actions/home'
 export class SplashPage extends React.Component {
     
     componentDidMount = () => {
+        this.splashFadeIn()
+    }
+
+    splashOff = () => {
+        this.props.splashOff()
+    }
+
+    splashFadeIn = () => {
         setTimeout(() => {
             const background = document.querySelector('.splash__background.two')
             background.style.opacity = '0.9'
@@ -64,10 +72,6 @@ export class SplashPage extends React.Component {
             text.style.opacity = '1'
         }, 3900)
     }
-
-    splashOff = () => {
-        this.props.splashOff()
-    } 
 
     render() {
         return (
