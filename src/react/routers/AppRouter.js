@@ -37,37 +37,39 @@ export class AppRouter extends React.Component {
                     <LogoBar />
 
                     <div id="main-content" onClick={this.toggleNavOff}>
-                        <Switch>
-                            <Route 
-                                path="/" 
-                                component={Home} 
-                                exact 
-                            />
+                        {!this.props.splash &&
+                            <Switch>
+                                <Route 
+                                    path="/" 
+                                    component={Home} 
+                                    exact 
+                                />
 
-                            <Route 
-                                path="/style_guide" 
-                                component={StyleGuide}
-                                exact
-                            />
+                                <Route 
+                                    path="/style_guide" 
+                                    component={StyleGuide}
+                                    exact
+                                />
 
-                            <Route 
-                                path="/skills" 
-                                component={Skills}
-                                exact
-                            />
+                                <Route 
+                                    path="/skills" 
+                                    component={Skills}
+                                    exact
+                                />
 
-                            <Route 
-                                path="/experience" 
-                                component={Experience}
-                                exact
-                            />
+                                <Route 
+                                    path="/experience" 
+                                    component={Experience}
+                                    exact
+                                />
 
-                            <Route
-                                path="/projects"
-                                component={Projects}
-                                exact
-                            />
-                        </Switch>
+                                <Route
+                                    path="/projects"
+                                    component={Projects}
+                                    exact
+                                />
+                            </Switch>
+                        }
                     </div>
                 </div>
             </BrowserRouter>
