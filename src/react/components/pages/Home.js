@@ -2,34 +2,92 @@ import React from 'react'
 import {connect} from 'react-redux'
 
 import Attribute from '../content/Attribute'
+import {homeOff} from '../../actions/home'
 
 
 export class Home extends React.Component {
 
-    render() {
+    constructor(props) {
+        super(props)
+        this.state = {
+            home: props.home,
+            test: props.test
+        }
+    }
 
+    componentDidMount = () => {
+        if (!this.props.test) {
+            this.attributesFadeIn()
+        }
+    } 
+    
+    attributesFadeIn = () => {
+        if (this.props.home) {
+            setTimeout(() => {
+                let attribute = document.querySelector('.attribute.fast')
+                attribute.style.opacity = '1'
+            }, 300)
+        
+            setTimeout(() => {
+                let attribute = document.querySelector('.attribute.responsive')
+                attribute.style.opacity = '1'            
+            }, 600)
+        
+            setTimeout(() => {
+                let attribute = document.querySelector('.attribute.beautiful')
+                attribute.style.opacity = '1'
+            }, 900)
+        
+            setTimeout(() => {
+                let attribute = document.querySelector('.attribute.accessible')
+                attribute.style.opacity = '1'
+            }, 1200)
+        
+            this.homeOff()
+
+        } else {
+            let attribute = document.querySelector('.attribute.fast')
+            attribute.style.opacity = '1'
+
+            attribute = document.querySelector('.attribute.responsive')
+            attribute.style.opacity = '1' 
+            
+            attribute = document.querySelector('.attribute.beautiful')
+            attribute.style.opacity = '1' 
+            
+            attribute = document.querySelector('.attribute.accessible')
+            attribute.style.opacity = '1'
+        }
+    }
+
+    homeOff = () => {
+        console.log('Turning home off')
+        this.props.homeOff()
+    }
+
+    render() {
         const fastAttribute = {
             image: "/dist/images/icons/speed_icon.png",
             title: "Fast",
-            text: "Fully minified files and an optimized structure guarantee your website will load quickly, even on inconsistent internet connections."
+            text: "Fully minified files and an optimized structure guarantee your website will always load quickly."
         }
 
         const responsiveAttribute = {
             image: "/dist/images/icons/responsive_icon.png",
             title: "Responsive",
-            text: "Mobile first development built up to 4k screens guarantees that your website will be elegant and functional on any device."
+            text: "Mobile first development ensures your site works smoothly on all screen sizes."
         }
 
         const beautifulAttribute = {
             image: "/dist/images/icons/paint_icon.png",
             title: "Beautiful",
-            text: "A thorough, UX focused design process and open communication guarantees your website will look as beautiful as you envision it."
+            text: "A UX focused design process guarantees your website is as functional as it is elegant."
         }
 
         const accessibleAttribute = {
             image: "/dist/images/icons/accessibility_icon.png",
             title: "Accessible",
-            text: "Full compliance with ADA standards guarantees that your website will be accessible and easy to use for everyone."
+            text: "Compliance with ADA ensures your website is accessible and easy to use for everyone."
         }
         
         return (
@@ -58,15 +116,13 @@ export class Home extends React.Component {
 const mapStateToProps = (state) => {
     return {
       nav: state.navigation.nav,
-      title: state.title.title,
       home: state.home.home,
-      homePage: state.home.homePage,
       splash: state.home.splash
     }
 }
 
-const mapDispatchToProps = (dispatch) => ({
-
+const mapDispatchToProps = (dispatch, props) => ({
+    homeOff: () => dispatch(homeOff())
 })
 
 
