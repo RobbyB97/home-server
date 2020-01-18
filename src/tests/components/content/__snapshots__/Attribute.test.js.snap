@@ -5,22 +5,30 @@ exports[`Render Attribute with all props 1`] = `
   className="attribute title!"
 >
   <div
-    className="attribute__image"
+    className="attribute__top"
   >
-    <img
-      src="Image!"
-    />
+    <div
+      className="attribute__image"
+    >
+      <img
+        src="Image!"
+      />
+    </div>
+    <h2
+      className="attribute__title"
+    >
+      Title!
+    </h2>
   </div>
-  <h2
-    className="attribute__title"
+  <div
+    className="attribute__bottom"
   >
-    Title!
-  </h2>
-  <p
-    className="attribute__text"
-  >
-    Text!
-  </p>
+    <p
+      className="attribute__text"
+    >
+      Text!
+    </p>
+  </div>
 </div>
 `;
 
@@ -28,21 +36,36 @@ exports[`Render Attribute with some props 1`] = `
 <div
   className="attribute title!"
 >
-  <h2
-    className="attribute__title"
+  <div
+    className="attribute__top"
   >
-    Title!
-  </h2>
-  <p
-    className="attribute__text"
+    <h2
+      className="attribute__title"
+    >
+      Title!
+    </h2>
+  </div>
+  <div
+    className="attribute__bottom"
   >
-    Text!
-  </p>
+    <p
+      className="attribute__text"
+    >
+      Text!
+    </p>
+  </div>
 </div>
 `;
 
 exports[`Render Attribute without props 1`] = `
 <div
   className="attribute"
-/>
+>
+  <div
+    className="attribute__top"
+  />
+  <div
+    className="attribute__bottom"
+  />
+</div>
 `;
