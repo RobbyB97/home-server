@@ -3,7 +3,6 @@ import {NavLink} from 'react-router-dom'
 import {connect} from 'react-redux'
 
 import {toggleNav, toggleNavOff} from '../../actions/navigation'
-import {homeOn} from '../../actions/home'
 
 
 export class Header extends React.Component {

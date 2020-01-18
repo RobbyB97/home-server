@@ -2,9 +2,8 @@ import React from 'react'
 import {NavLink} from 'react-router-dom'
 import { connect } from 'react-redux'
 
-import {toggleNav, toggleNavOff} from '../../actions/navigation'
-import {setTitle} from '../../actions/title'
-import {homeOn, homeOff} from '../../actions/home'
+import {toggleNav} from '../../actions/navigation'
+import {homeOff} from '../../actions/home'
 
 
 export class MobileNavigation extends React.Component {

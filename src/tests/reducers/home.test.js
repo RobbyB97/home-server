@@ -38,22 +38,3 @@ test('Set splash off', () => {
 
     expect(state.splash).toBe(false)
 })
-
-
-test('Toggle homepage from default state', () => {
-    const state = homeReducer(undefined, {type: 'TOGGLE_HOMEPAGE'})
-
-    expect(state.homePage).toBe(true)
-})
-
-
-test('Toggle homepage from altered state', () => {
-    const currentState = {
-        home: true,
-        homePage: true,
-        splash: true
-    }
-    const state = homeReducer(currentState, {type: 'TOGGLE_HOMEPAGE'})
-
-    expect(state.homePage).toBe(false)
-})

@@ -1,6 +1,5 @@
 const homeReducerDefaultState = {
     home: true,
-    homePage: false,
     splash: true,
 }
 
@@ -28,13 +27,6 @@ export default (state = homeReducerDefaultState, action) => {
             return {
                 ...state,
                 splash: false
-            }
-
-        case 'TOGGLE_HOMEPAGE':
-            let thing = !state.homePage
-            return {
-                ...state,
-                homePage: thing
             }
 
         default:
