@@ -77,7 +77,7 @@ exports[`Render SplashPage 1`] = `
       <span
         className="splash__words nine"
       >
-        Hi, my name's Robby. I'm a freelance front end developer. If you're looking for someone to design an elegant website or web app that your clients will love, then I'm your man. Click the button below to learn more about my skills or get in touch with me.
+        Hi, my name's Robby. I'm a freelance front end developer. If you've been searching for someone to design an elegant website or web app that your clients will love, your search is over.
       </span>
     </p>
     <p

@@ -17,8 +17,8 @@ export class SplashPage extends React.Component {
     splashFadeIn = () => {
         setTimeout(() => {
             const background = document.querySelector('.splash__background.two')
-            background.style.opacity = '0.9'
-        }, 100)
+            background.style.opacity = '1'
+        }, 2900)
 
         setTimeout(() => {
             const text = document.querySelector('.splash__words.one')
@@ -109,7 +109,7 @@ export class SplashPage extends React.Component {
 
                     <p className="splash__text two">
                         <span className="splash__words nine">
-                            Hi, my name's Robby. I'm a freelance front end developer. If you're looking for someone to design an elegant website or web app that your clients will love, then I'm your man. Click the button below to learn more about my skills or get in touch with me.
+                            Hi, my name's Robby. I'm a freelance front end developer. If you've been searching for someone to design an elegant website or web app that your clients will love, your search is over.
                         </span>
                     </p>
         
