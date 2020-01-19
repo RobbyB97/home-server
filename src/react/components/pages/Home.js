@@ -87,17 +87,11 @@ export class Home extends React.Component {
         const accessibleAttribute = {
             image: "/dist/images/icons/accessibility_icon.png",
             title: "Accessible",
-            text: "Compliance with ADA ensures your website is accessible and easy to use for everyone."
+            text: "Compliance with ADA standards ensures your website is accessible and easy to use for everyone."
         }
         
         return (
             <div id="home">
-                
-                <div className={this.props.splash ? "home__background phone one": "home__background phone two"}></div>
-                <div className={this.props.splash ? "home__background tablet one": "home__background tablet two"}></div>
-                <div className={this.props.splash ? "home__background desktop one": "home__background desktop two"}></div>
-                <div className={this.props.splash ? "home__background huge one": "home__background huge two"}></div>
-
                 {!this.props.splash &&
                     <div className="home__attributes">
                         <Attribute {...fastAttribute} />

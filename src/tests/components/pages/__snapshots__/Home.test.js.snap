@@ -5,18 +5,6 @@ exports[`Render Home page 1`] = `
   id="home"
 >
   <div
-    className="home__background phone two"
-  />
-  <div
-    className="home__background tablet two"
-  />
-  <div
-    className="home__background desktop two"
-  />
-  <div
-    className="home__background huge two"
-  />
-  <div
     className="home__attributes"
   >
     <Attribute
@@ -36,7 +24,7 @@ exports[`Render Home page 1`] = `
     />
     <Attribute
       image="/dist/images/icons/accessibility_icon.png"
-      text="Compliance with ADA ensures your website is accessible and easy to use for everyone."
+      text="Compliance with ADA standards ensures your website is accessible and easy to use for everyone."
       title="Accessible"
     />
   </div>

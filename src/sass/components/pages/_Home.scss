@@ -3,70 +3,14 @@
 }
 
 
-.home__background {
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    height: 100vh;
-    background: $space-blue;
-    z-index: -10;
-    transition: 1000ms;
+.home__attributes {
+    width: 100%;
 
-    &.phone {
-        background: url('/dist/images/backgrounds/planets-mobile.jpg') no-repeat;
-        background-size: cover;
-
-        @media #{$bp-phone} {
-            display: none;
-        }
-    }
-
-    &.tablet {
-        display: none;
-
-        @media #{$bp-phone} {
-            background: url('/dist/images/backgrounds/planets-mobile.jpg') no-repeat;
-            background-size: cover;
-            display: block;
-        }
-
-        @media #{$bp-desktop} {
-            display: none;
-        }
-    }
-
-    &.desktop {
-        display: none;
-
-        @media #{$bp-desktop} {
-            background: url('/dist/images/backgrounds/milky-way-1080.jpg') no-repeat;
-            background-position: center top;
-            background-size: cover;
-            display: block;
-        }
-
-        @media #{$bp-large} {
-            display: none;
-        }
-    }
-
-    &.huge {
-        display: none;
-
-        @media #{$bp-large} {
-            background: url('/dist/images/backgrounds/milky-way-1200.jpg') no-repeat;
-            background-size: cover;
-            display: block;
-        }
-    }
-
-    &.one {
-        opacity: 0;
-    }
-
-    &.two {
-        opacity: 0.3;
+    @media #{$bp-tablet} {
+        margin: 0 auto;
+        margin-top: 40px;
+        height: 400px;
+        width: 700px;
     }
 }
+
