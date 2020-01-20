@@ -37,9 +37,15 @@ $off-white: #fcfff6;
 
 
 
-/* Icons */
+/* Paths */
 
 $icon: '/dist/images/icons/';
+$background: '/dist/images/backgrounds/';
+
+
+
+/* Icons */
+
 $down_arrow: $icon + 'down_arrow.png';
 $down_arrow_white: $icon + 'down_arrow_white.png';
 $github: $icon + 'github.svg';
