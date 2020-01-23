@@ -10,10 +10,6 @@ export class Skills extends React.Component {
         return (
             <div id="skills">
                 Skills component
-                <Skill
-                    title="Test"
-                    description="Test"
-                />
             </div>
         )
     }

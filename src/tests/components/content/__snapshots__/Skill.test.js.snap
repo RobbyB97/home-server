@@ -4,42 +4,13 @@ exports[`Render Skill with only a title 1`] = `
 <div
   className="skill"
 >
-  <button
-    className="skill__button"
-  >
-    <h2
-      className="skill__title"
-    >
-      Title!
-    </h2>
-  </button>
   <div
-    className="skill__content"
+    className="skill__title"
   >
-    <p />
+    Title!
   </div>
-</div>
-`;
-
-exports[`Render Skill with title and description 1`] = `
-<div
-  className="skill"
->
-  <button
-    className="skill__button"
-  >
-    <h2
-      className="skill__title"
-    >
-      Title!
-    </h2>
-  </button>
   <div
-    className="skill__content"
-  >
-    <p>
-      Description!
-    </p>
-  </div>
+    className="skill__description"
+  />
 </div>
 `;

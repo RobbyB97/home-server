@@ -9,15 +9,3 @@ test('Render Skill with only a title', () => {
 
     expect(wrapper).toMatchSnapshot()
 })
-
-
-test('Render Skill with title and description', () => {
-    const wrapper = shallow(
-        <Skill 
-            title="Title!"
-            description="Description!"
-        />
-    )
-
-    expect(wrapper).toMatchSnapshot()
-})
