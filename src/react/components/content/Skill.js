@@ -13,9 +13,11 @@ export default (props) => (
                 ))}
             </div>
         }
-        
-        <div className="skill__description">
-            {props.description}
-        </div>
+
+        {props.description &&
+            <div className="skill__description">
+                {props.description}
+            </div>
+        }
     </div>
 )
