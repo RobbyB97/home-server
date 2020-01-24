@@ -24,13 +24,31 @@ exports[`Render Skill with title and bits 1`] = `
   <div
     className="skill__bits"
   >
-    <p>
-      bit1
-    </p>
-    <p>
+    <ul>
+      <p
+        key="bit1"
+      >
+        bit1
+      </p>
+      <li
+        key="bitlist1"
+      >
+        bitlist1
+      </li>
+      <li
+        key="bitlist2"
+      >
+        bitlist2
+      </li>
+    </ul>
+    <p
+      key="bit2"
+    >
       bit2
     </p>
-    <p>
+    <p
+      key="bit3"
+    >
       bit3
     </p>
   </div>
@@ -66,13 +84,31 @@ exports[`Render Skill with title, bits and description 1`] = `
   <div
     className="skill__bits"
   >
-    <p>
-      bit1
-    </p>
-    <p>
+    <ul>
+      <p
+        key="bit1"
+      >
+        bit1
+      </p>
+      <li
+        key="bitlist4"
+      >
+        bitlist4
+      </li>
+      <li
+        key="bitlist5"
+      >
+        bitlist5
+      </li>
+    </ul>
+    <p
+      key="bit2"
+    >
       bit2
     </p>
-    <p>
+    <p
+      key="bit3"
+    >
       bit3
     </p>
   </div>

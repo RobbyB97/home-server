@@ -8,9 +8,22 @@ export default (props) => (
         
         {props.bits &&
             <div className="skill__bits">
-                {props.bits.map((bit) => (
-                    <p>{bit}</p>
-                ))}
+                {props.bits.map((bit) => {
+                    if (bit.list) {
+                        return (
+                            <ul>
+                                <p key={bit.skill}>{bit.skill}</p>
+                                {bit.list.map((item) => (
+                                    <li key={item}>{item}</li>
+                                ))}
+                            </ul>
+                        )
+                    } else {
+                        return (
+                            <p key={bit.skill}>{bit.skill}</p>
+                        )    
+                    }
+                })}
             </div>
         }
 
