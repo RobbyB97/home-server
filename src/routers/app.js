@@ -67,4 +67,16 @@ router.get('/projects', http2https, (req, res) => {
 })
 
 
+router.get('/resume', http2https, (req, res) => {
+    try {
+        return res.sendFile(path.join(publicPath, 'resume.pdf'))
+
+    } catch(e) {
+        res.send()
+        console.log(chalk.red('An error occured on /resume: '))
+        console.log(e)
+    }
+})
+
+
 module.exports = router
