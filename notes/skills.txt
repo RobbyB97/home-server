@@ -1,0 +1,30 @@
+Skills:
+
+HTML5 / CSS3 / JS ES6
+
+React
+	-Router
+	-Redux
+	-Jest
+
+Node.JS
+	-Express
+
+NPM
+
+Gulp
+
+SASS
+
+Webpack
+
+Test Driven Development
+
+Mobile First Development
+
+Heroku
+
+Git
+	-GitHub/SourceTree
+
+BASH
