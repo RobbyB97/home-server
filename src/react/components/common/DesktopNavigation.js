@@ -30,6 +30,11 @@ const DesktopNavigation = () => (
                 >Projects</NavLink>
             </li>
 
+            <li>
+                <NavLink to="/resume/"
+                    activeClassName="active"
+                >Resume</NavLink>
+            </li>
 
             <li>
                 <a href="mailto:bergersr@my.easternct.edu">

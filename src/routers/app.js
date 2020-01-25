@@ -69,7 +69,7 @@ router.get('/projects', http2https, (req, res) => {
 
 router.get('/resume', http2https, (req, res) => {
     try {
-        return res.sendFile(path.join(publicPath, 'resume.pdf'))
+        return res.sendFile(path.join(publicPath, 'index.html'))
 
     } catch(e) {
         res.send()

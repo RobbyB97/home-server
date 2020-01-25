@@ -52,6 +52,16 @@ exports[`Render MobileNavigation 1`] = `
         </NavLink>
       </li>
       <li>
+        <NavLink
+          activeClassName="active"
+          ariaCurrent="true"
+          onClick={[Function]}
+          to="/resume"
+        >
+          Resume
+        </NavLink>
+      </li>
+      <li>
         <a
           href="mailto:bergersr@my.easternct.edu"
         >

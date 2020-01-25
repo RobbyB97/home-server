@@ -43,6 +43,15 @@ exports[`Render DesktopNavigation 1`] = `
       </NavLink>
     </li>
     <li>
+      <NavLink
+        activeClassName="active"
+        ariaCurrent="true"
+        to="/resume/"
+      >
+        Resume
+      </NavLink>
+    </li>
+    <li>
       <a
         href="mailto:bergersr@my.easternct.edu"
       >

@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Resume page 1`] = `
+<div
+  id="resume"
+>
+  <object
+    data="/resume.pdf"
+  >
+    <p>
+      Looks like your browser doesn't support PDF files.
+    </p>
+    <p>
+      <a
+        download={true}
+        href="/resume.pdf"
+      >
+        Download instead.
+      </a>
+    </p>
+  </object>
+</div>
+`;
