@@ -79,4 +79,16 @@ router.get('/resume', http2https, (req, res) => {
 })
 
 
+router.get('/*', http2https, (req, res) => {
+    try {
+        return res.sendFile(path.join(publicPath, 'wildcard.html'))
+
+    } catch(e) {
+        res.send()
+        console.log(chalk.red('An error occured on the wildcard: '))
+        console.log(e)
+    }
+})
+
+
 module.exports = router
