@@ -1,7 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 
-import JobCard from '../content/JobCard'
+import Job from '../content/Job'
 
 
 export class Experience extends React.Component {
@@ -11,11 +11,11 @@ export class Experience extends React.Component {
             <div id="experience">
                 
                 Experience component
-                <JobCard
+                <Job
                     title="Finalsite"
                     text="Job"
                     image="/dist/images/icons/finalsite.png">
-                </JobCard>
+                </Job>
             </div>  
         )
     }

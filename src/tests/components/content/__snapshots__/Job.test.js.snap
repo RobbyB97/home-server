@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Job with all props 1`] = `
+<div
+  className="job"
+>
+  <h2
+    className="job__title"
+  >
+    Title!
+  </h2>
+  <p
+    className="job__text"
+  >
+    Text!
+  </p>
+  <div
+    className="job__image"
+  >
+    <img
+      src="Image!"
+    />
+  </div>
+</div>
+`;
+
+exports[`Render Job with only title 1`] = `
+<div
+  className="job"
+>
+  <h2
+    className="job__title"
+  >
+    Title!
+  </h2>
+</div>
+`;

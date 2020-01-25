@@ -5,7 +5,7 @@ exports[`Render Experience page 1`] = `
   id="experience"
 >
   Experience component
-  <Component
+  <Job
     image="/dist/images/icons/finalsite.png"
     text="Job"
     title="Finalsite"
