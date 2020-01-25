@@ -1,30 +1,48 @@
-Skills:
+Skill sections:
 
-HTML5 / CSS3 / JS ES6
+Front End Development
 
-React
-	-Router
-	-Redux
-	-Jest
+	- HTML5
 
-Node.JS
-	-Express
+	- CSS3
 
-NPM
+	- JS (ES6)
 
-Gulp
+	- SASS
 
-SASS
+	- React
+		- Router
+		- Redux
+		- Jest
 
-Webpack
 
-Test Driven Development
 
-Mobile First Development
+Back End Development
 
-Heroku
+	- Node.JS
+		- Express
 
-Git
-	-GitHub/SourceTree
+	- PHP
 
-BASH
+	- Heroku
+
+
+
+Programming
+
+	- Workflow
+		- NPM
+		- Webpack
+		- Gulp
+
+	- Mobile First Development
+
+	- Test Driven Development
+
+	- Languages
+		- Python
+		- BASH
+
+	- Git
+		- Github
+		- SourceTree
