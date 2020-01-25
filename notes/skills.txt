@@ -1,5 +1,3 @@
-Skill sections:
-
 Front End Development
 
 	- HTML5
@@ -25,6 +23,10 @@ Back End Development
 	- PHP
 
 	- Heroku
+
+	- SQL / NOSQL
+
+	- MongoDB
 
 
 
