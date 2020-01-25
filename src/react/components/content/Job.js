@@ -6,9 +6,9 @@ export class Job extends React.Component {
     render() {
         return (
             <div className="job">
-                <h2 className="job__title">
+                <p className="job__title">
                     {this.props.title}
-                </h2>
+                </p>
 
                 {this.props.text &&
                     <p className="job__text">
