@@ -11,7 +11,7 @@ export default (props) => (
                 {props.bits.map((bit) => {
                     if (bit.list) {
                         return (
-                            <ul>
+                            <ul className="skill__list">
                                 <p key={bit.skill}>{bit.skill}</p>
                                 {bit.list.map((item) => (
                                     <li key={item}>{item}</li>

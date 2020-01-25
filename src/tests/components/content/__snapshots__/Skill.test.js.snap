@@ -24,7 +24,9 @@ exports[`Render Skill with title and bits 1`] = `
   <div
     className="skill__bits"
   >
-    <ul>
+    <ul
+      className="skill__list"
+    >
       <p
         key="bit1"
       >
@@ -84,7 +86,9 @@ exports[`Render Skill with title, bits and description 1`] = `
   <div
     className="skill__bits"
   >
-    <ul>
+    <ul
+      className="skill__list"
+    >
       <p
         key="bit1"
       >
