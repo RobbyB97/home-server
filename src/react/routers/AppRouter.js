@@ -31,52 +31,59 @@ export class AppRouter extends React.Component {
         return (
             <BrowserRouter>
                 <div>
-                    <SplashPage />
                     <Header />
                     <DesktopNavigation />
                     <MobileNavigation />
                     <LogoBar />
 
                     <div id="main-content" onClick={this.toggleNavOff}>
-                        {!this.props.splash &&
-                            <Switch>
+                        <Switch>
+                            {this.props.splash &&
+                                <Route 
+                                    path="/" 
+                                    component={SplashPage} 
+                                    exact 
+                                />
+                            }
+
+                            {!this.props.splash &&
                                 <Route 
                                     path="/" 
                                     component={Home} 
                                     exact 
                                 />
+                            }
 
-                                <Route 
-                                    path="/style_guide" 
-                                    component={StyleGuide}
-                                    exact
-                                />
+                            <Route 
+                                path="/style_guide" 
+                                component={StyleGuide}
+                                exact
+                            />
 
-                                <Route 
-                                    path="/skills" 
-                                    component={Skills}
-                                    exact
-                                />
+                            <Route 
+                                path="/skills" 
+                                component={Skills}
+                                exact
+                            />
 
-                                <Route 
-                                    path="/experience" 
-                                    component={Experience}
-                                    exact
-                                />
+                            <Route 
+                                path="/experience" 
+                                component={Experience}
+                                exact
+                            />
 
-                                <Route
-                                    path="/projects"
-                                    component={Projects}
-                                    exact
-                                />
+                            <Route
+                                path="/projects"
+                                component={Projects}
+                                exact
+                            />
 
-                                <Route 
-                                    path="/resume"
-                                    component={Resume}
-                                    exact
-                                />
-                            </Switch>
-                        }
+                            <Route 
+                                path="/resume"
+                                component={Resume}
+                                exact
+                            />
+                        </Switch>
                     </div>
                 </div>
             </BrowserRouter>

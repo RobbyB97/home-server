@@ -3,7 +3,6 @@
 exports[`Render AppRouter 1`] = `
 <BrowserRouter>
   <div>
-    <Connect(SplashPage) />
     <Connect(Header) />
     <DesktopNavigation />
     <Connect(MobileNavigation) />

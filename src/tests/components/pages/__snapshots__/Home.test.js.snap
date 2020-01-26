@@ -5,6 +5,9 @@ exports[`Render Home page 1`] = `
   id="home"
 >
   <div
+    className="home__backdrop"
+  />
+  <div
     className="home__attributes"
   >
     <Attribute
