@@ -1,16 +1,21 @@
 .nextpage {
+    width: auto;
+    float: right;
+    margin: 0;
 
+    &.float {
+        position: absolute;
+        bottom: 4px;
+        right: 0;    
+    }
 }
 
 
 .nextpage__text {
-
-}
-
-
-.nextpage__arrow {
-
-    img {
-        
-    }
+    width: 200px;
+    float: left;
+    margin: 0;
+    text-align: right;
+    color: $off-white;
+    font-size: 1.2rem;
 }

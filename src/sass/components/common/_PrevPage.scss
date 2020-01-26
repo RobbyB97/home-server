@@ -1,13 +1,21 @@
 .prevpage {
+    width: 50%;
+    float: left;
+    margin: 0;
 
+    &.float {
+        position: absolute;
+        bottom: 4px;
+        left: 0;    
+    }
 }
 
 
 .prevpage__text {
-
-}
-
-
-.prevpage__arrow {
-    
+    width: 200px;
+    float: left;
+    margin: 0;
+    text-align: left;
+    color: $off-white;
+    font-size: 1.2rem;
 }
