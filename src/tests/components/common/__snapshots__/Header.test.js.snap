@@ -15,7 +15,7 @@ exports[`Render Header 1`] = `
     >
       <img
         alt="Home"
-        src="/dist/images/favicon.png"
+        src="/dist/images/icons/b-icon.png"
       />
     </NavLink>
   </div>
