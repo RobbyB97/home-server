@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render PrevPage with all props 1`] = `
+<div
+  className="prevpage"
+>
+  <p
+    className="prevpage__text"
+  >
+    Text!
+  </p>
+  <NavLink
+    activeClassName="active"
+    ariaCurrent="true"
+    to="Route!"
+  >
+    <div
+      className="prevpage__arrow"
+    >
+      <img
+        src="/dist/images/icons/down_arrow_white.png"
+      />
+    </div>
+  </NavLink>
+</div>
+`;
+
+exports[`Render PrevPage with no props 1`] = `
+<div
+  className="prevpage"
+>
+  <NavLink
+    activeClassName="active"
+    ariaCurrent="true"
+    to="/"
+  >
+    <div
+      className="prevpage__arrow"
+    >
+      <img
+        src="/dist/images/icons/down_arrow_white.png"
+      />
+    </div>
+  </NavLink>
+</div>
+`;
+
+exports[`Render PrevPage with route 1`] = `
+<div
+  className="prevpage"
+>
+  <NavLink
+    activeClassName="active"
+    ariaCurrent="true"
+    to="Route!"
+  >
+    <div
+      className="prevpage__arrow"
+    >
+      <img
+        src="/dist/images/icons/down_arrow_white.png"
+      />
+    </div>
+  </NavLink>
+</div>
+`;
+
+exports[`Render PrevPage with text 1`] = `
+<div
+  className="prevpage"
+>
+  <p
+    className="prevpage__text"
+  >
+    Text!
+  </p>
+  <NavLink
+    activeClassName="active"
+    ariaCurrent="true"
+    to="/"
+  >
+    <div
+      className="prevpage__arrow"
+    >
+      <img
+        src="/dist/images/icons/down_arrow_white.png"
+      />
+    </div>
+  </NavLink>
+</div>
+`;
