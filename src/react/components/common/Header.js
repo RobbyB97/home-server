@@ -19,7 +19,7 @@ export class Header extends React.Component {
 			<header id="header">
 				<div className="header__logo">
 					<NavLink to="/" onClick={this.goHome}>
-						<img src='/dist/images/favicon.png' alt='Home'/> 
+						<img src='/dist/images/icons/b-icon.png' alt='Home'/> 
 				  	</NavLink>
 				</div>
 	
