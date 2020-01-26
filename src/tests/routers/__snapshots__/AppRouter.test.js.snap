@@ -42,6 +42,10 @@ exports[`Render AppRouter 1`] = `
           exact={true}
           path="/resume"
         />
+        <Route
+          component={[Function]}
+          path="/*"
+        />
       </Switch>
     </div>
   </div>

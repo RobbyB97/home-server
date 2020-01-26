@@ -81,7 +81,7 @@ router.get('/resume', http2https, (req, res) => {
 
 router.get('/*', http2https, (req, res) => {
     try {
-        return res.sendFile(path.join(publicPath, 'wildcard.html'))
+        return res.sendFile(path.join(publicPath, 'index.html'))
 
     } catch(e) {
         res.send()

@@ -1,4 +1,76 @@
 #wildcard {
-    background-color: red;
-    color: green;
+    
+}
+
+
+.wildcard__content {
+
+}
+
+
+.wildcard__image {
+    width: 200px;
+    margin: 0 auto;
+
+    img {
+        width: 200px;
+        height: auto;
+    }
+
+    @media #{$bp-tablet} {
+        width: 300px;
+
+        img {
+            width: 300px;
+        }
+    }
+
+    @media #{$bp-desktop} {
+        width: 340px;
+
+        img {
+            width: 340px;
+        }
+    }
+}
+
+
+.wildcard__text {
+    width: 280px;
+    margin: 0 auto;
+
+    a {
+        display: block;
+        margin: 0 auto;
+        height: $m-font;
+        width: 120px;
+        border-radius: calc();
+        background-color: blue;
+    }
+}
+
+
+.wildcard__home-button {
+    width: 200px;
+    margin: 0 auto;
+    height: 2em;
+    margin-top: 2em;
+
+    button {
+        width: 200px;
+        border-radius: 1em;
+    }
+}
+
+
+.wildcard__backdrop {
+    opacity: 0.3;
+    z-index: -1;
+    background: url($background + 'space_background.jpg');
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
