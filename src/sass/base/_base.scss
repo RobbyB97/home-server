@@ -35,10 +35,12 @@ a {
 }
 
 button {
-    background-color: lighten($dark-blue, 10%);
+    background-color: darken($purple, 20%);
     padding: 4px 8px;
     border: 0;
     border-bottom: 4px solid $dark-blue;
+    border-bottom: 3px solid darken($purple, 40%);
+
     margin: 3px;
     font-weight: 400;
     font-family: $sans-serif;
@@ -49,15 +51,8 @@ button {
         outline: none;
     }
     &:active {
-        background-color: darken($purple, 2%);
+        background-color: darken($purple, 40%);
         color: darken(white, 5%);
-        @media #{$bp-desktop} {
-            background-color: darken($purple, 45%);
-        }
-    }
-    @media #{$bp-desktop} {
-        background-color: darken($purple, 35%);
-        border-bottom: 3px solid darken($purple, 45%)
     }
 }
 
