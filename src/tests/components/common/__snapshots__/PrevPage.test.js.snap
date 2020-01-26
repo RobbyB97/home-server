@@ -4,23 +4,17 @@ exports[`Render PrevPage with all props 1`] = `
 <div
   className="prevpage"
 >
-  <p
-    className="prevpage__text"
-  >
-    Text!
-  </p>
   <NavLink
     activeClassName="active"
     ariaCurrent="true"
     to="Route!"
   >
-    <div
-      className="prevpage__arrow"
+    <p
+      className="prevpage__text"
     >
-      <img
-        src="/dist/images/icons/down_arrow_white.png"
-      />
-    </div>
+      ← 
+      Text!
+    </p>
   </NavLink>
 </div>
 `;
@@ -34,13 +28,11 @@ exports[`Render PrevPage with no props 1`] = `
     ariaCurrent="true"
     to="/"
   >
-    <div
-      className="prevpage__arrow"
+    <p
+      className="prevpage__text"
     >
-      <img
-        src="/dist/images/icons/down_arrow_white.png"
-      />
-    </div>
+      ← 
+    </p>
   </NavLink>
 </div>
 `;
@@ -54,13 +46,11 @@ exports[`Render PrevPage with route 1`] = `
     ariaCurrent="true"
     to="Route!"
   >
-    <div
-      className="prevpage__arrow"
+    <p
+      className="prevpage__text"
     >
-      <img
-        src="/dist/images/icons/down_arrow_white.png"
-      />
-    </div>
+      ← 
+    </p>
   </NavLink>
 </div>
 `;
@@ -69,23 +59,17 @@ exports[`Render PrevPage with text 1`] = `
 <div
   className="prevpage"
 >
-  <p
-    className="prevpage__text"
-  >
-    Text!
-  </p>
   <NavLink
     activeClassName="active"
     ariaCurrent="true"
     to="/"
   >
-    <div
-      className="prevpage__arrow"
+    <p
+      className="prevpage__text"
     >
-      <img
-        src="/dist/images/icons/down_arrow_white.png"
-      />
-    </div>
+      ← 
+      Text!
+    </p>
   </NavLink>
 </div>
 `;
