@@ -5,7 +5,7 @@ import {SplashPage} from '../../../react/components/pages/SplashPage'
 
 
 test('Render SplashPage', () => {
-    const wrapper = shallow(<SplashPage />)
+    const wrapper = shallow(<SplashPage test={true}/>)
 
     expect(wrapper).toMatchSnapshot()
 })
@@ -15,6 +15,7 @@ test('Trigger splashOff', () => {
     const splashOff = jest.fn()
     const wrapper = shallow(
         <SplashPage 
+            test={true}
             splashOff={splashOff}    
         />
     )

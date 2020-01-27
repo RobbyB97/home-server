@@ -7,7 +7,13 @@ import {splashOff} from '../../actions/home'
 export class SplashPage extends React.Component {
     
     componentDidMount = () => {
-        this.splashFadeIn()
+        if (!this.props.test) {
+            if (this.props.splashFade) {
+                this.splashFadeIn()
+            } else {
+                this.splashFlashIn()
+            }
+        }
     }
 
     splashOff = () => {
@@ -73,6 +79,29 @@ export class SplashPage extends React.Component {
         }, 3900)
     }
 
+    splashFlashIn = () => {
+        const textNodes = [
+            '.splash__background.two',
+            '.splash__words.one',
+            '.splash__words.two',
+            '.splash__words.three',
+            '.splash__words.four',
+            '.splash__words.five',
+            '.splash__words.six',
+            '.splash__words.seven',
+            '.splash__words.eight',
+            '.splash__words.nine',
+            '.splash__name',
+            '.splash__to-site'
+        ]
+
+       textNodes.forEach((node) => {
+           let text = document.querySelector(node)
+           text.style.opacity = '1'
+       })
+        
+    }
+
     render() {
         return (
             <div id="splash" className={this.props.splash ? "":"splash__hidden"}>
@@ -130,7 +159,8 @@ export class SplashPage extends React.Component {
 
 const mapStateToProps = (state) => {
     return {
-        splash: state.home.splash
+        splash: state.home.splash,
+        splashFade: state.home.splashFade
     }
 }
 

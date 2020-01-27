@@ -6,7 +6,8 @@ test('homeReducer default state', () => {
 
     expect(state).toEqual({
         home: true,
-        splash: true
+        splash: true,
+        splashFade: true
     })
 })
 
@@ -29,6 +30,7 @@ test('Set splash on', () => {
     const state = homeReducer(undefined, {type: 'SPLASH_ON'})
 
     expect(state.splash).toBe(true)
+    expect(state.splashFade).toBe(false)
 })
 
 
@@ -36,4 +38,5 @@ test('Set splash off', () => {
     const state = homeReducer(undefined, {type: 'SPLASH_OFF'})
 
     expect(state.splash).toBe(false)
+    expect(state.splashFade).toBe(false)
 })

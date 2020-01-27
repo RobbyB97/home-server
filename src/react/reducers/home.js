@@ -1,6 +1,7 @@
 const homeReducerDefaultState = {
     home: true,
     splash: true,
+    splashFade: true
 }
 
 export default (state = homeReducerDefaultState, action) => {
@@ -20,13 +21,15 @@ export default (state = homeReducerDefaultState, action) => {
         case 'SPLASH_ON':
             return {
                 ...state,
-                splash: true
+                splash: true,
+                splashFade: false
             }
 
         case 'SPLASH_OFF':
             return {
                 ...state,
-                splash: false
+                splash: false,
+                splashFade: false
             }
 
         default:
