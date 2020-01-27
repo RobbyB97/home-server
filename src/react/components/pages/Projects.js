@@ -1,6 +1,9 @@
 import React from 'react'
 import {connect} from 'react-redux'
 
+import PrevPage from '../common/PrevPage'
+import NextPage from '../common/NextPage'
+
 
 export class Projects extends React.Component {
 
@@ -8,6 +11,18 @@ export class Projects extends React.Component {
         return (
             <div id="projects">
                 Projects component
+                
+                <PrevPage
+                    text="Experience"
+                    route="/experience/"
+                    float={true}
+                />
+
+                <NextPage 
+                    text="Resume"
+                    route="/resume/"
+                    float={true}
+                />
             </div>
         )
     }

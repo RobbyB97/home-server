@@ -31,5 +31,11 @@ exports[`Render Home page 1`] = `
       title="Accessible"
     />
   </div>
+  <Divider />
+  <NextPage
+    float={true}
+    route="/skills/"
+    text="Skills"
+  />
 </div>
 `;

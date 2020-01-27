@@ -19,5 +19,23 @@ exports[`Render Resume page 1`] = `
       </a>
     </p>
   </object>
+  <PrevPage
+    float={true}
+    route="/projects"
+    text="Projects"
+  />
+  <div
+    className="nextpage float"
+  >
+    <a
+      href="mailto:bergersr@my.easternct.edu"
+    >
+      <p
+        className="nextpage__text"
+      >
+        Contact me →
+      </p>
+    </a>
+  </div>
 </div>
 `;

@@ -1,7 +1,8 @@
 import React from 'react'
 import {connect} from 'react-redux'
 
-import SplashPage from './SplashPage'
+import {Divider} from '../content/Divider'
+import NextPage from '../common/NextPage'
 import Attribute from '../content/Attribute'
 import {homeOff} from '../../actions/home'
 
@@ -94,6 +95,7 @@ export class Home extends React.Component {
         return (
             <div id="home">
                 <div className="home__backdrop"></div>
+                
                 <div className="home__attributes">
                     <Attribute {...fastAttribute} />
                     <Attribute {...responsiveAttribute} />
@@ -101,6 +103,13 @@ export class Home extends React.Component {
                     <Attribute {...accessibleAttribute} />
                 </div>
                 
+                <Divider />
+                
+                <NextPage
+                    text="Skills"
+                    route="/skills/"
+                    float={true}
+                />
             </div>
         )
     }

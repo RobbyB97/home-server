@@ -5,5 +5,15 @@ exports[`Render Projects page 1`] = `
   id="projects"
 >
   Projects component
+  <PrevPage
+    float={true}
+    route="/experience/"
+    text="Experience"
+  />
+  <NextPage
+    float={true}
+    route="/resume/"
+    text="Resume"
+  />
 </div>
 `;
