@@ -106,8 +106,6 @@ export class Home extends React.Component {
                     <Attribute {...beautifulAttribute} />
                     <Attribute {...accessibleAttribute} />
                 </div>
-                
-                <Divider />
 
                 <div 
                     className="prevpage float"
@@ -125,6 +123,8 @@ export class Home extends React.Component {
                     route="/skills/"
                     float={true}
                 />
+
+                <Divider />
             </div>
         )
     }

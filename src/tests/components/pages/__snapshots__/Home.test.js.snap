@@ -31,7 +31,6 @@ exports[`Render Home page 1`] = `
       title="Accessible"
     />
   </div>
-  <Divider />
   <div
     className="prevpage float"
     onClick={[Function]}
@@ -53,5 +52,6 @@ exports[`Render Home page 1`] = `
     route="/skills/"
     text="Skills"
   />
+  <Divider />
 </div>
 `;
