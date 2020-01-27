@@ -32,6 +32,22 @@ exports[`Render Home page 1`] = `
     />
   </div>
   <Divider />
+  <div
+    className="prevpage float"
+    onClick={[Function]}
+  >
+    <NavLink
+      activeClassName="active"
+      ariaCurrent="true"
+      to="/"
+    >
+      <p
+        className="prevpage__text"
+      >
+        ← Splash page
+      </p>
+    </NavLink>
+  </div>
   <NextPage
     float={true}
     route="/skills/"

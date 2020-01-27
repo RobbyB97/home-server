@@ -1,10 +1,11 @@
 import React from 'react'
 import {connect} from 'react-redux'
+import {NavLink} from 'react-router-dom'
 
 import {Divider} from '../content/Divider'
 import NextPage from '../common/NextPage'
 import Attribute from '../content/Attribute'
-import {homeOff} from '../../actions/home'
+import {homeOff, splashOn} from '../../actions/home'
 
 
 export class Home extends React.Component {
@@ -63,8 +64,11 @@ export class Home extends React.Component {
     }
 
     homeOff = () => {
-        console.log('Turning home off')
         this.props.homeOff()
+    }
+
+    splashOn = () => {
+        this.props.splashOn()
     }
 
     render() {
@@ -104,6 +108,17 @@ export class Home extends React.Component {
                 </div>
                 
                 <Divider />
+
+                <div 
+                    className="prevpage float"
+                    onClick={this.splashOn}
+                >
+                    <NavLink to="/">
+                        <p className="prevpage__text">
+                            ← Splash page
+                        </p>
+                    </NavLink>
+                </div>
                 
                 <NextPage
                     text="Skills"
@@ -125,7 +140,8 @@ const mapStateToProps = (state) => {
 }
 
 const mapDispatchToProps = (dispatch, props) => ({
-    homeOff: () => dispatch(homeOff())
+    homeOff: () => dispatch(homeOff()),
+    splashOn: () => dispatch(splashOn())
 })
 
 
