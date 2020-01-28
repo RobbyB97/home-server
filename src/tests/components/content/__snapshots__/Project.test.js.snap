@@ -3,5 +3,17 @@
 exports[`Render Project 1`] = `
 <div
   className="project"
-/>
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  <div
+    className="project__inactive"
+  >
+    <div
+      className="project__name"
+    >
+      <p />
+    </div>
+  </div>
+</div>
 `;

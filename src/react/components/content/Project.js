@@ -9,17 +9,11 @@ export class Project extends React.Component {
         }
     }
 
-    toggle = () => {
-        this.setState({active: !this.state.active})
-    }
+    toggle = () => this.setState({active: !this.state.active})
 
-    toggleOn = () => {
-        this.setState({active: true})
-    }
+    toggleOn = () => this.setState({active: true})
 
-    toggleOff = () => {
-        this.setState({active: false})
-    }
+    toggleOff = () => this.setState({active: false})
 
     render() {
         return (
@@ -37,16 +31,19 @@ export class Project extends React.Component {
                     </div>
                 :
                     <div className="project__inactive">
-                        {this.props.logo &&
-                            <img 
-                                className="project__logo"
-                                src={this.props.logo}
-                            />
-                        }
+                        <div className="project__name">
+                            <p>
+                                {this.props.name}
+                            </p>
+                        </div>
 
-                        <p className="project__name">
-                            {this.props.name}
-                        </p>
+                        {this.props.languages &&
+                            <div className="project__language">
+                                <p>
+                                    {this.props.languages}
+                                </p>
+                            </div>
+                        }
                     </div>
                 }
             </div>
