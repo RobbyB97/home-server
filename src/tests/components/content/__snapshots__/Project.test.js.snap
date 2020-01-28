@@ -1,6 +1,137 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Render Project 1`] = `
+exports[`Render Project with description 1`] = `
+<div
+  className="project active"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  <div
+    className="project__active"
+  >
+    <div
+      className="project__description"
+    >
+      Description!
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Render Project with languages 1`] = `
+<div
+  className="project"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  <div
+    className="project__inactive"
+  >
+    <div
+      className="project__name"
+    >
+      <p />
+    </div>
+    <div
+      className="project__languages"
+    >
+      <p>
+        Languages!
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Render Project with link 1`] = `
+<div
+  className="project active"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  <div
+    className="project__active"
+  >
+    <div
+      className="project__link"
+    >
+      <a
+        href="Link!"
+        target="_blank"
+      >
+        View on GitHub
+      </a>
+    </div>
+    <div
+      className="project__description"
+    />
+  </div>
+</div>
+`;
+
+exports[`Render Project with link and linkText 1`] = `
+<div
+  className="project active"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  <div
+    className="project__active"
+  >
+    <div
+      className="project__link"
+    >
+      <a
+        href="Link!"
+        target="_blank"
+      >
+        LinkText!
+      </a>
+    </div>
+    <div
+      className="project__description"
+    />
+  </div>
+</div>
+`;
+
+exports[`Render Project with name 1`] = `
+<div
+  className="project"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  <div
+    className="project__inactive"
+  >
+    <div
+      className="project__name"
+    >
+      <p>
+        Name!
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Render active Project without props 1`] = `
+<div
+  className="project active"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  <div
+    className="project__active"
+  >
+    <div
+      className="project__description"
+    />
+  </div>
+</div>
+`;
+
+exports[`Render inactive Project without props 1`] = `
 <div
   className="project"
   onMouseEnter={[Function]}

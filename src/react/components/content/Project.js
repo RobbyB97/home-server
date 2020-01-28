@@ -2,6 +2,7 @@ import React from 'react'
 
 
 export class Project extends React.Component {
+    
     constructor(props) {
         super(props)
         this.state = {
@@ -9,19 +10,16 @@ export class Project extends React.Component {
         }
     }
 
-    toggle = () => this.setState({active: !this.state.active})
-
     toggleOn = () => this.setState({active: true})
-
     toggleOff = () => this.setState({active: false})
 
+    
     render() {
         return (
             <div
                 className={this.state.active ? 
                     "project active" : 
                     "project"}
-                
                 onMouseEnter={this.toggleOn}
                 onMouseLeave={this.toggleOff}
             >
@@ -48,7 +46,7 @@ export class Project extends React.Component {
                         </div>
 
                         {this.props.languages &&
-                            <div className="project__language">
+                            <div className="project__languages">
                                 <p>
                                     {this.props.languages}
                                 </p>
