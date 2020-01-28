@@ -1,0 +1,15 @@
+.project {
+    width: 280px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 8px;
+    background: linear-gradient(
+        to bottom right, 
+        darken($purple, 20%), 
+        darken($purple, 40%)
+    );
+
+    &.active {
+        background: darken($purple, 40%);
+    }
+}
