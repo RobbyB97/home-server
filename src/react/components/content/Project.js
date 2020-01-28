@@ -27,7 +27,17 @@ export class Project extends React.Component {
             >
                 {this.state.active ?
                     <div className="project__active">
-                        
+                        {this.props.link &&
+                            <div className="project__link">
+                                <a href={this.props.link} target="_blank">
+                                    {this.props.linkText || "View on GitHub"}
+                                </a>
+                            </div>
+                        }
+
+                        <div className="project__description">
+                            {this.props.description}
+                        </div>
                     </div>
                 :
                     <div className="project__inactive">
