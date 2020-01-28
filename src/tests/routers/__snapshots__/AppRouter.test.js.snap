@@ -20,11 +20,6 @@ exports[`Render AppRouter 1`] = `
         <Route
           component={[Function]}
           exact={true}
-          path="/style_guide"
-        />
-        <Route
-          component={[Function]}
-          exact={true}
           path="/skills"
         />
         <Route

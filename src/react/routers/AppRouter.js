@@ -10,7 +10,6 @@ import DesktopNavigation from '../components/common/DesktopNavigation'
 import LogoBar from '../components/common/LogoBar'
 
 //Pages
-import StyleGuide from '../components/pages/StyleGuide'
 import Home from '../components/pages/Home'
 import Skills from '../components/pages/Skills'
 import Experience from '../components/pages/Experience'
@@ -54,12 +53,6 @@ export class AppRouter extends React.Component {
                                     exact 
                                 />
                             }
-
-                            <Route 
-                                path="/style_guide" 
-                                component={StyleGuide}
-                                exact
-                            />
 
                             <Route 
                                 path="/skills" 

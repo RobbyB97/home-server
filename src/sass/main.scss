@@ -16,7 +16,6 @@
     './components/common/MobileNavigation',
     './components/common/Header',
     './components/common/LogoBar',
-    './components/common/Footer',
     './components/common/NextPage',
     './components/common/PrevPage';
 
@@ -26,8 +25,6 @@
 *** Content Components
 *************************************/
 @import
-    './components/content/Article',
-    './components/content/Card',
     './components/content/Job',
     './components/content/Skill',
     './components/content/Project',
