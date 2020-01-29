@@ -1,37 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Render Job with all props 1`] = `
+exports[`Render inactive Job with no props 1`] = `
 <div
   className="job"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
 >
-  <p
-    className="job__title"
-  >
-    Title!
-  </p>
-  <p
-    className="job__text"
-  >
-    Text!
-  </p>
   <div
-    className="job__image"
+    className="job__inactive"
   >
-    <img
-      src="Image!"
+    <div
+      className="job__logo"
     />
+    <div
+      className="job__name"
+    >
+      <p />
+    </div>
   </div>
-</div>
-`;
-
-exports[`Render Job with only title 1`] = `
-<div
-  className="job"
->
-  <p
-    className="job__title"
-  >
-    Title!
-  </p>
 </div>
 `;
