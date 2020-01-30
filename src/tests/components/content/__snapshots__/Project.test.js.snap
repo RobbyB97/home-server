@@ -2,7 +2,7 @@
 
 exports[`Render Project with description 1`] = `
 <div
-  className="project active"
+  className="project"
   onMouseEnter={[Function]}
   onMouseLeave={[Function]}
 >
@@ -45,7 +45,7 @@ exports[`Render Project with languages 1`] = `
 
 exports[`Render Project with link 1`] = `
 <div
-  className="project active"
+  className="project"
   onMouseEnter={[Function]}
   onMouseLeave={[Function]}
 >
@@ -71,7 +71,7 @@ exports[`Render Project with link 1`] = `
 
 exports[`Render Project with link and linkText 1`] = `
 <div
-  className="project active"
+  className="project"
   onMouseEnter={[Function]}
   onMouseLeave={[Function]}
 >
@@ -117,7 +117,7 @@ exports[`Render Project with name 1`] = `
 
 exports[`Render active Project without props 1`] = `
 <div
-  className="project active"
+  className="project"
   onMouseEnter={[Function]}
   onMouseLeave={[Function]}
 >

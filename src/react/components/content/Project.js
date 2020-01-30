@@ -16,10 +16,7 @@ export class Project extends React.Component {
     
     render() {
         return (
-            <div
-                className={this.state.active ? 
-                    "project active" : 
-                    "project"}
+            <div className="project"
                 onMouseEnter={this.toggleOn}
                 onMouseLeave={this.toggleOff}
             >

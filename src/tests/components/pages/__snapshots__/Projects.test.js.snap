@@ -5,6 +5,10 @@ exports[`Render Projects page 1`] = `
   id="projects"
 >
   Projects component
+  <Project
+    link="link"
+    name="name"
+  />
   <PrevPage
     float={true}
     route="/experience/"
