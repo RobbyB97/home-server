@@ -4,7 +4,6 @@ exports[`Render Projects page 1`] = `
 <div
   id="projects"
 >
-  Projects component
   <Project
     description="yt-iframe is an HTML file generator written in Python. All you need to do is add a link to a youtube channel and an HTML file will be generated that cleanly displays all the youtube videos of a channel."
     languages="Python"
