@@ -30,43 +30,33 @@ export class Home extends React.Component {
             this.attributesFadeIn()
         }
     } 
+
+    attributeFadeIn = (target, time=0) => {
+        if (time > 0) {
+            setTimeout(() => {
+                let attribute = document.querySelector(target)
+                attribute.style.opacity = '1'
+            }, time)    
+        
+        } else {
+            let attribute = document.querySelector(target)
+            attribute.style.opacity = '1'
+        }
+    }
     
     attributesFadeIn = () => {
         if (this.props.home) {
-            setTimeout(() => {
-                let attribute = document.querySelector('.attribute.fast')
-                attribute.style.opacity = '1'
-            }, 300)
-        
-            setTimeout(() => {
-                let attribute = document.querySelector('.attribute.responsive')
-                attribute.style.opacity = '1'            
-            }, 600)
-        
-            setTimeout(() => {
-                let attribute = document.querySelector('.attribute.beautiful')
-                attribute.style.opacity = '1'
-            }, 900)
-        
-            setTimeout(() => {
-                let attribute = document.querySelector('.attribute.accessible')
-                attribute.style.opacity = '1'
-            }, 1200)
-        
+            this.attributeFadeIn('.attribute.fast', 300)
+            this.attributeFadeIn('.attribute.responsive', 600)
+            this.attributeFadeIn('.attribute.beautiful', 900)
+            this.attributeFadeIn('.attribute.accessible', 1200)        
             this.homeOff()
 
         } else {
-            let attribute = document.querySelector('.attribute.fast')
-            attribute.style.opacity = '1'
-
-            attribute = document.querySelector('.attribute.responsive')
-            attribute.style.opacity = '1' 
-            
-            attribute = document.querySelector('.attribute.beautiful')
-            attribute.style.opacity = '1' 
-            
-            attribute = document.querySelector('.attribute.accessible')
-            attribute.style.opacity = '1'
+            this.attributeFadeIn('.attribute.fast')
+            this.attributeFadeIn('.attribute.responsive')
+            this.attributeFadeIn('.attribute.beautiful')            
+            this.attributeFadeIn('.attribute.accessible')            
         }
     }
 
