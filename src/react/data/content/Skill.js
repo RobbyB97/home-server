@@ -1,4 +1,4 @@
-export const skillFrontEnd = {
+export const skill_frontEnd = {
     title: "Front End Development",
     bits: [
         'HTML5',
@@ -16,7 +16,7 @@ export const skillFrontEnd = {
     ]
 }
 
-export const skillBackEnd = {
+export const skill_backEnd = {
     title: "Back End Development",
     bits: [
         {
@@ -37,7 +37,7 @@ export const skillBackEnd = {
     ]
 }
 
-export const skillProgramming = {
+export const skill_programming = {
     title: "Programming",
     bits: [
         {
