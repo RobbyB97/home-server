@@ -7,6 +7,13 @@ import NextPage from '../common/NextPage'
 import Attribute from '../content/Attribute'
 import {homeOff, splashOn} from '../../actions/home'
 
+import {
+    attribute_fast,
+    attribute_responsive,
+    attribute_beautiful,
+    attribute_accessible
+} from '../../data/content/Attribute'
+
 
 export class Home extends React.Component {
 
@@ -72,39 +79,16 @@ export class Home extends React.Component {
     }
 
     render() {
-        const fastAttribute = {
-            image: "/dist/images/icons/speed_icon.png",
-            title: "Fast",
-            text: "Fully minified files and an optimized structure guarantee your website will always load quickly."
-        }
 
-        const responsiveAttribute = {
-            image: "/dist/images/icons/responsive_icon.png",
-            title: "Responsive",
-            text: "Mobile first development ensures your site works smoothly on all screen sizes."
-        }
-
-        const beautifulAttribute = {
-            image: "/dist/images/icons/paint_icon.png",
-            title: "Beautiful",
-            text: "A UX focused design process guarantees your website is as functional as it is elegant."
-        }
-
-        const accessibleAttribute = {
-            image: "/dist/images/icons/accessibility_icon.png",
-            title: "Accessible",
-            text: "Compliance with ADA standards ensures your website is accessible and easy to use for everyone."
-        }
-        
         return (
             <div id="home">
                 <div className="home__backdrop"></div>
                 
                 <div className="home__attributes">
-                    <Attribute {...fastAttribute} />
-                    <Attribute {...responsiveAttribute} />
-                    <Attribute {...beautifulAttribute} />
-                    <Attribute {...accessibleAttribute} />
+                    <Attribute {...attribute_fast} />
+                    <Attribute {...attribute_responsive} />
+                    <Attribute {...attribute_beautiful} />
+                    <Attribute {...attribute_accessible} />
                 </div>
 
                 <div 
