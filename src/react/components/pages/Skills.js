@@ -5,13 +5,18 @@ import Skill from '../content/Skill'
 import NextPage from '../common/NextPage'
 import PrevPage from '../common/PrevPage'
 
+import {skillFrontEnd, skillBackEnd, skillProgramming} from '../../data/content/Skill'
+
 
 export class Skills extends React.Component {
     
     render() {
         return (
             <div id="skills">
-                Skills component
+
+                <Skill {...skillFrontEnd}/>
+                <Skill {...skillBackEnd}/>
+                <Skill {...skillProgramming}/>
 
                 <PrevPage
                     text="Homepage"

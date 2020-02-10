@@ -4,7 +4,77 @@ exports[`Render Skills page 1`] = `
 <div
   id="skills"
 >
-  Skills component
+  <Skill
+    bits={
+      Array [
+        "HTML5",
+        "CSS3",
+        "JS (ES6)",
+        "SASS",
+        Object {
+          "list": Array [
+            "Router",
+            "Redux",
+            "Jest",
+          ],
+          "skill": "React",
+        },
+      ]
+    }
+    title="Front End Development"
+  />
+  <Skill
+    bits={
+      Array [
+        Object {
+          "list": Array [
+            "Express",
+          ],
+          "skill": "Node.JS",
+        },
+        "PHP",
+        "Heroku",
+        Object {
+          "list": Array [
+            "Oracle SQL",
+            "MongoDB",
+          ],
+          "skill": "SQL / NOSQL",
+        },
+      ]
+    }
+    title="Back End Development"
+  />
+  <Skill
+    bits={
+      Array [
+        Object {
+          "list": Array [
+            "NPM",
+            "Webpack",
+            "Gulp",
+          ],
+          "skill": "Workflow",
+        },
+        "Mobile First Development",
+        "Test Driven Development",
+        Object {
+          "list": Array [
+            "Python",
+            "BASH",
+          ],
+          "skill": "Languages",
+        },
+        Object {
+          "list": Array [
+            "Github",
+          ],
+          "skill": "Git",
+        },
+      ]
+    }
+    title="Programming"
+  />
   <PrevPage
     float={true}
     route="/"
