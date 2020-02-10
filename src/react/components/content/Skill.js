@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default (props) => (
+export const Skill = (props) => (
     <div className="skill">
         <div className="skill__title">
             {props.title}
@@ -20,7 +20,7 @@ export default (props) => (
                         )
                     } else {
                         return (
-                            <p key={bit.skill}>{bit.skill}</p>
+                            <p key={bit}>{bit}</p>
                         )    
                     }
                 })}
@@ -34,3 +34,5 @@ export default (props) => (
         }
     </div>
 )
+
+export default Skill
