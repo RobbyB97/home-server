@@ -20,13 +20,11 @@ export class Experience extends React.Component {
                 </Job>
 
                 <PrevPage
-                    text="Skills"
                     route="/skills/"
                     float={true}
                 />
 
                 <NextPage 
-                    text="Projects"
                     route="/projects/"
                     float={true}
                 />

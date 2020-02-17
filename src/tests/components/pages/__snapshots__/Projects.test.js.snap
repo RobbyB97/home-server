@@ -26,12 +26,10 @@ exports[`Render Projects page 1`] = `
   <PrevPage
     float={true}
     route="/experience/"
-    text="Experience"
   />
   <NextPage
     float={true}
     route="/resume/"
-    text="Resume"
   />
 </div>
 `;

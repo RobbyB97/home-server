@@ -87,13 +87,12 @@ export class Home extends React.Component {
                 >
                     <NavLink to="/">
                         <p className="prevpage__text">
-                            ← Splash page
+                            ←
                         </p>
                     </NavLink>
                 </div>
                 
                 <NextPage
-                    text="Skills"
                     route="/skills/"
                     float={true}
                 />

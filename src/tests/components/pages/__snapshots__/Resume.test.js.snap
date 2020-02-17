@@ -22,7 +22,6 @@ exports[`Render Resume page 1`] = `
   <PrevPage
     float={true}
     route="/projects"
-    text="Projects"
   />
   <div
     className="nextpage float"

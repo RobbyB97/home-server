@@ -22,13 +22,11 @@ export class Projects extends React.Component {
                 <Project {...project_webDevBootcamp}/>
                 
                 <PrevPage
-                    text="Experience"
                     route="/experience/"
                     float={true}
                 />
 
                 <NextPage 
-                    text="Resume"
                     route="/resume/"
                     float={true}
                 />

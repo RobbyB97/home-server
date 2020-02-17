@@ -23,13 +23,11 @@ export class Skills extends React.Component {
                 <Skill {...skill_programming}/>
 
                 <PrevPage
-                    text="Homepage"
                     route="/"
                     float={true}
                 />
 
                 <NextPage 
-                    text="Experience"
                     route="/experience/"
                     float={true}
                 />

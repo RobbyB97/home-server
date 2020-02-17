@@ -14,7 +14,6 @@ export class Resume extends React.Component {
                 </object>
 
                 <PrevPage
-                    text="Projects"
                     route="/projects"
                     float={true}
                 />

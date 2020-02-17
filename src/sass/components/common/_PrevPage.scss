@@ -1,7 +1,14 @@
 .prevpage {
-    width: 150px;
+    width: auto;
     float: left;
+    background-color: white;
+    border-radius: 2px;
     margin: 0;
+    padding: 0 4px;
+
+    a {
+        text-decoration: none;
+    }
 
     &.float {
         position: fixed;
@@ -13,9 +20,8 @@
 
 .prevpage__text {
     width: 100%;
-    float: left;
     margin: 0;
-    text-align: left;
-    color: $off-white;
-    font-size: 1.3rem;
+    text-align: center;
+    color: darken($purple, 30%);
+    font-size: 1.6rem;
 }

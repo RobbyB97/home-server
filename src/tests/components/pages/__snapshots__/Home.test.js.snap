@@ -43,14 +43,13 @@ exports[`Render Home page 1`] = `
       <p
         className="prevpage__text"
       >
-        ← Splash page
+        ←
       </p>
     </NavLink>
   </div>
   <NextPage
     float={true}
     route="/skills/"
-    text="Skills"
   />
   <Divider />
 </div>
