@@ -20,63 +20,31 @@ export class SplashPage extends React.Component {
         this.props.splashOff()
     }
 
+    textFadeIn = (element, time=0) => {
+        if (time > 0) {
+            setTimeout(() => {
+                const attribute = document.querySelector(element)
+                attribute.style.opacity = '1'
+            }, time)
+        } else {
+            const attribute = document.querySelector(target)
+            attribute.style.opacity = '1'
+        }
+    }
+
     splashFadeIn = () => {
-        setTimeout(() => {
-            const background = document.querySelector('.splash__background.two')
-            background.style.opacity = '1'
-        }, 2900)
-
-        setTimeout(() => {
-            const text = document.querySelector('.splash__words.one')
-            text.style.opacity = '1'
-        }, 200)
-        
-        setTimeout(() => {
-            const text = document.querySelector('.splash__words.two')
-            text.style.opacity = '1'
-        }, 800)
-
-        setTimeout(() => {
-            const text = document.querySelector('.splash__words.three')
-            text.style.opacity = '1'
-        }, 1100)
-
-        setTimeout(() => {
-            const text = document.querySelector('.splash__words.four')
-            text.style.opacity = '1'
-        }, 1400)
-
-        setTimeout(() => {
-            const text = document.querySelector('.splash__words.five')
-            text.style.opacity = '1'
-        }, 1700)
-
-        setTimeout(() => {
-            const text = document.querySelector('.splash__words.six')
-            text.style.opacity = '1'
-        }, 2000)
-
-        setTimeout(() => {
-            const text = document.querySelector('.splash__words.seven')
-            text.style.opacity = '1'
-        }, 2300)
-
-        setTimeout(() => {
-            const text = document.querySelector('.splash__words.eight')
-            text.style.opacity = '1'
-        }, 2900)
-
-        setTimeout(() => {
-            const text = document.querySelector('.splash__words.nine')
-            text.style.opacity = '1'
-        }, 3500)
-
-        setTimeout(() => {
-            let text = document.querySelector('.splash__name')
-            text.style.opacity = '1'
-            text = document.querySelector('.splash__to-site')
-            text.style.opacity = '1'
-        }, 3900)
+        this.textFadeIn('.splash__background.two', 2900)
+        this.textFadeIn('.splash__words.one', 200)
+        this.textFadeIn('.splash__words.two', 800)
+        this.textFadeIn('.splash__words.three', 1100)        
+        this.textFadeIn('.splash__words.four', 1400)
+        this.textFadeIn('.splash__words.five', 1700)
+        this.textFadeIn('.splash__words.six', 2000)
+        this.textFadeIn('.splash__words.seven', 2300)
+        this.textFadeIn('.splash__words.eight', 2900)
+        this.textFadeIn('.splash__words.nine', 3500)
+        this.textFadeIn('.splash__name', 3900)
+        this.textFadeIn('.splash__to-site', 3900)
     }
 
     splashFlashIn = () => {
@@ -96,8 +64,7 @@ export class SplashPage extends React.Component {
         ]
 
        textNodes.forEach((node) => {
-           let text = document.querySelector(node)
-           text.style.opacity = '1'
+           this.textFadeIn(node)
        })
         
     }
