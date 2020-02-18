@@ -27,7 +27,7 @@ export class SplashPage extends React.Component {
                 attribute.style.opacity = '1'
             }, time)
         } else {
-            const attribute = document.querySelector(target)
+            const attribute = document.querySelector(element)
             attribute.style.opacity = '1'
         }
     }
