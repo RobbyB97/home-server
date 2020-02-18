@@ -3,7 +3,7 @@
     float: right;
     margin: 0;
     padding: 0 4px;
-    background-color: white;
+    background-color: darken($purple, 30%);
     border-radius: 2px;
 
     a {
@@ -19,10 +19,9 @@
 
 
 .nextpage__text {
-    font-weight: bold;
     width: 100%;
     margin: 0;
     text-align: center;
-    color: darken($purple, 30%);
+    color: white;
     font-size: 1.6rem;
 }
