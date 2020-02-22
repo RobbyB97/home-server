@@ -21,5 +21,7 @@ test('Trigger splashOff', () => {
     )
     wrapper.find('.splash__to-site').simulate('click')
 
-    expect(splashOff).toHaveBeenCalled()
+    setTimeout(() => {
+        expect(splashOff).toHaveBeenCalled()
+    }, 200)
 })
