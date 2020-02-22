@@ -5,7 +5,7 @@ exports[`Render Home page 1`] = `
   id="home"
 >
   <div
-    className="home__backdrop"
+    className="home__text"
   />
   <div
     className="home__attributes"
@@ -35,17 +35,11 @@ exports[`Render Home page 1`] = `
     className="prevpage float"
     onClick={[Function]}
   >
-    <NavLink
-      activeClassName="active"
-      ariaCurrent="true"
-      to="/"
+    <p
+      className="prevpage__text"
     >
-      <p
-        className="prevpage__text"
-      >
-        ←
-      </p>
-    </NavLink>
+      ←
+    </p>
   </div>
   <NextPage
     float={true}
