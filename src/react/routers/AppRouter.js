@@ -38,22 +38,20 @@ export class AppRouter extends React.Component {
 
                     <div id="main-content" onClick={this.toggleNavOff}>
                         <Switch>
-                            {this.props.splash &&
+                            {this.props.splash ?
                                 <Route 
                                     path="/" 
                                     component={SplashPage} 
                                     exact 
                                 />
-                            }
-
-                            {!this.props.splash &&
+                            :
                                 <Route 
                                     path="/" 
                                     component={Home} 
                                     exact 
                                 />
                             }
-
+                            
                             <Route 
                                 path="/skills" 
                                 component={Skills}
