@@ -32,14 +32,14 @@ export class Home extends React.Component {
     } 
 
     attributeFadeIn = (target, time=0) => {
+        let attribute = document.querySelector(target)
+
         if (time > 0) {
             setTimeout(() => {
-                let attribute = document.querySelector(target)
                 attribute.style.opacity = '1'
             }, time)    
         
         } else {
-            let attribute = document.querySelector(target)
             attribute.style.opacity = '1'
         }
     }
@@ -65,14 +65,19 @@ export class Home extends React.Component {
     }
 
     splashOn = () => {
-        this.props.splashOn()
+        setTimeout(() => {
+            this.props.splashOn()            
+        }, 200)
     }
 
     render() {
 
         return (
             <div id="home">
-                <div className="home__backdrop"></div>
+
+                <div className="home__text">
+                    
+                </div>
                 
                 <div className="home__attributes">
                     <Attribute {...attribute_fast} />
@@ -85,11 +90,9 @@ export class Home extends React.Component {
                     className="prevpage float"
                     onClick={this.splashOn}
                 >
-                    <NavLink to="/">
-                        <p className="prevpage__text">
-                            ←
-                        </p>
-                    </NavLink>
+                    <p className="prevpage__text">
+                        ←
+                    </p>
                 </div>
                 
                 <NextPage

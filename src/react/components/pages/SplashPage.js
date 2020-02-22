@@ -17,7 +17,9 @@ export class SplashPage extends React.Component {
     }
 
     splashOff = () => {
-        this.props.splashOff()
+        setTimeout(() => {
+            this.props.splashOff()
+        }, 200)
     }
 
     textFadeIn = (element, time=0) => {
