@@ -6,12 +6,12 @@
     right: 0;
     bottom: 0;
     overflow-y: hidden;
-    transition: 300ms;
+    transition: 200;
 
     &.splash__hidden {
+        transition: 200;
         left: 100vw;
         right: -100vw;
-        opacity: 0;
     }
 }
 
@@ -127,4 +127,7 @@
     right: 1rem;
     opacity: 0;
     transition: 1s;
+    background: transparent;
+    border-bottom: 0px;
+    border: 1px solid white;
 }
