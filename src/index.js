@@ -30,6 +30,10 @@ app.use(mainRouter)
 console.log(chalk.blue(`Running server in ${dev ? "dev" : "prod"} environment`))
 
 // Run server
+http.createServer(app).listen(port, () => {
+	console.log(chalk.bold.green(`Server is up on port ${port}`))
+})
+/*
 if (dev) {
   // Dev
   http.createServer(app).listen(port, () => {
@@ -41,3 +45,4 @@ if (dev) {
     console.log(chalk.green(`Production HTTPS server running on port: ${port}`))
   })
 }
+*/
