@@ -27,33 +27,7 @@ app.use(express.json())
 app.use(mainRouter)
 
 
-// Server config
-let key = ''
-let cert = ''
-let ca = ''
-let httpsOptions = {}
-
-// Dev
-if (dev) {
-  	console.log(chalk.blue('Running server in dev environment'))
-
-// Prod
-} else {
-  	console.log(chalk.blue('Running server in prod environment'))
-  
-	// Connect SSL Certs
-  	key = fs.readFileSync('/etc/letsencrypt/live/bergers.dev/privkey.pem')
-  	cert = fs.readFileSync('/etc/letsencrypt/live/bergers.dev/fullchain.pem')
-  	ca = fs.readFileSync('/etc/letsencrypt/live/bergers.dev/chain.pem')
-
-  	// HTTPS Config
-  	httpsOptions = {
-    	cert: cert,
-    	key: key,
-    	ca: ca
-  	}
-}
-
+console.log(chalk.blue(`Running server in ${dev ? "dev" : "prod"} environment`))
 
 // Run server
 if (dev) {
