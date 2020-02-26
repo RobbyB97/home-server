@@ -16,7 +16,7 @@ import Experience from '../components/pages/Experience'
 import Projects from '../components/pages/Projects'
 import SplashPage from '../components/pages/SplashPage'
 import Resume from '../components/pages/Resume'
-import WildCard from '../components/pages/WildCard'
+import Page404 from '../components/pages/Page404'
 
 // Actions
 import {toggleNavOff} from '../actions/navigation'
@@ -78,7 +78,7 @@ export class AppRouter extends React.Component {
 
                             <Route
                                 path="/*"
-                                component={WildCard}
+                                component={Page404}
                             />
                         </Switch>
                     </div>

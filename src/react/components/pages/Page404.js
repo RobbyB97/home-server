@@ -2,22 +2,22 @@ import React from 'react'
 import {NavLink} from 'react-router-dom'
 
 
-export class WildCard extends React.Component {
+export class Page404 extends React.Component {
     
     render() {
         return (
-            <div id="wildcard">
-                <div className="wildcard__backdrop"></div>
-                <div className="wildcard__content">
-                    <div className="wildcard__image">
+            <div id="page404">
+                <div className="page404__backdrop"></div>
+                <div className="page404__content">
+                    <div className="page404__image">
                         <img src="/dist/images/wildcard.png" />
                     </div>
 
-                    <div className="wildcard__text">
+                    <div className="page404__text">
                         Uh oh, looks like this page doesn't exist.
                     </div>
 
-                    <div className="wildcard__home-button">
+                    <div className="page404__home-button">
                         <NavLink to="/">
                             <button>
                                 Return home
@@ -31,4 +31,4 @@ export class WildCard extends React.Component {
 }
 
 
-export default WildCard
+export default Page404

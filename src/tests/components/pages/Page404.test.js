@@ -1,11 +1,11 @@
 import React from 'react'
 import {shallow} from 'enzyme'
 
-import {WildCard} from '../../../react/components/pages/WildCard'
+import {Page404} from '../../../react/components/pages/Page404'
 
 
 test('Render WildCard', () => {
-    const wrapper = shallow(<WildCard/>)
+    const wrapper = shallow(<Page404/>)
 
     expect(wrapper).toMatchSnapshot()
 })
