@@ -33,16 +33,3 @@ console.log(chalk.blue(`Running server in ${dev ? "dev" : "prod"} environment`))
 http.createServer(app).listen(port, () => {
 	console.log(chalk.bold.green(`Server is up on port ${port}`))
 })
-/*
-if (dev) {
-  // Dev
-  http.createServer(app).listen(port, () => {
-    console.log(chalk.bold.green(`Server is up on port ${port}`))
-  })
-} else {
-  // Production
-  https.createServer(httpsOptions, app).listen(port, () => {
-    console.log(chalk.green(`Production HTTPS server running on port: ${port}`))
-  })
-}
-*/
