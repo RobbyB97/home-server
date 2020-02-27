@@ -2,28 +2,28 @@
 
 exports[`Render WildCard 1`] = `
 <div
-  id="wildcard"
+  id="page404"
 >
   <div
-    className="wildcard__backdrop"
+    className="page404__backdrop"
   />
   <div
-    className="wildcard__content"
+    className="page404__content"
   >
     <div
-      className="wildcard__image"
+      className="page404__image"
     >
       <img
         src="/dist/images/wildcard.png"
       />
     </div>
     <div
-      className="wildcard__text"
+      className="page404__text"
     >
       Uh oh, looks like this page doesn't exist.
     </div>
     <div
-      className="wildcard__home-button"
+      className="page404__home-button"
     >
       <NavLink
         activeClassName="active"
