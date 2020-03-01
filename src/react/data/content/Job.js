@@ -1,23 +1,23 @@
 export const job_finalsite = {
     name: "Finalsite",
-    logo: "",
-    link: "",
-    position: "",
+    logo: "/dist/images/icons/finalsite/finalsite-logo.png",
+    link: "https://www.finalsite.com/",
+    position: "Front End Developer",
     time: {
-        start: "",
-        end: ""
+        start: "July 2019",
+        end: "December 2019"
     },
     description: ""
 }
 
 export const job_twdh = {
     name: "The Web Design Hub",
-    logo: "",
-    link: "",
-    position: "",
+    logo: "/dist/images/icons/twdh/twdh-logo.png",
+    link: "https://www.thewebdesignhub.com/",
+    position: "Junior Web Developer",
     time: {
-        start: "",
-        end: ""
+        start: "November 2018",
+        end: "June 2019"
     },
     description: ""
 }
