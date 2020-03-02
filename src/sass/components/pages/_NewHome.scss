@@ -1,0 +1,33 @@
+#newHome {
+
+}
+
+
+.newHome__backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+    background: url('/dist/images/backgrounds/space_background.jpg') no-repeat;
+    background-size: cover;
+    z-index: -1;
+
+    @media #{$bp-desktop} {
+        background: url('/dist/images/backgrounds/space_background.jpg') no-repeat;
+        background-position: center top;
+        background-size: cover;
+        display: block;
+    }
+}
+
+
+.newHome__content {
+
+}
+
+
+.newHome__head {
+    text-align: center;
+}

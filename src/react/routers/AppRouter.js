@@ -17,6 +17,7 @@ import Projects from '../components/pages/Projects'
 import SplashPage from '../components/pages/SplashPage'
 import Resume from '../components/pages/Resume'
 import Page404 from '../components/pages/Page404'
+import NewHome from '../components/pages/NewHome'
 
 // Actions
 import {toggleNavOff} from '../actions/navigation'
@@ -55,25 +56,26 @@ export class AppRouter extends React.Component {
                             <Route 
                                 path="/skills" 
                                 component={Skills}
-                                exact
                             />
 
                             <Route 
                                 path="/experience" 
                                 component={Experience}
-                                exact
                             />
 
                             <Route
                                 path="/projects"
                                 component={Projects}
-                                exact
                             />
 
                             <Route 
                                 path="/resume"
                                 component={Resume}
-                                exact
+                            />
+
+                            <Route 
+                                path="/newhome"
+                                component={NewHome}
                             />
 
                             <Route
