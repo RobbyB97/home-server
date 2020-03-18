@@ -1,9 +1,119 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Render HomeLink 1`] = `
+exports[`Render external HomeLink 1`] = `
 <div
   className="home-link"
 >
-  HomeLink component
+  <a
+    className="home-link__link"
+  >
+    <p
+      className="home-link__link-text"
+    >
+      <p>
+        HomeLink External
+      </p>
+    </p>
+  </a>
+</div>
+`;
+
+exports[`Render external HomeLink with icon 1`] = `
+<div
+  className="home-link"
+>
+  <a
+    className="home-link__link"
+  >
+    <img
+      className="home-link__icon"
+      src="icon!"
+    />
+    <p
+      className="home-link__link-text"
+    >
+      <p>
+        HomeLink External
+      </p>
+    </p>
+  </a>
+</div>
+`;
+
+exports[`Render external HomeLink with linkText 1`] = `
+<div
+  className="home-link"
+>
+  <a
+    className="home-link__link"
+  >
+    <p
+      className="home-link__link-text"
+    >
+      LinkText!
+    </p>
+  </a>
+</div>
+`;
+
+exports[`Render internal HomeLink with icon 1`] = `
+<div
+  className="home-link"
+>
+  <NavLink
+    activeClassName="active"
+    ariaCurrent="true"
+    className="home-link__link"
+  >
+    <img
+      className="home-link__icon"
+      src="icon!"
+    />
+    <p
+      className="home-link__link-text"
+    >
+      <p>
+        HomeLink Internal
+      </p>
+    </p>
+  </NavLink>
+</div>
+`;
+
+exports[`Render internal HomeLink with linkText 1`] = `
+<div
+  className="home-link"
+>
+  <NavLink
+    activeClassName="active"
+    ariaCurrent="true"
+    className="home-link__link"
+  >
+    <p
+      className="home-link__link-text"
+    >
+      LinkText!
+    </p>
+  </NavLink>
+</div>
+`;
+
+exports[`Render internal HomeLink without props 1`] = `
+<div
+  className="home-link"
+>
+  <NavLink
+    activeClassName="active"
+    ariaCurrent="true"
+    className="home-link__link"
+  >
+    <p
+      className="home-link__link-text"
+    >
+      <p>
+        HomeLink Internal
+      </p>
+    </p>
+  </NavLink>
 </div>
 `;
