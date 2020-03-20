@@ -1,3 +1,14 @@
 .home-link {
-    
+    width: 280px;
+    font-size: $m-font;
+    padding: 0;
+    margin: 4px auto;
+    border: 1px solid white;
+    color: white; 
+}
+
+
+.home-link__link-text {
+    width: 100%;
+    text-align: center;
 }

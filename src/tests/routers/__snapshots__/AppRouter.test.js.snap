@@ -19,23 +19,23 @@ exports[`Render AppRouter 1`] = `
         />
         <Route
           component={[Function]}
-          exact={true}
           path="/skills"
         />
         <Route
           component={[Function]}
-          exact={true}
           path="/experience"
         />
         <Route
           component={[Function]}
-          exact={true}
           path="/projects"
         />
         <Route
           component={[Function]}
-          exact={true}
           path="/resume"
+        />
+        <Route
+          component={[Function]}
+          path="/newhome"
         />
         <Route
           component={[Function]}

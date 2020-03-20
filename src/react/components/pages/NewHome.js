@@ -1,5 +1,7 @@
 import React from 'react'
 
+import HomeLink from '../content/HomeLink'
+
 
 export class NewHome extends React.Component {
     render() {
@@ -16,7 +18,15 @@ export class NewHome extends React.Component {
                     </div>
 
                     <div className="newHome__body">
-
+                        <HomeLink 
+                            to="/skills"
+                            linkText="skills"
+                        />
+                        <HomeLink
+                            to="https://www.google.com"
+                            linkText="google"
+                            external
+                        />
                     </div>
                 </div>
 
