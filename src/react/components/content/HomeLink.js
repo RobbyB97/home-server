@@ -6,14 +6,14 @@ export default class HomeLink extends React.Component {
 
     render() {
         return (
-            <div className='home-link'>
+            <div className='homeLink'>
                 {this.props.external ?
-                    <a className="home-link__link" href={this.props.to}>
+                    <a className="homeLink__link" href={this.props.to}>
                         {this.props.icon &&
-                            <img className="home-link__icon" src={this.props.icon} />
+                            <img className="homeLink__icon" src={this.props.icon} />
                         }
 
-                        <p className="home-link__link-text">
+                        <p className="homeLink__link-text">
                             {this.props.linkText ?
                                 this.props.linkText
                             :
@@ -22,12 +22,12 @@ export default class HomeLink extends React.Component {
                         </p>
                     </a>
                 :
-                    <NavLink className="home-link__link" to={this.props.to}>
+                    <NavLink className="homeLink__link" to={this.props.to}>
                         {this.props.icon &&
-                            <img className="home-link__icon" src={this.props.icon} />
+                            <img className="homeLink__icon" src={this.props.icon} />
                         }
 
-                        <p className='home-link__link-text'>
+                        <p className='homeLink__link-text'>
                             {this.props.linkText ?
                                 this.props.linkText
                             :
