@@ -2,7 +2,7 @@
 
 exports[`Render NextPage with all props 1`] = `
 <div
-  className="nextpage"
+  className="nextPage"
 >
   <NavLink
     activeClassName="active"
@@ -10,7 +10,7 @@ exports[`Render NextPage with all props 1`] = `
     to="Route!"
   >
     <p
-      className="nextpage__text"
+      className="nextPage__text"
     >
       Text!
        →
@@ -21,7 +21,7 @@ exports[`Render NextPage with all props 1`] = `
 
 exports[`Render NextPage with no props 1`] = `
 <div
-  className="nextpage"
+  className="nextPage"
 >
   <NavLink
     activeClassName="active"
@@ -29,7 +29,7 @@ exports[`Render NextPage with no props 1`] = `
     to="/"
   >
     <p
-      className="nextpage__text"
+      className="nextPage__text"
     >
        →
     </p>
@@ -39,7 +39,7 @@ exports[`Render NextPage with no props 1`] = `
 
 exports[`Render NextPage with route 1`] = `
 <div
-  className="nextpage"
+  className="nextPage"
 >
   <NavLink
     activeClassName="active"
@@ -47,7 +47,7 @@ exports[`Render NextPage with route 1`] = `
     to="Route!"
   >
     <p
-      className="nextpage__text"
+      className="nextPage__text"
     >
        →
     </p>
@@ -57,7 +57,7 @@ exports[`Render NextPage with route 1`] = `
 
 exports[`Render NextPage with text 1`] = `
 <div
-  className="nextpage"
+  className="nextPage"
 >
   <NavLink
     activeClassName="active"
@@ -65,7 +65,7 @@ exports[`Render NextPage with text 1`] = `
     to="/"
   >
     <p
-      className="nextpage__text"
+      className="nextPage__text"
     >
       Text!
        →
