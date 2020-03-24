@@ -7,7 +7,7 @@ export class Resume extends React.Component {
             <div id="resume">
                 <object data="/resume.pdf">
                     <p>Looks like your browser doesn't support PDF files.</p>
-                    <p><a href="/resume.pdf" download>Download instead.</a></p>
+                    <p><a href="/resume.pdf" download>Download my resume instead.</a></p>
                 </object>
             </div>
         )

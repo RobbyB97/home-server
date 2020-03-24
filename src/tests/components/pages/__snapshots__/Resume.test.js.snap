@@ -15,7 +15,7 @@ exports[`Render Resume page 1`] = `
         download={true}
         href="/resume.pdf"
       >
-        Download instead.
+        Download my resume instead.
       </a>
     </p>
   </object>
