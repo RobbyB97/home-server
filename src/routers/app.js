@@ -6,12 +6,11 @@ const chalk = require('chalk')
 
 // Config
 const router = new express.Router()
-const http2https = require('../middleware/http2https')
 const publicPath = path.join(__dirname, '../../public/')
 
 
 // Routes
-router.get('/', http2https, (req, res) => {
+router.get('/', (req, res) => {
     try {
         return res.sendFile(path.join(publicPath, 'index.html'))
 
@@ -22,7 +21,7 @@ router.get('/', http2https, (req, res) => {
     }
 })
 
-router.get('/style_guide', http2https, (req, res) => {
+router.get('/style_guide', (req, res) => {
     try {
         return res.sendFile(path.join(publicPath, 'index.html'))
         
@@ -33,7 +32,7 @@ router.get('/style_guide', http2https, (req, res) => {
     }
 })
 
-router.get('/skills', http2https, (req, res) => {
+router.get('/skills', (req, res) => {
     try {
         return res.sendFile(path.join(publicPath, 'index.html'))
         
@@ -44,7 +43,7 @@ router.get('/skills', http2https, (req, res) => {
     }
 })
 
-router.get('/experience', http2https, (req, res) => {
+router.get('/experience', (req, res) => {
     try {
         return res.sendFile(path.join(publicPath, 'index.html'))
     
@@ -55,7 +54,7 @@ router.get('/experience', http2https, (req, res) => {
     }
 })
 
-router.get('/projects', http2https, (req, res) => {
+router.get('/projects', (req, res) => {
     try {
         return res.sendFile(path.join(publicPath, 'index.html'))
 
@@ -67,7 +66,7 @@ router.get('/projects', http2https, (req, res) => {
 })
 
 
-router.get('/resume', http2https, (req, res) => {
+router.get('/resume', (req, res) => {
     try {
         return res.sendFile(path.join(publicPath, 'index.html'))
 
@@ -79,7 +78,7 @@ router.get('/resume', http2https, (req, res) => {
 })
 
 
-router.get('/*', http2https, (req, res) => {
+router.get('/*', (req, res) => {
     try {
         return res.sendFile(path.join(publicPath, 'index.html'))
 
