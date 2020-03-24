@@ -87,10 +87,10 @@ export class Home extends React.Component {
                 </div>
 
                 <div 
-                    className="prevpage float"
+                    className="prevPage float"
                     onClick={this.splashOn}
                 >
-                    <p className="prevpage__text">
+                    <p className="prevPage__text">
                         ←
                     </p>
                 </div>

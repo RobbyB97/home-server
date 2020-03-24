@@ -7,11 +7,11 @@ export class NextPage extends React.Component {
 
     render() {
         return (
-            <div className={this.props.float ? "nextpage float" : "nextpage"}>
+            <div className={this.props.float ? "nextPage float" : "nextPage"}>
                 <NavLink 
                     to={this.props.route ? this.props.route : '/'}
                 >
-                    <p className="nextpage__text">
+                    <p className="nextPage__text">
                         {this.props.text && this.props.text} →
                     </p>
                 </NavLink>

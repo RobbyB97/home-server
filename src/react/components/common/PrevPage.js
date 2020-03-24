@@ -7,11 +7,11 @@ export class PrevPage extends React.Component {
 
     render() {
         return (
-            <div className={this.props.float ? "prevpage float" : "prevpage"}>
+            <div className={this.props.float ? "prevPage float" : "prevPage"}>
                 <NavLink 
                     to={this.props.route ? this.props.route : '/'}
                 >
-                    <p className="prevpage__text">
+                    <p className="prevPage__text">
                         ← {this.props.text && this.props.text}
                     </p>
                 

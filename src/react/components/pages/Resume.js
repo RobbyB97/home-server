@@ -18,10 +18,10 @@ export class Resume extends React.Component {
                     float={true}
                 />
 
-                <div className="nextpage float">
+                <div className="nextPage float">
                     <a href="mailto:bergersr@my.easternct.edu">
-                        <p className="nextpage__text">
-                            Contact me →
+                        <p className="nextPage__text">
+                            Contact me
                         </p>
                     </a>
                 </div>
