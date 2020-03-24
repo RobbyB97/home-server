@@ -5,46 +5,42 @@ exports[`Render Home page 1`] = `
   id="home"
 >
   <div
-    className="home__text"
-  />
-  <div
-    className="home__attributes"
+    className="home__content"
   >
-    <Attribute
-      image="/dist/images/icons/speed_icon.png"
-      text="Fully minified files and an optimized structure guarantee your website will always load quickly."
-      title="Fast"
-    />
-    <Attribute
-      image="/dist/images/icons/responsive_icon.png"
-      text="Mobile first development ensures your site works smoothly on all screen sizes."
-      title="Responsive"
-    />
-    <Attribute
-      image="/dist/images/icons/paint_icon.png"
-      text="A UX focused design process guarantees your website is as functional as it is elegant."
-      title="Beautiful"
-    />
-    <Attribute
-      image="/dist/images/icons/accessibility_icon.png"
-      text="Compliance with ADA standards ensures your website is accessible and easy to use for everyone."
-      title="Accessible"
-    />
-  </div>
-  <div
-    className="prevpage float"
-    onClick={[Function]}
-  >
-    <p
-      className="prevpage__text"
+    <div
+      className="home__head"
     >
-      ←
-    </p>
+      <div
+        className="home__name"
+      >
+        <h2>
+          Robby Bergers
+        </h2>
+      </div>
+      <div
+        className="home__title"
+      >
+        <h3>
+          Front End Developer
+        </h3>
+      </div>
+    </div>
+    <div
+      className="home__body"
+    >
+      <HomeLink
+        linkText="skills"
+        to="/skills"
+      />
+      <HomeLink
+        external={true}
+        linkText="google"
+        to="https://www.google.com"
+      />
+    </div>
   </div>
-  <NextPage
-    float={true}
-    route="/skills/"
+  <div
+    className="home__backdrop"
   />
-  <Divider />
 </div>
 `;
