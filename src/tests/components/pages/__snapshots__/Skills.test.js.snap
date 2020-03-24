@@ -75,13 +75,5 @@ exports[`Render Skills page 1`] = `
     }
     title="Programming"
   />
-  <PrevPage
-    float={true}
-    route="/"
-  />
-  <NextPage
-    float={true}
-    route="/experience/"
-  />
 </div>
 `;

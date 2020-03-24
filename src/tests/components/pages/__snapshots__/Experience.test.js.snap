@@ -10,13 +10,5 @@ exports[`Render Experience page 1`] = `
     text="Job"
     title="Finalsite"
   />
-  <PrevPage
-    float={true}
-    route="/skills/"
-  />
-  <NextPage
-    float={true}
-    route="/projects/"
-  />
 </div>
 `;

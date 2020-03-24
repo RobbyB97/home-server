@@ -1,7 +1,5 @@
 import React from 'react'
 
-import PrevPage from '../common/PrevPage'
-import NextPage from '../common/NextPage'
 import Project from '../content/Project'
 
 import {
@@ -20,16 +18,6 @@ export class Projects extends React.Component {
                 <Project {...project_ytIframe}/>
                 <Project {...project_thisWebsite}/>
                 <Project {...project_webDevBootcamp}/>
-                
-                <PrevPage
-                    route="/experience/"
-                    float={true}
-                />
-
-                <NextPage 
-                    route="/resume/"
-                    float={true}
-                />
             </div>
         )
     }

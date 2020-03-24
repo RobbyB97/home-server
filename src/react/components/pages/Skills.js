@@ -1,8 +1,6 @@
 import React from 'react'
 
 import Skill from '../content/Skill'
-import NextPage from '../common/NextPage'
-import PrevPage from '../common/PrevPage'
 
 import {
     skill_frontEnd, 
@@ -20,16 +18,6 @@ export class Skills extends React.Component {
                 <Skill {...skill_frontEnd}/>
                 <Skill {...skill_backEnd}/>
                 <Skill {...skill_programming}/>
-
-                <PrevPage
-                    route="/"
-                    float={true}
-                />
-
-                <NextPage 
-                    route="/experience/"
-                    float={true}
-                />
             </div>
         )
     }

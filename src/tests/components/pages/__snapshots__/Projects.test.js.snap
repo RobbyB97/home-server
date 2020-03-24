@@ -23,13 +23,5 @@ exports[`Render Projects page 1`] = `
     link="https://github.com/RobbyB97/web-dev-bootcamp"
     name="Web dev bootcamp"
   />
-  <PrevPage
-    float={true}
-    route="/experience/"
-  />
-  <NextPage
-    float={true}
-    route="/resume/"
-  />
 </div>
 `;
