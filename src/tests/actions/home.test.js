@@ -1,4 +1,4 @@
-import {homeOn, homeOff, splashOn, splashOff} from '../../react/actions/home'
+import {homeOn, homeOff} from '../../react/actions/home'
 
 
 test('homeOn action', () => {
@@ -15,23 +15,6 @@ test('homeOff action', () => {
 
     expect(action).toEqual({
         type: 'HOME_OFF'
-    })
-})
-
-test('splashOn action', () => {
-    const action = splashOn()
-
-    expect(action).toEqual({
-        type: 'SPLASH_ON'
-    })
-})
-
-
-test('splashOff action', () => {
-    const action = splashOff()
-
-    expect(action).toEqual({
-        type: 'SPLASH_OFF'
     })
 })
 
