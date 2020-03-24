@@ -1,5 +1,4 @@
 import React from 'react'
-import {connect} from 'react-redux'
 
 import Job from '../content/Job'
 import PrevPage from '../common/PrevPage'
@@ -34,17 +33,4 @@ export class Experience extends React.Component {
 }
 
 
-const mapStateToProps = (state) => {
-	return {
-		nav: state.navigation.nav,
-        title: state.title.title,
-        splash: state.home.splash
-	}
-}
-
-const mapDispatchToProps = (dispatch) => ({
-
-})
-
-
-export default connect(mapStateToProps, mapDispatchToProps)(Experience)
+export default Experience

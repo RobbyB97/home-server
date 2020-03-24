@@ -2,13 +2,13 @@
 
 exports[`Render external HomeLink 1`] = `
 <div
-  className="home-link"
+  className="homeLink"
 >
   <a
-    className="home-link__link"
+    className="homeLink__link"
   >
     <p
-      className="home-link__link-text"
+      className="homeLink__link-text"
     >
       <p>
         HomeLink External
@@ -20,17 +20,17 @@ exports[`Render external HomeLink 1`] = `
 
 exports[`Render external HomeLink with icon 1`] = `
 <div
-  className="home-link"
+  className="homeLink"
 >
   <a
-    className="home-link__link"
+    className="homeLink__link"
   >
     <img
-      className="home-link__icon"
+      className="homeLink__icon"
       src="icon!"
     />
     <p
-      className="home-link__link-text"
+      className="homeLink__link-text"
     >
       <p>
         HomeLink External
@@ -42,13 +42,13 @@ exports[`Render external HomeLink with icon 1`] = `
 
 exports[`Render external HomeLink with linkText 1`] = `
 <div
-  className="home-link"
+  className="homeLink"
 >
   <a
-    className="home-link__link"
+    className="homeLink__link"
   >
     <p
-      className="home-link__link-text"
+      className="homeLink__link-text"
     >
       LinkText!
     </p>
@@ -58,19 +58,19 @@ exports[`Render external HomeLink with linkText 1`] = `
 
 exports[`Render internal HomeLink with icon 1`] = `
 <div
-  className="home-link"
+  className="homeLink"
 >
   <NavLink
     activeClassName="active"
     ariaCurrent="true"
-    className="home-link__link"
+    className="homeLink__link"
   >
     <img
-      className="home-link__icon"
+      className="homeLink__icon"
       src="icon!"
     />
     <p
-      className="home-link__link-text"
+      className="homeLink__link-text"
     >
       <p>
         HomeLink Internal
@@ -82,15 +82,15 @@ exports[`Render internal HomeLink with icon 1`] = `
 
 exports[`Render internal HomeLink with linkText 1`] = `
 <div
-  className="home-link"
+  className="homeLink"
 >
   <NavLink
     activeClassName="active"
     ariaCurrent="true"
-    className="home-link__link"
+    className="homeLink__link"
   >
     <p
-      className="home-link__link-text"
+      className="homeLink__link-text"
     >
       LinkText!
     </p>
@@ -100,15 +100,15 @@ exports[`Render internal HomeLink with linkText 1`] = `
 
 exports[`Render internal HomeLink without props 1`] = `
 <div
-  className="home-link"
+  className="homeLink"
 >
   <NavLink
     activeClassName="active"
     ariaCurrent="true"
-    className="home-link__link"
+    className="homeLink__link"
   >
     <p
-      className="home-link__link-text"
+      className="homeLink__link-text"
     >
       <p>
         HomeLink Internal

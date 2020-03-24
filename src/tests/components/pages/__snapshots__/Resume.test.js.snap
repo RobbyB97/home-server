@@ -24,15 +24,15 @@ exports[`Render Resume page 1`] = `
     route="/projects"
   />
   <div
-    className="nextpage float"
+    className="nextPage float"
   >
     <a
       href="mailto:bergersr@my.easternct.edu"
     >
       <p
-        className="nextpage__text"
+        className="nextPage__text"
       >
-        Contact me →
+        Contact me
       </p>
     </a>
   </div>
