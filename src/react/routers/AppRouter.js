@@ -14,10 +14,8 @@ import Home from '../components/pages/Home'
 import Skills from '../components/pages/Skills'
 import Experience from '../components/pages/Experience'
 import Projects from '../components/pages/Projects'
-import SplashPage from '../components/pages/SplashPage'
 import Resume from '../components/pages/Resume'
 import Page404 from '../components/pages/Page404'
-import NewHome from '../components/pages/NewHome'
 
 // Actions
 import {toggleNavOff} from '../actions/navigation'
@@ -39,19 +37,12 @@ export class AppRouter extends React.Component {
 
                     <div id="main-content" onClick={this.toggleNavOff}>
                         <Switch>
-                            {this.props.splash ?
-                                <Route 
-                                    path="/" 
-                                    component={SplashPage} 
-                                    exact 
-                                />
-                            :
-                                <Route 
-                                    path="/" 
-                                    component={Home} 
-                                    exact 
-                                />
-                            }
+
+                            <Route
+                                path="/"
+                                component={Home}
+                                exact 
+                            />
                             
                             <Route 
                                 path="/skills" 
@@ -73,11 +64,6 @@ export class AppRouter extends React.Component {
                                 component={Resume}
                             />
 
-                            <Route 
-                                path="/newhome"
-                                component={NewHome}
-                            />
-
                             <Route
                                 path="/*"
                                 component={Page404}
@@ -94,9 +80,7 @@ export class AppRouter extends React.Component {
 const mapStateToProps = (state) => {
 	return {
 		nav: state.navigation.nav,
-		title: state.title.title,
-        home: state.home.home,
-        splash: state.home.splash
+        home: state.home.home
 	}
 }
 

@@ -35,10 +35,6 @@ exports[`Render AppRouter 1`] = `
         />
         <Route
           component={[Function]}
-          path="/newhome"
-        />
-        <Route
-          component={[Function]}
           path="/*"
         />
       </Switch>

@@ -9,9 +9,6 @@ import 'normalize.css/normalize.css'
 import '../sass/main.scss'
 import AppRouter from './routers/AppRouter'
 import configureStore from './store/configureStore'
-import toggleNav from './actions/navigation'
-import {setTitle} from './actions/title'
-
 
 // Variables
 const $appRoot = document.getElementById('app')
