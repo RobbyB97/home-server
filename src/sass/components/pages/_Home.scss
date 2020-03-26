@@ -4,26 +4,30 @@
 
 
 .home__backdrop {
-    opacity: 0.3;
-    z-index: -1;
-    background: url($background + 'space_background.jpg');
-    background-size: cover;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-}
+    opacity: 0.5;
+    background: url('/dist/images/backgrounds/space_background.jpg') no-repeat;
+    background-size: cover;
+    z-index: -1;
 
-
-.home__attributes {
-    width: 100%;
-
-    @media #{$bp-tablet} {
-        margin: 0 auto;
-        margin-top: 40px;
-        height: 400px;
-        width: 700px;
+    @media #{$bp-desktop} {
+        background: url('/dist/images/backgrounds/space_background.jpg') no-repeat;
+        background-position: center top;
+        background-size: cover;
+        display: block;
     }
 }
 
+
+.home__content {
+
+}
+
+
+.home__head {
+    text-align: center;
+}

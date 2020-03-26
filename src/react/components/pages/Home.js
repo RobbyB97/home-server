@@ -1,6 +1,12 @@
 import React from 'react'
 
 import HomeLink from '../content/HomeLink'
+import HomeIcons from '../content/HomeIcon'
+
+import {
+    homeIcon_GitHub,
+    homeIcon_LinkedIn
+} from '../../data/content/HomeIcon'
 
 
 export class Home extends React.Component {
@@ -18,6 +24,7 @@ export class Home extends React.Component {
                     </div>
 
                     <div className="home__body">
+                        <HomeIcons icons={[homeIcon_GitHub, homeIcon_LinkedIn]} />
                         <HomeLink 
                             to="/skills"
                             linkText="skills"
