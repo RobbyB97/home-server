@@ -15,9 +15,7 @@
     './components/common/DesktopNavigation',
     './components/common/MobileNavigation',
     './components/common/Header',
-    './components/common/LogoBar',
-    './components/common/NextPage',
-    './components/common/PrevPage';
+    './components/common/LogoBar';
 
 
 
@@ -30,7 +28,9 @@
     './components/content/Project',
     './components/content/Attribute',
     './components/content/Divider',
-    './components/content/HomeLink';
+    './components/content/HomeLink',
+    './components/content/HomeIcon',
+    './components/content/HomeIcons';
 
 
 
@@ -40,9 +40,7 @@
 @import
     './components/pages/Experience',
     './components/pages/Home',
-    './components/pages/NewHome',
     './components/pages/Projects',
     './components/pages/Skills',
-    './components/pages/SplashPage',
     './components/pages/Resume',
     './components/pages/Page404';

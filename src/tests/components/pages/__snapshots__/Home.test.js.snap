@@ -28,6 +28,22 @@ exports[`Render Home page 1`] = `
     <div
       className="home__body"
     >
+      <HomeIcon
+        icons={
+          Array [
+            Object {
+              "icon": "/dist/images/icons/github.svg",
+              "link": "https://www.github.com/robbyb97",
+              "name": "GitHub",
+            },
+            Object {
+              "icon": "/dist/images/icons/linkedin.png",
+              "link": "https://www.linkedin.com/in/robbyb97",
+              "name": "LinkedIn",
+            },
+          ]
+        }
+      />
       <HomeLink
         linkText="skills"
         to="/skills"
