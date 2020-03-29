@@ -1,9 +1,22 @@
-// Skills
+export const homeLink_Skills = {
+    to: "/skills",
+    linkText: "Skills"
+}
 
-// Experience
 
-// Projects
+export const homeLink_Experience = {
+    to: "/experience",
+    linkText: "Experience"
+}
 
-// Resume
 
-// Contact me
+export const homeLink_Projects = {
+    to: "/projects",
+    linkText: "Projects"
+}
+
+
+export const homeLink_Resume = {
+    to: "/resume",
+    linkText: "Resume"
+}

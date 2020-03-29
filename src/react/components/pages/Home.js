@@ -7,6 +7,13 @@ import {
     homeIcon_GitHub,
     homeIcon_LinkedIn
 } from '../../data/content/HomeIcon'
+import {
+    homeLink_Skills,
+    homeLink_Experience,
+    homeLink_Projects,
+    homeLink_Resume
+} from '../../data/content/homeLink'
+
 
 
 export class Home extends React.Component {
@@ -25,15 +32,11 @@ export class Home extends React.Component {
 
                     <div className="home__body">
                         <HomeIcons icons={[homeIcon_GitHub, homeIcon_LinkedIn]} />
-                        <HomeLink 
-                            to="/skills"
-                            linkText="skills"
-                        />
-                        <HomeLink
-                            to="https://www.google.com"
-                            linkText="google"
-                            external
-                        />
+                        
+                        <HomeLink {...homeLink_Skills} />
+                        <HomeLink {...homeLink_Experience} />
+                        <HomeLink {...homeLink_Projects} />
+                        <HomeLink {...homeLink_Resume} />
                     </div>
                 </div>
 
