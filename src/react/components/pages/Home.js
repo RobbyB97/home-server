@@ -1,7 +1,7 @@
 import React from 'react'
 
 import HomeLink from '../content/HomeLink'
-import HomeIcons from '../content/HomeIcon'
+import HomeIcon from '../content/HomeIcon'
 
 import {
     homeIcon_GitHub,
@@ -17,6 +17,7 @@ import {
 
 
 export class Home extends React.Component {
+
     render() {
         return (
             <div id="home">                
@@ -30,13 +31,17 @@ export class Home extends React.Component {
                         </div>
                     </div>
 
-                    <div className="home__body">
-                        <HomeIcons icons={[homeIcon_GitHub, homeIcon_LinkedIn]} />
-                        
-                        <HomeLink {...homeLink_Skills} />
-                        <HomeLink {...homeLink_Experience} />
-                        <HomeLink {...homeLink_Projects} />
-                        <HomeLink {...homeLink_Resume} />
+                    <div className="home__body">   
+                        <div className="home__links">
+                            <div className="home__icons">
+                                <HomeIcon {...homeIcon_GitHub} />
+                                <HomeIcon {...homeIcon_LinkedIn} />                     
+                            </div>
+                            <HomeLink {...homeLink_Skills} />
+                            <HomeLink {...homeLink_Experience} />
+                            <HomeLink {...homeLink_Projects} />
+                            <HomeLink {...homeLink_Resume} />
+                        </div>
                     </div>
                 </div>
 
