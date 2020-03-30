@@ -8,59 +8,18 @@ const chalk = require('chalk')
 const router = new express.Router()
 const publicPath = path.join(__dirname, '../../public/')
 
+// Paths
+const portfolioRoute = path.join(publicPath, 'portfolio.html')
+
 
 // Routes
 router.get('/', (req, res) => {
     try {
-        return res.sendFile(path.join(publicPath, 'index.html'))
+        return res.sendFile(portfolioRoute)
 
     } catch(e) {
         res.send()
-        console.log(chalk.red('An error occured on /: '))
-        console.log(e)
-    }
-})
-
-router.get('/style_guide', (req, res) => {
-    try {
-        return res.sendFile(path.join(publicPath, 'index.html'))
-        
-    } catch(e) {
-        res.send()
-        console.log(chalk.red('An error occured on /style_guide: '))
-        console.log(e)
-    }
-})
-
-router.get('/skills', (req, res) => {
-    try {
-        return res.sendFile(path.join(publicPath, 'index.html'))
-        
-    } catch(e) {
-        res.send()
-        console.log(chalk.red('An error occured on /skills: '))
-        console.log(e)
-    }
-})
-
-router.get('/experience', (req, res) => {
-    try {
-        return res.sendFile(path.join(publicPath, 'index.html'))
-    
-    } catch(e) {
-        res.send()
-        console.log(chalk.red('An error occured on /experience: '))
-        console.log(e)
-    }
-})
-
-router.get('/projects', (req, res) => {
-    try {
-        return res.sendFile(path.join(publicPath, 'index.html'))
-
-    } catch(e) {
-        res.send()
-        console.log(chalk.red('An error occured on /projects: '))
+        console.log(chalk.red('An error occured on the homepage: '))
         console.log(e)
     }
 })
@@ -68,7 +27,7 @@ router.get('/projects', (req, res) => {
 
 router.get('/resume', (req, res) => {
     try {
-        return res.sendFile(path.join(publicPath, 'index.html'))
+        return res.sendFile(path.join(publicPath, 'resume.pdf'))
 
     } catch(e) {
         res.send()
