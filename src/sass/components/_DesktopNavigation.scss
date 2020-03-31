@@ -1,0 +1,98 @@
+#DesktopNavigation {
+    display: none;
+
+    @media #{$bp-tablet} {
+        display: block;
+        flex-grow: 1;
+        position: fixed;
+        z-index: 10;
+        right: 2.2rem;
+        top: 1.2rem;
+        background: transparent;
+        font-size: $s-font;
+        height: 3rem;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            margin-top: 0;
+            margin-bottom: 0;
+
+            li {
+                list-style-type: none;
+                margin-right: $m-font;
+
+                a {
+                    color: white;
+                    transition: 200ms;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: none;
+                        border-bottom: 2px solid $purple;
+                    }
+                }
+
+                .active {
+                    border-bottom: 1px solid white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    @media #{$bp-desktop} {
+        ul {
+            margin-top: 12px ;
+            margin-bottom: 12px;
+        }
+    }
+}
+
+
+.desktop-navigation__link {
+    margin-right: 1rem;
+
+    a {
+        width: $m-font;
+        height: $m-font;
+        border-radius: 50%;
+        padding-bottom: 2px;
+        transition: 200ms;
+        
+        &:hover {
+            border-bottom: 0;
+        }                        
+    }
+
+    &.linkedin {
+        margin-right: 0 !important;
+
+        a > div {
+            background: url($linkedin);
+            background-size: 100% 100%;
+            width: $m-font;
+            height: $m-font;
+
+            &:hover {
+                background: url($linkedin-purple);
+                background-size: 100% 100%;
+            }   
+        }
+    }
+
+    &.github {
+                    
+        a > div {
+            background: url($github);
+            background-size: 100% 100%;
+            width: $m-font;
+            height: $m-font;
+
+            &:hover {
+                background: url($github-purple);
+                background-size: 100% 100%;
+            }
+        }
+    }
+}

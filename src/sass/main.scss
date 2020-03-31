@@ -1,45 +1,25 @@
-/*************************************
-*** Base Config
-*************************************/
-@import 
-    './base/variables',
-    './base/base',
-    './base/main-content';
-
-
-
-/*************************************
-*** Common Components
-*************************************/
+/* Base config */
 @import
-    './components/common/DesktopNavigation',
-    './components/common/MobileNavigation',
-    './components/common/Header',
-    './components/common/LogoBar';
+    './config/paths',
+    './config/colors',
+    './config/fonts',
+    './config/icons',
+    './config/mediaQueries';
 
 
-
-/*************************************
-*** Content Components
-*************************************/
+/* Content */
 @import
-    './components/content/Job',
-    './components/content/Skill',
-    './components/content/Project',
-    './components/content/Attribute',
-    './components/content/Divider',
-    './components/content/HomeLink',
-    './components/content/HomeIcon';
+    './static/base';
 
 
-
-/*************************************
-*** Page Components
-*************************************/
+/* Components */
 @import
-    './components/pages/Experience',
-    './components/pages/Home',
-    './components/pages/Projects',
-    './components/pages/Skills',
-    './components/pages/Resume',
-    './components/pages/Page404';
+    './components/DesktopNavigation',
+    './components/Header',
+    './components/MobileNavigation';
+
+
+/* Pages */
+@import
+    './pages/Portfolio'
+
