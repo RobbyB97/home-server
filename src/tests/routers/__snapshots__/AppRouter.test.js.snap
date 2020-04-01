@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render AppRouter 1`] = `
+<BrowserRouter>
+  <div>
+    <Connect(HomeButton) />
+    <DesktopNavigation />
+    <Connect(MobileNavigation) />
+    <Switch>
+      <Route
+        component={[Function]}
+        exact={true}
+        path="/"
+      />
+    </Switch>
+  </div>
+</BrowserRouter>
+`;
