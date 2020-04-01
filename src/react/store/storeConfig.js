@@ -1,6 +1,6 @@
 import {createStore, combineReducers} from 'redux'
 
-import uiReducer from '../reducers/uiReducer.js'
+import uiReducer from '../reducers/ui.js'
 
 export default () => {
     return createStore(
