@@ -4,19 +4,15 @@
     './config/colors',
     './config/fonts',
     './config/icons',
-    './config/mediaQueries';
-
-
-/* Content */
-@import
-    './static/base';
+    './config/mediaQueries',
+    './config/html';
 
 
 /* Components */
 @import
-    './components/DesktopNavigation',
-    './components/Header',
-    './components/MobileNavigation';
+    './components/ui/DesktopNavigation',
+    './components/ui/HomeButton',
+    './components/ui/MobileNavigation';
 
 
 /* Pages */
