@@ -8,6 +8,9 @@ export class Portfolio extends React.Component {
     render() {
         return (
             <div id="#Portfolio">
+                <div className="portfolio__landing">
+                    
+                </div>
                 <div className="portfolio__about">
 
                 </div>
