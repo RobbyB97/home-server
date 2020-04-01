@@ -17,3 +17,8 @@ config/prod.env
 #Ignore webpack-built files
 public/dist/bundle.js
 public/dist/bundle.css
+
+#Ignore old build files
+src/sass_old
+src/tests_old
+src/react/old stuff

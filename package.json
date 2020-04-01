@@ -1,7 +1,7 @@
 {
-  "name": "home-server",
-  "version": "1.0.0",
-  "description": "home server",
+  "name": "Portfolio",
+  "version": "2.0.0",
+  "description": "Robby Bergers' Portfolio",
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
@@ -12,7 +12,8 @@
     "test:watch": "npm run test -- --watch",
     "dev": "concurrently --kill-others \"npm run watch\" \"npm run watch-react\"",
     "watch": "nodemon src/index.js -e js,css,html,hbs",
-    "watch-react": "webpack --watch"
+    "watch-react": "webpack --watch",
+    "try": "live-server"
   },
   "repository": {
     "type": "git",
