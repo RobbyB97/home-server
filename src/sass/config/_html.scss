@@ -1,23 +1,37 @@
 html {
     background-color: $white;
     color: $black;
+    font-family: $serif;
+    overflow-x: hidden;
 }
 
 header {}
 
 body {}
 
-h1 {}
+h1 {
+    font-family: $montserrat;
+}
 
-h2 {}
+h2 {
+    font-family: $montserrat;
+}
 
-h3 {}
+h3 {
+    font-family: $montserrat;
+}
 
-h4 {}
+h4 {
+    font-family: $montserrat;
+}
 
-h5 {}
+h5 {
+    font-family: $montserrat;
+}
 
-h6 {}
+h6 {
+    font-family: $montserrat;
+}
 
 p {}
 
