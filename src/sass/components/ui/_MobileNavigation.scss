@@ -13,8 +13,6 @@
     width: 3em;
     height: 3em;
     z-index: 10;
-    border-radius: 8px;
-    background-color: $white;
     color: $black;
 
     &.nav {
@@ -39,7 +37,7 @@
 
 
 .mobileNavigation__menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;

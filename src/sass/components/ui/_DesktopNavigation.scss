@@ -6,7 +6,7 @@
         flex-grow: 1;
         position: fixed;
         z-index: 10;
-        right: 2.2rem;
+        right: 33px;
         top: 1.2rem;
         background: transparent;
         font-size: $s-font;
@@ -20,21 +20,25 @@
 
             li {
                 list-style-type: none;
-                margin-right: $m-font;
 
                 a {
-                    color: white;
+                    color: $black;
                     transition: 200ms;
                     text-decoration: none;
 
                     &:hover {
                         text-decoration: none;
+                        color: $red;
                     }
                 }
 
                 .active {
                     border-bottom: 1px solid white;
                     text-decoration: none;
+                }
+
+                &:not(:last-child) {
+                    margin-right: $m-font;
                 }
             }
         }
