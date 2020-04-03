@@ -1,5 +1,6 @@
 /* Libraries */
 import React from 'react'
+import Particles from 'react-particles-js'
 
 
 /* Components */
@@ -21,17 +22,69 @@ export class Portfolio extends React.Component {
 
                 {/* Landing section */}
                 <div className="portfolio__landing">
-                    {/* Landing content */}
                     
+                    {/* Landing content */}
+                    <div className="portfolio__tagLine">
+                        
+                    </div>
                     <h2>Robby Bergers</h2>
 
+
                     {/* Background fanciness */}
+                    <Particles 
+                        width="100vw"
+                        height="100vh"
+                        className="portfolio__particles one"
+                        params={{
+                            particles: {
+                                line_linked: {
+                                    shadow: {
+                                        enable: true,
+                                        color: '#080808',
+                                        blur: 1
+                                    }
+                                }
+                            }
+                        }}
+                    />
+                    <Particles 
+                        width="100vw"
+                        height="100vh"
+                        className="portfolio__particles two"
+                        params={{
+                            particles: {
+                                line_linked: {
+                                    shadow: {
+                                        enable: true,
+                                        color: '#080808',
+                                        blur: 5
+                                    }
+                                }
+                            }
+                        }}
+                    />
+                    <Particles 
+                        width="100vw"
+                        height="100vh"
+                        className="portfolio__particles three"
+                        params={{
+                            particles: {
+                                line_linked: {
+                                    shadow: {
+                                        enable: true,
+                                        color: '#080808',
+                                        blur: 10
+                                    }
+                                }
+                            }
+                        }}
+                    />
                     <div className="portfolio__topShapes"></div>
-                    <div className="portfolio__shapeOne"></div>
-                    <div className="portfolio__shapeTwo"></div>
-                    <div className="portfolio__shapeThree"></div>
-                    <div className="portfolio__shapeFour"></div>
-                    <div className="portfolio__shapeFive"></div>
+                    <div className="portfolio__landingShape one"></div>
+                    <div className="portfolio__landingShape two"></div>
+                    <div className="portfolio__landingShape three"></div>
+                    <div className="portfolio__landingShape four"></div>
+                    <div className="portfolio__landingShape five"></div>
                     <div className="portfolio__landingBottom">
 
                     </div>
@@ -39,11 +92,13 @@ export class Portfolio extends React.Component {
 
                 {/* About section */}                
                 <div id="about" className="portfolio__about">
-                    <div className="portfolio__shapeSix"></div>
-                    <div className="portfolio__shapeSeven"></div>
-                    <div className="portfolio__shapeEight"></div>
-                    <div className="portfolio__shapeNine"></div>
-                    <div className="portfolio__shapeTen"></div>
+                    
+                    {/* Background fanciness top */}
+                    <div className="portfolio__aboutShape one"></div>
+                    <div className="portfolio__aboutShape two"></div>
+                    <div className="portfolio__aboutShape three"></div>
+                    <div className="portfolio__aboutShape four"></div>
+                    <div className="portfolio__aboutShape five"></div>
                 </div>
 
                 {/* Services section */}
