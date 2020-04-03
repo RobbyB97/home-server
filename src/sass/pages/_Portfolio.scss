@@ -2,20 +2,179 @@
 
 }
 
-
+/* Landing section */
 .portfolio__landing {
+    height: 100vh;
+    padding-top: 5em;
+
+    h2 {
+        font-weight: 300;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+.portfolio__shapeOne {
+    position: absolute;
+    bottom: 3em;
+    width: 0;
+    height: 0;
+    z-index: 6;
+    border-bottom: 4vh solid lighten($black, 10%);
+    border-left: 100vw solid transparent;
+
+    @media #{$bp-tablet} {
+        border-bottom: 6vh solid lighten($black, 10%);
+    }
+}
+
+.portfolio__shapeTwo {
+    position: absolute;
+    bottom: 3em;
+    width: 0;
+    height: 0;
+    z-index: 5;
+    border-bottom: 8vh solid lighten($black, 20%);
+    border-left: 100vw solid transparent;
     
+    @media #{$bp-tablet} {
+        border-bottom: 12vh solid lighten($black, 20%);
+    }
+}
+
+.portfolio__shapeThree {
+    position: absolute;
+    bottom: 3em;
+    width: 0;
+    height: 0;
+    z-index: 4;
+    border-bottom: 12vh solid lighten($black, 35%);
+    border-left: 100vw solid transparent;
+
+    @media #{$bp-tablet} {
+        border-bottom: 18vh solid lighten($black, 35%);
+    }
+}
+
+.portfolio__shapeFour {
+    position: absolute;
+    bottom: 3em;
+    width: 0;
+    height: 0;
+    z-index: 3;
+    border-bottom: 16vh solid lighten($black, 55%);
+    border-left: 100vw solid transparent;
+
+    @media #{$bp-tablet} {
+        border-bottom: 24vh solid lighten($black, 55%);
+    }
+}
+
+.portfolio__shapeFive {
+    position: absolute;
+    bottom: 3em;
+    width: 0;
+    height: 0;
+    z-index: 2;
+    border-bottom: 20vh solid lighten($black, 80%);
+    border-left: 100vw solid transparent;
+
+    @media #{$bp-tablet} {
+        border-bottom: 30vh solid lighten($black, 80%);
+    }
+}
+
+.portfolio__landingBottom {
+    background-color: $black;
+    height: 3em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 
+/* About */
 .portfolio__about {
+    height: 300vh;
+}
 
+.portfolio__shapeSix {
+    position: absolute;
+    top: 100vh;
+    width: 0;
+    height: 0;
+    z-index: 6;
+    border-top: 4vh solid darken($red, 10%);
+    border-right: 100vw solid transparent;
+
+    @media #{$bp-tablet} {
+        border-top: 6vh solid darken($red, 10%);
+    }
+}
+
+.portfolio__shapeSeven {
+    position: absolute;
+    top: 100vh;
+    width: 0;
+    height: 0;
+    z-index: 5;
+    border-top: 8vh solid $red;
+    border-right: 100vw solid transparent;
+    
+    @media #{$bp-tablet} {
+        border-top: 12vh solid $red;
+    }
+}
+
+.portfolio__shapeEight {
+    position: absolute;
+    top: 100vh;
+    width: 0;
+    height: 0;
+    z-index: 4;
+    border-top: 12vh solid lighten($red, 15%);
+    border-right: 100vw solid transparent;
+
+    @media #{$bp-tablet} {
+        border-top: 18vh solid lighten($red, 15%);
+    }
+}
+
+.portfolio__shapeNine {
+    position: absolute;
+    top: 100vh;
+    width: 0;
+    height: 0;
+    z-index: 3;
+    border-top: 16vh solid lighten($red, 35%);
+    border-right: 100vw solid transparent;
+
+    @media #{$bp-tablet} {
+        border-top: 24vh solid lighten($red, 35%);
+    }
+}
+
+.portfolio__shapeTen {
+    position: absolute;
+    top: 100vh;
+    width: 0;
+    height: 0;
+    z-index: 2;
+    border-top: 20vh solid lighten($red, 50%);
+    border-right: 100vw solid transparent;
+
+    @media #{$bp-tablet} {
+        border-top: 30vh solid lighten($red, 50%);
+    }
 }
 
 
+/* Services */
 .portfolio__services {
 
 }
+
 
 
 .portfolio__skills {
