@@ -3,9 +3,6 @@
 exports[`Render AppRouter 1`] = `
 <BrowserRouter>
   <div>
-    <Connect(HomeButton) />
-    <DesktopNavigation />
-    <Connect(MobileNavigation) />
     <Switch>
       <Route
         component={[Function]}
