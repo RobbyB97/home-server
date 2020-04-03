@@ -5,10 +5,6 @@ import { connect } from 'react-redux';
 
 
 /* Components */
-import MobileNavigation from '../components/ui/MobileNavigation'
-import DesktopNavigation from '../components/ui/DesktopNavigation'
-import HomeButton from '../components/ui/HomeButton'
-
 import Portfolio from '../pages/Portfolio'
 
 
@@ -22,9 +18,6 @@ export class AppRouter extends React.Component {
         return (
             <BrowserRouter>
                 <div>
-                    <HomeButton />
-                    <DesktopNavigation />
-                    <MobileNavigation />
                     <Switch>
 
                         <Route
