@@ -8,10 +8,13 @@ module.exports = (env) => {
     const CSSExtract = new ExtractTextPlugin('bundle.css')
     
     return {
-        entry: './src/react/app.js',
+        entry: './src/react/app.tsx',
         output: {
             path: path.join(__dirname, 'public', 'dist'),
             filename: 'bundle.js'
+        },
+        resolve: {
+            extensions: [".mjs", ".js", ".jsx", ".ts", ".tsx", ".json"]
         },
         module: {
             rules: [{
@@ -36,6 +39,18 @@ module.exports = (env) => {
                         }
                     ]
                 })
+            }, {
+                test: /\.ts(x?)$/,
+                exclude: /node_modules/,
+                use: [
+                    {
+                        loader: "ts-loader"
+                    }
+                ]
+            }, {
+                enforce: "pre",
+                test: /\.js$/,
+                loader: "source-map-loader"
             }]
         },
         plugins: [
