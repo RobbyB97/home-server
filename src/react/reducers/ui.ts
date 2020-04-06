@@ -3,7 +3,7 @@ const UIDefaultState = {
 }
 
 
-export default (state = UIDefaultState, action) => {
+export default (state = UIDefaultState, action): any => {
     switch(action.type) {
         case 'NAV_TOGGLE':
             return {
