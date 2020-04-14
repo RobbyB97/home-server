@@ -29,10 +29,14 @@
 
 .portfolio__landingShape {
     position: absolute;
-    bottom: 5em;
+    bottom: 20vh;
     width: 0;
     height: 0;
     border-left: 100vw solid transparent;
+
+    @media #{$bp-desktop} {
+        bottom: 15vh;
+    }
 
     &.one {
         z-index: 6;
@@ -88,12 +92,16 @@
 
 .portfolio__landingBottom {
     background-color: $black;
-    height: 5em;
+    height: 20vh;
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     z-index: 4;
+
+    @media #{$bp-desktop} {
+        height: 15vh;
+    }
 }
 
 

@@ -38,14 +38,21 @@ export class Portfolio extends React.Component {
                         params={{
                             particles: {
                                 number: {
-                                    value: 80,
+                                    value: 150,
                                     density: {
                                         enable: true,
                                         value_area: 700
                                     }
                                 },
+                                line_linked: {
+                                    enable: true,
+                                    distance: 60,
+                                    color: '#808080',
+                                    opacity: 0.5,
+                                    width: 1
+                                },
                                 color: {
-                                    value: '#080808'
+                                    value: '#000'
                                 }
                             }
                         }}
