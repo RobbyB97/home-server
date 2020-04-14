@@ -37,17 +37,20 @@ export class Portfolio extends React.Component {
                         className="portfolio__particles one"
                         params={{
                             particles: {
-                                line_linked: {
-                                    shadow: {
+                                number: {
+                                    value: 80,
+                                    density: {
                                         enable: true,
-                                        color: '#080808',
-                                        blur: 1
+                                        value_area: 700
                                     }
+                                },
+                                color: {
+                                    value: '#080808'
                                 }
                             }
                         }}
                     />
-                    <Particles 
+                    {/*<Particles 
                         width="100vw"
                         height="100vh"
                         className="portfolio__particles two"
@@ -63,7 +66,7 @@ export class Portfolio extends React.Component {
                             }
                         }}
                     />
-                    <Particles 
+                    <Particles
                         width="100vw"
                         height="100vh"
                         className="portfolio__particles three"
@@ -78,7 +81,7 @@ export class Portfolio extends React.Component {
                                 }
                             }
                         }}
-                    />
+                    />*/}
                     <div className="portfolio__topShapes"></div>
                     <div className="portfolio__landingShape one"></div>
                     <div className="portfolio__landingShape two"></div>
