@@ -96,7 +96,11 @@ export class Portfolio extends React.Component {
                     <div className="portfolio__landingShape four"></div>
                     <div className="portfolio__landingShape five"></div>
                     <div className="portfolio__landingBottom">
+                        
 
+                        <div>
+                            Hire me on <a href="">Upwork!</a>
+                        </div>
                     </div>
                 </div>
 

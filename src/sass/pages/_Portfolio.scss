@@ -18,13 +18,6 @@
     position: absolute;
     top: 0;
     z-index: 1;
-
-    &.three, &.two {
-        display: none;
-        @media #{$bp-tablet} {
-            display: block;
-        }
-    }
 }
 
 .portfolio__landingShape {
@@ -33,10 +26,6 @@
     width: 0;
     height: 0;
     border-left: 100vw solid transparent;
-
-    @media #{$bp-desktop} {
-        bottom: 15vh;
-    }
 
     &.one {
         z-index: 6;
@@ -98,10 +87,10 @@
     left: 0;
     right: 0;
     z-index: 4;
-
-    @media #{$bp-desktop} {
-        height: 15vh;
-    }
+    color: $white;
+    font-family: $montserrat;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 
