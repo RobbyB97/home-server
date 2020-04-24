@@ -1,7 +1,7 @@
 {
-  "name": "home-server",
-  "version": "1.0.0",
-  "description": "home server",
+  "name": "Portfolio",
+  "version": "2.0.0",
+  "description": "Robby Bergers' Portfolio",
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
@@ -12,7 +12,9 @@
     "test:watch": "npm run test -- --watch",
     "dev": "concurrently --kill-others \"npm run watch\" \"npm run watch-react\"",
     "watch": "nodemon src/index.js -e js,css,html,hbs",
-    "watch-react": "webpack --watch"
+    "watch-react": "webpack --watch",
+    "try": "live-server",
+    "build": "tsc index.tsx"
   },
   "repository": {
     "type": "git",
@@ -44,6 +46,7 @@
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-modal": "^2.2.2",
+    "react-particles-js": "^2.7.1",
     "react-redux": "^5.0.5",
     "react-router-dom": "^4.2.2",
     "redux": "^3.7.2",
@@ -63,6 +66,7 @@
     "parallelshell": "^3.0.1",
     "react-test-renderer": "^16.0.0",
     "sass": "^1.22.7",
+    "typescript": "^3.8.3",
     "webpack-dev-server": "^3.8.0"
   }
 }

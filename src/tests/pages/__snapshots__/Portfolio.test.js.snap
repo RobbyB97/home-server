@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Portfolio 1`] = `
+<div
+  id="#Portfolio"
+>
+  <Connect(HomeButton)
+    internal={true}
+  />
+  <DesktopNavigation />
+  <Connect(MobileNavigation) />
+  <div
+    className="portfolio__landing"
+  >
+    <div
+      className="portfolio__tagLine"
+    />
+    <h2>
+      Robby Bergers
+    </h2>
+    <t
+      className="portfolio__particles one"
+      height="100vh"
+      params={
+        Object {
+          "particles": Object {
+            "color": Object {
+              "value": "#000",
+            },
+            "line_linked": Object {
+              "color": "#808080",
+              "distance": 60,
+              "enable": true,
+              "opacity": 0.5,
+              "width": 1,
+            },
+            "number": Object {
+              "density": Object {
+                "enable": true,
+                "value_area": 700,
+              },
+              "value": 150,
+            },
+          },
+        }
+      }
+      style={Object {}}
+      width="100vw"
+    />
+    <div
+      className="portfolio__topShapes"
+    />
+    <div
+      className="portfolio__landingShape one"
+    />
+    <div
+      className="portfolio__landingShape two"
+    />
+    <div
+      className="portfolio__landingShape three"
+    />
+    <div
+      className="portfolio__landingShape four"
+    />
+    <div
+      className="portfolio__landingShape five"
+    />
+    <div
+      className="portfolio__landingBottom"
+    >
+      <div>
+        Hire me on 
+        <a
+          href=""
+        >
+          Upwork!
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    className="portfolio__about"
+    id="about"
+  >
+    <div
+      className="portfolio__aboutShape one"
+    />
+    <div
+      className="portfolio__aboutShape two"
+    />
+    <div
+      className="portfolio__aboutShape three"
+    />
+    <div
+      className="portfolio__aboutShape four"
+    />
+    <div
+      className="portfolio__aboutShape five"
+    />
+  </div>
+  <div
+    className="portfolio__services"
+    id="services"
+  />
+  <div
+    className="portfolio__skills"
+    id="skills"
+  />
+  <div
+    className="portfolio__experience"
+    id="experience"
+  />
+  <div
+    className="portfolio__projects"
+    id="projects"
+  />
+</div>
+`;

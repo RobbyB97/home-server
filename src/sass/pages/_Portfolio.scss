@@ -1,0 +1,180 @@
+#Portfolio {
+
+}
+
+/* Landing section */
+.portfolio__landing {
+    height: 100vh;
+    padding-top: 5em;
+
+    h2 {
+        font-weight: 400;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+.portfolio__particles {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+
+    canvas {
+        opacity: 0.7;
+    }
+}
+
+.portfolio__landingShape {
+    position: absolute;
+    bottom: 20vh;
+    width: 0;
+    height: 0;
+    border-left: 100vw solid transparent;
+
+    &.one {
+        z-index: 6;
+        border-bottom: 4vh solid lighten($black, 10%);
+        border-left: 100vw solid transparent;
+        opacity: 0.9;
+    
+        @media #{$bp-tablet} {
+            border-bottom: 6vh solid lighten($black, 10%);
+        }    
+    }
+
+    &.two {
+        z-index: 5;
+        border-bottom: 8vh solid lighten($black, 20%);
+        opacity: 0.8;
+        
+        @media #{$bp-tablet} {
+            border-bottom: 12vh solid lighten($black, 20%);
+        }  
+    }
+
+    &.three {
+        z-index: 4;
+        border-bottom: 12vh solid lighten($black, 35%);
+        opacity: 0.6;
+
+        @media #{$bp-tablet} {
+            border-bottom: 18vh solid lighten($black, 35%);
+        }
+    }
+    
+    &.four {
+        z-index: 3;
+        border-bottom: 16vh solid lighten($black, 55%);
+        opacity: 0.4;
+
+        @media #{$bp-tablet} {
+            border-bottom: 24vh solid lighten($black, 55%);
+        }
+    }
+
+    &.five {
+        z-index: 2;
+        border-bottom: 20vh solid lighten($black, 80%);
+        opacity: 0.2;
+    
+        @media #{$bp-tablet} {
+            border-bottom: 30vh solid lighten($black, 80%);
+        }
+    }
+}
+
+.portfolio__landingBottom {
+    background-color: $black;
+    height: 20vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 4;
+    color: $white;
+    font-family: $montserrat;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
+/* About */
+.portfolio__about {
+    height: 300vh;
+    
+}
+
+.portfolio__aboutShape {
+    position: absolute;
+    top: 100vh;
+    width: 0;
+    height: 0;
+    border-right: 100vw solid transparent;
+
+    &.one {
+        z-index: 6;
+        border-top: 4vh solid lighten($black, 10%);
+
+        @media #{$bp-tablet} {
+            border-top: 6vh solid lighten($black, 10%);
+        }
+    }
+
+    &.two {
+        z-index: 5;
+        border-top: 8vh solid lighten($black, 20%);
+        
+        @media #{$bp-tablet} {
+            border-top: 12vh solid lighten($black, 20%);
+        }
+    }
+
+    &.three {
+        z-index: 4;
+        border-top: 12vh solid lighten($black, 35%);
+    
+        @media #{$bp-tablet} {
+            border-top: 18vh solid lighten($black, 35%);
+        } 
+    }
+
+    &.four {
+        z-index: 3;
+        border-top: 16vh solid lighten($red, 35%);
+
+        @media #{$bp-tablet} {
+            border-top: 24vh solid lighten($red, 35%);
+        }
+    }
+
+    &.five {
+        z-index: 2;
+        border-top: 20vh solid lighten($red, 50%);
+        border-right: 100vw solid transparent;
+
+        @media #{$bp-tablet} {
+            border-top: 30vh solid lighten($red, 50%);
+        }
+    }
+}
+
+/* Services */
+.portfolio__services {
+
+}
+
+
+
+.portfolio__skills {
+
+}
+
+
+.portfolio__experience {
+
+}
+
+
+.portfolio__projects {
+    
+}

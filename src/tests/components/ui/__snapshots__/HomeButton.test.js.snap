@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render HomeButton (external) 1`] = `
+<div
+  className=""
+  id="HomeButton"
+>
+  <NavLink
+    activeClassName="active"
+    ariaCurrent="true"
+    className="homeButton__logo"
+    to="/"
+  >
+    B
+  </NavLink>
+</div>
+`;
+
+exports[`Render HomeButton (internal) 1`] = `
+<div
+  className=""
+  id="HomeButton"
+>
+  <a
+    className="homeButton__logo"
+    href="#app"
+  >
+    B
+  </a>
+</div>
+`;

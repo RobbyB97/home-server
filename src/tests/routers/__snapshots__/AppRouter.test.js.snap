@@ -3,42 +3,13 @@
 exports[`Render AppRouter 1`] = `
 <BrowserRouter>
   <div>
-    <Connect(Header) />
-    <DesktopNavigation />
-    <Connect(MobileNavigation) />
-    <LogoBar />
-    <div
-      id="main-content"
-      onClick={[Function]}
-    >
-      <Switch>
-        <Route
-          component={[Function]}
-          exact={true}
-          path="/"
-        />
-        <Route
-          component={[Function]}
-          path="/skills"
-        />
-        <Route
-          component={[Function]}
-          path="/experience"
-        />
-        <Route
-          component={[Function]}
-          path="/projects"
-        />
-        <Route
-          component={[Function]}
-          path="/resume"
-        />
-        <Route
-          component={[Function]}
-          path="/*"
-        />
-      </Switch>
-    </div>
+    <Switch>
+      <Route
+        component={[Function]}
+        exact={true}
+        path="/"
+      />
+    </Switch>
   </div>
 </BrowserRouter>
 `;
