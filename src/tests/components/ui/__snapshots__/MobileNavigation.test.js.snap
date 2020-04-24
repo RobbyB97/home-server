@@ -18,7 +18,48 @@ exports[`Render MobileNavigation 1`] = `
   >
     <ul
       className="mobileNavigation__links"
-    />
+    >
+      <li>
+        <a
+          href="#about"
+          onClick={[Function]}
+        >
+          about
+        </a>
+      </li>
+      <li>
+        <a
+          href="#services"
+          onClick={[Function]}
+        >
+          services
+        </a>
+      </li>
+      <li>
+        <a
+          href="#skills"
+          onClick={[Function]}
+        >
+          skills
+        </a>
+      </li>
+      <li>
+        <a
+          href="#experience"
+          onClick={[Function]}
+        >
+          experience
+        </a>
+      </li>
+      <li>
+        <a
+          href="#projects"
+          onClick={[Function]}
+        >
+          projects
+        </a>
+      </li>
+    </ul>
   </div>
 </div>
 `;
