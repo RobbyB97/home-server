@@ -1,9 +1,10 @@
 #Ignore node modules
 node_modules/
 
-#Ignore sass cache
+#Ignore build caches
 .sass-cache/
 *.map
+*.cache
 
 #Ignore keys for SSL cert
 src/key/*
