@@ -14,10 +14,23 @@ exports[`Render Portfolio 1`] = `
   >
     <div
       className="portfolio__tagLine"
-    />
-    <h2>
-      Robby Bergers
-    </h2>
+    >
+      <h2
+        className="portfolio__tagLineTitle"
+      >
+        Robby Bergers
+      </h2>
+      <p
+        className="portfolio__tagLineText one"
+      >
+        Designer
+      </p>
+      <p
+        className="portfolio__tagLineText two"
+      >
+        Developer
+      </p>
+    </div>
     <t
       className="portfolio__particles one"
       height="100vh"
@@ -73,7 +86,7 @@ exports[`Render Portfolio 1`] = `
         <a
           href=""
         >
-          Upwork!
+          Fiverr!
         </a>
       </div>
     </div>

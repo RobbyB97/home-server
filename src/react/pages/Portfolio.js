@@ -22,15 +22,19 @@ export class Portfolio extends React.Component {
 
                 {/* Landing section */}
                 <div className="portfolio__landing">
-                    
-                    {/* Landing content */}
+
                     <div className="portfolio__tagLine">
-                        
+                        <h2 className="portfolio__tagLineTitle">
+                            Robby Bergers
+                        </h2>
+                        <p className="portfolio__tagLineText one">
+                            Designer
+                        </p>
+                        <p className="portfolio__tagLineText two">
+                            Developer
+                        </p>
                     </div>
-                    <h2>Robby Bergers</h2>
 
-
-                    {/* Background fanciness */}
                     <Particles 
                         width="100vw"
                         height="100vh"
@@ -57,38 +61,7 @@ export class Portfolio extends React.Component {
                             }
                         }}
                     />
-                    {/*<Particles 
-                        width="100vw"
-                        height="100vh"
-                        className="portfolio__particles two"
-                        params={{
-                            particles: {
-                                line_linked: {
-                                    shadow: {
-                                        enable: true,
-                                        color: '#080808',
-                                        blur: 5
-                                    }
-                                }
-                            }
-                        }}
-                    />
-                    <Particles
-                        width="100vw"
-                        height="100vh"
-                        className="portfolio__particles three"
-                        params={{
-                            particles: {
-                                line_linked: {
-                                    shadow: {
-                                        enable: true,
-                                        color: '#080808',
-                                        blur: 10
-                                    }
-                                }
-                            }
-                        }}
-                    />*/}
+
                     <div className="portfolio__topShapes"></div>
                     <div className="portfolio__landingShape one"></div>
                     <div className="portfolio__landingShape two"></div>
@@ -97,9 +70,8 @@ export class Portfolio extends React.Component {
                     <div className="portfolio__landingShape five"></div>
                     <div className="portfolio__landingBottom">
                         
-
                         <div>
-                            Hire me on <a href="">Upwork!</a>
+                            Hire me on <a href="">Fiverr!</a>
                         </div>
                     </div>
                 </div>
