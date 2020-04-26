@@ -142,7 +142,7 @@
 /* About */
 .portfolio__about {
     height: 300vh;
-    background-color: lighten($gray, 10%);
+    background-color: lighten($black, 15%);
     
 }
 
@@ -155,19 +155,19 @@
 
     &.one {
         z-index: 6;
-        border-top: 4vh solid lighten($black, 10%);
+        border-top: 4vh solid lighten($black, 5%);
 
         @media #{$bp-tablet} {
-            border-top: 6vh solid lighten($black, 10%);
+            border-top: 6vh solid lighten($black, 5%);
         }
     }
 
     &.two {
         z-index: 5;
-        border-top: 8vh solid lighten($black, 20%);
+        border-top: 8vh solid lighten($black, 10%);
         
         @media #{$bp-tablet} {
-            border-top: 12vh solid lighten($black, 20%);
+            border-top: 12vh solid lighten($black, 10%);
         }
     }
 

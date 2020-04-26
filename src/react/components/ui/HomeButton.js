@@ -41,7 +41,7 @@ export class HomeButton extends React.Component {
     render() {
         return (
             <div id="HomeButton" 
-                className={this.props.nav ? "nav":""}
+                className={this.props.nav || this.props.white ? "nav":""}
                 onClick={this.props.nav && this.navToggle}
                 >
                 
@@ -68,7 +68,8 @@ export class HomeButton extends React.Component {
 /* Connect to store */
 const mapStateToProps = (state) => {
     return {
-        nav: state.ui.nav
+        nav: state.ui.nav,
+        white: state.ui.white
     }
 }
 

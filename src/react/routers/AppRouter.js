@@ -1,17 +1,29 @@
-/* Libraries */
-import React from 'react'
-import {BrowserRouter, Route, Switch} from 'react-router-dom'
+import React from 'react';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import { connect } from 'react-redux';
 
-
-/* Components */
-import Portfolio from '../pages/Portfolio'
+import Portfolio from '../pages/Portfolio';
+import {whiteOn, whiteOff} from '../actions/ui'
 
 
 /* Router */
 export class AppRouter extends React.Component {
-    toggleNavOff = () => {
-        this.props.toggleNavOff()
+    constructor(props) {
+        super(props);
+    }
+
+    componentDidMount() {
+        const component = this;
+        document.addEventListener('scroll', () => component.toggle()); 
+    }
+
+    toggle = () => {
+        if (window.pageYOffset > 800) {
+            this.props.whiteOn();
+
+        } else {
+            this.props.whiteOff();
+        }
     }
 
     render() {
@@ -29,9 +41,22 @@ export class AppRouter extends React.Component {
                     </Switch>
                 </div>
             </BrowserRouter>
-        )
+        );
     }
 }
 
 
-export default AppRouter
+const mapStateToProps = (state) => {
+    return {
+        white: state.ui.white
+    };
+}
+
+
+const mapDispatchToProps = (dispatch) => ({
+    whiteOn: () => dispatch(whiteOn()),
+    whiteOff: () => dispatch(whiteOff())
+});
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(AppRouter);

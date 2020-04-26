@@ -1,5 +1,11 @@
 #MobileNavigation {
 
+    &.white {
+        .mobileNavigation__button {
+            color: $white;
+        }
+    }
+
     @media #{$bp-tablet} {
         display: none;
     }

@@ -7,14 +7,20 @@ import {navToggle} from '../../actions/ui'
 
 /* Component */
 export class MobileNavigation extends React.Component {
+    constructor(props) {
+        super(props);
+    }
 
     navToggle = () => {
-        this.props.navToggle()
+        this.props.navToggle();
     }
 
     render() {
         return (
-            <div id="MobileNavigation">
+            <div id="MobileNavigation" 
+                className={this.props.white ?
+                    "white":""}
+            >
                 <div className={this.props.nav ?
                     "mobileNavigation__button nav":
                     "mobileNavigation__button"}>
@@ -54,6 +60,7 @@ export class MobileNavigation extends React.Component {
 const mapStateToProps = (state) => {
     return {
         nav: state.ui.nav,
+        white: state.ui.white
     }
 }
 

@@ -2,6 +2,7 @@
 
 exports[`Render MobileNavigation 1`] = `
 <div
+  className=""
   id="MobileNavigation"
 >
   <div

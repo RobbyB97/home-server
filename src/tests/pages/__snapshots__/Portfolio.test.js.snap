@@ -7,11 +7,14 @@ exports[`Render Portfolio 1`] = `
   <Connect(HomeButton)
     internal={true}
   />
-  <DesktopNavigation />
+  <Connect(DesktopNavigation) />
   <Connect(MobileNavigation) />
   <div
     className="portfolio__landing"
   >
+    <div
+      className="portfolio__landingBackground"
+    />
     <div
       className="portfolio__tagLine"
     >
@@ -80,16 +83,7 @@ exports[`Render Portfolio 1`] = `
     />
     <div
       className="portfolio__landingBottom"
-    >
-      <div>
-        Hire me on 
-        <a
-          href=""
-        >
-          Fiverr!
-        </a>
-      </div>
-    </div>
+    />
   </div>
   <div
     className="portfolio__about"

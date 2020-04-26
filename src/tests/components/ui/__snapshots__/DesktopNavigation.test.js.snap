@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Render HomeButton 1`] = `
+exports[`Render DesktopNavigation 1`] = `
 <div
+  className=""
   id="DesktopNavigation"
 >
   <ul>
