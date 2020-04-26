@@ -7,6 +7,7 @@ import Particles from 'react-particles-js'
 import MobileNavigation from '../components/ui/MobileNavigation'
 import DesktopNavigation from '../components/ui/DesktopNavigation'
 import HomeButton from '../components/ui/HomeButton'
+import ContactForm from '../components/ContactForm'
 
 
 export class Portfolio extends React.Component {
@@ -22,6 +23,7 @@ export class Portfolio extends React.Component {
 
                 {/* Landing section */}
                 <div className="portfolio__landing">
+                    <div className="portfolio__landingBackground"></div>
 
                     <div className="portfolio__tagLine">
                         <h2 className="portfolio__tagLineTitle">
@@ -82,9 +84,8 @@ export class Portfolio extends React.Component {
                     {/* Background fanciness top */}
                     <div className="portfolio__aboutShape one"></div>
                     <div className="portfolio__aboutShape two"></div>
-                    <div className="portfolio__aboutShape three"></div>
-                    <div className="portfolio__aboutShape four"></div>
-                    <div className="portfolio__aboutShape five"></div>
+
+                    <ContactForm />
                 </div>
 
                 {/* Services section */}

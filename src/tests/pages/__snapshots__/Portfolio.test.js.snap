@@ -101,15 +101,7 @@ exports[`Render Portfolio 1`] = `
     <div
       className="portfolio__aboutShape two"
     />
-    <div
-      className="portfolio__aboutShape three"
-    />
-    <div
-      className="portfolio__aboutShape four"
-    />
-    <div
-      className="portfolio__aboutShape five"
-    />
+    <ContactForm />
   </div>
   <div
     className="portfolio__services"
