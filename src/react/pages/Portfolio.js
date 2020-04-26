@@ -3,8 +3,8 @@ import React from 'react';
 import MobileNavigation from '../components/ui/MobileNavigation';
 import DesktopNavigation from '../components/ui/DesktopNavigation';
 import HomeButton from '../components/ui/HomeButton';
-import Landing from '../components/Landing'
-import ContactForm from '../components/ContactForm';
+import Landing from '../components/Landing';
+import About from '../components/About';
 
 
 export class Portfolio extends React.Component {
@@ -19,18 +19,7 @@ export class Portfolio extends React.Component {
                 <MobileNavigation />
 
                 <Landing />
-
-                {/* About section */}                
-                <div id="about" className="portfolio__about">
-                    
-                    {/* Background fanciness top */}
-                    <div className="portfolio__aboutShape one"></div>
-                    <div className="portfolio__aboutShape two"></div>
-
-                    
-
-                    <ContactForm />
-                </div>
+                <About />
 
                 {/* Services section */}
                 <div id="services" className="portfolio__services">

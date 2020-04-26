@@ -10,18 +10,7 @@ exports[`Render Portfolio 1`] = `
   <Connect(DesktopNavigation) />
   <Connect(MobileNavigation) />
   <Landing />
-  <div
-    className="portfolio__about"
-    id="about"
-  >
-    <div
-      className="portfolio__aboutShape one"
-    />
-    <div
-      className="portfolio__aboutShape two"
-    />
-    <ContactForm />
-  </div>
+  <About />
   <div
     className="portfolio__services"
     id="services"
