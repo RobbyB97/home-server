@@ -1,0 +1,135 @@
+.landing {
+    height: 100vh;
+}
+
+.landing__background {
+  /*position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 6em;
+    background-image: url("/dist/images/4klanding_001.png");
+    background-size: 100%;
+    background-position: bottom;
+    width: 100vw;
+    height: 100%;
+    background-repeat: no-repeat;
+    z-index: 1;*/  
+}
+
+.landing__tagline {
+    margin: 0 auto;
+    padding-top: 5em;
+
+    h2 {
+        margin-bottom: 2em;
+        font-weight: 400;
+        margin: 0 auto;
+        text-align: center;    
+    }
+
+    p {
+        text-align: center;
+        font-family: $montserrat;
+        font-size: 1.2em;
+        font-weight: 600;
+
+        &.one {
+            padding-right: 4em;
+            color: $red;
+        }
+
+        &.two {
+            padding-left: 4em;
+        }
+    }
+}
+
+.landing__particles {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+
+    canvas {
+        opacity: 0.7;
+    }  
+}
+
+.landing__shape {
+    position: absolute;
+    bottom: 100px;
+    width: 0;
+    height: 0;
+    border-left: 100vw solid transparent;
+
+    &.one {
+        z-index: 6;
+        border-bottom: 3vh solid lighten($black, 10%);
+        border-left: 100vw solid transparent;
+        opacity: 0.9;
+    
+        @media #{$bp-tablet} {
+            border-bottom: 4vh solid lighten($black, 10%);
+        }    
+    }
+
+    &.two {
+        z-index: 5;
+        border-bottom: 6vh solid lighten($black, 20%);
+        opacity: 0.8;
+        
+        @media #{$bp-tablet} {
+            border-bottom: 8vh solid lighten($black, 20%);
+        }  
+    }
+
+    &.three {
+        z-index: 4;
+        border-bottom: 9vh solid lighten($black, 35%);
+        opacity: 0.6;
+
+        @media #{$bp-tablet} {
+            border-bottom: 12vh solid lighten($black, 35%);
+        }
+    }
+    
+    &.four {
+        z-index: 3;
+        border-bottom: 12vh solid lighten($black, 55%);
+        opacity: 0.4;
+
+        @media #{$bp-tablet} {
+            border-bottom: 16vh solid lighten($black, 55%);
+        }
+    }
+
+    &.five {
+        z-index: 2;
+        border-bottom: 15vh solid lighten($black, 80%);
+        opacity: 0.2;
+    
+        @media #{$bp-tablet} {
+            border-bottom: 20vh solid lighten($black, 80%);
+        }
+    }
+}
+
+.landing__bottom {
+    background-color: $black;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 4;
+    color: $white;
+    font-family: $montserrat;
+    font-weight: 400;
+    font-size: 1.2em;
+
+    div {
+        position: absolute;
+        right: 2em;
+        bottom: 2em;
+        font-size: 1.5em;
+    } 
+}
