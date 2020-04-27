@@ -3,6 +3,50 @@ import Particles from 'react-particles-js';
 
 
 export class Landing extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            // Used for shape animation on bottom of landing section
+            shapeOne: false,
+            shapeTwo:  false,
+            shapeThree: false,
+            shapeFour: false,
+            shapeFive: false
+        }
+    }
+
+    componentDidMount() {
+        this.landingAnimation()
+    }
+
+    landingAnimation = () => {
+        setTimeout(() => {
+            this.setState({
+                shapeOne: true
+            });    
+        }, 500);
+        setTimeout(() => {
+            this.setState({
+                shapeTwo: true
+            });
+        }, 650);
+        setTimeout(() => {
+            this.setState({
+                shapeThree: true
+            });
+        }, 800);
+        setTimeout(() => {
+            this.setState({
+                shapeFour: true
+            });
+        }, 950);
+        setTimeout(() => {
+            this.setState({
+                shapeFive: true
+            });
+        }, 1100);
+    }
+
     render() {
         return (
             <div className="landing">
@@ -47,11 +91,21 @@ export class Landing extends React.Component {
                     }}
                 />
 
-                <div className="landing__shape one"></div>
-                <div className="landing__shape two"></div>
-                <div className="landing__shape three"></div>
-                <div className="landing__shape four"></div>
-                <div className="landing__shape five"></div>
+                <div className={this.state.shapeOne ?
+                    "landing__shape one":
+                    "landing__shape"}></div>
+                <div className={this.state.shapeTwo ?
+                    "landing__shape two":
+                    "landing__shapte"}></div>
+                <div className={this.state.shapeThree ?
+                    "landing__shape three":
+                    "landing__shape"}></div>
+                <div className={this.state.shapeFour ?
+                    "landing__shape four":
+                    "landing__shape"}></div>
+                <div className={this.state.shapeFive ?
+                    "landing__shape five":
+                    "landing__shape"}></div>
                 <div className="landing__bottom">
                     
                     

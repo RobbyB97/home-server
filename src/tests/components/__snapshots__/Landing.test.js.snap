@@ -54,19 +54,19 @@ exports[`Render Landing 1`] = `
     width="100vw"
   />
   <div
-    className="landing__shape one"
+    className="landing__shape"
   />
   <div
-    className="landing__shape two"
+    className="landing__shapte"
   />
   <div
-    className="landing__shape three"
+    className="landing__shape"
   />
   <div
-    className="landing__shape four"
+    className="landing__shape"
   />
   <div
-    className="landing__shape five"
+    className="landing__shape"
   />
   <div
     className="landing__bottom"
