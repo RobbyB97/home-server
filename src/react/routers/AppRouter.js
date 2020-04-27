@@ -18,7 +18,7 @@ export class AppRouter extends React.Component {
     }
 
     toggle = () => {
-        if (window.pageYOffset > 800) {
+        if (window.pageYOffset > 540) {
             this.props.whiteOn();
 
         } else {
