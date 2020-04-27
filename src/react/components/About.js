@@ -1,5 +1,4 @@
 import React from 'react';
-import ContactForm from '../components/ContactForm';
 
 
 export class About extends React.Component {
@@ -10,9 +9,13 @@ export class About extends React.Component {
                 <div className="about__shape one"></div>
                 <div className="about__shape two"></div>
 
-                
-
-                <ContactForm />
+                <div className="about__content">
+                    <div className="about__bio">
+                        <p>
+                            Hi, my name's Robby. I'm a full-stack web developer and digital artist. I love clean, responsive and intuitive interfaces, and so do your clients.
+                        </p>
+                    </div>
+                </div>
             </div>
         );
     }

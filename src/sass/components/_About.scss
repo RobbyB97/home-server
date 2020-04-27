@@ -28,3 +28,15 @@
         }
     }
 }
+
+.about__content {
+    color: white;
+    display: inline-block;
+    font-family: $montserrat;
+    text-align: center;
+    margin-top: 8vh;
+
+    @media #{$bp-tablet} {
+        margin-top: 12vh;
+    }
+}
