@@ -13,7 +13,7 @@ import AppRouter from './routers/AppRouter'
 /* Store */
 const store = storeConfig()
 store.subscribe(() => {
-    console.log(store.getState())
+    //console.log(store.getState())
 })
 
 
