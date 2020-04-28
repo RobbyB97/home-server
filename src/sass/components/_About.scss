@@ -1,5 +1,5 @@
-.about {
-    height: 300vh;
+#About {
+    height: 100vh;
     background-color: lighten($black, 15%);
 }
 
@@ -12,10 +12,10 @@
 
     &.one {
         z-index: 6;
-        border-top: 4vh solid lighten($black, 5%);
+        border-top: 4vh solid $black;
 
         @media #{$bp-tablet} {
-            border-top: 6vh solid lighten($black, 5%);
+            border-top: 6vh solid $black;
         }
     }
 
@@ -39,4 +39,20 @@
     @media #{$bp-tablet} {
         margin-top: 12vh;
     }
+}
+
+.about__bio {
+    padding: 1em 2em;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.about__bioTitle {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.about__portrait {
+    width: 280px;
+    height: auto;
 }
