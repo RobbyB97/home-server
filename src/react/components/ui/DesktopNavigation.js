@@ -16,19 +16,16 @@ export class DesktopNavigation extends React.Component {
             >
                 <ul>
                     <li>
-                        <a href="#about">about</a>
+                        <a href="#About">About me</a>
                     </li>
                     <li>
-                        <a href="#services">services</a>
+                        <a href="#Experience">Experience</a>
                     </li>
                     <li>
-                        <a href="#skills">skills</a>
+                        <a href="#Projects">Projects</a>
                     </li>
                     <li>
-                        <a href="#experience">experience</a>
-                    </li>
-                    <li>
-                        <a href="#projects">projects</a>
+                        <a href="#Contact">Contact</a>
                     </li>
                 </ul>
             </div>

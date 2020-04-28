@@ -34,19 +34,16 @@ export class MobileNavigation extends React.Component {
                     "mobileNavigation__menu"}>
                     <ul className="mobileNavigation__links">
                         <li>
-                            <a href="#about" onClick={this.navToggle}>about</a>
+                            <a href="#About" onClick={this.navToggle}>About me</a>
                         </li>
                         <li>
-                            <a href="#services" onClick={this.navToggle}>services</a>
+                            <a href="#Experience" onClick={this.navToggle}>Experience</a>
                         </li>
                         <li>
-                            <a href="#skills" onClick={this.navToggle}>skills</a>
+                            <a href="#Projects" onClick={this.navToggle}>Projects</a>
                         </li>
                         <li>
-                            <a href="#experience"onClick={this.navToggle}>experience</a>
-                        </li>
-                        <li>
-                            <a href="#projects" onClick={this.navToggle}>projects</a>
+                            <a href="#Contact" onClick={this.navToggle}>Contact</a>
                         </li>
                     </ul>
                 </div>

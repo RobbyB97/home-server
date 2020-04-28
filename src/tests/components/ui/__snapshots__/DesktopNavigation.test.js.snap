@@ -8,37 +8,30 @@ exports[`Render DesktopNavigation 1`] = `
   <ul>
     <li>
       <a
-        href="#about"
+        href="#About"
       >
-        about
+        About me
       </a>
     </li>
     <li>
       <a
-        href="#services"
+        href="#Experience"
       >
-        services
+        Experience
       </a>
     </li>
     <li>
       <a
-        href="#skills"
+        href="#Projects"
       >
-        skills
+        Projects
       </a>
     </li>
     <li>
       <a
-        href="#experience"
+        href="#Contact"
       >
-        experience
-      </a>
-    </li>
-    <li>
-      <a
-        href="#projects"
-      >
-        projects
+        Contact
       </a>
     </li>
   </ul>
