@@ -1,13 +1,16 @@
 html {
-    background-color: $white;
-    color: $black;
+    background-color: $black;
+    color: $white;
     font-family: $serif;
     overflow-x: hidden;
+    height: 100%;
 }
 
 header {}
 
-body {}
+body {
+    height: 100%;
+}
 
 h1 {
     font-family: $montserrat;
