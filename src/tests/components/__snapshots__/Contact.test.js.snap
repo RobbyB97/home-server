@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Contact 1`] = `
+<section
+  className="contact"
+  id="Contact"
+>
+  <div
+    className="contact__shape one"
+  />
+  <div
+    className="contact__shape two"
+  />
+  Contact component
+</section>
+`;

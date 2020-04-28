@@ -1,0 +1,30 @@
+#Projects {
+    height: 100vh;
+    background-color: lighten($black, 15%);
+}
+
+.projects__shape {
+    position: absolute;
+    top: 300vh;
+    width: 0;
+    height: 0;
+    border-right: 100vw solid transparent;
+
+    &.one {
+        z-index: 6;
+        border-top: 4vh solid lighten($black, 5%);
+
+        @media #{$bp-tablet} {
+            border-top: 6vh solid lighten($black, 5%);
+        }
+    }
+
+    &.two {
+        z-index: 5;
+        border-top: 8vh solid lighten($black, 10%);
+        
+        @media #{$bp-tablet} {
+            border-top: 12vh solid lighten($black, 10%);
+        }
+    }
+}
