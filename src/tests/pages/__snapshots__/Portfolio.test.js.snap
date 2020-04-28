@@ -11,6 +11,9 @@ exports[`Render Portfolio 1`] = `
   <Connect(MobileNavigation) />
   <Landing />
   <About />
+  <Experience />
+  <Projects />
+  <Contact />
   <div
     className="portfolio__services"
     id="services"
