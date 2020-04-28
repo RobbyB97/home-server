@@ -3,55 +3,10 @@ import Particles from 'react-particles-js';
 
 
 export class Landing extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            // Used for shape animation on bottom of landing section
-            shapeOne: false,
-            shapeTwo:  false,
-            shapeThree: false,
-            shapeFour: false,
-            shapeFive: false
-        }
-    }
-
-    componentDidMount() {
-        this.landingAnimation()
-    }
-
-    landingAnimation = () => {
-        setTimeout(() => {
-            this.setState({
-                shapeOne: true
-            });    
-        }, 500);
-        setTimeout(() => {
-            this.setState({
-                shapeTwo: true
-            });
-        }, 650);
-        setTimeout(() => {
-            this.setState({
-                shapeThree: true
-            });
-        }, 800);
-        setTimeout(() => {
-            this.setState({
-                shapeFour: true
-            });
-        }, 950);
-        setTimeout(() => {
-            this.setState({
-                shapeFive: true
-            });
-        }, 1100);
-    }
-
     render() {
         return (
-            <div className="landing">
-                <div className="landing__background"></div>
-
+            <div id="Landing" className="landing">
+                    
                 <div className="landing__tagline">
                     <h2>
                         Robby Bergers
@@ -63,6 +18,27 @@ export class Landing extends React.Component {
                         Developer
                     </p>
                 </div>
+
+                <section className="landing__menu">
+                    <a className="landing__view"
+                        href="#About">View my work</a>
+                    <a className="landing__email"
+                        href="#Contact">Get in touch</a>
+                </section>
+
+                <section className="landing__contact">
+                    <a className="landing__github" href="https://www.github.com/robbyb97">
+                        <div></div>
+                    </a>
+                    
+                    <a className="landing__linkedin" href="https://www.linkedin.com/in/robbyb97/">
+                        <div></div>
+                    </a>
+
+                    <a className="landing__upwork" href="https://www.upwork.com/o/profiles/users/~01f696e65011a54866/">
+                        <div></div>
+                    </a>
+                </section>
 
                 <Particles 
                     width="100vw"
@@ -79,37 +55,19 @@ export class Landing extends React.Component {
                             },
                             line_linked: {
                                 enable: true,
-                                distance: 60,
-                                color: '#808080',
+                                distance: 45,
+                                color: '#f8f8f8',
                                 opacity: 0.5,
                                 width: 1
                             },
                             color: {
-                                value: '#000'
+                                value: '#f8f8f8'
                             }
                         }
                     }}
                 />
 
-                <div className={this.state.shapeOne ?
-                    "landing__shape one":
-                    "landing__shape"}></div>
-                <div className={this.state.shapeTwo ?
-                    "landing__shape two":
-                    "landing__shapte"}></div>
-                <div className={this.state.shapeThree ?
-                    "landing__shape three":
-                    "landing__shape"}></div>
-                <div className={this.state.shapeFour ?
-                    "landing__shape four":
-                    "landing__shape"}></div>
-                <div className={this.state.shapeFive ?
-                    "landing__shape five":
-                    "landing__shape"}></div>
-                <div className="landing__bottom">
-                    
-                    
-                </div>
+                
             </div>
         );
     }

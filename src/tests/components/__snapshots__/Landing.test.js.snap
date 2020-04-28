@@ -3,10 +3,8 @@
 exports[`Render Landing 1`] = `
 <div
   className="landing"
+  id="Landing"
 >
-  <div
-    className="landing__background"
-  />
   <div
     className="landing__tagline"
   >
@@ -24,6 +22,44 @@ exports[`Render Landing 1`] = `
       Developer
     </p>
   </div>
+  <section
+    className="landing__menu"
+  >
+    <a
+      className="landing__view"
+      href="#About"
+    >
+      View my work
+    </a>
+    <a
+      className="landing__email"
+      href="#Contact"
+    >
+      Get in touch
+    </a>
+  </section>
+  <section
+    className="landing__contact"
+  >
+    <a
+      className="landing__github"
+      href="https://www.github.com/robbyb97"
+    >
+      <div />
+    </a>
+    <a
+      className="landing__linkedin"
+      href="https://www.linkedin.com/in/robbyb97/"
+    >
+      <div />
+    </a>
+    <a
+      className="landing__upwork"
+      href="https://www.upwork.com/o/profiles/users/~01f696e65011a54866/"
+    >
+      <div />
+    </a>
+  </section>
   <t
     className="landing__particles"
     height="100vh"
@@ -31,11 +67,11 @@ exports[`Render Landing 1`] = `
       Object {
         "particles": Object {
           "color": Object {
-            "value": "#000",
+            "value": "#f8f8f8",
           },
           "line_linked": Object {
-            "color": "#808080",
-            "distance": 60,
+            "color": "#f8f8f8",
+            "distance": 45,
             "enable": true,
             "opacity": 0.5,
             "width": 1,
@@ -52,24 +88,6 @@ exports[`Render Landing 1`] = `
     }
     style={Object {}}
     width="100vw"
-  />
-  <div
-    className="landing__shape"
-  />
-  <div
-    className="landing__shapte"
-  />
-  <div
-    className="landing__shape"
-  />
-  <div
-    className="landing__shape"
-  />
-  <div
-    className="landing__shape"
-  />
-  <div
-    className="landing__bottom"
   />
 </div>
 `;
