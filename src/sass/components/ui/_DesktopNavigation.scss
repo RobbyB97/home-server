@@ -51,20 +51,6 @@
             margin-bottom: 12px;
         }
     }
-
-
-    &.white {
-        @media #{$bp-tablet} {
-            ul {
-                li {
-                    a {
-                        transition: 800ms;
-                        color: white;
-                    }
-                }
-            }
-        }
-    }
 }
 
 

@@ -1,50 +1,30 @@
 #About {
-    height: 100vh;
     background-color: lighten($black, 15%);
 }
 
-.about__shape {
-    position: absolute;
-    top: 100vh;
-    width: 0;
-    height: 0;
-    border-right: 100vw solid transparent;
-
-    &.one {
-        z-index: 6;
-        border-top: 4vh solid $black;
-
-        @media #{$bp-tablet} {
-            border-top: 6vh solid $black;
-        }
-    }
-
-    &.two {
-        z-index: 5;
-        border-top: 8vh solid lighten($black, 10%);
-        
-        @media #{$bp-tablet} {
-            border-top: 12vh solid lighten($black, 10%);
-        }
-    }
-}
-
 .about__content {
-    color: white;
     display: inline-block;
     font-family: $montserrat;
     text-align: center;
-    margin-top: 8vh;
-
-    @media #{$bp-tablet} {
-        margin-top: 12vh;
-    }
+    width: 100%;
 }
 
 .about__bio {
     padding: 1em 2em;
     text-align: center;
     line-height: 1.5em;
+    margin: 0 auto;
+    width: 300px;
+
+    @media #{$bp-tablet} {
+        width: 400px;
+    }
+
+    @media #{$bp-desktop} {
+        width: 750px;
+        font-size: 1.5em;
+        padding: 0;
+    }
 }
 
 .about__bioTitle {
@@ -53,6 +33,17 @@
 }
 
 .about__portrait {
-    width: 280px;
-    height: auto;
+    img {
+        width: 300px;
+        height: auto;
+        border-radius: 50%;
+
+        @media #{$bp-tablet} {
+            width: 400px;
+        }
+
+        @media #{$bp-desktop} {
+            width: 750px;
+        }
+    }
 }
