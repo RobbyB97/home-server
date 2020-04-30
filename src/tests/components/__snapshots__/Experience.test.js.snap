@@ -5,12 +5,11 @@ exports[`Render Experience 1`] = `
   className="experience"
   id="Experience"
 >
-  <div
-    className="experience__shape one"
+  <Divider
+    section="experience"
   />
   <div
-    className="experience__shape two"
+    className="experience__blurb"
   />
-  Experience component
 </section>
 `;

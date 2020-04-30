@@ -1,13 +1,18 @@
 import React from 'react';
 
+import Divider from './Divider'
+
 
 export class Experience extends React.Component {
     render() {
         return (
             <section id="Experience" className="experience">
-                <div className="experience__shape one"></div>
-                <div className="experience__shape two"></div>
-                Experience component
+                <Divider section="experience" />
+
+                <div className="experience__blurb">
+
+                </div>
+
             </section>
         );
     }
