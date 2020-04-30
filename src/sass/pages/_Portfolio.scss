@@ -1,5 +1,12 @@
 #Portfolio {
+    /* Page loader settings */
+    opacity: 0;
+    transition: 300ms;
 
+    &.loaded {
+        opacity: 1;
+        transition: 300ms;
+    }
 }
 
 /* Services */
