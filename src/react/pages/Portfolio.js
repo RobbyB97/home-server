@@ -12,10 +12,31 @@ import Contact from '../components/Contact';
 
 
 export class Portfolio extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            loaded: false
+        };
+    }
+
+    componentDidMount() {
+        // Disable loader
+        setTimeout(() => {
+            document.querySelector('.page-loader').style.opacity = 0;
+        }, 200);
+        
+        // page fade in
+        setTimeout(() => {
+            document.querySelector('.page-loader').style.display = "none";
+            this.setState({
+                loaded: true
+            });
+        }, 300);
+    }
 
     render() {
         return (
-            <div id="Portfolio">
+            <div id="Portfolio" className={this.state.loaded ? "loaded":""}>
 
                 <HomeButton internal />
                 <DesktopNavigation />

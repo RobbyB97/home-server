@@ -2,6 +2,7 @@
 
 exports[`Render Portfolio 1`] = `
 <div
+  className=""
   id="Portfolio"
 >
   <Connect(HomeButton)
