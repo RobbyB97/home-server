@@ -38,6 +38,10 @@ export class Landing extends React.Component {
                     <a className="landing__upwork" href="https://www.upwork.com/o/profiles/users/~01f696e65011a54866/">
                         <div></div>
                     </a>
+
+                    <a className="landing__twitter" href="https://twitter.com/RobbyBergers">
+                        <div></div>
+                    </a>
                 </section>
 
                 <Particles 

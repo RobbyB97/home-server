@@ -113,7 +113,7 @@
 
 .landing__linkedin {
     > div {
-        background-image: url($icons + 'icons/linkedin/linkedin-red.png');
+        background-image: url($icons + 'linkedin/linkedin-red.png');
 
         &:hover {
             transition: 150ms;
@@ -129,6 +129,17 @@
         &:hover {
             transition: 150ms;
             background-image: url($icons + 'upwork/upwork-white.png');
+        }
+    }
+}
+
+.landing__twitter {
+    > div {
+        background-image: url($icons + 'twitter/twitter-red.png');
+
+        &:hover {
+            transition: 150ms;
+            background-image: url($icons + 'twitter/twitter-white.png');
         }
     }
 }
