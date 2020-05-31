@@ -47,21 +47,6 @@ export class Portfolio extends React.Component {
                 <Experience />
                 <Projects />
                 <Contact />
-
-                {/* Services section */}
-                <div id="services" className="portfolio__services">
-                
-                </div>
-
-                <div id="skills" className="portfolio__skills">
-
-                </div>
-                <div id="experience" className="portfolio__experience">
-
-                </div>
-                <div id="projects" className="portfolio__projects">
-
-                </div>
             </div>
         )
     }
