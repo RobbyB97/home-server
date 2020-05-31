@@ -1,2 +1,3 @@
-$icon: '/dist/images/icons/';
-$background: '/dist/images/backgrounds/';
+$images: '/dist/images/';
+$icons: $images + 'icons/';
+$background: $images + 'backgrounds/';

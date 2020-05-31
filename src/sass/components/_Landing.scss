@@ -102,33 +102,33 @@
 
 .landing__github {
     > div {
-        background-image: url('/dist/images/icons/github/github-red.png');
+        background-image: url($icons + 'github/github-red.png');
 
         &:hover {
             transition: 150ms;
-            background-image: url('/dist/images/icons/github/github-white.png');
+            background-image: url($icons + 'github/github-white.png');
         }
     }
 }
 
 .landing__linkedin {
     > div {
-        background-image: url('/dist/images/icons/linkedin/linkedin-red.png');
+        background-image: url($icons + 'icons/linkedin/linkedin-red.png');
 
         &:hover {
             transition: 150ms;
-            background-image: url('/dist/images/icons/linkedin/linkedin-white.png');
+            background-image: url($icons + 'linkedin/linkedin-white.png');
         }
     }
 }
 
 .landing__upwork {
     > div {
-        background-image: url('/dist/images/icons/upwork/upwork-red.png');
+        background-image: url($icons + 'upwork/upwork-red.png');
 
         &:hover {
             transition: 150ms;
-            background-image: url('/dist/images/icons/upwork/upwork-white.png');
+            background-image: url($icons + 'upwork/upwork-white.png');
         }
     }
 }
