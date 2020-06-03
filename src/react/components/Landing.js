@@ -1,8 +1,22 @@
 import React from 'react';
 import Particles from 'react-particles-js';
+import ReactModal from 'react-modal'
 
 
 export class Landing extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            emailModal: false
+        };
+    }
+
+    /* Controls email modal */
+    toggleEmail() {
+        this.setState({
+            emailModal: !this.state.emailModal
+        });
+    }
     render() {
         return (
             <div id="Landing" className="landing">
@@ -23,7 +37,12 @@ export class Landing extends React.Component {
                     <a className="landing__view"
                         href="#About">View my work</a>
                     <a className="landing__email"
-                        href="#Contact">Get in touch</a>
+                        onClick={() => {this.toggleEmail()}}>Get in touch</a>
+                </section>
+
+                {/* Email modal */}
+                <section className={this.state.emailModal ? "landing__emailModal active":"landing__emailModal"}>
+                    <p>Email me @ <a href="mailto:bergersr97@gmail.com">bergersr97@gmail.com</a></p>
                 </section>
 
                 <section className="landing__contact">

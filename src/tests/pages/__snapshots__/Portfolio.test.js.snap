@@ -15,21 +15,5 @@ exports[`Render Portfolio 1`] = `
   <Experience />
   <Projects />
   <Contact />
-  <div
-    className="portfolio__services"
-    id="services"
-  />
-  <div
-    className="portfolio__skills"
-    id="skills"
-  />
-  <div
-    className="portfolio__experience"
-    id="experience"
-  />
-  <div
-    className="portfolio__projects"
-    id="projects"
-  />
 </div>
 `;
