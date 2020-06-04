@@ -85,11 +85,15 @@
     width: 100%;
     height: 0;
     transition: 100ms ease-out;
-    background-color: $red;
+    background-color: darken($red, 20%) ;
     margin: 2em auto;
     
     &.active {
         height: 3em;
+    }
+
+    p {
+        text-align: center;
     }
 }
 
@@ -126,21 +130,31 @@
 .landing__github {
     > div {
         background-image: url($icons + 'github/github-red.png');
+        opacity: 1;
+
+        @media #{$bp-tablet} {
+            opacity: 0.5;
+        }
 
         &:hover {
             transition: 150ms;
-            background-image: url($icons + 'github/github-white.png');
+            opacity: 1;
         }
     }
 }
 
 .landing__linkedin {
     > div {
-        background-image: url($icons + 'linkedin/linkedin-red.png');
+        background-image: url($icons + 'linkedin/linkedin-white.png');
+        opacity: 1;
+
+        @media #{$bp-tablet} {
+            opacity: 0.5;
+        }
 
         &:hover {
             transition: 150ms;
-            background-image: url($icons + 'linkedin/linkedin-white.png');
+            opacity: 1;
         }
     }
 }
@@ -148,21 +162,31 @@
 .landing__upwork {
     > div {
         background-image: url($icons + 'upwork/upwork-red.png');
+        opacity: 1;
+
+        @media #{$bp-tablet} {
+            opacity: 0.5;
+        }
 
         &:hover {
             transition: 150ms;
-            background-image: url($icons + 'upwork/upwork-white.png');
+            opacity: 1;
         }
     }
 }
 
 .landing__twitter {
     > div {
-        background-image: url($icons + 'twitter/twitter-red.png');
+        background-image: url($icons + 'twitter/twitter-white.png');
+        opacity: 1;
+
+        @media #{$bp-tablet} {
+            opacity: 0.5;
+        }
 
         &:hover {
             transition: 150ms;
-            background-image: url($icons + 'twitter/twitter-white.png');
+            opacity: 1;
         }
     }
 }

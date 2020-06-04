@@ -21,6 +21,7 @@ export class Landing extends React.Component {
         return (
             <div id="Landing" className="landing">
                     
+                {/* Tagline */}
                 <div className="landing__tagline">
                     <h2>
                         Robby Bergers
@@ -33,11 +34,19 @@ export class Landing extends React.Component {
                     </p>
                 </div>
 
+                {/* Menu buttons */}
                 <section className="landing__menu">
-                    <a className="landing__view"
-                        href="#About">View my work</a>
+                    <a className="landing__view" href="#About">
+                        View my work
+                    </a>
+                    
                     <a className="landing__email"
-                        onClick={() => {this.toggleEmail()}}>Get in touch</a>
+                        onClick={() => {
+                            this.toggleEmail();
+                        }}
+                    >
+                        Get in touch
+                    </a>
                 </section>
 
                 {/* Email modal */}
@@ -45,6 +54,7 @@ export class Landing extends React.Component {
                     <p>Email me @ <a href="mailto:bergersr97@gmail.com">bergersr97@gmail.com</a></p>
                 </section>
 
+                {/* Link icons */}
                 <section className="landing__contact">
                     <a className="landing__github" href="https://www.github.com/robbyb97">
                         <div></div>
