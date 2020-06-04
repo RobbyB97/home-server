@@ -47,3 +47,38 @@
         }
     }
 }
+
+.about__text {
+    width: 100%;
+    font-size: 1.1em;
+    
+    p {
+        width: 280px;
+        margin: 0 auto;
+    }
+}
+
+.about__text.one {
+    position: absolute;
+
+    p {
+        position: relative;
+        bottom: 60px;
+
+        span.one {
+            padding: 1px;
+            background-color: $black;
+        }
+
+        span.two {
+            padding: 1px;
+            font-size: 1.2em;
+            background-color: darken($red, 10%);
+        }
+    }
+}
+
+.about__text.two {
+    margin-top: 16px;
+
+}

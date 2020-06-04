@@ -12,18 +12,19 @@ export class About extends React.Component {
                 <div className="about__content">
                     <div className="about__portrait">
                         <img src="/dist/images/aboutImage.png" />
+                        <div className="about__text one">
+                            <p>
+                                <span className="one">Hi, my name's Robby. <span className="two">I'm a front-end developer and digital artist</span>.</span>
+                            </p>
+                        </div>
                     </div>
 
-                    <article className="about__bio">
+
+                    <div className="about__text two">
                         <p>
-                            Hi, my name's Robby. <span className="about__bioTitle">I'm a front-end web developer and freelance digital artist.</span>
-
-                            <br /><br />
-                            I put my interdisciplinary skillset to good use by building websites that are as beautiful as they are functional.
-
-                            
+                            I love helping businesses succeed by building beautiful, fast and functional websites.
                         </p>
-                    </article>
+                    </div>
                 </div>
             </section>
         );
