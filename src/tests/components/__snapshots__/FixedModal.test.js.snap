@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render FixedModal 1`] = `
+<section
+  className="fixedModal"
+>
+  <div
+    className="fixedModal__modal inactive"
+  >
+    <button
+      className="fixedModal__close inactive"
+      onClick={[Function]}
+    >
+      ×
+    </button>
+  </div>
+</section>
+`;

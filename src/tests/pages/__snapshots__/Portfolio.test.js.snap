@@ -10,6 +10,7 @@ exports[`Render Portfolio 1`] = `
   />
   <Connect(DesktopNavigation) />
   <Connect(MobileNavigation) />
+  <FixedModal />
   <Landing />
   <About />
   <Experience />

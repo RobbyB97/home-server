@@ -1,0 +1,49 @@
+.fixedModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    overflow: visible;
+    z-index: 10;
+}
+
+.fixedModal__modal {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: 150ms ease-in-out;
+    background-color: darken($red, 10%);
+    color: $white;
+    overflow: hidden;
+
+    &.inactive {
+        height: 0;
+    }
+
+    &.active {
+        height: auto;
+    }
+
+    p {
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+        margin: 6px auto;
+    }
+}
+
+.fixedModal__close {
+    position: fixed;
+    right: 20px;
+    bottom: 20;
+
+    &.inactive {
+        display: none;
+    }
+
+    &.active {
+        display: block;
+    }
+}

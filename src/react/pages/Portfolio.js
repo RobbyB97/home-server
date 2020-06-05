@@ -4,6 +4,7 @@ import MobileNavigation from '../components/ui/MobileNavigation';
 import DesktopNavigation from '../components/ui/DesktopNavigation';
 import HomeButton from '../components/ui/HomeButton';
 
+import FixedModal from '../components/FixedModal'
 import Landing from '../components/Landing';
 import About from '../components/About';
 import Projects from '../components/Projects';
@@ -41,6 +42,14 @@ export class Portfolio extends React.Component {
                 <HomeButton internal />
                 <DesktopNavigation />
                 <MobileNavigation />
+
+                <FixedModal 
+                    text = {(
+                        <p>
+                            I am offering a significant discount to small businesses during this pandemic. E-mail me @  <a href="mailto:bergersr97@gmail.com">bergersr97@gmail.com</a>
+                        </p>
+                    )}
+                />
 
                 <Landing />
                 <About />
