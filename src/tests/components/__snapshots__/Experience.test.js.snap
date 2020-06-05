@@ -5,9 +5,6 @@ exports[`Render Experience 1`] = `
   className="experience"
   id="Experience"
 >
-  <Divider
-    section="experience"
-  />
   <div
     className="experience__blurb"
   />

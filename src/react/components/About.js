@@ -9,7 +9,7 @@ export class About extends React.Component {
             <section id="About" className="about">
                 <Divider section="about"/>
 
-                <div className="about__content">
+                <div className="about__content one">
                     <div className="about__portrait">
                         <img src="/dist/images/aboutImage.png" />
                         <div className="about__text one">
@@ -18,11 +18,14 @@ export class About extends React.Component {
                             </p>
                         </div>
                     </div>
+                </div>
 
+                <Divider section="experience" />
 
+                <div className="about__content two">
                     <div className="about__text two">
                         <p>
-                            I love helping businesses succeed by building beautiful, fast and functional websites.
+                            I want to help you succeed by building a beautiful, fast and functional website for your business.
                         </p>
                     </div>
                 </div>

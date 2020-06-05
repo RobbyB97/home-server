@@ -27,6 +27,7 @@
 
 .divider.about {
     height: 6vh;
+    background: lighten($black, 15%);
 
     @media #{$bp-tablet} {
         height: 8vh;

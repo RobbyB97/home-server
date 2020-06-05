@@ -1,29 +1,14 @@
-#About {
-    background-color: lighten($black, 15%);
-}
+#About {}
 
 .about__content {
     display: inline-block;
     font-family: $montserrat;
     text-align: center;
     width: 100%;
-}
+    padding-bottom: 20px;
 
-.about__bio {
-    padding: 1em 2em;
-    text-align: center;
-    line-height: 1.5em;
-    margin: 0 auto;
-    width: 300px;
-
-    @media #{$bp-tablet} {
-        width: 400px;
-    }
-
-    @media #{$bp-desktop} {
-        width: 750px;
-        font-size: 1.5em;
-        padding: 0;
+    &.one {
+        background-color: lighten($black, 15%);
     }
 }
 

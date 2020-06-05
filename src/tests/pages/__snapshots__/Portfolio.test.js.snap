@@ -10,7 +10,18 @@ exports[`Render Portfolio 1`] = `
   />
   <Connect(DesktopNavigation) />
   <Connect(MobileNavigation) />
-  <FixedModal />
+  <FixedModal
+    text={
+      <p>
+        I am offering a significant discount to small businesses during this pandemic. E-mail me @  
+        <a
+          href="mailto:bergersr97@gmail.com"
+        >
+          bergersr97@gmail.com
+        </a>
+      </p>
+    }
+  />
   <Landing />
   <About />
   <Experience />

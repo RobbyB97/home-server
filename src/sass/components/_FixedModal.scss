@@ -30,14 +30,17 @@
         width: 80%;
         text-align: center;
         margin: 0 auto;
-        margin: 6px auto;
+        margin: 18px auto;
     }
 }
 
 .fixedModal__close {
-    position: fixed;
-    right: 20px;
-    bottom: 20;
+    text-align: center;
+    width: 100%;
+    font-size: 1.2em;
+    background: darken($red, 20%);
+    border: none;
+    color: $white;
 
     &.inactive {
         display: none;

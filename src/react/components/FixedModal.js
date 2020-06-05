@@ -16,7 +16,7 @@ export class FixedModal extends React.Component {
     toggleModal = () => {
         // Only show once per visit
         window.removeEventListener('scroll', this.toggleModal);
-        
+
         this.setState({
             active: !this.state.active
         });
@@ -34,7 +34,7 @@ export class FixedModal extends React.Component {
 
                     <button 
                         className={this.state.active ? closeStates[0]: closeStates[1]}
-                        onClick={() => this.toggleModal}
+                        onClick={this.toggleModal}
                     >
                         ×
                     </button>
