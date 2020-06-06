@@ -7,7 +7,7 @@ export class About extends React.Component {
     render() {
         return (
             <section id="About" className="about">
-                <Divider section="about"/>
+                <Divider section="about one"/>
 
                 <div className="about__content one">
                     <div className="about__portrait">
@@ -20,7 +20,7 @@ export class About extends React.Component {
                     </div>
                 </div>
 
-                <Divider section="experience" />
+                <Divider section="about two" />
 
                 <div className="about__content two">
                     <div className="about__text two">

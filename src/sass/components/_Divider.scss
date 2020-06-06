@@ -25,7 +25,7 @@
     }
 }
 
-.divider.about {
+.divider.about.one {
     height: 6vh;
     background: lighten($black, 15%);
 
@@ -44,7 +44,7 @@
     }
 }
 
-.divider.experience {
+.divider.about.two {
     .divider__shape {
         &.one {
             border-top: 6vh solid lighten($black, 15%);

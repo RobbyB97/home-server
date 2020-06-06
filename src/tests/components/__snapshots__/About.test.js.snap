@@ -6,7 +6,7 @@ exports[`Render About 1`] = `
   id="About"
 >
   <Divider
-    section="about"
+    section="about one"
   />
   <div
     className="about__content one"
@@ -37,7 +37,7 @@ exports[`Render About 1`] = `
     </div>
   </div>
   <Divider
-    section="experience"
+    section="about two"
   />
   <div
     className="about__content two"

@@ -64,6 +64,10 @@
 }
 
 .about__text.two {
-    margin-top: 16px;
+    margin-top: 30px;
+
+    @media #{$bp-phone} {
+        margin-top: 24px;
+    }
 
 }
