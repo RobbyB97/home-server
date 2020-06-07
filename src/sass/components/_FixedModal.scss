@@ -37,7 +37,7 @@
 .fixedModal__close {
     text-align: center;
     width: 100%;
-    font-size: 1.2em;
+    font-size: 1.6em;
     background: darken($red, 20%);
     border: none;
     color: $white;
@@ -48,5 +48,15 @@
 
     &.active {
         display: block;
+
+        @media #{$bp-desktop} {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: auto;
+            height: 100%;
+            font-size: 2em;
+            padding: 0 14px 0 14px;
+        }
     }
 }
