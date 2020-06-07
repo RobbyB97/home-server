@@ -7,9 +7,6 @@ import HomeButton from '../components/ui/HomeButton';
 import FixedModal from '../components/FixedModal'
 import Landing from '../components/Landing';
 import About from '../components/About';
-import Projects from '../components/Projects';
-import Experience from '../components/Experience';
-import Contact from '../components/Contact';
 
 
 export class Portfolio extends React.Component {
@@ -53,9 +50,6 @@ export class Portfolio extends React.Component {
 
                 <Landing />
                 <About />
-                <Experience />
-                <Projects />
-                <Contact />
             </div>
         )
     }
