@@ -19,12 +19,15 @@ export class Landing extends React.Component {
     }
     render() {
         return (
-            <div id="Landing" className="landing">
+            <section id="Landing" className="landing">
+                {/* Background color blocks */}
+                <div className="landing__background one"></div>
+                <div className="landing__background two"></div>
                     
                 {/* Tagline */}
-                <div className="landing__tagline">
+                <section className="landing__tagline">
                     <h2>
-                        Robby Bergers
+                        <span className="left">Robby</span> <span className="right">Bergers</span>
                     </h2>
                     <p className="one">
                         Designer
@@ -32,7 +35,7 @@ export class Landing extends React.Component {
                     <p className="two">
                         Developer
                     </p>
-                </div>
+                </section>
 
                 {/* Menu buttons */}
                 <section className="landing__menu">
@@ -101,7 +104,7 @@ export class Landing extends React.Component {
                 />
 
                 
-            </div>
+            </section>
         );
     }
 }

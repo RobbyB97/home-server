@@ -1,15 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Render Landing 1`] = `
-<div
+<section
   className="landing"
   id="Landing"
 >
   <div
+    className="landing__background one"
+  />
+  <div
+    className="landing__background two"
+  />
+  <section
     className="landing__tagline"
   >
     <h2>
-      Robby Bergers
+      <span
+        className="left"
+      >
+        Robby
+      </span>
+       
+      <span
+        className="right"
+      >
+        Bergers
+      </span>
     </h2>
     <p
       className="one"
@@ -21,7 +37,7 @@ exports[`Render Landing 1`] = `
     >
       Developer
     </p>
-  </div>
+  </section>
   <section
     className="landing__menu"
   >
@@ -107,5 +123,5 @@ exports[`Render Landing 1`] = `
     style={Object {}}
     width="100vw"
   />
-</div>
+</section>
 `;
