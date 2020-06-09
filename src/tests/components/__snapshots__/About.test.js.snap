@@ -5,9 +5,6 @@ exports[`Render About 1`] = `
   className="about"
   id="About"
 >
-  <Divider
-    section="about one"
-  />
   <div
     className="about__content one"
   >
