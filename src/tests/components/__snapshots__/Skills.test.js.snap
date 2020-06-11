@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Skills 1`] = `
+<section
+  className="skills"
+  id="Skills"
+>
+  Skills component
+</section>
+`;
