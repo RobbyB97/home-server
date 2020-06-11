@@ -1,28 +1,59 @@
 #Landing {
     height: 100vh;
-    overflow-x: auto;
+    scroll-snap-align: start;
+    margin-bottom: 0;
+}
+
+/* Left purple backdrop */
+.landing__background.one {
+    position: absolute;
+    z-index: -3;
+    opacity: 1;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    right: 50%;
+    background: $purple;
+}
+
+/* Right red backdrop */
+.landing__background.two {
+    position: absolute;
+    z-index: -3;
+    opacity: 1;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    left: 50%;
+    background: $red;
 }
 
 .landing__background {
-    z-index: -1;
-    opacity: 0.7;
+    z-index: -3;
+    opacity: 1;
     position: absolute;
 
-    &.one {
-            left: 0;
+    &.four {   // Animated particle background
+        z-index: -1;
+
+        .landing__particles {
+            position: absolute;
             top: 0;
-            bottom: 0;
-            right: 50%;
-            background-image: linear-gradient(to bottom, white, lighten($black, 22%));
+        
+            canvas {
+                opacity: 1;
+            }  
         }
-    
-        &.two {
-            right: 0;
-            top: 0;
-            bottom: 0;
-            left: 50%;
-            background-image: linear-gradient(to bottom, darken($red, 10%), lighten($black, 22%));
-        }
+    }
+
+    &.five {   // Gray gradient overlay
+        z-index: 0;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(to bottom, transparent, lighten($black, 15%) 99%);
+    }
 }
 
 .landing__tagline {
@@ -67,7 +98,7 @@
                 margin-top: 80px;
                 text-align: left;
                 padding-right: 0;
-                color: darken($red, 10%);
+                color: $red;
             }
 
             &.two {
@@ -114,7 +145,7 @@
     font-weight: 900;
 
     &:hover {
-        background-color: darken($red, 10%);
+        background-color: $red;
         color: $white;
         border: 1px solid $white;
         cursor: pointer;
@@ -133,7 +164,7 @@
     width: 100%;
     height: 0;
     transition: 100ms ease-out;
-    background-color: darken($red, 20%) ;
+    background-color: darken($red, 10%) ;
     margin: 2em auto;
     
     &.active {
@@ -243,14 +274,4 @@
             opacity: 0.7;
         }
     }
-}
-
-.landing__particles {
-    position: absolute;
-    top: 0;
-    z-index: -10;
-
-    canvas {
-        opacity: 0.7;
-    }  
 }

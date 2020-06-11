@@ -20,9 +20,42 @@ export class Landing extends React.Component {
     render() {
         return (
             <section id="Landing" className="landing">
+
                 {/* Background color blocks */}
                 <div className="landing__background one"></div>
                 <div className="landing__background two"></div>
+                <div className="landing__background three">
+                    
+                </div>
+                <div className="landing__background four">
+                    <Particles 
+                        width="100vw"
+                        height="100vh"
+                        className="landing__particles"
+                        params={{
+                            particles: {
+                                number: {
+                                    value: 110,
+                                    density: {
+                                        enable: true,
+                                        value_area: 700
+                                    }
+                                },
+                                line_linked: {
+                                    enable: true,
+                                    distance: 200,
+                                    color: '#f8f8f8',
+                                    opacity: 0.5,
+                                    width: 1
+                                },
+                                color: {
+                                    value: '#f8f8f8'
+                                }
+                            }
+                        }}
+                    />
+                </div>
+                <div className="landing__background five"></div>
                     
                 {/* Tagline */}
                 <section className="landing__tagline">
@@ -75,35 +108,6 @@ export class Landing extends React.Component {
                         <div></div>
                     </a>
                 </section>
-
-                <Particles 
-                    width="100vw"
-                    height="100vh"
-                    className="landing__particles"
-                    params={{
-                        particles: {
-                            number: {
-                                value: 150,
-                                density: {
-                                    enable: true,
-                                    value_area: 700
-                                }
-                            },
-                            line_linked: {
-                                enable: true,
-                                distance: 45,
-                                color: '#f8f8f8',
-                                opacity: 0.5,
-                                width: 1
-                            },
-                            color: {
-                                value: '#f8f8f8'
-                            }
-                        }
-                    }}
-                />
-
-                
             </section>
         );
     }
