@@ -14,7 +14,7 @@
     left: 0;
     right: 0;
     transition: 150ms ease-in-out;
-    background-color: darken($red, 10%);
+    background-color: $red;
     color: $white;
     overflow: hidden;
 
@@ -48,6 +48,10 @@
 
     &.active {
         display: block;
+
+        &:hover {
+            cursor: pointer;
+        }
 
         @media #{$bp-desktop} {
             position: absolute;
