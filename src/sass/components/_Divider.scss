@@ -35,7 +35,7 @@
 
     .divider__shape {
         &.one {
-            border-top: 6vh solid $black;
+            border-top: 6vh solid rgba(0,0,0,0);
         }
 
         &.two {
