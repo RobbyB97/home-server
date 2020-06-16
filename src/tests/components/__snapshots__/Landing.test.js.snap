@@ -6,50 +6,66 @@ exports[`Render Landing 1`] = `
   id="Landing"
 >
   <div
-    className="landing__background one"
-  />
-  <div
-    className="landing__background two"
-  />
-  <div
-    className="landing__background three"
-  />
-  <div
-    className="landing__background four"
+    className="landing__background"
   >
-    <t
-      className="landing__particles"
-      height="100vh"
-      params={
-        Object {
-          "particles": Object {
-            "color": Object {
-              "value": "#f8f8f8",
-            },
-            "line_linked": Object {
-              "color": "#f8f8f8",
-              "distance": 200,
-              "enable": true,
-              "opacity": 0.5,
-              "width": 1,
-            },
-            "number": Object {
-              "density": Object {
-                "enable": true,
-                "value_area": 700,
+    <div
+      className="one"
+    >
+      <div
+        className="texture"
+      >
+        <div />
+      </div>
+    </div>
+    <div
+      className="two"
+    >
+      <div
+        className="texture"
+      >
+        <div />
+      </div>
+    </div>
+    <div
+      className="three"
+    />
+    <div
+      className="four"
+    >
+      <t
+        className="landing__particles"
+        height="100vh"
+        params={
+          Object {
+            "particles": Object {
+              "color": Object {
+                "value": "#f8f8f8",
               },
-              "value": 110,
+              "line_linked": Object {
+                "color": "#f8f8f8",
+                "distance": 200,
+                "enable": true,
+                "opacity": 0.5,
+                "width": 1,
+              },
+              "number": Object {
+                "density": Object {
+                  "enable": true,
+                  "value_area": 700,
+                },
+                "value": 110,
+              },
             },
-          },
+          }
         }
-      }
-      style={Object {}}
-      width="100vw"
+        style={Object {}}
+        width="100vw"
+      />
+    </div>
+    <div
+      className="five"
     />
   </div>
-  <div
-    className="landing__background five"
-  />
   <section
     className="landing__tagline"
   >

@@ -4,56 +4,121 @@
     margin-bottom: 0;
 }
 
-/* Left purple backdrop */
-.landing__background.one {
-    position: absolute;
+.landing__background {
     z-index: -3;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Left purple backdrop */
+.landing__background > .one {
+    position: absolute;
+    z-index: -5;
     opacity: 1;
     left: 0;
     top: 0;
     height: 100vh;
     right: 50%;
     background: $purple;
+
+    > .texture {
+        position: relative;
+
+        > div {
+            z-index: -3;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            background:
+                linear-gradient(27deg, lighten($purple, 2%) 5px, transparent 5px) 0 5px,
+                linear-gradient(207deg, lighten($purple, 2%) 5px, transparent 5px) 10px 0px,
+                linear-gradient(27deg, darken($purple, 7%) 5px, transparent 5px) 0px 10px,
+                linear-gradient(207deg, darken($purple, 7%) 5px, transparent 5px) 10px 5px,
+                linear-gradient(90deg, $purple 10px, transparent 10px),
+                linear-gradient(
+                    lighten($purple, 5%) 25%, $purple 25%, 
+                    $purple 50%, transparent 50%, 
+                    transparent 75%, darken($purple, 7%) 
+                    75%, darken($purple, 7%)
+                );
+            background-color: $purple;
+            background-size: 20px 20px;
+            opacity: 0.2;
+        }   
+    }
 }
 
 /* Right red backdrop */
-.landing__background.two {
+/*.landing__background > .two {
     position: absolute;
-    z-index: -3;
+    z-index: -4;
     opacity: 1;
     right: 0;
     top: 0;
     height: 100vh;
     left: 50%;
     background: $red;
+
+    > .texture {
+        position: relative;
+
+        > div {
+            z-index: -3;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+            background:
+                linear-gradient(27deg, lighten($red, 2%) 5px, transparent 5px) 0 5px,
+                linear-gradient(207deg, lighten($red, 2%) 5px, transparent 5px) 10px 0px,
+                linear-gradient(27deg, darken($red, 7%) 5px, transparent 5px) 0px 10px,
+                linear-gradient(207deg, darken($red, 7%) 5px, transparent 5px) 10px 5px,
+                linear-gradient(90deg, $red 10px, transparent 10px),
+                linear-gradient(
+                    lighten($red, 5%) 25%, $red 25%, 
+                    $red 50%, transparent 50%, 
+                    transparent 75%, darken($red, 7%) 
+                    75%, darken($red, 7%)
+                );
+            background-color: $red;
+            background-size: 20px 20px;
+            opacity: 0.4;
+        }   
+    }
+}*/
+
+/* Animated particle background */
+.landing__background > .four {
+    z-index: -2;
+    opacity: 0;
+
+    .landing__particles {
+        position: absolute;
+        top: 0;
+    
+        canvas {
+            z-index: -2;
+            opacity: 0.5;
+            position: absolute;
+        }  
+    }
 }
 
-.landing__background {
-    z-index: -3;
-    opacity: 1;
-    position: absolute;
-
-    &.four {   // Animated particle background
-        z-index: -1;
-
-        .landing__particles {
-            position: absolute;
-            top: 0;
-        
-            canvas {
-                opacity: 1;
-            }  
-        }
-    }
-
-    &.five {   // Gray gradient overlay
-        z-index: 0;
-        left: 0;
-        top: 0;
-        width: 100vw;
-        height: 100vh;
-        background: linear-gradient(to bottom, transparent, lighten($black, 15%) 99%);
-    }
+/* Gray gradient overlay */
+.landing__background > .five {
+    z-index: -1;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, transparent, lighten($black, 15%) 99%);
 }
 
 .landing__tagline {
@@ -203,7 +268,7 @@
 
 .landing__github {
     > div {
-        background-image: url($icons + 'github/github-red.png');
+        background-image: url($icons + 'github/github-white.png');
         opacity: 1;
 
         &:hover {
@@ -221,7 +286,7 @@
 
 .landing__linkedin {
     > div {
-        background-image: url($icons + 'linkedin/linkedin-red.png');
+        background-image: url($icons + 'linkedin/linkedin-white.png');
         opacity: 1;
 
         &:hover {
@@ -232,7 +297,6 @@
 
     @media #{$bp-tablet} {
         > div {
-            background-image: url($icons + 'linkedin/linkedin-red.png');
             opacity: 0.7;
         }
     }
@@ -251,7 +315,6 @@
 
     @media #{$bp-tablet} {
         > div {
-            background-image: url($icons + 'upwork/upwork-white.png');
             opacity: 0.7;
         }
     }
@@ -270,7 +333,6 @@
 
     @media #{$bp-tablet} {
         > div {
-            background-image: url($icons + 'twitter/twitter-white.png');
             opacity: 0.7;
         }
     }
