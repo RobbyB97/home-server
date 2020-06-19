@@ -4,9 +4,10 @@ import MobileNavigation from '../components/ui/MobileNavigation';
 import DesktopNavigation from '../components/ui/DesktopNavigation';
 import HomeButton from '../components/ui/HomeButton';
 
+import Landing from '../components/sections/Landing';
+import About from '../components/sections/About';
+
 import FixedModal from '../components/FixedModal'
-import Landing from '../components/Landing';
-import About from '../components/About';
 
 
 export class Portfolio extends React.Component {

@@ -8,21 +8,29 @@
     './config/html';
 
 
-/* Components */
+/* UI */
 @import
     './components/ui/DesktopNavigation',
     './components/ui/HomeButton',
-    './components/ui/MobileNavigation',
-    './components/Landing',
-    './components/FixedModal',
-    './components/About',
-    './components/Projects',
-    './components/Contact',
-    './components/Divider',
-    './components/Skills';
+    './components/ui/MobileNavigation';
 
 
 /* Pages */
 @import
     './pages/Portfolio';
+
+
+/* Page Sections */
+@import
+    './components/sections/About',
+    './components/sections/Landing',
+    './components/sections/Projects',
+    './components/sections/Skills';
+
+
+/* Components */
+@import
+    './components/FixedModal',
+    './components/Divider';
+
 
