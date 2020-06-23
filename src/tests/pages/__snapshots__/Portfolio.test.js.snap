@@ -24,5 +24,9 @@ exports[`Render Portfolio 1`] = `
   />
   <Landing />
   <About />
+  <Skills />
+  <Experience />
+  <Projects />
+  <Footer />
 </div>
 `;
