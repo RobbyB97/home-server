@@ -1,10 +1,10 @@
-import React from 'react'
-import {shallow} from 'enzyme'
+import React from 'react';
+import {shallow} from 'enzyme';
 
-import {Landing} from '../../../react/components/sections/Landing'
+import {Landing} from '../../../react/components/sections/Landing';
 
 
 test('Render Landing', () => {
-    const wrapper = shallow(<Landing />)
-    expect(wrapper).toMatchSnapshot()
-})
+    const wrapper = shallow(<Landing />);
+    expect(wrapper).toMatchSnapshot();
+});

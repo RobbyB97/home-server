@@ -69,26 +69,23 @@ exports[`Render Landing 1`] = `
   <section
     className="landing__tagline"
   >
-    <h2>
-      <span
-        className="left"
-      >
-        Robby
-      </span>
-       
-      <span
-        className="right"
-      >
-        Bergers
-      </span>
+    <h2
+      className="left"
+    >
+      Robby
+    </h2>
+    <h2
+      className="right"
+    >
+      Bergers
     </h2>
     <p
-      className="one"
+      className="left"
     >
       Designer
     </p>
     <p
-      className="two"
+      className="right"
     >
       Developer
     </p>

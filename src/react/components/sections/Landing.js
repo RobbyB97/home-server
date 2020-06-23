@@ -11,12 +11,20 @@ export class Landing extends React.Component {
         };
     }
 
+    componentDidMount() {
+        setTimeout(() => {
+            const thing = document.querySelector('p.left');
+            
+        }, 1000)
+    }
+
     /* Controls email modal */
     toggleEmail() {
         this.setState({
             emailModal: !this.state.emailModal
         });
     }
+
     render() {
         return (
             <section id="Landing" className="landing">
@@ -28,14 +36,15 @@ export class Landing extends React.Component {
                             <div></div>
                         </div>
                     </div>
+
                     <div className="two">
                         <div className="texture">
                             <div></div>
                         </div>
                     </div>
-                    <div className="three">
-                        
-                    </div>
+
+                    <div className="three"></div>
+                    
                     <div className="four">
                         <Particles 
                             width="100vw"
@@ -64,18 +73,25 @@ export class Landing extends React.Component {
                             }}
                         />
                     </div>
+                    
                     <div className="five"></div>
                 </div>
                     
                 {/* Tagline */}
                 <section className="landing__tagline">
-                    <h2>
-                        <span className="left">Robby</span> <span className="right">Bergers</span>
+                    <h2 className="left">
+                        Robby
                     </h2>
-                    <p className="one">
+
+                    <h2 className="right">
+                        Bergers
+                    </h2>
+
+                    <p className="left">
                         Designer
                     </p>
-                    <p className="two">
+
+                    <p className="right">
                         Developer
                     </p>
                 </section>

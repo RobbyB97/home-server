@@ -36,11 +36,26 @@
             width: 100vw;
             height: 100vh;
             background:
-                linear-gradient(27deg, lighten($purple, 2%) 5px, transparent 5px) 0 5px,
-                linear-gradient(207deg, lighten($purple, 2%) 5px, transparent 5px) 10px 0px,
-                linear-gradient(27deg, darken($purple, 7%) 5px, transparent 5px) 0px 10px,
-                linear-gradient(207deg, darken($purple, 7%) 5px, transparent 5px) 10px 5px,
-                linear-gradient(90deg, $purple 10px, transparent 10px),
+                linear-gradient(
+                    27deg, lighten($purple, 2%) 5px, 
+                    transparent 5px
+                ) 0 5px,
+                linear-gradient(
+                    207deg, lighten($purple, 2%) 5px, 
+                    transparent 5px
+                ) 10px 0px,
+                linear-gradient(
+                    27deg, darken($purple, 7%) 5px, 
+                    transparent 5px
+                ) 0px 10px,
+                linear-gradient(
+                    207deg, darken($purple, 7%) 5px, 
+                    transparent 5px
+                ) 10px 5px,
+                linear-gradient(
+                    90deg, $purple 10px, 
+                    transparent 10px
+                ),
                 linear-gradient(
                     lighten($purple, 5%) 25%, $purple 25%, 
                     $purple 50%, transparent 50%, 
@@ -55,7 +70,7 @@
 }
 
 /* Right red backdrop */
-/*.landing__background > .two {
+.landing__background > .two {
     position: absolute;
     z-index: -4;
     opacity: 1;
@@ -92,7 +107,7 @@
             opacity: 0.4;
         }   
     }
-}*/
+}
 
 /* Animated particle background */
 .landing__background > .four {
@@ -118,7 +133,11 @@
     top: 0;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(to bottom, transparent, lighten($black, 15%) 99%);
+    background: linear-gradient(
+        to bottom, 
+        transparent, 
+        lighten($black, 15%) 99%
+    );
 }
 
 .landing__tagline {
@@ -128,47 +147,59 @@
     height: 50%;
 
     h2 {
-        margin-bottom: 2em;
         font-weight: 400;
-        margin: 0 auto;
-        text-align: center;    
         font-size: 2em;
-        padding-top: 55px;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: 2em;
+
+        &.left {    // Robby
+            right: 50%;
+        }
+        
+        &.right {   // Bergers
+            left: 50%;
+        }
     }
 
     p {
-        text-align: center;
         font-family: $montserrat;
-        font-size: 2em;
+        font-size: 1.5em;
         font-weight: 600;
+        position: absolute;
+        top: 5em;
 
-        &.one {
-            padding-right: 4.5em;
-            color: $white;
+        &.left {   // Designer
+            right: 50%;
+            -moz-transform: scale(-1, 1);
+            -webkit-transform: scale(-1, 1);
+            -o-transform: scale(-1, 1);
+            -ms-transform: scale(-1, 1);
+            transform: scale(-1, 1);
         }
 
-        &.two {
-            padding-left: 3.9em;
+        &.right {    // Developer
+            left: 50%;
         }
     }
 
     @media #{$bp-tablet} {
-        width: 40%;
-        height: auto;
-
         p {
-            font-size: 3em;
+            position: absolute;
+            top: 5em;
 
-            &.one {
-                margin-top: 80px;
-                text-align: left;
-                padding-right: 0;
-                color: $red;
+            &.left {   // Designer
+                right: 50%;
+                -moz-transform: scale(-1, 1);
+                -webkit-transform: scale(-1, 1);
+                -o-transform: scale(-1, 1);
+                -ms-transform: scale(-1, 1);
+                transform: scale(-1, 1);
             }
 
-            &.two {
-                text-align: right;
-                padding-left: 0;
+            &.right {    // Developer
+                left: 50%;
             }
         }
     }
