@@ -5,6 +5,43 @@ exports[`Render Skills 1`] = `
   className="skills"
   id="Skills"
 >
-  Skills component
+  <SkillSection
+    skills={
+      Array [
+        "HTML5",
+        "CSS3",
+        "JS (ES6)",
+        "React (Router, Redux)",
+        "SASS",
+      ]
+    }
+    title="Front end"
+  />
+  <SkillSection
+    skills={
+      Array [
+        "Git",
+        "NPM",
+        "Gulp",
+        "Webpack",
+        "Jest",
+        "Firebase",
+        "Heroku",
+      ]
+    }
+    title="Workflow"
+  />
+  <SkillSection
+    skills={
+      Array [
+        "Node.js",
+        "Bash",
+        "Linux/Ubuntu server",
+        "MongoDB",
+        "Oracle SQL",
+      ]
+    }
+    title="Back end"
+  />
 </section>
 `;
