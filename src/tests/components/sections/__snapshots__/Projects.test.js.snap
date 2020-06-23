@@ -4,13 +4,5 @@ exports[`Render Projects 1`] = `
 <section
   className="projects"
   id="Projects"
->
-  <div
-    className="projects__shape one"
-  />
-  <div
-    className="projects__shape two"
-  />
-  Projects component
-</section>
+/>
 `;
