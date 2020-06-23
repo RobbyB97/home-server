@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render SkillSection with title 1`] = `
+<div
+  className="skillSection"
+>
+  <h2
+    className="skillSection__title"
+  >
+    Title!
+  </h2>
+  <ul />
+</div>
+`;
+
+exports[`Render SkillSection with title and skills 1`] = `
+<div
+  className="skillSection"
+>
+  <h2
+    className="skillSection__title"
+  >
+    Title!
+  </h2>
+  <ul>
+    <li>
+      Skill1
+    </li>
+    <li>
+      Skill2
+    </li>
+    <li>
+      Skill3
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Render SkillSection without props 1`] = `
+<div
+  className="skillSection"
+>
+  <h2
+    className="skillSection__title"
+  />
+  <ul />
+</div>
+`;
