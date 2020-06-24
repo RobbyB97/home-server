@@ -26,51 +26,27 @@
 </head>
 
 <body>
+    <main id="app"></main>
 
-<!-- Page loader -->
-    <section class="page-loader"><div></div></section>
-<!-- End Page loader -->
+    <aside class="page-loader">
+        <div></div>
+    </aside>
 
-<!-- React app -->
-    <section id="app"></section>
-<!-- End React app-->
+    <aside class="firebase-config">
+        <!-- Firebase config -->
+        <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+        <script src="/__/firebase/7.14.2/firebase-database.js"></script>
+        <script src="/__/firebase/init.js"></script>
+        <!-- End Firebase config -->
+    </aside>
 
-
-<!-- Firebase config -->
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-        https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
-
-    <script>
-    // Your web app's Firebase configuration
-    var firebaseConfig = {
-        apiKey: "AIzaSyCldn83h2vFfp7IJ88RlmOtPcc3Ty1kLC0",
-        authDomain: "gdjhgaeui87ty78reg.firebaseapp.com",
-        databaseURL: "https://gdjhgaeui87ty78reg.firebaseio.com",
-        projectId: "gdjhgaeui87ty78reg",
-        storageBucket: "gdjhgaeui87ty78reg.appspot.com",
-        messagingSenderId: "1086944262898",
-        appId: "1:1086944262898:web:7e6e5c241390ac27946e6b",
-        measurementId: "G-L0KEFS7CBM"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    firebase.analytics();
-    </script>
-
-    <!-- FireBase DB SDK -->
-    <script src="/__/firebase/7.14.2/firebase-database.js"></script>
-
-    <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js"></script>
-<!-- End Firebase config -->
-
-    <!-- Import React -->
-    <script src="https://unpkg.com/react@16.0.0/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@16.0.0/umd/react-dom.development.js"></script>
-    <script src="/dist/bundle.js"></script>
+    <aside class="react-config">
+        <!-- Import React -->
+        <script src="https://unpkg.com/react@16.0.0/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@16.0.0/umd/react-dom.development.js"></script>
+        <script src="/dist/bundle.js"></script>
+        <!-- End import React -->
+    </aside>
 </body>
 </html>
