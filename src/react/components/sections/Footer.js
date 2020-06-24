@@ -4,9 +4,9 @@ import React from 'react';
 export class Footer extends React.Component {
     render() {
         return (
-            <section id="Footer" className="footer">
-
-            </section>
+            <footer id="Footer" className="footer">
+                
+            </footer>
         );
     }
 }

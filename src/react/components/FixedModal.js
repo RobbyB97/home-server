@@ -27,7 +27,7 @@ export class FixedModal extends React.Component {
         const closeStates = ['fixedModal__close active', 'fixedModal__close inactive']
 
         return (
-            <section className="fixedModal">
+            <aside className="fixedModal">
                 <div className={this.state.active ? modalStates[0]: modalStates[1]}>
                     {/* Content of modal */}
                     {this.props.text}
@@ -39,7 +39,7 @@ export class FixedModal extends React.Component {
                         ×
                     </button>
                 </div>
-            </section>
+            </aside>
         );
     }
 }

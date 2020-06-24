@@ -66,7 +66,7 @@ exports[`Render Landing 1`] = `
       className="five"
     />
   </div>
-  <section
+  <div
     className="landing__tagline"
   >
     <h2
@@ -89,8 +89,8 @@ exports[`Render Landing 1`] = `
     >
       Developer
     </p>
-  </section>
-  <section
+  </div>
+  <div
     className="landing__menu"
   >
     <a
@@ -105,8 +105,8 @@ exports[`Render Landing 1`] = `
     >
       Get in touch
     </a>
-  </section>
-  <section
+  </div>
+  <div
     className="landing__emailModal"
   >
     <p>
@@ -117,8 +117,8 @@ exports[`Render Landing 1`] = `
         bergersr97@gmail.com
       </a>
     </p>
-  </section>
-  <section
+  </div>
+  <div
     className="landing__contact"
   >
     <a
@@ -145,6 +145,6 @@ exports[`Render Landing 1`] = `
     >
       <div />
     </a>
-  </section>
+  </div>
 </section>
 `;

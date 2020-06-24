@@ -7,16 +7,16 @@ export class About extends React.Component {
     render() {
         return (
             <section id="About" className="about">
-
                 <div className="about__content one">
-                    <div className="about__portrait">
+                    <figure className="about__portrait">
                         <img src="/dist/images/aboutImage.png" />
+                        
                         <div className="about__text one">
                             <p>
                                 <span className="one">Hi, my name's Robby. <span className="two">I'm a front-end developer and digital artist</span>.</span>
                             </p>
                         </div>
-                    </div>
+                    </figure>
                 </div>
 
                 <Divider section="about two" />
