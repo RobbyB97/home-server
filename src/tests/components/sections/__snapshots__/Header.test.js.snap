@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Header 1`] = `
+<header
+  className="header"
+  id="Header"
+>
+  <Connect(HomeButton)
+    internal={true}
+  />
+  <Connect(DesktopNavigation) />
+  <Connect(MobileNavigation) />
+</header>
+`;
