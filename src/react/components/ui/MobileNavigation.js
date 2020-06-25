@@ -1,11 +1,9 @@
-/* Libraries */
 import React from 'react'
 import {connect} from 'react-redux'
 
 import {navToggle} from '../../actions/ui'
 
 
-/* Component */
 export class MobileNavigation extends React.Component {
     constructor(props) {
         super(props);
@@ -17,60 +15,54 @@ export class MobileNavigation extends React.Component {
 
     render() {
         return (
-            <div id="MobileNavigation" 
-                className={this.props.white ?
-                    "white":""}
-            >
-                <div className={this.props.nav ?
-                    "mobileNavigation__button nav":
-                    "mobileNavigation__button"}
+            <div id="MobileNavigation">
+                <div className="mobileNavigation__button"
+                    data-nav={this.props.nav}
                 >
                     <div onClick={this.navToggle}>
 					    {this.props.nav ? '✕':'☰'}
                     </div>
 				</div>
 
-                <div className={this.props.nav ? 
-                    "mobileNavigation__menu nav":
-                    "mobileNavigation__menu"}>
+                <div className="mobileNavigation__menu"
+                    data-nav={this.props.nav}
+                >
                     <ul className="mobileNavigation__links">
                         <li>
                             <a href="#About" onClick={this.navToggle}>About</a>
                         </li>
-                        {/*<li>
+                        
+                        <li>
                             <a href="#Skills" onClick={this.navToggle}>Skills</a>
                         </li>
-                        <li>
-                            <a href="#Experience" onClick={this.navToggle}>Experience</a>
-                        </li>
+
                         <li>
                             <a href="#Projects" onClick={this.navToggle}>Projects</a>
                         </li>
+
                         <li>
-                            <a href="#Contact" onClick={this.navToggle}>Contact</a>
-                        </li>*/}
+                            <a href="#Experience" onClick={this.navToggle}>Experience</a>
+                        </li>
                     </ul>
                 </div>
             </div>
-        )
+        );
     }
 }
 
 
-/* Connect to store */
 const mapStateToProps = (state) => {
     return {
         nav: state.ui.nav,
         white: state.ui.white
     }
-}
+};
 
 const mapDispatchToProps = (dispatch) => ({
     navToggle: () => {
-        dispatch(navToggle())
+        dispatch(navToggle());
     }
-})
+});
 
 
-/* Export */
-export default connect(mapStateToProps, mapDispatchToProps)(MobileNavigation)
+export default connect(mapStateToProps, mapDispatchToProps)(MobileNavigation);

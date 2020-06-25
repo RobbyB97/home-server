@@ -2,7 +2,6 @@
 
 exports[`Render MobileNavigation 1`] = `
 <div
-  className=""
   id="MobileNavigation"
 >
   <div
@@ -26,6 +25,30 @@ exports[`Render MobileNavigation 1`] = `
           onClick={[Function]}
         >
           About
+        </a>
+      </li>
+      <li>
+        <a
+          href="#Skills"
+          onClick={[Function]}
+        >
+          Skills
+        </a>
+      </li>
+      <li>
+        <a
+          href="#Projects"
+          onClick={[Function]}
+        >
+          Projects
+        </a>
+      </li>
+      <li>
+        <a
+          href="#Experience"
+          onClick={[Function]}
+        >
+          Experience
         </a>
       </li>
     </ul>

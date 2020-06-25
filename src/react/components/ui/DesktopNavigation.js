@@ -2,7 +2,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 
-/* Component */
 export class DesktopNavigation extends React.Component {
     constructor(props) {
         super(props);
@@ -18,15 +17,18 @@ export class DesktopNavigation extends React.Component {
                     <li>
                         <a href="#About">About me</a>
                     </li>
-                    {/*<li>
-                        <a href="#Experience">Experience</a>
+
+                    <li>
+                        <a href="#Skills">Skills</a>
                     </li>
+
                     <li>
                         <a href="#Projects">Projects</a>
                     </li>
+
                     <li>
-                        <a href="#Contact">Contact</a>
-                    </li>*/}
+                        <a href="#Experience">Experience</a>
+                    </li>
                 </ul>
             </div>
         );
@@ -38,7 +40,7 @@ const mapStateToProps = (state) => {
     return {
         white: state.ui.white
     }
-}
+};
 
 
-export default connect(mapStateToProps, undefined)(DesktopNavigation)
+export default connect(mapStateToProps, undefined)(DesktopNavigation);
