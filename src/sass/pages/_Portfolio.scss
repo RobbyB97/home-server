@@ -1,31 +1,15 @@
 #Portfolio {
-    /* Page loader settings */
-    opacity: 0;
-    transition: 300ms;
+    &[data-loaded=false] {
+        opacity: 0;
+        transition: 300ms;
+    }
 
-    &.loaded {
+    &[data-loaded=true] {
         opacity: 1;
         transition: 300ms;
     }
-}
 
-/* Services */
-.portfolio__services {
-
-}
-
-
-
-.portfolio__skills {
-
-}
-
-
-.portfolio__experience {
-
-}
-
-
-.portfolio__projects {
-    
+    &[data-nav=true] {
+        position: fixed;
+    }
 }

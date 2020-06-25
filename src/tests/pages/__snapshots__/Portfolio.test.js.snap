@@ -2,14 +2,10 @@
 
 exports[`Render Portfolio 1`] = `
 <div
-  className=""
+  data-loaded={false}
   id="Portfolio"
 >
-  <Connect(HomeButton)
-    internal={true}
-  />
-  <Connect(DesktopNavigation) />
-  <Connect(MobileNavigation) />
+  <Header />
   <FixedModal
     text={
       <p>
@@ -25,8 +21,8 @@ exports[`Render Portfolio 1`] = `
   <Landing />
   <About />
   <Skills />
-  <Experience />
   <Projects />
+  <Experience />
   <Footer />
 </div>
 `;

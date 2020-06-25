@@ -1,10 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 
-import MobileNavigation from '../components/ui/MobileNavigation';
-import DesktopNavigation from '../components/ui/DesktopNavigation';
-import HomeButton from '../components/ui/HomeButton';
-
+import Header from '../components/sections/Header';
 import Landing from '../components/sections/Landing';
 import About from '../components/sections/About';
 import Skills from '../components/sections/Skills';
@@ -40,10 +37,11 @@ export class Portfolio extends React.Component {
 
     render() {
         return (
-            <div id="Portfolio" className={this.state.loaded ? "loaded":""}>
-                <HomeButton internal />
-                <DesktopNavigation />
-                <MobileNavigation />
+            <div id="Portfolio" 
+                data-loaded={this.state.loaded}
+                data-nav={this.props.nav}
+            >
+                <Header />
 
                 <FixedModal 
                     text = {(
@@ -52,12 +50,12 @@ export class Portfolio extends React.Component {
                         </p>
                     )}
                 />
-
+                
                 <Landing />
                 <About />
                 <Skills />
-                <Experience />
                 <Projects />
+                <Experience />
                 <Footer />
             </div>
         )
@@ -65,4 +63,11 @@ export class Portfolio extends React.Component {
 }
 
 
-export default Portfolio;
+const mapStateToProps = (state) => {
+    return {
+        nav: state.ui.nav
+    }
+};
+
+
+export default connect(mapStateToProps, undefined)(Portfolio);
