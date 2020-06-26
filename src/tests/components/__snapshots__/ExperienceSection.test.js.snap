@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render ExperienceSection with all props 1`] = `
+<article
+  className="experienceSection"
+>
+  <header
+    className="experienceSection__head"
+  >
+    <img
+      className="experienceSection__logo"
+      src="Logo"
+    />
+    <h2
+      className="experienceSection__company"
+    >
+      Company
+    </h2>
+    <h4
+      className="experienceSection__jobTitle"
+    >
+      jobTitle
+    </h4>
+  </header>
+  <section
+    className="experienceSection__description"
+  >
+    <p>
+      Description
+    </p>
+  </section>
+</article>
+`;
+
+exports[`Render ExperienceSection with company 1`] = `
+<article
+  className="experienceSection"
+>
+  <header
+    className="experienceSection__head"
+  >
+    <h2
+      className="experienceSection__company"
+    >
+      Company
+    </h2>
+  </header>
+  <section
+    className="experienceSection__description"
+  >
+    <p />
+  </section>
+</article>
+`;
+
+exports[`Render ExperienceSection with description 1`] = `
+<article
+  className="experienceSection"
+>
+  <header
+    className="experienceSection__head"
+  >
+    <h2
+      className="experienceSection__company"
+    />
+  </header>
+  <section
+    className="experienceSection__description"
+  >
+    <p>
+      Description
+    </p>
+  </section>
+</article>
+`;
+
+exports[`Render ExperienceSection with job title 1`] = `
+<article
+  className="experienceSection"
+>
+  <header
+    className="experienceSection__head"
+  >
+    <h2
+      className="experienceSection__company"
+    />
+    <h4
+      className="experienceSection__jobTitle"
+    >
+      jobTitle
+    </h4>
+  </header>
+  <section
+    className="experienceSection__description"
+  >
+    <p />
+  </section>
+</article>
+`;
+
+exports[`Render ExperienceSection with logo 1`] = `
+<article
+  className="experienceSection"
+>
+  <header
+    className="experienceSection__head"
+  >
+    <img
+      className="experienceSection__logo"
+      src="Logo"
+    />
+    <h2
+      className="experienceSection__company"
+    />
+  </header>
+  <section
+    className="experienceSection__description"
+  >
+    <p />
+  </section>
+</article>
+`;
+
+exports[`Render ExperienceSection without props 1`] = `
+<article
+  className="experienceSection"
+>
+  <header
+    className="experienceSection__head"
+  >
+    <h2
+      className="experienceSection__company"
+    />
+  </header>
+  <section
+    className="experienceSection__description"
+  >
+    <p />
+  </section>
+</article>
+`;
