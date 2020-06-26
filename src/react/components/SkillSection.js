@@ -4,20 +4,21 @@ import React from 'react';
 export class SkillSection extends React.Component {
     render() {
         return (
-            <div className="skillSection">
+            <article className="skillSection">
                 <h2 className="skillSection__title">
                     {this.props.title}
                 </h2>
-                <ul>
+
+                <ul className="skillSection__list">
                     {this.props.skills && 
                         this.props.skills.map((skill) => (
-                            <li>
+                            <li key={skill}>
                                 {skill}
                             </li>
                         ))
                     }
                 </ul>
-            </div>
+            </article>
         );
     }
 }

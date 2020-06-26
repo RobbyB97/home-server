@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Render SkillSection with title 1`] = `
-<div
+<article
   className="skillSection"
 >
   <h2
@@ -9,12 +9,14 @@ exports[`Render SkillSection with title 1`] = `
   >
     Title!
   </h2>
-  <ul />
-</div>
+  <ul
+    className="skillSection__list"
+  />
+</article>
 `;
 
 exports[`Render SkillSection with title and skills 1`] = `
-<div
+<article
   className="skillSection"
 >
   <h2
@@ -22,27 +24,37 @@ exports[`Render SkillSection with title and skills 1`] = `
   >
     Title!
   </h2>
-  <ul>
-    <li>
+  <ul
+    className="skillSection__list"
+  >
+    <li
+      key="Skill1"
+    >
       Skill1
     </li>
-    <li>
+    <li
+      key="Skill2"
+    >
       Skill2
     </li>
-    <li>
+    <li
+      key="Skill3"
+    >
       Skill3
     </li>
   </ul>
-</div>
+</article>
 `;
 
 exports[`Render SkillSection without props 1`] = `
-<div
+<article
   className="skillSection"
 >
   <h2
     className="skillSection__title"
   />
-  <ul />
-</div>
+  <ul
+    className="skillSection__list"
+  />
+</article>
 `;
