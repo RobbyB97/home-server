@@ -7,9 +7,23 @@ import {navToggle} from '../../actions/ui'
 export class MobileNavigation extends React.Component {
     constructor(props) {
         super(props);
+
+        this.navToggle = this.navToggle.bind(this);
+        this.body = document.getElementsByTagName("BODY")[0];
+        this.html = document.getElementsByTagName("HTML")[0];
     }
 
     navToggle = () => {
+        // Reset scroll position
+        if (this.props.nav) {   // Turning nav off
+            this.body.style.overflow = "unset";
+            this.html.style.overflow = "unset";
+
+        } else {    // Turning nav on
+            this.body.style.overflow = "hidden";
+            this.html.style.overflow = "hidden";
+        }
+
         this.props.navToggle();
     }
 
@@ -24,7 +38,7 @@ export class MobileNavigation extends React.Component {
                     </div>
 				</div>
 
-                <div className="mobileNavigation__menu"
+                <nav className="mobileNavigation__menu"
                     data-nav={this.props.nav}
                 >
                     <ul className="mobileNavigation__links">
@@ -44,7 +58,7 @@ export class MobileNavigation extends React.Component {
                             <a href="#Experience" onClick={this.navToggle}>Experience</a>
                         </li>
                     </ul>
-                </div>
+                </nav>
             </div>
         );
     }

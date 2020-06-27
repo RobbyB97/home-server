@@ -13,7 +13,7 @@ exports[`Render MobileNavigation 1`] = `
       ☰
     </div>
   </div>
-  <div
+  <nav
     className="mobileNavigation__menu"
   >
     <ul
@@ -52,6 +52,6 @@ exports[`Render MobileNavigation 1`] = `
         </a>
       </li>
     </ul>
-  </div>
+  </nav>
 </div>
 `;

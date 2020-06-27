@@ -1,5 +1,4 @@
 import React from 'react';
-import {connect} from 'react-redux';
 
 import Header from '../components/sections/Header';
 import Landing from '../components/sections/Landing';
@@ -37,10 +36,7 @@ export class Portfolio extends React.Component {
 
     render() {
         return (
-            <div id="Portfolio" 
-                data-loaded={this.state.loaded}
-                data-nav={this.props.nav}
-            >
+            <div id="Portfolio" data-loaded={this.state.loaded}>
                 <Header />
 
                 <FixedModal 
@@ -63,11 +59,4 @@ export class Portfolio extends React.Component {
 }
 
 
-const mapStateToProps = (state) => {
-    return {
-        nav: state.ui.nav
-    }
-};
-
-
-export default connect(mapStateToProps, undefined)(Portfolio);
+export default Portfolio;
