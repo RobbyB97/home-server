@@ -7,6 +7,30 @@
     z-index: 10;
     transition: 300ms;
 
+    &:active {
+        outline: none;
+    }
+
+    &[data-active=true] {
+        border-radius: 8px;
+        transition: 0ms;
+
+        .homeButton__logo, .homeButton__logo.show {
+            font-family: $montserrat;
+            text-decoration: none;
+            font-size: 2.5em;
+            font-weight: 400;
+            width: 100%;
+            height: 100%;
+            display: table;
+            text-align: center;
+            z-index: 11;
+            color: $white !important;
+            opacity: 1;
+            transition: 0ms;
+        }
+    }
+
     @media #{$bp-tablet} {
         &:hover {
             .homeButton__logo {
@@ -14,33 +38,6 @@
             }
         }    
     }
-
-    &:active {
-        outline: none;
-    }
-}
-
-
-// Home Button when mobileNav is up
-#HomeButton.nav {
-    border-radius: 8px;
-    transition: 0ms;
-
-    .homeButton__logo, .homeButton__logo.show {
-        font-family: $montserrat;
-        text-decoration: none;
-        font-size: 2.5em;
-        font-weight: 400;
-        width: 100%;
-        height: 100%;
-        display: table;
-        text-align: center;
-        z-index: 11;
-        color: $white !important;
-        opacity: 1;
-        transition: 0ms;
-    }
-    
 }
 
 

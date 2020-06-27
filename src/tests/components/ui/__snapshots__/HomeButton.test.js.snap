@@ -1,8 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Render HomeButton (external) 1`] = `
-<div
-  className=""
+<section
   id="HomeButton"
 >
   <NavLink
@@ -13,12 +12,11 @@ exports[`Render HomeButton (external) 1`] = `
   >
     B
   </NavLink>
-</div>
+</section>
 `;
 
 exports[`Render HomeButton (internal) 1`] = `
-<div
-  className=""
+<section
   id="HomeButton"
 >
   <a
@@ -27,5 +25,5 @@ exports[`Render HomeButton (internal) 1`] = `
   >
     B
   </a>
-</div>
+</section>
 `;

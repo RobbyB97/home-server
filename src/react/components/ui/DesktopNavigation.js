@@ -9,28 +9,30 @@ export class DesktopNavigation extends React.Component {
 
     render() {
         return (
-            <div id="DesktopNavigation"
+            <section id="DesktopNavigation"
                 className={this.props.white ?
                     "white":""}
             >
-                <ul>
-                    <li>
-                        <a href="#About">About me</a>
-                    </li>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#About">About me</a>
+                        </li>
 
-                    <li>
-                        <a href="#Skills">Skills</a>
-                    </li>
+                        <li>
+                            <a href="#Skills">Skills</a>
+                        </li>
 
-                    <li>
-                        <a href="#Projects">Projects</a>
-                    </li>
+                        <li>
+                            <a href="#Projects">Projects</a>
+                        </li>
 
-                    <li>
-                        <a href="#Experience">Experience</a>
-                    </li>
-                </ul>
-            </div>
+                        <li>
+                            <a href="#Experience">Experience</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
         );
     }
 }

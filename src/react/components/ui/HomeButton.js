@@ -1,9 +1,9 @@
 /* Libraries */
-import React from 'react'
-import {NavLink} from 'react-router-dom'
-import {connect} from 'react-redux'
+import React from 'react';
+import {NavLink} from 'react-router-dom';
+import {connect} from 'react-redux';
 
-import {navToggle} from '../../actions/ui'
+import {navToggle} from '../../actions/ui';
 
 
 /* Component */
@@ -12,36 +12,36 @@ export class HomeButton extends React.Component {
         super(props);
         this.state = {
             show: false
-        }
+        };
     }
 
     componentDidMount() {
         const component = this;
         document.addEventListener('scroll', () => {
-            component.toggle()
-        })
+            component.toggle();
+        });
     }
 
     toggle = () => {
         if (window.pageYOffset > 300) {
             this.setState({
                 show: true
-            })
+            });
         } else {
             this.setState({
                 show: false
-            })
+            });
         }
     }
 
     navToggle = () => {
-        this.props.navToggle()
+        this.props.navToggle();
     }
 
     render() {
         return (
-            <div id="HomeButton" 
-                className={this.props.nav || this.props.white ? "nav":""}
+            <section id="HomeButton" 
+                data-active={this.props.nav || this.props.white}
                 onClick={this.props.nav && this.navToggle}
                 >
                 
@@ -59,8 +59,8 @@ export class HomeButton extends React.Component {
                         B
 				    </NavLink>
                 }
-            </div>
-        )
+            </section>
+        );
     }
 }
 
@@ -71,14 +71,14 @@ const mapStateToProps = (state) => {
         nav: state.ui.nav,
         white: state.ui.white
     }
-}
+};
 
 const mapDispatchToProps = (dispatch) => ({
     navToggle: () => {
-        dispatch(navToggle())
+        dispatch(navToggle());
     }
-})
+});
 
 
 /* Export */
-export default connect(mapStateToProps, mapDispatchToProps)(HomeButton)
+export default connect(mapStateToProps, mapDispatchToProps)(HomeButton);

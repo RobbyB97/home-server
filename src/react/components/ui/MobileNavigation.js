@@ -29,7 +29,7 @@ export class MobileNavigation extends React.Component {
 
     render() {
         return (
-            <div id="MobileNavigation">
+            <section id="MobileNavigation">
                 <div className="mobileNavigation__button"
                     data-nav={this.props.nav}
                 >
@@ -59,7 +59,7 @@ export class MobileNavigation extends React.Component {
                         </li>
                     </ul>
                 </nav>
-            </div>
+            </section>
         );
     }
 }
