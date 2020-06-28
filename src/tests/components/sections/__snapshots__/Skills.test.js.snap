@@ -5,6 +5,13 @@ exports[`Render Skills 1`] = `
   className="skills"
   id="Skills"
 >
+  <header
+    className="skills__header"
+  >
+    <h2>
+      My skillset
+    </h2>
+  </header>
   <SkillSection
     skills={
       Array [

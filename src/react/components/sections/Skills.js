@@ -1,11 +1,16 @@
 import React from 'react';
 
-import SkillSection from '../SkillSection'
+import SkillSection from '../SkillSection';
+
 
 export class Skills extends React.Component {
     render() {
         return (
             <section id="Skills" className="skills">
+                <header className="skills__header">
+                    <h2>My skillset</h2>
+                </header>
+
                 <SkillSection 
                     title="Front end"
                     skills={[

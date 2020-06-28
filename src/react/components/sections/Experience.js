@@ -7,6 +7,10 @@ export class Experience extends React.Component {
     render() {
         return (
             <section id="Experience" className="experience">
+                <header className="experience__header">
+                    <h2>Previous experience</h2>
+                </header>
+
                 <ExperienceSection 
                     company="Finalsite"
                     jobTitle="Front End Developer"

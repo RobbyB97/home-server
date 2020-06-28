@@ -4,5 +4,13 @@ exports[`Render Projects 1`] = `
 <section
   className="projects"
   id="Projects"
-/>
+>
+  <header
+    className="projects__header"
+  >
+    <h2>
+      Personal projects
+    </h2>
+  </header>
+</section>
 `;

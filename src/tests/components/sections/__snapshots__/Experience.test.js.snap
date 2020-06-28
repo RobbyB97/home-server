@@ -5,6 +5,13 @@ exports[`Render About 1`] = `
   className="experience"
   id="Experience"
 >
+  <header
+    className="experience__header"
+  >
+    <h2>
+      Previous experience
+    </h2>
+  </header>
   <ExperienceSection
     company="Finalsite"
     description="I resolved bugs and implemented design changes on 
