@@ -18,6 +18,7 @@ export class MobileNavigation extends React.Component {
         if (this.props.nav) {   // Turning nav off
             this.body.style.overflow = "unset";
             this.html.style.overflow = "unset";
+            this.body.style.overflowX = "hidden";
 
         } else {    // Turning nav on
             this.body.style.overflow = "hidden";
