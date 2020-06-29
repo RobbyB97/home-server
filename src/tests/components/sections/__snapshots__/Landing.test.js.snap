@@ -91,34 +91,6 @@ exports[`Render Landing 1`] = `
     </p>
   </div>
   <div
-    className="landing__menu"
-  >
-    <a
-      className="landing__view"
-      href="#About"
-    >
-      View my work
-    </a>
-    <a
-      className="landing__email"
-      onClick={[Function]}
-    >
-      Get in touch
-    </a>
-  </div>
-  <div
-    className="landing__emailModal"
-  >
-    <p>
-      Email me @ 
-      <a
-        href="mailto:bergersr97@gmail.com"
-      >
-        bergersr97@gmail.com
-      </a>
-    </p>
-  </div>
-  <div
     className="landing__contact"
   >
     <a
@@ -145,6 +117,41 @@ exports[`Render Landing 1`] = `
     >
       <div />
     </a>
+  </div>
+  <div
+    className="landing__menu"
+  >
+    <a
+      className="landing__view"
+      href="#About"
+    >
+      See my work
+    </a>
+    <a
+      className="landing__resume"
+      href="https://bergers.dev/resume.pdf"
+      target="_blank"
+    >
+      View my resume
+    </a>
+    <a
+      className="landing__email"
+      onClick={[Function]}
+    >
+      Get in touch
+    </a>
+  </div>
+  <div
+    className="landing__emailModal"
+  >
+    <p>
+      Email me @ 
+      <a
+        href="mailto:bergersr97@gmail.com"
+      >
+        bergersr97@gmail.com
+      </a>
+    </p>
   </div>
 </section>
 `;

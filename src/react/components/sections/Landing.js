@@ -1,6 +1,5 @@
 import React from 'react';
 import Particles from 'react-particles-js';
-import ReactModal from 'react-modal'
 
 
 export class Landing extends React.Component {
@@ -28,7 +27,6 @@ export class Landing extends React.Component {
     render() {
         return (
             <section id="Landing" className="landing">
-
                 {/* Background color blocks */}
                 <div className="landing__background">
                     <div className="one">
@@ -96,26 +94,6 @@ export class Landing extends React.Component {
                     </p>
                 </div>
 
-                {/* Menu buttons */}
-                <div className="landing__menu">
-                    <a className="landing__view" href="#About">
-                        View my work
-                    </a>
-                    
-                    <a className="landing__email"
-                        onClick={() => {
-                            this.toggleEmail();
-                        }}
-                    >
-                        Get in touch
-                    </a>
-                </div>
-
-                {/* Email modal */}
-                <div className={this.state.emailModal ? "landing__emailModal active":"landing__emailModal"}>
-                    <p>Email me @ <a href="mailto:bergersr97@gmail.com">bergersr97@gmail.com</a></p>
-                </div>
-
                 {/* Link icons */}
                 <div className="landing__contact">
                     <a className="landing__github" href="https://www.github.com/robbyb97">
@@ -133,6 +111,30 @@ export class Landing extends React.Component {
                     <a className="landing__twitter" href="https://twitter.com/RobbyBergers">
                         <div></div>
                     </a>
+                </div>
+
+                {/* Menu buttons */}
+                <div className="landing__menu">
+                    <a className="landing__view" href="#About">
+                        See my work
+                    </a>
+
+                    <a className="landing__resume" target="_blank" href="https://bergers.dev/resume.pdf">
+                        View my resume
+                    </a>
+                    
+                    <a className="landing__email"
+                        onClick={() => {
+                            this.toggleEmail();
+                        }}
+                    >
+                        Get in touch
+                    </a>
+                </div>
+
+                {/* Email modal */}
+                <div className={this.state.emailModal ? "landing__emailModal active":"landing__emailModal"}>
+                    <p>Email me @ <a href="mailto:bergersr97@gmail.com">bergersr97@gmail.com</a></p>
                 </div>
             </section>
         );
