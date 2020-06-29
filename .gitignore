@@ -12,3 +12,4 @@ node_modules/
 #Ignore webpack-built files
 public/dist/bundle.js
 public/dist/bundle.css
+.vscode/settings.json
