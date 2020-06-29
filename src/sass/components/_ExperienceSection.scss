@@ -1,1 +1,67 @@
-.experienceSection {}
+.experienceSection {
+    margin: 20px 0;
+}
+
+
+.experienceSection__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: $purple;
+}
+
+
+.experienceSection__info {
+
+}
+
+
+.experienceSection__logo {
+    width: 50px;
+    max-width: 50px;
+    height: auto;
+    margin: auto 0;
+}
+
+
+.experienceSection__company {
+    display: block;
+}
+
+
+.experienceSection__jobTitle {
+    display: block;
+}
+
+
+.experienceSection__description {
+    overflow: hidden;
+    background-color: darken($purple, 5%);
+    transition: 150ms ease-out;
+
+    &[data-active=false] {
+        max-height: 0;
+    }
+
+    &[data-active=true] {
+        height: auto;
+        max-height: 120px;
+    }
+}
+
+
+.experienceSection__footer {
+    display: block;
+    margin: 0;
+    width: 100%;
+    background-color: $purple;
+    position: relative;
+
+    p {
+        margin: 0;
+        font-size: 1.4em;
+        text-align: center;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+}
