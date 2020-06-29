@@ -30,7 +30,17 @@ test('Render ExperienceSection with description', () => {
     expect(wrapper).toMatchSnapshot();
 });
 
-test('Render ExperienceSection with all props', () => {
+test('Render ExperienceSection with start date', () => {
     const wrapper = shallow(<ExperienceSection {...experienceSections[4]}/>);
+    expect(wrapper).toMatchSnapshot();
+});
+
+test('Render ExperienceSection with start and end date', () => {
+    const wrapper = shallow(<ExperienceSection {...experienceSections[5]}/>);
+    expect(wrapper).toMatchSnapshot();
+});
+
+test('Render ExperienceSection with all props', () => {
+    const wrapper = shallow(<ExperienceSection {...experienceSections[6]}/>);
     expect(wrapper).toMatchSnapshot();
 });

@@ -14,16 +14,30 @@ exports[`Render About 1`] = `
   </header>
   <ExperienceSection
     company="Finalsite"
+    dates={
+      Array [
+        "July 2019",
+        "December 2019",
+      ]
+    }
     description="I resolved bugs and implemented design changes on 
  Finalsite's proprietary CMS through client submitted tickets.
  I also improved upon their user guide."
     jobTitle="Front End Developer"
+    logo="/dist/images/icons/finalsite/finalsite-logo.png"
   />
   <ExperienceSection
     company="Web Design Hub"
+    dates={
+      Array [
+        "November 2018",
+        "June 2019",
+      ]
+    }
     description="I resolved bugs and added features to PHP sites on 
  The Web Design Hub's proprietary CMS."
     jobTitle="Junior Web Developer"
+    logo="/dist/images/icons/twdh/twdh-logo.png"
   />
 </section>
 `;

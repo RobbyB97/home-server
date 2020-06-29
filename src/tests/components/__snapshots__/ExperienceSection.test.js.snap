@@ -5,30 +5,44 @@ exports[`Render ExperienceSection with all props 1`] = `
   className="experienceSection"
 >
   <header
-    className="experienceSection__head"
+    className="experienceSection__header"
   >
     <img
       className="experienceSection__logo"
       src="Logo"
     />
-    <h2
-      className="experienceSection__company"
+    <div
+      className="experienceSection__info"
     >
-      Company
-    </h2>
-    <h4
-      className="experienceSection__jobTitle"
-    >
-      jobTitle
-    </h4>
+      <h2
+        className="experienceSection__company"
+      >
+        Company
+      </h2>
+      <h4
+        className="experienceSection__jobTitle"
+      >
+        jobTitle
+      </h4>
+    </div>
   </header>
   <section
     className="experienceSection__description"
+    data-active={false}
   >
     <p>
       Description
     </p>
   </section>
+  <footer
+    className="experienceSection__footer"
+    data-active={false}
+    onClick={[Function]}
+  >
+    <p>
+      ⮟
+    </p>
+  </footer>
 </article>
 `;
 
@@ -37,19 +51,33 @@ exports[`Render ExperienceSection with company 1`] = `
   className="experienceSection"
 >
   <header
-    className="experienceSection__head"
+    className="experienceSection__header"
   >
-    <h2
-      className="experienceSection__company"
+    <div
+      className="experienceSection__info"
     >
-      Company
-    </h2>
+      <h2
+        className="experienceSection__company"
+      >
+        Company
+      </h2>
+    </div>
   </header>
   <section
     className="experienceSection__description"
+    data-active={false}
   >
     <p />
   </section>
+  <footer
+    className="experienceSection__footer"
+    data-active={false}
+    onClick={[Function]}
+  >
+    <p>
+      ⮟
+    </p>
+  </footer>
 </article>
 `;
 
@@ -58,19 +86,33 @@ exports[`Render ExperienceSection with description 1`] = `
   className="experienceSection"
 >
   <header
-    className="experienceSection__head"
+    className="experienceSection__header"
   >
-    <h2
-      className="experienceSection__company"
-    />
+    <div
+      className="experienceSection__info"
+    >
+      <h2
+        className="experienceSection__company"
+      />
+    </div>
   </header>
   <section
     className="experienceSection__description"
+    data-active={false}
   >
     <p>
       Description
     </p>
   </section>
+  <footer
+    className="experienceSection__footer"
+    data-active={false}
+    onClick={[Function]}
+  >
+    <p>
+      ⮟
+    </p>
+  </footer>
 </article>
 `;
 
@@ -79,22 +121,36 @@ exports[`Render ExperienceSection with job title 1`] = `
   className="experienceSection"
 >
   <header
-    className="experienceSection__head"
+    className="experienceSection__header"
   >
-    <h2
-      className="experienceSection__company"
-    />
-    <h4
-      className="experienceSection__jobTitle"
+    <div
+      className="experienceSection__info"
     >
-      jobTitle
-    </h4>
+      <h2
+        className="experienceSection__company"
+      />
+      <h4
+        className="experienceSection__jobTitle"
+      >
+        jobTitle
+      </h4>
+    </div>
   </header>
   <section
     className="experienceSection__description"
+    data-active={false}
   >
     <p />
   </section>
+  <footer
+    className="experienceSection__footer"
+    data-active={false}
+    onClick={[Function]}
+  >
+    <p>
+      ⮟
+    </p>
+  </footer>
 </article>
 `;
 
@@ -103,21 +159,114 @@ exports[`Render ExperienceSection with logo 1`] = `
   className="experienceSection"
 >
   <header
-    className="experienceSection__head"
+    className="experienceSection__header"
   >
     <img
       className="experienceSection__logo"
       src="Logo"
     />
-    <h2
-      className="experienceSection__company"
-    />
+    <div
+      className="experienceSection__info"
+    >
+      <h2
+        className="experienceSection__company"
+      />
+    </div>
   </header>
   <section
     className="experienceSection__description"
+    data-active={false}
   >
     <p />
   </section>
+  <footer
+    className="experienceSection__footer"
+    data-active={false}
+    onClick={[Function]}
+  >
+    <p>
+      ⮟
+    </p>
+  </footer>
+</article>
+`;
+
+exports[`Render ExperienceSection with start and end date 1`] = `
+<article
+  className="experienceSection"
+>
+  <header
+    className="experienceSection__header"
+  >
+    <div
+      className="experienceSection__info"
+    >
+      <h2
+        className="experienceSection__company"
+      />
+      <h5
+        className="experienceSection__dates"
+      >
+        startDate
+         
+        - endDate
+      </h5>
+    </div>
+  </header>
+  <section
+    className="experienceSection__description"
+    data-active={false}
+  >
+    <p />
+  </section>
+  <footer
+    className="experienceSection__footer"
+    data-active={false}
+    onClick={[Function]}
+  >
+    <p>
+      ⮟
+    </p>
+  </footer>
+</article>
+`;
+
+exports[`Render ExperienceSection with start date 1`] = `
+<article
+  className="experienceSection"
+>
+  <header
+    className="experienceSection__header"
+  >
+    <div
+      className="experienceSection__info"
+    >
+      <h2
+        className="experienceSection__company"
+      />
+      <h5
+        className="experienceSection__dates"
+      >
+        startDate
+         
+      </h5>
+    </div>
+  </header>
+  <section
+    className="experienceSection__description"
+    data-active={false}
+  >
+    <p />
+  </section>
+  <footer
+    className="experienceSection__footer"
+    data-active={false}
+    onClick={[Function]}
+  >
+    <p>
+      ⮟
+    </p>
+  </footer>
 </article>
 `;
 
@@ -126,16 +275,30 @@ exports[`Render ExperienceSection without props 1`] = `
   className="experienceSection"
 >
   <header
-    className="experienceSection__head"
+    className="experienceSection__header"
   >
-    <h2
-      className="experienceSection__company"
-    />
+    <div
+      className="experienceSection__info"
+    >
+      <h2
+        className="experienceSection__company"
+      />
+    </div>
   </header>
   <section
     className="experienceSection__description"
+    data-active={false}
   >
     <p />
   </section>
+  <footer
+    className="experienceSection__footer"
+    data-active={false}
+    onClick={[Function]}
+  >
+    <p>
+      ⮟
+    </p>
+  </footer>
 </article>
 `;

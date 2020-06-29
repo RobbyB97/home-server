@@ -7,6 +7,10 @@ export default [{
 }, {
     description: "Description"
 }, {
+    dates: ["startDate"]
+}, {
+    dates: ["startDate", "endDate"]
+}, {
     logo: "Logo",
     company: "Company",
     jobTitle: "jobTitle",
