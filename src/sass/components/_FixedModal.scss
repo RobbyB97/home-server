@@ -8,31 +8,33 @@
     z-index: 8;
 }
 
+
 .fixedModal__modal {
     position: fixed;
-    bottom: 0;
+    top: 0;
     left: 0;
     right: 0;
-    transition: 150ms ease-in-out;
+    transition: 150ms ease-out;
     background-color: $red;
     color: $white;
     overflow: hidden;
 
-    &.inactive {
-        height: 0;
+    &[data-active=false] {
+        max-height: 0px;
     }
 
-    &.active {
+    &[data-active=true] {
         height: auto;
+        max-height: 150px;
     }
 
     p {
-        width: 80%;
+        width: 250px;
         text-align: center;
-        margin: 0 auto;
         margin: 18px auto;
     }
 }
+
 
 .fixedModal__close {
     text-align: center;
@@ -41,12 +43,13 @@
     background: darken($red, 20%);
     border: none;
     color: $white;
+    padding: 0;
 
-    &.inactive {
+    &[data-active=false] {
         display: none;
     }
 
-    &.active {
+    &[data-active=true] {
         display: block;
 
         &:hover {

@@ -4,15 +4,17 @@ exports[`Render FixedModal 1`] = `
 <aside
   className="fixedModal"
 >
-  <div
-    className="fixedModal__modal inactive"
+  <article
+    className="fixedModal__modal"
+    data-active={false}
   >
     <button
-      className="fixedModal__close inactive"
+      className="fixedModal__close"
+      data-active={false}
       onClick={[Function]}
     >
       ×
     </button>
-  </div>
+  </article>
 </aside>
 `;

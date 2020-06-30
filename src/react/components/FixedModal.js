@@ -10,12 +10,12 @@ export class FixedModal extends React.Component {
     }
 
     componentDidMount() {
-        window.addEventListener('scroll', this.toggleModal);
+        window.addEventListener('scroll', this.toggle);
     }
 
-    toggleModal = () => {
+    toggle = () => {
         // Only show once per visit
-        window.removeEventListener('scroll', this.toggleModal);
+        window.removeEventListener('scroll', this.toggle);
 
         this.setState({
             active: !this.state.active
@@ -23,22 +23,23 @@ export class FixedModal extends React.Component {
     }
     
     render() {
-        const modalStates = ['fixedModal__modal active', 'fixedModal__modal inactive']
-        const closeStates = ['fixedModal__close active', 'fixedModal__close inactive']
-
         return (
             <aside className="fixedModal">
-                <div className={this.state.active ? modalStates[0]: modalStates[1]}>
+                <article 
+                    className="fixedModal__modal"
+                    data-active={this.state.active}    
+                >
                     {/* Content of modal */}
                     {this.props.text}
 
                     <button 
-                        className={this.state.active ? closeStates[0]: closeStates[1]}
-                        onClick={this.toggleModal}
+                        className="fixedModal__close" 
+                        data-active={this.state.active}
+                        onClick={this.toggle}
                     >
                         ×
                     </button>
-                </div>
+                </article>
             </aside>
         );
     }
