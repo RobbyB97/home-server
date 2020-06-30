@@ -28,7 +28,7 @@ exports[`Render ExperienceSection with all props 1`] = `
   </header>
   <section
     className="experienceSection__description"
-    data-active={false}
+    data-active={true}
   >
     <p>
       Description
@@ -36,11 +36,13 @@ exports[`Render ExperienceSection with all props 1`] = `
   </section>
   <footer
     className="experienceSection__footer"
-    data-active={false}
+    data-active={true}
     onClick={[Function]}
   >
-    <p>
-      ⮟
+    <p
+      data-active={true}
+    >
+      ^
     </p>
   </footer>
 </article>
@@ -65,17 +67,19 @@ exports[`Render ExperienceSection with company 1`] = `
   </header>
   <section
     className="experienceSection__description"
-    data-active={false}
+    data-active={true}
   >
     <p />
   </section>
   <footer
     className="experienceSection__footer"
-    data-active={false}
+    data-active={true}
     onClick={[Function]}
   >
-    <p>
-      ⮟
+    <p
+      data-active={true}
+    >
+      ^
     </p>
   </footer>
 </article>
@@ -98,7 +102,7 @@ exports[`Render ExperienceSection with description 1`] = `
   </header>
   <section
     className="experienceSection__description"
-    data-active={false}
+    data-active={true}
   >
     <p>
       Description
@@ -106,11 +110,13 @@ exports[`Render ExperienceSection with description 1`] = `
   </section>
   <footer
     className="experienceSection__footer"
-    data-active={false}
+    data-active={true}
     onClick={[Function]}
   >
-    <p>
-      ⮟
+    <p
+      data-active={true}
+    >
+      ^
     </p>
   </footer>
 </article>
@@ -138,17 +144,19 @@ exports[`Render ExperienceSection with job title 1`] = `
   </header>
   <section
     className="experienceSection__description"
-    data-active={false}
+    data-active={true}
   >
     <p />
   </section>
   <footer
     className="experienceSection__footer"
-    data-active={false}
+    data-active={true}
     onClick={[Function]}
   >
-    <p>
-      ⮟
+    <p
+      data-active={true}
+    >
+      ^
     </p>
   </footer>
 </article>
@@ -175,17 +183,19 @@ exports[`Render ExperienceSection with logo 1`] = `
   </header>
   <section
     className="experienceSection__description"
-    data-active={false}
+    data-active={true}
   >
     <p />
   </section>
   <footer
     className="experienceSection__footer"
-    data-active={false}
+    data-active={true}
     onClick={[Function]}
   >
-    <p>
-      ⮟
+    <p
+      data-active={true}
+    >
+      ^
     </p>
   </footer>
 </article>
@@ -215,17 +225,19 @@ exports[`Render ExperienceSection with start and end date 1`] = `
   </header>
   <section
     className="experienceSection__description"
-    data-active={false}
+    data-active={true}
   >
     <p />
   </section>
   <footer
     className="experienceSection__footer"
-    data-active={false}
+    data-active={true}
     onClick={[Function]}
   >
-    <p>
-      ⮟
+    <p
+      data-active={true}
+    >
+      ^
     </p>
   </footer>
 </article>
@@ -254,17 +266,19 @@ exports[`Render ExperienceSection with start date 1`] = `
   </header>
   <section
     className="experienceSection__description"
-    data-active={false}
+    data-active={true}
   >
     <p />
   </section>
   <footer
     className="experienceSection__footer"
-    data-active={false}
+    data-active={true}
     onClick={[Function]}
   >
-    <p>
-      ⮟
+    <p
+      data-active={true}
+    >
+      ^
     </p>
   </footer>
 </article>
@@ -287,17 +301,19 @@ exports[`Render ExperienceSection without props 1`] = `
   </header>
   <section
     className="experienceSection__description"
-    data-active={false}
+    data-active={true}
   >
     <p />
   </section>
   <footer
     className="experienceSection__footer"
-    data-active={false}
+    data-active={true}
     onClick={[Function]}
   >
-    <p>
-      ⮟
+    <p
+      data-active={true}
+    >
+      ^
     </p>
   </footer>
 </article>

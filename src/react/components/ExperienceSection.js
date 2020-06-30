@@ -5,7 +5,7 @@ export class ExperienceSection extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            active: false
+            active: true
         };
     }
 
@@ -57,7 +57,7 @@ export class ExperienceSection extends React.Component {
                     data-active={this.state.active}
                     onClick={this.toggle}
                 >
-                    <p>{this.state.active ? "⮝" : "⮟"}</p>
+                    <p data-active={this.state.active}>^</p>
                 </footer>
             </article>
         );
