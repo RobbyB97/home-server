@@ -4,14 +4,32 @@ exports[`Render SkillSection with title 1`] = `
 <article
   className="skillSection"
 >
-  <h2
-    className="skillSection__title"
+  <header
+    className="skillSection__header"
   >
-    Title!
-  </h2>
-  <ul
+    <h2
+      className="skillSection__title"
+    >
+      Title!
+    </h2>
+  </header>
+  <section
     className="skillSection__list"
-  />
+    data-active={true}
+  >
+    <ul />
+  </section>
+  <footer
+    className="skillSection__footer"
+    data-active={true}
+    onClick={[Function]}
+  >
+    <p
+      data-active={true}
+    >
+      ^
+    </p>
+  </footer>
 </article>
 `;
 
@@ -19,30 +37,48 @@ exports[`Render SkillSection with title and skills 1`] = `
 <article
   className="skillSection"
 >
-  <h2
-    className="skillSection__title"
+  <header
+    className="skillSection__header"
   >
-    Title!
-  </h2>
-  <ul
+    <h2
+      className="skillSection__title"
+    >
+      Title!
+    </h2>
+  </header>
+  <section
     className="skillSection__list"
+    data-active={true}
   >
-    <li
-      key="Skill1"
+    <ul>
+      <li
+        key="Skill1"
+      >
+        Skill1
+      </li>
+      <li
+        key="Skill2"
+      >
+        Skill2
+      </li>
+      <li
+        key="Skill3"
+      >
+        Skill3
+      </li>
+    </ul>
+  </section>
+  <footer
+    className="skillSection__footer"
+    data-active={true}
+    onClick={[Function]}
+  >
+    <p
+      data-active={true}
     >
-      Skill1
-    </li>
-    <li
-      key="Skill2"
-    >
-      Skill2
-    </li>
-    <li
-      key="Skill3"
-    >
-      Skill3
-    </li>
-  </ul>
+      ^
+    </p>
+  </footer>
 </article>
 `;
 
@@ -50,11 +86,29 @@ exports[`Render SkillSection without props 1`] = `
 <article
   className="skillSection"
 >
-  <h2
-    className="skillSection__title"
-  />
-  <ul
+  <header
+    className="skillSection__header"
+  >
+    <h2
+      className="skillSection__title"
+    />
+  </header>
+  <section
     className="skillSection__list"
-  />
+    data-active={true}
+  >
+    <ul />
+  </section>
+  <footer
+    className="skillSection__footer"
+    data-active={true}
+    onClick={[Function]}
+  >
+    <p
+      data-active={true}
+    >
+      ^
+    </p>
+  </footer>
 </article>
 `;

@@ -2,22 +2,50 @@ import React from 'react';
 
 
 export class SkillSection extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            active: true
+        };
+    }
+
+    toggle = () => {
+        this.setState({
+            active: !this.state.active
+        });
+    }
+
     render() {
         return (
             <article className="skillSection">
-                <h2 className="skillSection__title">
-                    {this.props.title}
-                </h2>
+                <header className="skillSection__header">
+                    <h2 className="skillSection__title">
+                        {this.props.title}
+                    </h2>
+                </header>
 
-                <ul className="skillSection__list">
-                    {this.props.skills && 
-                        this.props.skills.map((skill) => (
-                            <li key={skill}>
-                                {skill}
-                            </li>
-                        ))
-                    }
-                </ul>
+                <section 
+                    className="skillSection__list"
+                    data-active={this.state.active}    
+                >
+                    <ul>
+                        {this.props.skills && 
+                            this.props.skills.map((skill) => (
+                                <li key={skill}>
+                                    {skill}
+                                </li>
+                            ))
+                        }
+                    </ul>
+                </section>
+
+                <footer
+                    className="skillSection__footer"
+                    data-active={this.state.active}
+                    onClick={this.toggle}
+                >
+                    <p data-active={this.state.active}>^</p>
+                </footer>
             </article>
         );
     }
