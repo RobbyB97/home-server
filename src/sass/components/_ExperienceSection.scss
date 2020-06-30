@@ -1,5 +1,10 @@
 .experienceSection {
-    margin: 20px 0;
+    margin: 30px auto;
+    width: 320px;
+
+    @media #{$bp-tablet} {
+        width: 350px;
+    }
 }
 
 
@@ -26,11 +31,20 @@
 
 .experienceSection__company {
     display: block;
+    margin-bottom: 4px;
 }
 
 
 .experienceSection__jobTitle {
     display: block;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+
+.experienceSection__dates {
+    margin-top: 2px;
+    opacity: 0.7;
 }
 
 
@@ -46,6 +60,14 @@
     &[data-active=true] {
         height: auto;
         max-height: 120px;
+        padding: 0 8px;
+    }
+
+    @media #{$bp-tablet} {
+        p {
+            margin: 8px 1em;
+            text-align: justify;
+        }
     }
 }
 
@@ -54,14 +76,26 @@
     display: block;
     margin: 0;
     width: 100%;
-    background-color: $purple;
+    background-color: darken($purple, 5%);
     position: relative;
 
     p {
-        margin: 0;
+        margin: 0 auto;
         font-size: 1.4em;
         text-align: center;
-        padding-top: 8px;
-        padding-bottom: 8px;
+        transition: 150ms ease-out;
+        opacity: 0.5;
+
+        &[data-active=false] {
+            transform: rotate(180deg);
+        }
+
+        &[data-active=true] {
+            transform: rotate(0deg);
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
     }
 }
