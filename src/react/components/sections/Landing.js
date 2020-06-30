@@ -76,7 +76,7 @@ export class Landing extends React.Component {
                 </div>
                     
                 {/* Tagline */}
-                <div className="landing__tagline">
+                <header className="landing__tagline">
                     <h2 className="left">
                         Robby
                     </h2>
@@ -92,10 +92,10 @@ export class Landing extends React.Component {
                     <p className="right">
                         Developer
                     </p>
-                </div>
+                </header>
 
                 {/* Link icons */}
-                <div className="landing__contact">
+                <nav className="landing__contact">
                     <a className="landing__github" href="https://www.github.com/robbyb97">
                         <div></div>
                     </a>
@@ -111,10 +111,10 @@ export class Landing extends React.Component {
                     <a className="landing__twitter" href="https://twitter.com/RobbyBergers">
                         <div></div>
                     </a>
-                </div>
+                </nav>
 
                 {/* Menu buttons */}
-                <div className="landing__menu">
+                <nav className="landing__menu">
                     <a className="landing__view" href="#About">
                         See my work
                     </a>
@@ -130,10 +130,13 @@ export class Landing extends React.Component {
                     >
                         Get in touch
                     </a>
-                </div>
+                </nav>
 
                 {/* Email modal */}
-                <div className={this.state.emailModal ? "landing__emailModal active":"landing__emailModal"}>
+                <div 
+                    className="landing__emailModal"
+                    data-active={this.state.emailModal}
+                >
                     <p>Email me @ <a href="mailto:bergersr97@gmail.com">bergersr97@gmail.com</a></p>
                 </div>
             </section>

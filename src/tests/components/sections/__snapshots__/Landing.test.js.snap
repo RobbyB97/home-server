@@ -66,7 +66,7 @@ exports[`Render Landing 1`] = `
       className="five"
     />
   </div>
-  <div
+  <header
     className="landing__tagline"
   >
     <h2
@@ -89,8 +89,8 @@ exports[`Render Landing 1`] = `
     >
       Developer
     </p>
-  </div>
-  <div
+  </header>
+  <nav
     className="landing__contact"
   >
     <a
@@ -117,8 +117,8 @@ exports[`Render Landing 1`] = `
     >
       <div />
     </a>
-  </div>
-  <div
+  </nav>
+  <nav
     className="landing__menu"
   >
     <a
@@ -140,9 +140,10 @@ exports[`Render Landing 1`] = `
     >
       Get in touch
     </a>
-  </div>
+  </nav>
   <div
     className="landing__emailModal"
+    data-active={false}
   >
     <p>
       Email me @ 
