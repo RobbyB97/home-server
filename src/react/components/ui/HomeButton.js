@@ -46,16 +46,20 @@ export class HomeButton extends React.Component {
                 >
                 
                 {this.props.internal ?
-                    <a href="#app" className={this.state.show ?
-                        "homeButton__logo show":
-                        "homeButton__logo"
-                    }>B</a>
+                    <a  
+                        href="#app" 
+                        className="homeButton__logo"
+                        data-show={this.state.show}
+                    >
+                        B
+                    </a>
                 :
-                    <NavLink to="/" onClick={this.toTop}
-                        className={this.state.show ?
-                            "homeButton__logo show":
-                            "homeButton__logo"
-                        }>
+                    <NavLink 
+                        to="/" 
+                        onClick={this.toTop}
+                        className="homeButton__logo"
+                        data-show={this.state.show}
+                    >
                         B
 				    </NavLink>
                 }
