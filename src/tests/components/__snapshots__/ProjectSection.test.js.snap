@@ -1,0 +1,445 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render ProjectSection with Github link 1`] = `
+<article
+  className="projectSection"
+>
+  <header
+    className="projectSection__header"
+  >
+    <div
+      className="projectSection__info"
+    >
+      <h2
+        className="projectSection__name"
+      />
+      <h4
+        className="projectSection__languages"
+      />
+      <nav
+        className="projectSection__links"
+      >
+        <a
+          className="projectSection__github"
+          href="Github!"
+        >
+          <img
+            src="/dist/images/icons/github/github-white.png"
+          />
+          <p>
+            View on Github
+          </p>
+        </a>
+      </nav>
+    </div>
+  </header>
+  <section
+    className="projectSection__description"
+    data-active={true}
+  >
+    <p />
+  </section>
+  <footer
+    className="projectSection__footer"
+    data-active={true}
+    onClick={[Function]}
+  >
+    <p
+      data-active={true}
+    >
+      ^
+    </p>
+  </footer>
+</article>
+`;
+
+exports[`Render ProjectSection with all props 1`] = `
+<article
+  className="projectSection"
+>
+  <header
+    className="projectSection__header"
+  >
+    <img
+      className="projectSection__logo"
+      src="Logo!"
+    />
+    <div
+      className="projectSection__info"
+    >
+      <h2
+        className="projectSection__name"
+      >
+        Name!
+      </h2>
+      <h4
+        className="projectSection__languages"
+      >
+        <mark
+          key="Language1!"
+        >
+          Language1!
+        </mark>
+        <mark
+          key="Language2!"
+        >
+          Language2!
+        </mark>
+      </h4>
+      <nav
+        className="projectSection__links"
+      >
+        <a
+          className="projectSection__github"
+          href="Github!"
+        >
+          <img
+            src="/dist/images/icons/github/github-white.png"
+          />
+          <p>
+            View on Github
+          </p>
+        </a>
+        <a
+          className="projectSection__website"
+          href="Website!"
+        >
+          View website
+        </a>
+      </nav>
+    </div>
+  </header>
+  <section
+    className="projectSection__description"
+    data-active={true}
+  >
+    <p>
+      Description!
+    </p>
+  </section>
+  <footer
+    className="projectSection__footer"
+    data-active={true}
+    onClick={[Function]}
+  >
+    <p
+      data-active={true}
+    >
+      ^
+    </p>
+  </footer>
+</article>
+`;
+
+exports[`Render ProjectSection with custom links 1`] = `
+<article
+  className="projectSection"
+>
+  <header
+    className="projectSection__header"
+  >
+    <div
+      className="projectSection__info"
+    >
+      <h2
+        className="projectSection__name"
+      />
+      <h4
+        className="projectSection__languages"
+      />
+      <nav
+        className="projectSection__links"
+      />
+    </div>
+  </header>
+  <section
+    className="projectSection__description"
+    data-active={true}
+  >
+    <p />
+  </section>
+  <footer
+    className="projectSection__footer"
+    data-active={true}
+    onClick={[Function]}
+  >
+    <p
+      data-active={true}
+    >
+      ^
+    </p>
+  </footer>
+</article>
+`;
+
+exports[`Render ProjectSection with description 1`] = `
+<article
+  className="projectSection"
+>
+  <header
+    className="projectSection__header"
+  >
+    <div
+      className="projectSection__info"
+    >
+      <h2
+        className="projectSection__name"
+      />
+      <h4
+        className="projectSection__languages"
+      />
+      <nav
+        className="projectSection__links"
+      />
+    </div>
+  </header>
+  <section
+    className="projectSection__description"
+    data-active={true}
+  >
+    <p>
+      Description!
+    </p>
+  </section>
+  <footer
+    className="projectSection__footer"
+    data-active={true}
+    onClick={[Function]}
+  >
+    <p
+      data-active={true}
+    >
+      ^
+    </p>
+  </footer>
+</article>
+`;
+
+exports[`Render ProjectSection with languages 1`] = `
+<article
+  className="projectSection"
+>
+  <header
+    className="projectSection__header"
+  >
+    <div
+      className="projectSection__info"
+    >
+      <h2
+        className="projectSection__name"
+      />
+      <h4
+        className="projectSection__languages"
+      >
+        <mark
+          key="Language1!"
+        >
+          Language1!
+        </mark>
+        <mark
+          key="Language2!"
+        >
+          Language2!
+        </mark>
+      </h4>
+      <nav
+        className="projectSection__links"
+      />
+    </div>
+  </header>
+  <section
+    className="projectSection__description"
+    data-active={true}
+  >
+    <p />
+  </section>
+  <footer
+    className="projectSection__footer"
+    data-active={true}
+    onClick={[Function]}
+  >
+    <p
+      data-active={true}
+    >
+      ^
+    </p>
+  </footer>
+</article>
+`;
+
+exports[`Render ProjectSection with logo 1`] = `
+<article
+  className="projectSection"
+>
+  <header
+    className="projectSection__header"
+  >
+    <img
+      className="projectSection__logo"
+      src="Logo!"
+    />
+    <div
+      className="projectSection__info"
+    >
+      <h2
+        className="projectSection__name"
+      />
+      <h4
+        className="projectSection__languages"
+      />
+      <nav
+        className="projectSection__links"
+      />
+    </div>
+  </header>
+  <section
+    className="projectSection__description"
+    data-active={true}
+  >
+    <p />
+  </section>
+  <footer
+    className="projectSection__footer"
+    data-active={true}
+    onClick={[Function]}
+  >
+    <p
+      data-active={true}
+    >
+      ^
+    </p>
+  </footer>
+</article>
+`;
+
+exports[`Render ProjectSection with name 1`] = `
+<article
+  className="projectSection"
+>
+  <header
+    className="projectSection__header"
+  >
+    <div
+      className="projectSection__info"
+    >
+      <h2
+        className="projectSection__name"
+      >
+        Name!
+      </h2>
+      <h4
+        className="projectSection__languages"
+      />
+      <nav
+        className="projectSection__links"
+      />
+    </div>
+  </header>
+  <section
+    className="projectSection__description"
+    data-active={true}
+  >
+    <p />
+  </section>
+  <footer
+    className="projectSection__footer"
+    data-active={true}
+    onClick={[Function]}
+  >
+    <p
+      data-active={true}
+    >
+      ^
+    </p>
+  </footer>
+</article>
+`;
+
+exports[`Render ProjectSection with website link 1`] = `
+<article
+  className="projectSection"
+>
+  <header
+    className="projectSection__header"
+  >
+    <div
+      className="projectSection__info"
+    >
+      <h2
+        className="projectSection__name"
+      />
+      <h4
+        className="projectSection__languages"
+      />
+      <nav
+        className="projectSection__links"
+      >
+        <a
+          className="projectSection__website"
+          href="Website!"
+        >
+          View website
+        </a>
+      </nav>
+    </div>
+  </header>
+  <section
+    className="projectSection__description"
+    data-active={true}
+  >
+    <p />
+  </section>
+  <footer
+    className="projectSection__footer"
+    data-active={true}
+    onClick={[Function]}
+  >
+    <p
+      data-active={true}
+    >
+      ^
+    </p>
+  </footer>
+</article>
+`;
+
+exports[`Render ProjectSection without props 1`] = `
+<article
+  className="projectSection"
+>
+  <header
+    className="projectSection__header"
+  >
+    <div
+      className="projectSection__info"
+    >
+      <h2
+        className="projectSection__name"
+      />
+      <h4
+        className="projectSection__languages"
+      />
+      <nav
+        className="projectSection__links"
+      />
+    </div>
+  </header>
+  <section
+    className="projectSection__description"
+    data-active={true}
+  >
+    <p />
+  </section>
+  <footer
+    className="projectSection__footer"
+    data-active={true}
+    onClick={[Function]}
+  >
+    <p
+      data-active={true}
+    >
+      ^
+    </p>
+  </footer>
+</article>
+`;
