@@ -1,1 +1,24 @@
 #Footer {}
+
+
+.footer__content {
+    margin: 0;
+    background: lighten($black, 15%);
+    position: relative;
+    height: 40px;
+}
+
+
+.footer__links {
+
+}
+
+
+.footer__copyright {
+    margin: 0;
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+}
+
+// Footer bg: lighten($black, 15%)

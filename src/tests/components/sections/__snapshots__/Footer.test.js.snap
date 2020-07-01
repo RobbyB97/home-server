@@ -4,5 +4,21 @@ exports[`Render Projects 1`] = `
 <footer
   className="footer"
   id="Footer"
-/>
+>
+  <Divider
+    section="footer"
+  />
+  <div
+    className="footer__content"
+  >
+    <div
+      className="footer__links"
+    />
+    <p
+      className="footer__copyright"
+    >
+      © Robert Bergers 2017-2020
+    </p>
+  </div>
+</footer>
 `;
