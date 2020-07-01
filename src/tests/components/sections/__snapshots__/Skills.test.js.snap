@@ -13,18 +13,20 @@ exports[`Render Skills 1`] = `
     </h2>
   </header>
   <SkillSection
+    key="Front end"
     skills={
       Array [
+        "React",
+        "SASS",
         "HTML5",
         "CSS3",
         "JS (ES6)",
-        "React (Router, Redux)",
-        "SASS",
       ]
     }
     title="Front end"
   />
   <SkillSection
+    key="Workflow"
     skills={
       Array [
         "Git",
@@ -39,10 +41,11 @@ exports[`Render Skills 1`] = `
     title="Workflow"
   />
   <SkillSection
+    key="Back end"
     skills={
       Array [
         "Node.js",
-        "Bash",
+        "BASH",
         "Linux/Ubuntu server",
         "MongoDB",
         "Oracle SQL",
