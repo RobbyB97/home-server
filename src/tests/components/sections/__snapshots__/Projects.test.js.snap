@@ -12,98 +12,102 @@ exports[`Render Projects 1`] = `
       Personal projects
     </h2>
   </header>
-  <ProjectSection
-    description="This repository contains all the Udemy                tutorials and basic throwaway projects that I used to                learn my stack. Check the GitHub if you want to see all                the projects that aren't worth putting here."
-    github="https://github.com/RobbyB97/web-dev-bootcamp"
-    key="Web Dev Bootcamp"
-    languages={
-      Array [
-        "Node.js",
-        "Express",
-        "npm",
-        "Webpack",
-        "APIs",
-        "React",
-        "SASS",
-        "Heroku",
-      ]
-    }
-    name="Web Dev Bootcamp"
-  />
-  <ProjectSection
-    description="SoloTwitch is a chrome extension which                redesigns the entire Twitch website to cleanly remove                all view counts in order to remove the subconscious mob                mentality from Twitch."
-    github="https://github.com/RobbyB97/SoloTwitch"
-    key="SoloTwitch"
-    languages={
-      Array [
-        "Chrome extension",
-        "npm",
-        "Webpack",
-        "SASS",
-      ]
-    }
-    name="SoloTwitch"
-  />
-  <ProjectSection
-    description="Originally the codebase for my old Dell R410                server, this repository now contains my portfolio (this website!),                which is hosted through Firebase."
-    github="https://github.com/RobbyB97/home-server"
-    key="Portfolio"
-    languages={
-      Array [
-        "Node.js",
-        "Express",
-        "npm",
-        "Webpack",
-        "React",
-        "jest",
-        "SASS",
-        "firebase",
-      ]
-    }
-    name="Portfolio"
-    website="https://bergers.dev"
-  />
-  <ProjectSection
-    customLinks={
-      Array [
-        Object {
-          "link": "https://www.youtube.com/watch?v=WSW-5m8lRMs",
-          "text": "Code Bullet",
-        },
-      ]
-    }
-    description="An interesting application of RNN's in a Flappy Bird                clone. Code Bullet created this, destroyed it then put it on GitHub.                I fixed it and deployed it."
-    github="https://github.com/RobbyB97/Flappy-Bird-AI"
-    key="Flappy Bird AI"
-    languages={
-      Array [
-        "Node.js",
-        "Express",
-        "Heroku",
-      ]
-    }
-    name="Flappy Bird AI"
-    website="http://flappy-bird-ai.herokuapp.com/"
-  />
-  <ProjectSection
-    customLinks={
-      Array [
-        Object {
-          "link": "https://pypi.org/project/yt-iframe/",
-          "text": "PyPI",
-        },
-      ]
-    }
-    description="YT_iframe is a Python package that allows the user to                create a responsive HTML page containing all of a YouTube channel's                videos with a single function call."
-    github="https://github.com/RobbyB97/yt-iframe-python"
-    key="YT-iframe"
-    languages={
-      Array [
-        "Python",
-        "Beautiful Soup 4",
-      ]
-    }
-    name="YT-iframe"
-  />
+  <section
+    className="projects__content"
+  >
+    <ProjectSection
+      description="This repository contains all the Udemy                tutorials and basic throwaway projects that I used to                learn my stack. Check the GitHub if you want to see all                the projects that aren't worth putting here."
+      github="https://github.com/RobbyB97/web-dev-bootcamp"
+      key="Web Dev Bootcamp"
+      languages={
+        Array [
+          "Node.js",
+          "Express",
+          "npm",
+          "Webpack",
+          "APIs",
+          "React",
+          "SASS",
+          "Heroku",
+        ]
+      }
+      name="Web Dev Bootcamp"
+    />
+    <ProjectSection
+      description="SoloTwitch is a chrome extension which                redesigns the entire Twitch website to cleanly remove                all view counts in order to remove the subconscious mob                mentality from Twitch."
+      github="https://github.com/RobbyB97/SoloTwitch"
+      key="SoloTwitch"
+      languages={
+        Array [
+          "Chrome extension",
+          "npm",
+          "Webpack",
+          "SASS",
+        ]
+      }
+      name="SoloTwitch"
+    />
+    <ProjectSection
+      description="Originally the codebase for my old Dell R410                server, this repository now contains my portfolio (this website!),                which is hosted through Firebase."
+      github="https://github.com/RobbyB97/home-server"
+      key="Portfolio"
+      languages={
+        Array [
+          "Node.js",
+          "Express",
+          "npm",
+          "Webpack",
+          "React",
+          "jest",
+          "SASS",
+          "firebase",
+        ]
+      }
+      name="Portfolio"
+      website="https://bergers.dev"
+    />
+    <ProjectSection
+      customLinks={
+        Array [
+          Object {
+            "link": "https://www.youtube.com/watch?v=WSW-5m8lRMs",
+            "text": "Code Bullet",
+          },
+        ]
+      }
+      description="An interesting application of RNN's in a Flappy Bird                clone. Code Bullet created this, destroyed it then put it on GitHub.                I fixed it and deployed it."
+      github="https://github.com/RobbyB97/Flappy-Bird-AI"
+      key="Flappy Bird AI"
+      languages={
+        Array [
+          "Node.js",
+          "Express",
+          "Heroku",
+        ]
+      }
+      name="Flappy Bird AI"
+      website="http://flappy-bird-ai.herokuapp.com/"
+    />
+    <ProjectSection
+      customLinks={
+        Array [
+          Object {
+            "link": "https://pypi.org/project/yt-iframe/",
+            "text": "PyPI",
+          },
+        ]
+      }
+      description="YT_iframe is a Python package that allows the user to                create a responsive HTML page containing all of a YouTube channel's                videos with a single function call."
+      github="https://github.com/RobbyB97/yt-iframe-python"
+      key="YT-iframe"
+      languages={
+        Array [
+          "Python",
+          "Beautiful Soup 4",
+        ]
+      }
+      name="YT-iframe"
+    />
+  </section>
 </section>
 `;

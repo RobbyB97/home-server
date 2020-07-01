@@ -32,12 +32,15 @@ export class Skills extends React.Component {
                     <h2>My skillset</h2>
                 </header>
 
-                {sections.map((section) => (
-                    <SkillSection 
-                        {...section}
-                        key={section.title}
-                    />
-                ))}
+
+                <section className="skills__content">
+                    {sections.map((section) => (
+                        <SkillSection 
+                            {...section}
+                            key={section.title}
+                        />
+                    ))}
+                </section>
             </section>
         );
     }

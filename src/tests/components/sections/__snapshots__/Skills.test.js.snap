@@ -12,46 +12,50 @@ exports[`Render Skills 1`] = `
       My skillset
     </h2>
   </header>
-  <SkillSection
-    key="Front end"
-    skills={
-      Array [
-        "React",
-        "SASS",
-        "HTML5",
-        "CSS3",
-        "JS (ES6)",
-      ]
-    }
-    title="Front end"
-  />
-  <SkillSection
-    key="Workflow"
-    skills={
-      Array [
-        "Git",
-        "NPM",
-        "Gulp",
-        "Webpack",
-        "Jest",
-        "Firebase",
-        "Heroku",
-      ]
-    }
-    title="Workflow"
-  />
-  <SkillSection
-    key="Back end"
-    skills={
-      Array [
-        "Node.js",
-        "BASH",
-        "Linux/Ubuntu server",
-        "MongoDB",
-        "Oracle SQL",
-      ]
-    }
-    title="Back end"
-  />
+  <section
+    className="skills__content"
+  >
+    <SkillSection
+      key="Front end"
+      skills={
+        Array [
+          "React",
+          "SASS",
+          "HTML5",
+          "CSS3",
+          "JS (ES6)",
+        ]
+      }
+      title="Front end"
+    />
+    <SkillSection
+      key="Workflow"
+      skills={
+        Array [
+          "Git",
+          "NPM",
+          "Gulp",
+          "Webpack",
+          "Jest",
+          "Firebase",
+          "Heroku",
+        ]
+      }
+      title="Workflow"
+    />
+    <SkillSection
+      key="Back end"
+      skills={
+        Array [
+          "Node.js",
+          "BASH",
+          "Linux/Ubuntu server",
+          "MongoDB",
+          "Oracle SQL",
+        ]
+      }
+      title="Back end"
+    />
+  </section>
 </section>
 `;

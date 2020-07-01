@@ -74,10 +74,11 @@ export class Projects extends React.Component {
                     <h2>Personal projects</h2>
                 </header>
 
-                {projects.map((project) => (
-                    <ProjectSection key={project.name} {...project}/>
-                ))}
-                
+                <section className="projects__content">
+                    {projects.map((project) => (
+                        <ProjectSection key={project.name} {...project}/>
+                    ))}
+                </section>                
             </section>
         );
     }

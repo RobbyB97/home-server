@@ -12,8 +12,8 @@ exports[`Render About 1`] = `
       Previous experience
     </h2>
   </header>
-  <div
-    className="experienceSection__content"
+  <section
+    className="experience__content"
   >
     <ExperienceSection
       company="Finalsite"
@@ -41,6 +41,6 @@ exports[`Render About 1`] = `
       key="Web Design Hub"
       logo="/dist/images/icons/twdh/twdh-logo.png"
     />
-  </div>
+  </section>
 </section>
 `;

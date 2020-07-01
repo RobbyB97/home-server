@@ -34,14 +34,14 @@ export class Experience extends React.Component {
                     <h2>Previous experience</h2>
                 </header>
 
-                <div className="experienceSection__content">
+                <section className="experience__content">
                     {sections.map((section) => (
                         <ExperienceSection
                             {...section}
                             key={section.company}
                         />
                     ))}
-                </div>
+                </section>
             </section>
         );
     }
