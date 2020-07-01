@@ -1,4 +1,6 @@
 #Portfolio {
+    overflow-x: hidden !important;
+
     &[data-loaded=false] {
         opacity: 0;
         transition: 300ms;
