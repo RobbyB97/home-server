@@ -40,16 +40,14 @@ export class HomeButton extends React.Component {
 
     render() {
         return (
-            <section id="HomeButton" 
-                data-active={this.props.nav || this.props.white}
+            <section id="HomeButton"
                 onClick={this.props.nav && this.navToggle}
-                >
-                
+            >
                 {this.props.internal ?
                     <a  
                         href="#app" 
                         className="homeButton__logo"
-                        data-show={this.state.show}
+                        data-show={this.state.show || this.props.nav}
                     >
                         B
                     </a>
@@ -58,7 +56,7 @@ export class HomeButton extends React.Component {
                         to="/" 
                         onClick={this.toTop}
                         className="homeButton__logo"
-                        data-show={this.state.show}
+                        data-show={this.state.show || this.props.nav}
                     >
                         B
 				    </NavLink>

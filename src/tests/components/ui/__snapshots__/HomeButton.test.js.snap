@@ -8,7 +8,6 @@ exports[`Render HomeButton (external) 1`] = `
     activeClassName="active"
     ariaCurrent="true"
     className="homeButton__logo"
-    data-show={false}
     to="/"
   >
     B
@@ -22,7 +21,6 @@ exports[`Render HomeButton (internal) 1`] = `
 >
   <a
     className="homeButton__logo"
-    data-show={false}
     href="#app"
   >
     B
