@@ -113,26 +113,8 @@
 }
 
 
-/* Animated particle background */
-.landing__background > .four {
-    z-index: -2;
-    opacity: 0;
-
-    .landing__particles {
-        position: absolute;
-        top: 0;
-    
-        canvas {
-            z-index: -2;
-            opacity: 0.5;
-            position: absolute;
-        }  
-    }
-}
-
-
 /* Gray gradient overlay */
-.landing__background > .five {
+.landing__background > .four {
     z-index: -1;
     left: 0;
     top: 0;
@@ -162,12 +144,10 @@
 
         &.left {    // Robby
             right: 51%;
-            color: $red;
         }
         
         &.right {   // Bergers
             left: calc(51% - 4px);
-            color: $purple;
         }
     }
 
@@ -276,6 +256,7 @@
     border: 1px solid $white;
     color: $white;
     transition: 150ms;
+    font-weight: 600;
 
     &:hover {
         background-color: $red;
@@ -288,16 +269,19 @@
 .landing__emailModal {
     overflow: hidden;
     width: 100%;
-    height: 0;
     transition: 100ms ease-out;
     background-color: darken($red, 10%) ;
     position: absolute;
     bottom: 0;
-    
-    &.active {
-        height: 3em;
+
+    &[data-active=false] {
+        height: 0;
     }
 
+    &[data-active=true] {
+        height: 3em;
+    }
+    
     p {
         text-align: center;
     }
@@ -331,7 +315,7 @@
 
 .landing__github {
     > div {
-        background-image: url($icons + 'github/github-red.png');
+        background-image: url($icons + 'github/github-red-100.png');
         opacity: 1;
 
         &:hover {
@@ -350,7 +334,7 @@
 
 .landing__linkedin {
     > div {
-        background-image: url($icons + 'linkedin/linkedin-red.png');
+        background-image: url($icons + 'linkedin/linkedin-red-100.png');
         opacity: 1;
 
         &:hover {
@@ -369,7 +353,7 @@
 
 .landing__upwork {
     > div {
-        background-image: url($icons + 'upwork/upwork-purple.png');
+        background-image: url($icons + 'upwork/upwork-purple-100.png');
         opacity: 1;
 
         &:hover {
@@ -388,7 +372,7 @@
 
 .landing__twitter {
     > div {
-        background-image: url($icons + 'twitter/twitter-purple.png');
+        background-image: url($icons + 'twitter/twitter-purple-100.png');
         opacity: 1;
 
         &:hover {

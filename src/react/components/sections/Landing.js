@@ -43,36 +43,7 @@ export class Landing extends React.Component {
 
                     <div className="three"></div>
                     
-                    <div className="four">
-                        <Particles 
-                            width="100vw"
-                            height="100vh"
-                            className="landing__particles"
-                            params={{
-                                particles: {
-                                    number: {
-                                        value: 110,
-                                        density: {
-                                            enable: true,
-                                            value_area: 700
-                                        }
-                                    },
-                                    line_linked: {
-                                        enable: true,
-                                        distance: 200,
-                                        color: '#f8f8f8',
-                                        opacity: 0.5,
-                                        width: 1
-                                    },
-                                    color: {
-                                        value: '#f8f8f8'
-                                    }
-                                }
-                            }}
-                        />
-                    </div>
-                    
-                    <div className="five"></div>
+                    <div className="four"></div>
                 </div>
                     
                 {/* Tagline */}
@@ -115,11 +86,19 @@ export class Landing extends React.Component {
 
                 {/* Menu buttons */}
                 <nav className="landing__menu">
-                    <a className="landing__view" href="#About">
+                    <a 
+                        className="landing__view" 
+                        href="#About"
+                    >
                         See my work
                     </a>
 
-                    <a className="landing__resume" target="_blank" href="https://bergers.dev/resume.pdf">
+                    <a 
+                        className="landing__resume" 
+                        href="https://bergers.dev/resume.pdf"
+                        target="_blank" 
+                        rel="noopener"
+                    >
                         View my resume
                     </a>
                     
