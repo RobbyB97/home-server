@@ -3,6 +3,7 @@
 exports[`Render ExperienceSection with all props 1`] = `
 <article
   className="experienceSection"
+  onClick={[Function]}
 >
   <header
     className="experienceSection__header"
@@ -37,7 +38,6 @@ exports[`Render ExperienceSection with all props 1`] = `
   <footer
     className="experienceSection__footer"
     data-active={true}
-    onClick={[Function]}
   >
     <p
       data-active={true}
@@ -51,6 +51,7 @@ exports[`Render ExperienceSection with all props 1`] = `
 exports[`Render ExperienceSection with company 1`] = `
 <article
   className="experienceSection"
+  onClick={[Function]}
 >
   <header
     className="experienceSection__header"
@@ -74,7 +75,6 @@ exports[`Render ExperienceSection with company 1`] = `
   <footer
     className="experienceSection__footer"
     data-active={true}
-    onClick={[Function]}
   >
     <p
       data-active={true}
@@ -88,6 +88,7 @@ exports[`Render ExperienceSection with company 1`] = `
 exports[`Render ExperienceSection with description 1`] = `
 <article
   className="experienceSection"
+  onClick={[Function]}
 >
   <header
     className="experienceSection__header"
@@ -111,7 +112,6 @@ exports[`Render ExperienceSection with description 1`] = `
   <footer
     className="experienceSection__footer"
     data-active={true}
-    onClick={[Function]}
   >
     <p
       data-active={true}
@@ -125,6 +125,7 @@ exports[`Render ExperienceSection with description 1`] = `
 exports[`Render ExperienceSection with job title 1`] = `
 <article
   className="experienceSection"
+  onClick={[Function]}
 >
   <header
     className="experienceSection__header"
@@ -151,7 +152,6 @@ exports[`Render ExperienceSection with job title 1`] = `
   <footer
     className="experienceSection__footer"
     data-active={true}
-    onClick={[Function]}
   >
     <p
       data-active={true}
@@ -165,6 +165,7 @@ exports[`Render ExperienceSection with job title 1`] = `
 exports[`Render ExperienceSection with logo 1`] = `
 <article
   className="experienceSection"
+  onClick={[Function]}
 >
   <header
     className="experienceSection__header"
@@ -190,7 +191,6 @@ exports[`Render ExperienceSection with logo 1`] = `
   <footer
     className="experienceSection__footer"
     data-active={true}
-    onClick={[Function]}
   >
     <p
       data-active={true}
@@ -204,6 +204,7 @@ exports[`Render ExperienceSection with logo 1`] = `
 exports[`Render ExperienceSection with start and end date 1`] = `
 <article
   className="experienceSection"
+  onClick={[Function]}
 >
   <header
     className="experienceSection__header"
@@ -232,7 +233,6 @@ exports[`Render ExperienceSection with start and end date 1`] = `
   <footer
     className="experienceSection__footer"
     data-active={true}
-    onClick={[Function]}
   >
     <p
       data-active={true}
@@ -246,6 +246,7 @@ exports[`Render ExperienceSection with start and end date 1`] = `
 exports[`Render ExperienceSection with start date 1`] = `
 <article
   className="experienceSection"
+  onClick={[Function]}
 >
   <header
     className="experienceSection__header"
@@ -273,7 +274,6 @@ exports[`Render ExperienceSection with start date 1`] = `
   <footer
     className="experienceSection__footer"
     data-active={true}
-    onClick={[Function]}
   >
     <p
       data-active={true}
@@ -287,6 +287,7 @@ exports[`Render ExperienceSection with start date 1`] = `
 exports[`Render ExperienceSection without props 1`] = `
 <article
   className="experienceSection"
+  onClick={[Function]}
 >
   <header
     className="experienceSection__header"
@@ -308,7 +309,6 @@ exports[`Render ExperienceSection without props 1`] = `
   <footer
     className="experienceSection__footer"
     data-active={true}
-    onClick={[Function]}
   >
     <p
       data-active={true}

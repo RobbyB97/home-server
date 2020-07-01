@@ -17,7 +17,10 @@ export class ExperienceSection extends React.Component {
 
     render() {
         return (
-            <article className="experienceSection">
+            <article 
+                className="experienceSection" 
+                onClick={this.toggle}
+            >
                 <header className="experienceSection__header">
                     {this.props.logo &&
                         <img 
@@ -54,9 +57,7 @@ export class ExperienceSection extends React.Component {
 
                 <footer 
                     className="experienceSection__footer"
-                    data-active={this.state.active}
-                    onClick={this.toggle}
-                >
+                    data-active={this.state.active}>
                     <p data-active={this.state.active}>^</p>
                 </footer>
             </article>
