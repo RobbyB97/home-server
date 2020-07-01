@@ -3,6 +3,7 @@
 exports[`Render SkillSection with title 1`] = `
 <article
   className="skillSection"
+  onClick={[Function]}
 >
   <header
     className="skillSection__header"
@@ -22,7 +23,6 @@ exports[`Render SkillSection with title 1`] = `
   <footer
     className="skillSection__footer"
     data-active={true}
-    onClick={[Function]}
   >
     <p
       data-active={true}
@@ -36,6 +36,7 @@ exports[`Render SkillSection with title 1`] = `
 exports[`Render SkillSection with title and skills 1`] = `
 <article
   className="skillSection"
+  onClick={[Function]}
 >
   <header
     className="skillSection__header"
@@ -71,7 +72,6 @@ exports[`Render SkillSection with title and skills 1`] = `
   <footer
     className="skillSection__footer"
     data-active={true}
-    onClick={[Function]}
   >
     <p
       data-active={true}
@@ -85,6 +85,7 @@ exports[`Render SkillSection with title and skills 1`] = `
 exports[`Render SkillSection without props 1`] = `
 <article
   className="skillSection"
+  onClick={[Function]}
 >
   <header
     className="skillSection__header"
@@ -102,7 +103,6 @@ exports[`Render SkillSection without props 1`] = `
   <footer
     className="skillSection__footer"
     data-active={true}
-    onClick={[Function]}
   >
     <p
       data-active={true}

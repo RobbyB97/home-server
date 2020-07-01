@@ -17,7 +17,10 @@ export class SkillSection extends React.Component {
 
     render() {
         return (
-            <article className="skillSection">
+            <article 
+                className="skillSection"
+                onClick={this.toggle}    
+            >
                 <header className="skillSection__header">
                     <h2 className="skillSection__title">
                         {this.props.title}
@@ -42,7 +45,6 @@ export class SkillSection extends React.Component {
                 <footer
                     className="skillSection__footer"
                     data-active={this.state.active}
-                    onClick={this.toggle}
                 >
                     <p data-active={this.state.active}>^</p>
                 </footer>
