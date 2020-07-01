@@ -6,38 +6,41 @@ exports[`Render ProjectSection with Github link 1`] = `
 >
   <header
     className="projectSection__header"
+    onClick={[Function]}
   >
-    <div
-      className="projectSection__info"
-    >
-      <h2
-        className="projectSection__name"
-      />
-      <h4
-        className="projectSection__languages"
-      />
-      <nav
-        className="projectSection__links"
-      >
-        <a
-          className="projectSection__github"
-          href="Github!"
-        >
-          <img
-            src="/dist/images/icons/github/github-white.png"
-          />
-          <p>
-            View on Github
-          </p>
-        </a>
-      </nav>
-    </div>
+    <h2
+      className="projectSection__name"
+    />
   </header>
   <section
     className="projectSection__description"
     data-active={true}
   >
-    <p />
+    <div
+      className="projectSection__languages"
+      onClick={[Function]}
+    />
+    <nav
+      className="projectSection__links"
+    >
+      <a
+        className="projectSection__github"
+        href="Github!"
+        rel="noopener"
+        target="_blank"
+      >
+        <img
+          src="/dist/images/icons/github/github-white-100.png"
+        />
+        <p>
+          Github
+        </p>
+      </a>
+    </nav>
+    <summary
+      className="projectSection__summary"
+      onClick={[Function]}
+    />
   </section>
   <footer
     className="projectSection__footer"
@@ -59,63 +62,75 @@ exports[`Render ProjectSection with all props 1`] = `
 >
   <header
     className="projectSection__header"
+    onClick={[Function]}
   >
     <img
       className="projectSection__logo"
       src="Logo!"
     />
-    <div
-      className="projectSection__info"
+    <h2
+      className="projectSection__name"
     >
-      <h2
-        className="projectSection__name"
-      >
-        Name!
-      </h2>
-      <h4
-        className="projectSection__languages"
-      >
-        <mark
-          key="Language1!"
-        >
-          Language1!
-        </mark>
-        <mark
-          key="Language2!"
-        >
-          Language2!
-        </mark>
-      </h4>
-      <nav
-        className="projectSection__links"
-      >
-        <a
-          className="projectSection__github"
-          href="Github!"
-        >
-          <img
-            src="/dist/images/icons/github/github-white.png"
-          />
-          <p>
-            View on Github
-          </p>
-        </a>
-        <a
-          className="projectSection__website"
-          href="Website!"
-        >
-          View website
-        </a>
-      </nav>
-    </div>
+      Name!
+    </h2>
   </header>
   <section
     className="projectSection__description"
     data-active={true}
   >
-    <p>
+    <div
+      className="projectSection__languages"
+      onClick={[Function]}
+    >
+      <h5
+        key="Language1!"
+      >
+        Language1!
+      </h5>
+      <h5
+        key="Language2!"
+      >
+        Language2!
+      </h5>
+    </div>
+    <nav
+      className="projectSection__links"
+    >
+      <a
+        className="projectSection__github"
+        href="Github!"
+        rel="noopener"
+        target="_blank"
+      >
+        <img
+          src="/dist/images/icons/github/github-white-100.png"
+        />
+        <p>
+          Github
+        </p>
+      </a>
+      <a
+        className="projectSection__website"
+        href="Website!"
+        rel="noopener"
+        target="_blank"
+      >
+        Website
+      </a>
+      <a
+        className="projectSection__customLink"
+        href="Custom link link!"
+        key="Custom link link!"
+        rel="noopener"
+        target="_blank"
+      />
+    </nav>
+    <summary
+      className="projectSection__summary"
+      onClick={[Function]}
+    >
       Description!
-    </p>
+    </summary>
   </section>
   <footer
     className="projectSection__footer"
@@ -137,26 +152,35 @@ exports[`Render ProjectSection with custom links 1`] = `
 >
   <header
     className="projectSection__header"
+    onClick={[Function]}
   >
-    <div
-      className="projectSection__info"
-    >
-      <h2
-        className="projectSection__name"
-      />
-      <h4
-        className="projectSection__languages"
-      />
-      <nav
-        className="projectSection__links"
-      />
-    </div>
+    <h2
+      className="projectSection__name"
+    />
   </header>
   <section
     className="projectSection__description"
     data-active={true}
   >
-    <p />
+    <div
+      className="projectSection__languages"
+      onClick={[Function]}
+    />
+    <nav
+      className="projectSection__links"
+    >
+      <a
+        className="projectSection__customLink"
+        href="Custom link link!"
+        key="Custom link link!"
+        rel="noopener"
+        target="_blank"
+      />
+    </nav>
+    <summary
+      className="projectSection__summary"
+      onClick={[Function]}
+    />
   </section>
   <footer
     className="projectSection__footer"
@@ -178,28 +202,29 @@ exports[`Render ProjectSection with description 1`] = `
 >
   <header
     className="projectSection__header"
+    onClick={[Function]}
   >
-    <div
-      className="projectSection__info"
-    >
-      <h2
-        className="projectSection__name"
-      />
-      <h4
-        className="projectSection__languages"
-      />
-      <nav
-        className="projectSection__links"
-      />
-    </div>
+    <h2
+      className="projectSection__name"
+    />
   </header>
   <section
     className="projectSection__description"
     data-active={true}
   >
-    <p>
+    <div
+      className="projectSection__languages"
+      onClick={[Function]}
+    />
+    <nav
+      className="projectSection__links"
+    />
+    <summary
+      className="projectSection__summary"
+      onClick={[Function]}
+    >
       Description!
-    </p>
+    </summary>
   </section>
   <footer
     className="projectSection__footer"
@@ -221,37 +246,38 @@ exports[`Render ProjectSection with languages 1`] = `
 >
   <header
     className="projectSection__header"
+    onClick={[Function]}
   >
-    <div
-      className="projectSection__info"
-    >
-      <h2
-        className="projectSection__name"
-      />
-      <h4
-        className="projectSection__languages"
-      >
-        <mark
-          key="Language1!"
-        >
-          Language1!
-        </mark>
-        <mark
-          key="Language2!"
-        >
-          Language2!
-        </mark>
-      </h4>
-      <nav
-        className="projectSection__links"
-      />
-    </div>
+    <h2
+      className="projectSection__name"
+    />
   </header>
   <section
     className="projectSection__description"
     data-active={true}
   >
-    <p />
+    <div
+      className="projectSection__languages"
+      onClick={[Function]}
+    >
+      <h5
+        key="Language1!"
+      >
+        Language1!
+      </h5>
+      <h5
+        key="Language2!"
+      >
+        Language2!
+      </h5>
+    </div>
+    <nav
+      className="projectSection__links"
+    />
+    <summary
+      className="projectSection__summary"
+      onClick={[Function]}
+    />
   </section>
   <footer
     className="projectSection__footer"
@@ -273,30 +299,31 @@ exports[`Render ProjectSection with logo 1`] = `
 >
   <header
     className="projectSection__header"
+    onClick={[Function]}
   >
     <img
       className="projectSection__logo"
       src="Logo!"
     />
-    <div
-      className="projectSection__info"
-    >
-      <h2
-        className="projectSection__name"
-      />
-      <h4
-        className="projectSection__languages"
-      />
-      <nav
-        className="projectSection__links"
-      />
-    </div>
+    <h2
+      className="projectSection__name"
+    />
   </header>
   <section
     className="projectSection__description"
     data-active={true}
   >
-    <p />
+    <div
+      className="projectSection__languages"
+      onClick={[Function]}
+    />
+    <nav
+      className="projectSection__links"
+    />
+    <summary
+      className="projectSection__summary"
+      onClick={[Function]}
+    />
   </section>
   <footer
     className="projectSection__footer"
@@ -318,28 +345,29 @@ exports[`Render ProjectSection with name 1`] = `
 >
   <header
     className="projectSection__header"
+    onClick={[Function]}
   >
-    <div
-      className="projectSection__info"
+    <h2
+      className="projectSection__name"
     >
-      <h2
-        className="projectSection__name"
-      >
-        Name!
-      </h2>
-      <h4
-        className="projectSection__languages"
-      />
-      <nav
-        className="projectSection__links"
-      />
-    </div>
+      Name!
+    </h2>
   </header>
   <section
     className="projectSection__description"
     data-active={true}
   >
-    <p />
+    <div
+      className="projectSection__languages"
+      onClick={[Function]}
+    />
+    <nav
+      className="projectSection__links"
+    />
+    <summary
+      className="projectSection__summary"
+      onClick={[Function]}
+    />
   </section>
   <footer
     className="projectSection__footer"
@@ -361,33 +389,36 @@ exports[`Render ProjectSection with website link 1`] = `
 >
   <header
     className="projectSection__header"
+    onClick={[Function]}
   >
-    <div
-      className="projectSection__info"
-    >
-      <h2
-        className="projectSection__name"
-      />
-      <h4
-        className="projectSection__languages"
-      />
-      <nav
-        className="projectSection__links"
-      >
-        <a
-          className="projectSection__website"
-          href="Website!"
-        >
-          View website
-        </a>
-      </nav>
-    </div>
+    <h2
+      className="projectSection__name"
+    />
   </header>
   <section
     className="projectSection__description"
     data-active={true}
   >
-    <p />
+    <div
+      className="projectSection__languages"
+      onClick={[Function]}
+    />
+    <nav
+      className="projectSection__links"
+    >
+      <a
+        className="projectSection__website"
+        href="Website!"
+        rel="noopener"
+        target="_blank"
+      >
+        Website
+      </a>
+    </nav>
+    <summary
+      className="projectSection__summary"
+      onClick={[Function]}
+    />
   </section>
   <footer
     className="projectSection__footer"
@@ -409,26 +440,27 @@ exports[`Render ProjectSection without props 1`] = `
 >
   <header
     className="projectSection__header"
+    onClick={[Function]}
   >
-    <div
-      className="projectSection__info"
-    >
-      <h2
-        className="projectSection__name"
-      />
-      <h4
-        className="projectSection__languages"
-      />
-      <nav
-        className="projectSection__links"
-      />
-    </div>
+    <h2
+      className="projectSection__name"
+    />
   </header>
   <section
     className="projectSection__description"
     data-active={true}
   >
-    <p />
+    <div
+      className="projectSection__languages"
+      onClick={[Function]}
+    />
+    <nav
+      className="projectSection__links"
+    />
+    <summary
+      className="projectSection__summary"
+      onClick={[Function]}
+    />
   </section>
   <footer
     className="projectSection__footer"

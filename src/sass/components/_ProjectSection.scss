@@ -1,10 +1,16 @@
 .projectSection {
-    
+    margin: 30px auto;
+    background-color: darken($gray, 10%);
+    width: 300px;
+
+    @media #{$bp-tablet} {
+        width: 350px;
+    }
 }
 
 
 .projectSection__header {
-
+    background-color: darken($gray, 10%);
 }
 
 
@@ -13,24 +19,135 @@
 }
 
 
-.projectSection__info {
+.projectSection__name {
+    padding: 8px;
+    margin: 0;
 
+    @media #{$bp-tablet} {
+        padding: 1em;
+    }
 }
 
 
-.projectSection__name {
+.projectSection__description {
+    overflow: hidden;
+    background: darken($gray, 15%);
+    transition: 150ms ease-out;
 
+    &[data-active=false] {
+        max-height: 0;
+    }
+
+    &[data-active=true] {
+        height: auto;
+        max-height: 350px;
+    }
 }
 
 
 .projectSection__languages {
-    
-    mark {
+    padding: 8px 1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
+    h5 {
+        display: inline-block;
+        margin: 4px;
+        padding: 6px;
+        font-weight: 600;
+
+        &:nth-child(odd) {
+            background: $purple;
+        }
+
+        &:nth-child(even) {
+            background: darken($purple, 3%);
+        }
+    }
+
+    @media #{$bp-tablet} {
+        font-size: 1.1em;
     }
 }
 
 
 .projectSection__links {
-    
+    padding: 8px 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    a {
+        margin: 0 auto;
+        padding: 4px;
+        background-color: darken($gray, 25%);
+        border-bottom: 4px solid darken($gray, 30%);
+        text-decoration: none;
+    }
 }
+
+
+.projectSection__github {
+    img {
+        max-width: 1em;
+        display: inline;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        top: 2px;
+    }
+
+    p {
+        display: inline;
+        font-size: 1em;
+        padding: 0 4px;
+    }
+}
+
+
+.projectSection__website {
+
+}
+
+
+.projectSection__summary {
+    margin: 8px;
+    margin-top: 16px;
+}
+
+
+.projectSection__footer {
+    display: block;
+    margin: 0;
+    width: 100%;
+    background-color: darken($gray, 15%);
+    position: relative;
+
+    p {
+        margin: 0 auto;
+        font-size: 1.2em;
+        text-align: center;
+        transition: 150ms ease-out;
+        opacity: 0.5;
+
+        &[data-active=false] {
+            transform: rotate(180deg);
+        }
+
+        &[data-active=true] {
+            transform: rotate(0deg);
+        }
+    }
+    
+    &:hover {
+        cursor: pointer;
+    }
+
+    @media #{$bp-tablet} {
+        p {
+            font-size: 1.4em;
+        }
+    }
+}
+

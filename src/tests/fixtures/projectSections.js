@@ -9,7 +9,10 @@ export default [{
 }, {
     website: "Website!"
 }, {
-    customLinks: ["CustomLink1!", "CustomLink2!"]
+    customLinks: [{
+        link: "Custom link link!",
+        name: "Custom link name!"
+    }]
 }, {
     description: "Description!"
 }, {
@@ -18,6 +21,9 @@ export default [{
     languages: ["Language1!", "Language2!"],
     github: "Github!",
     website: "Website!",
-    customLinks: ["CustomLink1!", "CustomLink2!"],
+    customLinks: [{
+        link: "Custom link link!",
+        name: "Custom link name!"
+    }],
     description: "Description!"
 }]
