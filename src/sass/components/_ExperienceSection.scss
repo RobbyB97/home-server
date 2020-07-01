@@ -81,7 +81,7 @@
 
     p {
         margin: 0 auto;
-        font-size: 1.4em;
+        font-size: 1.2em;
         text-align: center;
         transition: 150ms ease-out;
         opacity: 0.5;
@@ -97,5 +97,9 @@
 
     &:hover {
         cursor: pointer;
+    }
+
+    @media #{$bp-tablet} {
+        font-size: 1.4em;
     }
 }
