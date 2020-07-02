@@ -1,6 +1,6 @@
 .skillSection {
     margin: 30px auto;
-    width: 250px;
+    width: 300px;
 
     @media #{$bp-tablet} {
         width: 350px;
@@ -10,21 +10,25 @@
 
 
 .skillSection__header {
-    background-color: darken($red, 8%);
+    background-color: darken($red, 15%);
 
 }
 
 
 .skillSection__title {
-    padding: 8px 16px;
+    padding: 8px;
     margin: 0;
+
+    @media #{$bp-tablet} {
+        padding: 1em;
+    }
 }
 
 
 .skillSection__list {
     overflow: hidden;
     width: 100%;
-    background-color: darken($red, 13%);
+    background-color: darken($red, 20%);
     transition: 150ms ease-out;
 
     ul {
@@ -49,12 +53,11 @@
     display: block;
     margin: 0;
     width: 100%;
-    background-color: darken($red, 13%);
     position: relative;
 
     p {
         margin: 0 auto;
-        font-size: 1.4em;
+        font-size: 1.2em;
         text-align: center;
         transition: 150ms ease-out;
         opacity: 0.5;
@@ -68,7 +71,21 @@
         }
     }
 
+    &[data-active=false] {
+        background-color: darken($red, 20%);
+    }
+
+    &[data-active=true] {
+        background-color: darken($red, 15%);
+    }
+    
     &:hover {
         cursor: pointer;
+    }
+
+    @media #{$bp-tablet} {
+        p {
+            font-size: 1.4em;
+        }
     }
 }

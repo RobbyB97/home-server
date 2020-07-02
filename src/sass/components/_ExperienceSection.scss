@@ -95,11 +95,15 @@
         }
     }
 
-    &:hover {
-        cursor: pointer;
+    &[data-active=true] {
+        background-color: $purple;
     }
 
-    @media #{$bp-tablet} {
-        font-size: 1.4em;
+    &[data-active=false] {
+        background-color: darken($purple, 5%);
+    }
+
+    &:hover {
+        cursor: pointer;
     }
 }
