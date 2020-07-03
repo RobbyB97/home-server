@@ -9,17 +9,19 @@ export class ProjectSection extends React.Component {
         };
     }
 
+
     toggle = () => {
         this.setState({
             active: !this.state.active
         });
     };
 
+
     render() {
         return (
             <article className="projectSection">
                 <header 
-                    className="projectSection__header" 
+                    className="projectSection__header"
                     onClick={this.toggle}
                 >
                     {this.props.logo &&
@@ -40,7 +42,7 @@ export class ProjectSection extends React.Component {
                 >
                     <div 
                         className="projectSection__languages"
-                        onClick={this.toggle}
+                        onClick={this.toggle}    
                     >
                         {this.props.languages &&
                             this.props.languages.map((language) => (
@@ -90,7 +92,7 @@ export class ProjectSection extends React.Component {
 
                     <summary 
                         className="projectSection__summary"
-                        onClick={this.toggle}    
+                        onClick={this.toggle}
                     >
                         {this.props.description}
                     </summary>

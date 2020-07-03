@@ -2,6 +2,10 @@
     margin: 30px auto;
     width: 300px;
 
+    &:hover {
+        cursor: pointer;
+    }
+
     @media #{$bp-tablet} {
         width: 350px;
     }
@@ -77,10 +81,6 @@
 
     &[data-active=true] {
         background-color: darken($red, 15%);
-    }
-    
-    &:hover {
-        cursor: pointer;
     }
 
     @media #{$bp-tablet} {

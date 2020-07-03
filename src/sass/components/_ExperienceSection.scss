@@ -1,6 +1,7 @@
 .experienceSection {
     margin: 30px auto;
     width: 320px;
+    cursor: pointer;
 
     @media #{$bp-tablet} {
         width: 350px;
