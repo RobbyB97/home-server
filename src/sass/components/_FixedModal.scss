@@ -1,6 +1,6 @@
 .fixedModal {
     position: fixed;
-    top: 0;
+    bottom: 0;
     left: 0;
     right: 0;
     height: 0;
@@ -11,7 +11,7 @@
 
 .fixedModal__modal {
     position: fixed;
-    top: 0;
+    bottom: 0;
     left: 0;
     right: 0;
     transition: 150ms ease-out;
@@ -32,6 +32,12 @@
         width: 250px;
         text-align: center;
         margin: 18px auto;
+    }
+
+    @media #{$bp-tablet} {
+        p {
+            width: 80%;
+        }
     }
 }
 
