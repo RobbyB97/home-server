@@ -1,5 +1,19 @@
 #Experience {
     overflow: hidden;
+    border-bottom: 30px;
+}
+
+
+.experience__header {
+    font-size: 1.3em;
+    width: 320px;
+    margin: 0 auto;
+
+    @media #{$bp-desktop} {
+        width: 100%;
+        max-width: 1200px;
+        text-align: center;
+    } 
 }
 
 

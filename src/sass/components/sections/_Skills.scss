@@ -3,6 +3,19 @@
 }
 
 
+.skills__header {
+    font-size: 1.3em;
+    width: 310px;
+    margin: 0 auto;
+
+    @media #{$bp-desktop} {
+        width: 100%;
+        max-width: 1200px;
+        text-align: center;
+    }
+}
+
+
 .skills__content {
     @media #{$bp-desktop} {
         display: flex;
