@@ -6,7 +6,7 @@ exports[`Render Projects 1`] = `
   id="Footer"
 >
   <Divider
-    section="footer"
+    section="footer__divider"
   />
   <div
     className="footer__content"

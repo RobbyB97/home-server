@@ -1,5 +1,6 @@
 #About {}
 
+
 .about__content {
     display: inline-block;
     font-family: $montserrat;
@@ -12,10 +13,12 @@
     }
 }
 
+
 .about__bioTitle {
     font-size: 1.4em;
     font-weight: bold;
 }
+
 
 .about__portrait {
     margin: 0 auto;
@@ -34,6 +37,7 @@
     }
 }
 
+
 .about__text {
     width: 100%;
     font-size: 1.1em;
@@ -43,6 +47,7 @@
         margin: 0 auto;
     }
 }
+
 
 .about__text.one {
     position: absolute;
@@ -62,13 +67,103 @@
             background-color: $red;
         }
     }
+
+    @media #{$bp-ultrawide} {
+        p {
+            padding-top: 10px;
+        }
+    }
 }
 
-.about__text.two {
-    margin-top: 30px;
 
-    @media #{$bp-phone} {
-        margin-top: 24px;
+.about__divider.one {
+    height: 0;
+
+    .divider__shape {
+        &.one {
+            border-top: 30px solid lighten($black, 15%);
+        }
+
+        &.two {
+            display: none;
+        }
     }
 
+    @media #{$bp-tablet} {
+        .divider__shape {
+            &.one {
+                border-top: 45px solid lighten($black, 15%);
+            }
+        }
+    }
+
+    @media #{$bp-desktop} {
+        .divider__shape {
+            &.one {
+                border-top: 60px solid lighten($black, 15%);
+            }
+        }
+    }
+
+    @media #{$bp-ultrawide} {
+        .divider__shape {
+            &.one {
+                border-top: 90px solid lighten($black, 15%);
+            }
+        }
+    }
+}
+
+
+.about__content.two {
+    background: lighten($black, 10%);
+    padding-bottom: 0;
+}
+
+
+.about__text.two {
+    padding-top: 5vh;
+
+    @media #{$bp-ultrawide} {
+        p {
+            margin-top: 10px;
+        }
+    }
+}
+
+
+.about__divider.two {
+    .divider__shape {
+        &.one {
+            border-top: 30px solid lighten($black, 10%);
+        }
+
+        &.two {
+            display: none;
+        }
+    }
+
+    @media #{$bp-tablet} {
+        .divider__shape {
+            &.one {
+                border-top: 45px solid lighten($black, 10%);
+            }
+        }
+    }
+
+    @media #{$bp-desktop} {
+        .divider__shape {
+            &.one {
+                border-top: 60px solid lighten($black, 10%);
+            }
+        }
+    }
+
+    @media #{$bp-ultrawide} {
+        .divider__shape {
+            &.one {
+                border-top: 90px solid lighten($black, 10%);
+            }
+        }
+    }
 }

@@ -34,7 +34,7 @@ exports[`Render About 1`] = `
     </figure>
   </div>
   <Divider
-    section="about two"
+    section="about__divider one"
   />
   <div
     className="about__content two"
@@ -47,5 +47,8 @@ exports[`Render About 1`] = `
       </p>
     </div>
   </div>
+  <Divider
+    section="about__divider two"
+  />
 </section>
 `;

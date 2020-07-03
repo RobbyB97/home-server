@@ -1,16 +1,29 @@
 #Footer {}
 
 
+.footer__divider {
+    .divider__shape {
+        border-right: unset;
+        border-left: 100vw solid transparent;
+        top: unset;
+        bottom: 0;
+
+        &.one {
+            border-bottom: 6vh solid lighten($black, 15%);
+        }
+
+        &.two {
+            border-bottom: 12vh solid lighten($black, 10%);
+        }
+    }
+}
+
+
 .footer__content {
     margin: 0;
     background: lighten($black, 15%);
     position: relative;
-    height: 40px;
-}
-
-
-.footer__links {
-
+    height: 25px;
 }
 
 
@@ -21,4 +34,3 @@
     right: 8px;
 }
 
-// Footer bg: lighten($black, 15%)

@@ -19,7 +19,7 @@ export class About extends React.Component {
                     </figure>
                 </div>
 
-                <Divider section="about two" />
+                <Divider section="about__divider one" />
 
                 <div className="about__content two">
                     <div className="about__text two">
@@ -28,6 +28,8 @@ export class About extends React.Component {
                         </p>
                     </div>
                 </div>
+
+                <Divider section="about__divider two" />
             </section>
         );
     }

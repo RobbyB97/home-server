@@ -7,7 +7,7 @@ export class Footer extends React.Component {
     render() {
         return (
             <footer id="Footer" className="footer">
-                <Divider section="footer"/>
+                <Divider section="footer__divider"/>
                 
                 <div className="footer__content">
                     <div className="footer__links">
