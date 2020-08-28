@@ -177,7 +177,6 @@
     @media #{$bp-tablet} {
         p {
             position: absolute;
-            top: 5em;
 
             &.left {   // Designer
                 right: 50%;
@@ -191,6 +190,15 @@
             &.right {    // Developer
                 left: 50%;
             }
+        }
+    }
+
+    @media #{$bp-desktop} {
+        height: calc(125px + 10em);
+
+        p {
+            font-size: 3em;
+            top: 125px;
         }
     }
 }
@@ -210,7 +218,7 @@
         text-decoration: none;
         width: 160px;
         text-align: center;
-        margin: 0 auto;
+        margin: 16px auto;
         padding: 8px;
     }
 
@@ -223,7 +231,6 @@
 
 
 .landing__view {
-    margin: 32px auto !important;
     border: 1px solid $white;
     color: $white;
     transition: 150ms;
@@ -239,7 +246,6 @@
 
 
 .landing__resume {
-    margin-bottom: 32px !important;
     border: 1px solid $white;
     color: $white;
     transition: 150ms;
