@@ -23,10 +23,23 @@ export class Projects extends React.Component {
                     "Chrome extension", "npm", "Webpack", "SASS"
                 ],
                 github: "https://github.com/RobbyB97/SoloTwitch",
+                website: "https://solotwitch.com",
                 description: "SoloTwitch is a chrome extension which\
                 redesigns the entire Twitch website to cleanly remove\
                 all view counts in order to remove the subconscious mob\
                 mentality from Twitch."
+            }, {
+                name: "Redux Boilerplate",
+                languages: [
+                    "Node.js", "Express", "npm", "webpack", "React",
+                    "React Router", "Redux", "SASS", "firebase"
+                ],
+                github: "https://github.com/RobbyB97/ReduxBoilerplate",
+                website: "https://reduxboilerplate.com",
+                description: "To create a react application from scratch requires\
+                an absurd amount of configuration of external packages. This boilerplate\
+                puts React on par with other frameworks like Angular in terms of initial\
+                configuration."
             }, {
                 name: "Portfolio",
                 languages: [

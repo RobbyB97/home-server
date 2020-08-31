@@ -46,6 +46,27 @@ exports[`Render Projects 1`] = `
         ]
       }
       name="SoloTwitch"
+      website="https://solotwitch.com"
+    />
+    <ProjectSection
+      description="To create a react application from scratch requires                an absurd amount of configuration of external packages. This boilerplate                puts React on par with other frameworks like Angular in terms of initial                configuration."
+      github="https://github.com/RobbyB97/ReduxBoilerplate"
+      key="Redux Boilerplate"
+      languages={
+        Array [
+          "Node.js",
+          "Express",
+          "npm",
+          "webpack",
+          "React",
+          "React Router",
+          "Redux",
+          "SASS",
+          "firebase",
+        ]
+      }
+      name="Redux Boilerplate"
+      website="https://reduxboilerplate.com"
     />
     <ProjectSection
       description="Originally the codebase for my old Dell R410                server, this repository now contains my portfolio (this website!),                which is hosted through Firebase."
